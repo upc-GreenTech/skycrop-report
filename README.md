@@ -378,8 +378,13 @@ El proyecto se centra en el software, sin fabricar drones propios. La integraci�
 
 ### 1.2.2 Lean UX Process. 
 
-#### 1.2.2.1. Lean UX Problem Statements. 
-*El estado actual del dominio del monitoreo agrícola se ha centrado principalmente en inspecciones manuales lentas y que demandan mucha mano de obra, realizadas sobre las parcelas por pequeños y medianos productores y los ingenieros agrónomos que los asesoran, y que a menudo detectan los problemas cuando el daño ya es irreversible. Lo que los productos existentes no logran abordar es la necesidad de una automatización de vuelos de drones y un análisis de imágenes accesibles, abiertos y personalizables, adaptados a las necesidades agronómicas específicas de estos usuarios, ya que las soluciones comerciales actuales son ecosistemas costosos y cerrados. Nuestro producto abordará esta brecha ofreciendo una plataforma por suscripción, compatible con drones comerciales estándar, que automatiza las rutas de vuelo y genera mapas visuales del terreno para identificar tempranamente el estrés de los cultivos, las plagas y las deficiencias de fertilizante. Nuestro enfoque inicial serán los pequeños y medianos productores agrícolas, ya sean independientes o asociados a cooperativas, y los ingenieros agrónomos que los asesoran. Sabremos que hemos tenido éxito cuando observemos una tasa de conversión del 25 % a nuestras suscripciones de pago (Básica, Profesional o Cooperativa) y un uso recurrente de la herramienta de mapeo durante los primeros 6 meses.*
+#### 1.2.2.1. Lean UX Problem Statements.
+
+El monitoreo manual de parcelas requiere tiempo y esfuerzo de los productores y de los ingenieros agrónomos que los asesoran. Los registros de entrevistas describen dificultades para supervisar los cultivos y acceder a información que permita identificar condiciones que requieren atención.
+
+SkyCrop propone apoyar este proceso mediante una plataforma por suscripción que centralice parcelas, planificación de vuelos, diagnósticos, mapas y reportes. La integración con drones comerciales y el análisis de imágenes forman parte de la propuesta del producto y requieren validación técnica. El segmento inicial comprende pequeños y medianos productores, productores asociados a cooperativas e ingenieros agrónomos.
+
+Como criterio propuesto de evaluación, se plantea una tasa de conversión del 25 % a suscripciones de pago durante los primeros seis meses y un uso recurrente de la herramienta de mapeo. Estas metas corresponden a hipótesis de negocio y no a resultados medidos del avance actual.
 
 #### 1.2.2.2. Lean UX Assumptions. 
 
@@ -419,35 +424,35 @@ El proyecto se centra en el software, sin fabricar drones propios. La integraci�
 
 **Hipótesis 1**
 
-*Creemos que lograremos* una tasa de conversión del 25% hacia nuestras suscripciones de pago durante los primeros 6 meses
+*Se plantea como hipótesis alcanzar* una tasa de conversión del 25% hacia nuestras suscripciones de pago durante los primeros 6 meses
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una reducción del tiempo y del esfuerzo manual necesarios para planificar vuelos de drones sobre sus parcelas
 *Con* la funcionalidad de Planificación automatizada de rutas de vuelo, que permite delimitar áreas y generar automáticamente rutas de vuelo personalizadas.
 
 **Hipótesis 2**
 
-*Creemos que lograremos* un uso mensual recurrente de la herramienta de mapeo por parte de al menos el 60% de nuestros suscriptores de pago
+*Se plantea como hipótesis alcanzar* un uso mensual recurrente de la herramienta de mapeo por parte de al menos el 60% de nuestros suscriptores de pago
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una visualización más rápida y comprensible del estado de sus cultivos y del terreno
 *Con* la funcionalidad de Generación de mapas visuales del terreno, que procesa imágenes aéreas y genera mapas visuales que resaltan anomalías en los cultivos.
 
 **Hipótesis 3**
 
-*Creemos que lograremos* una mayor adopción de las suscripciones Profesional y Cooperativa
+*Se plantea como hipótesis alcanzar* una mayor adopción de las suscripciones Profesional y Cooperativa
 *Si* los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una identificación más temprana de problemas agronómicos como el estrés de los cultivos, las plagas y las deficiencias de fertilizante
 *Con* la funcionalidad de Análisis avanzado de imágenes, que analiza automáticamente las imágenes aéreas para identificar anomalías visuales relevantes.
 
 **Hipótesis 4**
 
-*Creemos que lograremos* una tasa de retención del 70% de los suscriptores de pago después de los primeros 6 meses
+*Se plantea como hipótesis alcanzar* una tasa de retención del 70% de los suscriptores de pago después de los primeros 6 meses
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* decisiones mejor informadas al comparar las condiciones históricas de los cultivos con la información de monitoreos anteriores
 *Con* la funcionalidad de Historial de cultivos y reportes, que almacena de forma segura la información de monitoreo en la nube y permite comparar entre ciclos agrícolas.
 
 **Hipótesis 5**
 
-*Creemos que lograremos* una mayor tasa de conversión hacia la suscripción Cooperativa
+*Se plantea como hipótesis alcanzar* una mayor tasa de conversión hacia la suscripción Cooperativa
 *Si* los gestores de cooperativas y sus equipos
 *Alcanzan* una gestión colaborativa más eficiente de múltiples parcelas y usuarios
 *Con* la consola de Gestión multiparcela y multiusuario, que permite a las cooperativas organizar múltiples áreas agrícolas y trabajar de forma colaborativa con distintos miembros del equipo.
@@ -680,20 +685,20 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
   </tr>
 </table>
 
-### 2.1.2. Estrategias y tácticas frente a competidores. 
+### 2.1.2. Estrategias y tácticas frente a competidores.
 
-Luego de realizar el análisis de nuestra competencia, nos proponemos las siguientes estrategias para tener un mejor puesto en el mercado:
+El análisis competitivo orienta las siguientes estrategias propuestas para SkyCrop:
 
-- **Mayor enfoque en la agricultura:** Mientras que las empresas de nuestros competidores abarcan diferentes ámbitos como en construcciones, seguridad pública o inspecciones, nuestro producto estará enfocado en la agricultura, por lo cual realizaremos un mayor esfuerzo conociendo las necesidades que haya en este ámbito para proponer soluciones valiosas para nuestro segmento objetivo.
-- **Ofrecer diferentes tipos de subscripciones:** Los productos de Pix4D y DJI Enterprise cuentan con una subscripción costosa para acceder a todas las funcionalidades que tienen para ofrecer. Un agricultor o ingeniero agrónomo que no haya usado tales aplicaciones previamente habría pagado un precio adicional por funciones sin utilizar. Frente a esto, consideramos dividir nuestras futuras funcionalidades en diferentes tipos de subscripciones, con el fin de ofrecer lo más básico, útil y utilizado a un precio accesible y ofrecer lo más avanzado pero igual de útil a mayores precios.
-- **Desarrollar funciones sin conexión:** Para que nuestra solución no pierda su valor ante los inconvenientes presentes en campos agrícolas, como la falta de conexión, vemos esencial que la aplicación SkyCrop tenga una serie de funciones utiles accesibles sin conexión. Esto lo identificamos al observar las soluciones ofrecidas por Pix4D y DJI Enterprise, las cuales cuentan con funciones similares, y al analizar los problemas que pueden tener los servicios de Geodrone respecto a disponibilidad.
+- **Enfoque agrícola:** Priorizar las necesidades de monitoreo de cultivos de agricultores e ingenieros agrónomos mediante información de parcelas, diagnósticos y reportes.
+- **Suscripciones diferenciadas:** Organizar las funcionalidades en planes con distintos alcances para atender las necesidades de productores, profesionales y cooperativas. Los precios y la disposición de pago deben contrastarse con el segmento objetivo.
+- **Uso ante conectividad limitada:** Evaluar qué consultas y registros pueden realizarse sin conexión y cómo se sincronizarían al recuperar acceso a internet. Esta estrategia responde al contexto de trabajo en campo y no describe una capacidad acreditada por las capturas del Sprint 2.
 
 ## 2.2. Entrevistas. 
 
 ### 2.2.1. Diseño de entrevistas. 
 
-Las entrevistas consistirán de una serie de preguntas principales dirigidas a los segmentos objetivos junto con otras preguntas complementarias que nos brinden información adicional. 
-Antes de que comience la entrevista, explicaremos nuestra solución a los entrevistados con el fin de brindar contexto.
+El diseño de entrevistas comprende preguntas principales dirigidas a los segmentos objetivo y preguntas complementarias para obtener información adicional. 
+La entrevista incluye una presentación de la propuesta de SkyCrop para brindar contexto a los participantes.
 Al comenzar la entrevista, se realizarán preguntas cortas para recaudar información básica del entrevistado, como su nombre, edad y distrito de residencia. Luego de esto, se realizarán las preguntas principales.
 
 **Preguntas para el segmento 1: Agricultores**
@@ -1187,7 +1192,7 @@ A partir de este proceso, identificamos lo siguiente:
 
 ## 3.1. User Stories
 
-A continuación se presentan las User Stories que indicarán las funcionalidades que nuestro producto deberá cumplir. La tabla sigue el orden de contextos core, de soporte y genéricos definido en el catálogo de la sección 4.6.1. Conserva los identificadores y la relación con las épicas; las historias de una misma épica pueden aparecer en distintos contextos. Los contratos de EP-09 acompañan a la funcionalidad correspondiente y las historias de registro e inicio de sesión se presentan al final.
+A continuación se presentan las User Stories que indicarán las funcionalidades que SkyCrop deberá cumplir. La tabla sigue el orden de contextos core, de soporte y genéricos definido en el catálogo de la sección 4.6.1. Conserva los identificadores y la relación con las épicas; las historias de una misma épica pueden aparecer en distintos contextos. Los contratos de EP-09 acompañan a la funcionalidad correspondiente y las historias de registro e inicio de sesión se presentan al final.
 
 |Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
 |:--------------|:-----|:----------|:----------------------|:--------------|
