@@ -175,8 +175,16 @@ Las métricas reflejan la actividad registrada en GitHub. La calidad de los apor
       - [5.2.1.5. Execution Evidence for Sprint Review.](#5215-execution-evidence-for-sprint-review)
       - [5.2.1.6. Services Documentation Evidence for Sprint Review.](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review.](#5217-software-deployment-evidence-for-sprint-review)
-      - [5.2.X.8. Team Collaboration Insights during Sprint.](#52x8-team-collaboration-insights-during-sprint)
-  - [](#)
+      - [5.2.1.8. Team Collaboration Insights during Sprint.](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2.](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators.](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2.](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review.](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review.](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint.](#5228-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -2465,19 +2473,215 @@ Enlace: https://trello.com/b/v9IDjQLu/sprint-backlog-1
 
 Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. Los identificadores originales se conservan para relacionar cada bloque con las evidencias existentes y los aportes de sus responsables. La revisión mantiene un esfuerzo total estimado de 63 horas-persona; redistribuye el esfuerzo de beneficios entre el filtro compartido y su integración por segmento. Las horas corresponden a estimaciones revisadas, no a registros de tiempo ejecutado. La captura de Trello conserva la organización anterior; la tabla siguiente presenta la agrupación revisada.
 
-| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status (To-Do / In-Process / To-Review / Done) |
-| :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
-| US-36 | Presentación de SkyCrop | UT-01 / UT-12 | Preparar la base y la presentación de la landing | Configurar el repositorio y la estructura HTML/CSS/JS, y maquetar la sección Hero con descripción y botón de acceso provisional. | 6 | Diego Pumahualcca | Done |
-| US-37 | Demostración de funcionalidades de SkyCrop | UT-02 / UT-03 | Implementar la sección de funcionalidades | Maquetar los bloques de mapeo, telemetría y drones e incorporar las imágenes ilustrativas. | 6 | Oliver Jonseck (maquetación); Yam Cano (imágenes) | Done |
-| US-38 / US-39 | Beneficios por segmento | UT-04 / UT-05 | Implementar las tarjetas agrícolas y el filtro por perfil | Maquetar los beneficios para agricultores e implementar el filtro Agricultor / Agrónomo utilizado por ambas historias. | 4 | Yam Cano (tarjetas); Diego Pumahualcca (filtro) | Done |
-| US-39 | Muestra de beneficios para agrónomos | UT-06 | Integrar los beneficios para agrónomos | Redactar y maquetar los beneficios para agrónomos y verificar su visualización al cambiar de perfil mediante el filtro compartido. | 5 | Oliver Jonseck | Done |
-| US-40 | Planes de subscripciones y precios | UT-07 | Implementar la cuadrícula de planes | Maquetar costos mensuales, características y botones de suscripción de cada plan. | 4 | Sunio Landa | Done |
-| US-41 | Opción de contacto | UT-08 / UT-09 | Implementar el formulario y su envío | Crear los campos de contacto, validar los datos e integrar el servicio externo de formularios para enviar la consulta y conservar el correo del remitente. | 6 | Yam Cano (formulario); Oliver Jonseck (envío) | Done |
-| US-42 / US-43 | Navegación y pie de página | UT-10 / UT-11 | Implementar la navegación y el pie de página | Crear el menú fijo con desplazamiento a secciones y versión móvil, e incorporar enlaces institucionales, políticas y medios de contacto en el footer. | 5 | Diego Pumahualcca (navegación); Yam Cano (footer) | Done |
-| - | - | UT-13 / UT-14 | Definir fundamentos visuales y wireframes | Establecer paleta, tipografía y espaciados en Figma y elaborar los wireframes de la landing para escritorio y móvil. | 7 | Sebastián Rubio | Done |
-| - | - | UT-15 | Diseñar los mock-ups de la landing | Elaborar los mock-ups de las secciones en Figma. | 6 | Sunio Landa | Done |
-| - | - | UT-16 / UT-17 | Verificar el diseño adaptable y publicar la landing | Revisar la visualización en móvil y escritorio, corregir desbordes y configurar GitHub Pages con verificación de la URL pública. | 6 | Oliver Jonseck (diseño adaptable); Sunio Landa (despliegue) | Done |
-| - | - | UT-18 / UT-19 / UT-20 | Documentar la planificación y las evidencias del sprint | Registrar planificación, responsabilidades, backlog, commits, ejecución, despliegue e insights, e incorporar wireframes y mock-ups al informe. | 8 | Yam Cano (planificación); Sunio Landa (evidencias); Sebastián Rubio (diseños) | Done |
+
+<div align="center">
+<table border="1">
+  <tr>
+    <th>Sprint #</th>
+    <th colspan="7">Sprint 2</th>
+  </tr>
+
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="6">Work Item / Task</th>
+  </tr>
+
+  <tr>
+    <th>Story ID</th>
+    <th>Story Title</th>
+    <th>Task ID</th>
+    <th>Task Title</th>
+    <th>Task Description</th>
+    <th>Estimation (hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  
+  <tr>
+    <td rowspan="2">US-36</td>
+    <td rowspan="2">Presentación de SkyCrop</td>
+    <td>UT-01</td>
+    <td>Preparar la base</td>
+    <td>Configurar el repositorio y la estructura de archivos</td>
+    <td>2</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-02</td>
+    <td>Preparar la presentación de la pagina</td>
+    <td>Maquetar la sección Hero con descripción y botón de acceso provisional</td>
+    <td>3</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-37</td>
+    <td rowspan="2">Demostración de funcionalidades de SkyCrop</td>
+    <td>UT-03</td>
+    <td>Implementar la sección de funcionalidades</td>
+    <td>Maquetar los bloques ded mapeo, telemetria y drones e </td>
+    <td>2</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-04</td>
+    <td>Agregar imagenes de funcionalidades</td>
+    <td>Incorporar imagenes a la sección de funcionalidades</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-38</td>
+    <td rowspan="2">Muestra de beneficios para agricultores</td>
+    <td>UT-05</td>
+    <td>Implementar las tarjetas agrícolas</td>
+    <td>Maquetar los beneficios para agricultores</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-06</td>
+    <td>Implementar los filtros por perfil</td>
+    <td>Implementar el filtro de Agricultor y Agrónomo</td>
+    <td>2</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US-39</td>
+    <td>Muestra de beneficios para agrónomos</td>
+    <td>UT-07</td>
+    <td>Integrar los beneficios para agrónomos</td>
+    <td>Redactar y maquetar los beneficios para agrónomos y verificar su visualización al cambiar de perfil mediante el filtro compartido.</td>
+    <td>5</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US-40</td>
+    <td>Planes de subscripciones y precios</td>
+    <td>UT-08</td>
+    <td>Implementar la cuadrícula de planes</td>
+    <td>Maquetar costos mensuales, características y botones de subscripción de cada plan</td>
+    <td>4</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-41</td>
+    <td rowspan="2">Opción de contacto</td>
+    <td>UT-09</td>
+    <td>Implementar el diseño del formulario</td>
+    <td>Crear los campos de contacto, </td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-10</td>
+    <td>Implementar el envío del formulario</td>
+    <td>Validar los datos de formulario e integrar el servicio externo</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US-42</td>
+    <td>Navegación rápida por la Landing Page</td>
+    <td>UT-11</td>
+    <td>Implementar la navegación por las secciones de la pagina</td>
+    <td>Crear un menú fijo con desplazamiento a secciones</td>
+    <td>3</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US-43</td>
+    <td>Pie de pagina informativo</td>
+    <td>UT-12</td>
+    <td>Implementar el pie de página</td>
+    <td>Agregar enlace, politicas y medios de contacto en el footer</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+
+  <tr>
+    <td rowspan="6">-</td>
+    <td rowspan="6">-</td>
+    <td>UT-13</td>
+    <td>Definir fundamentos visuales y wireframes</td>
+    <td>Establecer paleta, tipografía y espaciados en Figma y elaborar los wireframes de la landing para escritorio y móvil.</td>
+    <td>5</td>
+    <td>Sebastián Rubio</td>
+    <td>Done</td>
+  </tr>
+
+
+  <tr>
+    <td>UT-14</td>
+    <td>Diseñar los mock-ups de la landing</td>
+    <td>Elaborar los mock-ups de las secciones en Figma.</td>
+    <td>5</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-15</td>
+    <td>Verificar el diseño adaptable y publicar la landing</td>
+    <td>Revisar la visualización en móvil y escritorio, corregir desbordes</td>
+    <td>2</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-16</td>
+    <td>Publicar la landing</td>
+    <td>Configurar GitHub Pages con verificación de la URL pública.</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-17</td>
+    <td>Documentar la planificación del sprint</td>
+    <td>Registrar planificación, responsabilidades, backlog, commits, ejecución, despliegue e insights</td>
+    <td>5</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-18</td>
+    <td>Documentar las evidencias del sprint</td>
+    <td>Registrar evidencias de lo logrado en el sprint</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+</table>
+</div>
 
 #### 5.2.1.4. Development Evidence for Sprint Review. 
 
@@ -2524,6 +2728,8 @@ ilustrativos.
 
 El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluye la entrega de los contratos RESTful API de EP-09. La documentación de la mock API se presenta en la configuración de despliegue de la sección 5.1.4 como un avance de integración distinto del alcance de este sprint.
 
+
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review. 
 
 
@@ -2557,16 +2763,287 @@ El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluy
 
 **Publicación del Landing Page tras la migración:** pendiente de verificar. La dirección correspondiente al nuevo repositorio es https://upc-greentech.github.io/skycrop-website/; al revisarla el 8 de octubre de 2026 devolvió HTTP 404.
 
-#### 5.2.X.8. Team Collaboration Insights during Sprint. 
+#### 5.2.1.8. Team Collaboration Insights during Sprint. 
 
 La captura de Pulse del repositorio de la Landing Page corresponde al período del 13 al 20 de septiembre de 2026. Muestra cinco pull requests integrados, cuatro autores y nueve commits, excluyendo merges. Estas cifras describen la actividad registrada durante el intervalo seleccionado.
 
 ![Insights-LP.png](resources/imgs/chapter_5/Insights-LP.png)
+
 ---
 
 La captura de Contributors presenta aportes de notoriussxd, DanLandio, DiegoPumahualcca y Yam-1CG, con tres, tres, dos y un commit, respectivamente. El período del filtro no aparece en la imagen, por lo que estos valores se describen de forma independiente del intervalo de Pulse. La evidencia de ejecución y las responsabilidades del sprint complementan estas métricas para evaluar la calidad, el cumplimiento y la participación del equipo.
 
 ![Contributors.png](resources/imgs/chapter_5/Contributors.png)
+
+### 5.2.2. Sprint 2 
+
+#### 5.2.2.1. Sprint Planning 2. 
+
+El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versión funcional de la pagina Frontend de SkyCrop. 
+
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2026-05-10 |
+| **Time** | 14:00 PM |
+| **Location** | Reunión virtual mediante Discord |
+| **Prepared By** | Landa Sanchez, Sunio Danilo |
+| **Attendees (to planning meeting)** | Landa Sanchez, Sunio Danilo / Cano Gomez, Yam Antony Gabriel / Jonseck Choque, Oliver / Rubio Ortiz, Luis Sebastián / Pumahualcca Garcia, Diego Rodrigo |
+| **Sprint 1 Review Summary** | Durante el sprint 1 desarrollamos e implementamos la primera versión de nuestra Landing Page para la promoción de nuestra plataforma. Los integrantes del grupo realizaron un buen trabajo durante el desarrollo de la Landing Page, con algunas de las correcciones a hacer consistiendo en temas de diseño. |
+| **Sprint 1 Retrospective Summary** | Durante el desarrollo del sprint 1 identificamos la importancia de la coordinación en equipo para la elaboración de proyectos de software en entornos como GitHub. Haber identificado esto y hacer algo respecto a ello será muy importante para llevar a cabo el desarrollo ordenado del frontend y backend de nuestra aplicación. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | Nuestro enfoque está en implementar el la aplicación web frontend de SkyCrop, que contenga funcionalidades clave para nuestro negocio, tales como el registro y consulta de información de las parcelas y los drones, la visualización de informes y diagnosticos, y la revisión de las rutinas de vuelo plaificadas. Creemos que esta aplicación facilitará la realización de transacciones dentro de la plataforma y permitirá que se agreguen y accedan a nuevas funcionalidades a ser desarrolladas. Esto se confirmará cuando los usuarios puedan acceder a los servicios de la plataforma SkyCrop y generar registros en el sistema dentro de la aplicación web. |
+| **Sprint 2 Velocity** | 14 |
+| **Sum of Story Points** | 24 |
+
+La estimación inicial de story points cubre nueve historias seleccionadas: US-11 (2), US-12 (1), US-14 (2), US-15 (1), US-17 (5), US-18 (5), US-23 (3), US-25 (2), US-31 (3) que suman 24 Story Points. Al tratarse del primer sprint, este valor corresponde a una referencia de planificación y no a una velocidad histórica medida. Las estimaciones de tareas expresan esfuerzo en horas-persona y se mantienen separadas de los Story Points.
+
+#### 5.2.2.2. Aspect Leaders and Collaborators. 
+
+A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para los aspectos clave abordados durante el sprint 2.
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend (Angular)<br>Leader (L) / Collaborator (C) | Mock API<br>Leader (L) / Collaborator (C) | Project Documentation<br>Leader (L) / Collaborator (C) | Software deployment<br>Leader (L) / Collaborator (C)|
+| :--- | :--- | :---: | :---: | :---: | :----:|
+| Landa Sanchez, Sunio Danilo  | DanLandio | C | C | L | C |
+| Cano Gomez, Yam Antony  | Yam-1CG  | L | C | L | C |
+| Jonseck Choque, Oliver | Olizzy-upc| C | L | C | C |
+| Rubio Ortiz, Luis Sebastián | notoriussxd | L | L | C | L |
+| Pumahualcca Garcia, Diego Rodrigo | DiegoPumahualcca | C | C | L | C |
+
+#### 5.2.2.3. Sprint Backlog 2. 
+
+El objetivo principal de este sprint es desarrollar la primera versión del frontend de nuestra aplicación. En esta ocasión se tomaron en cuenta User Stories principales que permitan demostrar la funcionalidad basica de nuestra aplicación, tomando como apoyo un Mock API antes del desarrollo del backend.
+
+**Tablero en trello del Sprint Backlog 2:** [https://trello.com/b/Vt1ncJsa](https://trello.com/b/Vt1ncJsa)
+
+<div align="center">
+<img src="resources/imgs/sprintbacklog-2-greentech.jpg" width="700" alt="Sprint backlog 2">
+</div>
+
+Las User Stories fueron repartidas por cada integrante, para así desarrollar distintas partes del proyecto de forma simultanea, ocasionalmente realizandose una retroalimentación grupal.
+
+
+<div align="center">
+<table border="1">
+  <tr>
+    <th>Sprint #</th>
+    <th colspan="7">Sprint 2</th>
+  </tr>
+
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="6">Work Item / Task</th>
+  </tr>
+
+  <tr>
+    <th>Story ID</th>
+    <th>Story Title</th>
+    <th>Task ID</th>
+    <th>Task Title</th>
+    <th>Task Description</th>
+    <th>Estimation (hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-11</td>
+    <td rowspan="2">Registro de parcela</td>
+    <td>UT-19</td>
+    <td>Diseñar el formulario de la parcela</td>
+    <td>Diseñar la estructura y los campos que se tomarán en cuenta para el registro</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-20</td>
+    <td>Guardar el registro de parcela</td>
+    <td>Registrar una nueva parcela a partir de los datos ingresados</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-12</td>
+    <td rowspan="2">Consulta de estado de una parcela</td>
+    <td>UT-21</td>
+    <td>Diseño de la vista de detalles</td>
+    <td>Diseñar y elaborar la vista con los detalles de la parcela</td>
+    <td>2</td>
+    <td>Sebastián Rubio</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-22</td>
+    <td>Presentación de datos de la parcela</td>
+    <td>Mostrar los datos registrados de la parcela en el diseño de la vista</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-14</td>
+    <td rowspan="2">Registro de cultivos en una parcela</td>
+    <td>UT-23</td>
+    <td>Diseño de formulario de cultivos</td>
+    <td>Diseñar e implementar el formulario de registro de cultivos</td>
+    <td>1</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-24</td>
+    <td>Registro de cultivos</td>
+    <td>Generar registros de cultivos mediante el formulario diseñado</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-15</td>
+    <td rowspan="2">Consulta de información de los cultivos</td>
+    <td>UT-25</td>
+    <td>Estructurar la vista de detalles</td>
+    <td>Diseñar la vista de detalles de cultivos y que campos se considerarán</td>
+    <td>1</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-26</td>
+    <td>Presentar datos de los cultivos</td>
+    <td>Mostrar los datos de los cultivos mediante la vista diseñada</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-17</td>
+    <td rowspan="2">Conectar el dron</td>
+    <td>UT-27</td>
+    <td>Diseñar el registro del dron</td>
+    <td>Estructurar y elaborar la interfaz de registro de dron</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>UT-28</td>
+    <td>Registrar drones</td>
+    <td>Generar registros de drones mediante la interfaz de registro</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-18</td>
+    <td rowspan="2">Gestionar la rutina de vuelo</td>
+    <td>UT-29</td>
+    <td>Diseñar interfaz de planificación</td>
+    <td>Estructurar y elaborar la interfaz para la planificación de los vuelos</td>
+    <td>3</td>
+    <td>Sebastián Rubio</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-30</td>
+    <td>Registrar datos de planificación</td>
+    <td>Guardar y mostrar en la plataforma los datos de la planificación realizada</td>
+    <td>2</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-23</td>
+    <td rowspan="2">Generación de diagnóstico</td>
+    <td>UT-31</td>
+    <td>Estructurar el diagnostico</td>
+    <td>Definir los campos y datos que se tomarán en cuenta para un diagnostico</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-32</td>
+    <td>Registrar diagnosticos</td>
+    <td>Guardar un historial de diagnosticos generados para una parcela</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-25</td>
+    <td rowspan="2">Historial de diagnósticos</td>
+    <td>UT-33</td>
+    <td>Diseñar la vista del historial</td>
+    <td>Definir la estructura visual del historial y los campos a considerar</td>
+    <td>1</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-34</td>
+    <td>Vista de datos del historial</td>
+    <td>Visualizar los datos registrados de los diagnosticos en el historial</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-31</td>
+    <td rowspan="2">Creación de reporte según la estación</td>
+    <td>UT-35</td>
+    <td>Estructurar el reporte</td>
+    <td>Diseñar y desarrollar la vista del reporte</td>
+    <td>2</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>UT-36</td>
+    <td>Generar el reporte</td>
+    <td>Usar datos historicos de los diagnosticos para registrar un reporte con ellos</td>
+    <td>3</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
+  </tr>
+
+</table>
+</div>
+
+#### 5.2.2.4. Development Evidence for Sprint Review. 
+
+
+#### 5.2.2.5. Execution Evidence for Sprint Review. 
+
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review. 
+
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review. 
+
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+
 
 # Conclusiones 
 
