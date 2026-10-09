@@ -3145,7 +3145,7 @@ Estas evidencias permiten sustentar los avances presentados durante el Sprint Re
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
-Las capturas del 9 de octubre de 2026 presentan cuatro vistas de la aplicación web de SkyCrop durante su ejecución. En todas se observa la estructura compartida de navegación, con el encabezado, el selector de idioma, el menú lateral y el área de contenido correspondiente al módulo seleccionado.
+Las capturas del 9 de octubre de 2026 presentan los listados y formularios de la aplicación web de SkyCrop durante su ejecución. En todas se observa la estructura compartida de navegación, con el encabezado, el selector de idioma, el menú lateral y el área de contenido correspondiente al módulo seleccionado.
 
 **Listado de parcelas agrícolas**
 
@@ -3179,7 +3179,39 @@ La vista Seasonal Report History presenta un total de cero reportes y el mensaje
 <img src="resources/imgs/chapter_5/website-execution/04-historial-reportes-vacio.png" alt="Historial de reportes estacionales sin registros" width="900">
 </div>
 
-Las evidencias corresponden a la visualización de los listados y del estado vacío de reportes. Los controles visibles identifican los accesos disponibles en cada pantalla; las capturas no registran la ejecución de los formularios de registro, las vistas de detalle, la generación de resultados ni la exportación de PDF. Las operaciones de la mock API utilizadas por los módulos se describen en la sección 5.2.2.6.
+**Formulario de registro de parcelas**
+
+La pantalla Agricultural Plot Registration presenta los campos de nombre, responsable, tipo de cultivo, tipo de suelo, fecha de siembra y superficie. La sección Location incluye búsqueda de ubicación, mapa, descripción, latitud y longitud. También se observa el campo opcional de URL de imagen y los controles Cancel y Register plot. En la captura los campos están vacíos y el botón de registro aparece deshabilitado.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/05-formulario-registro-parcela.png" alt="Formulario de registro de parcelas" width="900">
+</div>
+
+**Formulario de registro de drones**
+
+La pantalla Register drone contiene campos para nombre, modelo, número de serie, cámara, autonomía, batería y URL de imagen opcional. La autonomía presenta el valor inicial de 30 minutos y la batería el de 100 %. Los campos de identificación están vacíos; se observan el acceso Back to drones y los controles Cancel y Register drone.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/06-formulario-registro-dron.png" alt="Formulario de registro de drones" width="900">
+</div>
+
+**Panel de generación de diagnósticos**
+
+El historial muestra el panel Generate diagnosis con selectores de parcela, vuelo completado y escenario de simulación. La captura presenta Without flight y Water stress, sin parcela seleccionada, y el botón Generate and save deshabilitado. El mensaje informativo indica que el diagnóstico utiliza datos de demostración y no analiza imágenes del vuelo ni evalúa el cultivo real. Debajo permanece visible el registro diag_001 del historial.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/07-panel-generacion-diagnostico.png" alt="Panel de generación de diagnósticos" width="900">
+</div>
+
+**Formulario de generación de reportes**
+
+El panel Generate presenta campos para título, año, estación y fechas de inicio y fin. En la captura figuran el año 2026 y la estación Spring; el título y las fechas están vacíos y el botón Generate report aparece deshabilitado. El mensaje del panel indica que el reporte consolida al menos cinco reportes de monitoreo del período seleccionado. El historial conserva el estado No reports recorded.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/08-formulario-generacion-reporte.png" alt="Formulario de generación de reportes" width="900">
+</div>
+
+Las evidencias presentan los listados, el estado vacío de reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes. Los formularios capturados muestran su estado inicial, sin una confirmación de guardado ni un resultado recién generado. Las operaciones de la mock API utilizadas por los módulos se describen en la sección 5.2.2.6.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
