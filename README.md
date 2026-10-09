@@ -79,6 +79,7 @@ El registro reúne las modificaciones principales del informe mediante identific
 | TB1.1 | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
 | TB1.2 | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
 | TB1.3 | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
+| TB1.4 | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
 
 # Project Report Collaboration Insights
 
@@ -277,7 +278,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
   Promovió el trabajo en equipo durante la elaboración del proyecto.
 
   <br><br> TB1: <br>
-  La planificación del Sprint 2 establece el objetivo de implementar la primera versión del frontend y selecciona nueve historias de usuario. El Sprint Backlog 2 distribuye tareas, responsables, estimaciones y estados de avance. Las ramas de desarrollo y su integración permiten organizar los cambios de la aplicación. Las capturas de ejecución muestran las vistas de parcelas, drones, diagnósticos y reportes; la documentación de despliegue registra la configuración de la aplicación en Vercel y de la mock API en Azure.
+  La planificación del Sprint 2 establece el objetivo de implementar la primera versión del frontend y selecciona nueve historias de usuario. El Sprint Backlog 2 distribuye tareas, responsables, estimaciones y estados de avance. Las ramas de desarrollo y su integración permiten organizar los cambios de la aplicación. Las capturas de ejecución muestran los listados de parcelas, drones, diagnósticos y reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes; la documentación de despliegue registra la configuración de la aplicación en Vercel y de la mock API en Azure.
   </td>
 
   <td>
@@ -3313,7 +3314,7 @@ El refinamiento del dominio distingue Diagnoses Generation y Report Management c
 
 La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución.
 
-Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con Vue y Vite y se configuró su publicación en Vercel. Los módulos consumen recursos de la mock API de Azure mediante variables de entorno. Las evidencias de ejecución presentan los listados de parcelas, drones y diagnósticos, además del estado vacío del historial de reportes. La consulta HTTP de las rutas publicadas complementa las capturas con una comprobación de disponibilidad del documento de entrada de la aplicación.
+Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con Vue y Vite y se configuró su publicación en Vercel. Los módulos consumen recursos de la mock API de Azure mediante variables de entorno. Las evidencias de ejecución presentan los listados de parcelas, drones y diagnósticos, el estado vacío del historial de reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes. La consulta HTTP de las rutas publicadas complementa las capturas con una comprobación de disponibilidad del documento de entrada de la aplicación.
 
 El alcance implementado utiliza registros de una mock API y diagnósticos simulados. El estado de un dron y el registro de un vuelo representan información de la aplicación y no acreditan una conexión física con equipos agrícolas. Estas condiciones delimitan los resultados del sprint y permiten distinguir la implementación de las vistas de la validación operativa y agronómica de SkyCrop.
 
