@@ -49,9 +49,9 @@ Proyecto
 
 # Registro de Versiones del Informe
 
-Se registran cambios principales del informe grupal usando el commit como identificador de versión. Las fechas corresponden al historial de Git. La autoría del documento se presenta a nombre del equipo GreenTech.
+El registro reúne las modificaciones principales del informe mediante identificadores de versión y referencias a commits. Las fechas de los commits corresponden al historial de Git. La autoría del documento se presenta a nombre del equipo GreenTech.
 
-| Versión (commit) | Fecha | Autor | Descripción de modificación |
+| Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
 | [cec5325](https://github.com/upc-GreenTech/skycrop-report/commit/cec5325) | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
 | [2c87943](https://github.com/upc-GreenTech/skycrop-report/commit/2c87943) | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
@@ -75,20 +75,40 @@ Se registran cambios principales del informe grupal usando el commit como identi
 | [2187054](https://github.com/upc-GreenTech/skycrop-report/commit/2187054) | 2026-10-09 | Equipo GreenTech | Vistas generales C4 y componentes de frontend y backend por contexto. |
 | [70cc8cf](https://github.com/upc-GreenTech/skycrop-report/commit/70cc8cf) | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
 | [1d90594](https://github.com/upc-GreenTech/skycrop-report/commit/1d90594) | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
+| [5ba924e](https://github.com/upc-GreenTech/skycrop-report/commit/5ba924e) | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
+| TB1.1 | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
 
 # Project Report Collaboration Insights
 
-El informe se mantiene en el [repositorio skycrop-report de GreenTech](https://github.com/upc-GreenTech/skycrop-report). Los aportes se registran mediante commits y se integran en `develop` desde ramas de trabajo. El [historial de la rama develop](https://github.com/upc-GreenTech/skycrop-report/commits/develop/) permite consultar los cambios integrados en investigación, requisitos, diseño y documentación, incluidos el análisis de entrevistas, las historias de diagnósticos y la configuración de despliegue.
+El informe se elabora en el [repositorio skycrop-report de GreenTech](https://github.com/upc-GreenTech/skycrop-report). Las modificaciones se organizan en ramas de trabajo y se integran en `develop`. El [historial de develop](https://github.com/upc-GreenTech/skycrop-report/commits/develop/) permite consultar los cambios de investigación, requisitos, diseño y documentación.
 
-La captura de Pulse corresponde al período del 1 de septiembre al 1 de octubre de 2026 y muestra 29 pull requests integrados y actividad de cinco autores. Estos registros describen la actividad del repositorio durante el intervalo seleccionado.
+**Evidencias anteriores**
 
-![InsightsTB1](resources/imgs/chapter_0/Insights-AV1.png)
+La captura de Pulse corresponde al período del 1 de septiembre al 1 de octubre de 2026 y muestra 29 pull requests integrados y actividad de cinco autores. Estas cifras corresponden al intervalo seleccionado en esa consulta.
 
-La captura de Contributors muestra los aportes a `main`, excluyendo los commits de merge, de cinco cuentas: DanLandio, Yam-1CG, notoriussxd, DiegoPumahualcca y Olizzy-upc. Su intervalo semanal visible abarca del 27 de junio al 26 de septiembre de 2026 y corresponde a una consulta independiente de Pulse. Los gráficos permiten observar la distribución temporal de los commits registrados por cada cuenta.
+![Pulse del repositorio del informe: evidencia anterior](resources/imgs/chapter_0/Insights-AV1.png)
 
-![ContributorsTB1](resources/imgs/chapter_0/Contributors-AV1.png)
+La captura anterior de Contributors muestra los aportes a `main`, excluyendo los commits de merge, de las cuentas DanLandio, Yam-1CG, notoriussxd, DiegoPumahualcca y Olizzy-upc. El intervalo semanal visible abarca del 27 de junio al 26 de septiembre de 2026.
 
-Las métricas reflejan la actividad registrada en GitHub. La calidad de los aportes, el cumplimiento de las tareas y la totalidad de la participación se evalúan junto con los artefactos entregados y las responsabilidades documentadas.
+![Contributors del repositorio del informe: evidencia anterior](resources/imgs/chapter_0/Contributors-AV1.png)
+
+**TB1: colaboración en el informe**
+
+Para TB1 se incorporaron correcciones en la definición de Bounded Contexts, las relaciones entre agregados, los objetos de valor y los diagramas de clases y componentes. También se revisaron las estimaciones del Sprint 1, las evidencias de despliegue de la mock API y el formato del documento. Estas modificaciones se relacionan con los commits incluidos en el Registro de Versiones del Informe.
+
+La captura de Contributors utiliza el filtro «Last 3 months» y presenta contribuciones semanales a `main`, excluyendo los commits de merge. El gráfico general indica el período del 4 de julio al 3 de octubre de 2026. Las tarjetas muestran los siguientes aportes:
+
+| Cuenta de GitHub | Commits mostrados |
+|---|---:|
+| DanLandio | 35 |
+| Yam-1CG | 32 |
+| notoriussxd | 26 |
+| DiegoPumahualcca | 20 |
+| Olizzy-upc | 11 |
+
+![Contributors del repositorio skycrop-report para TB1](resources/imgs/chapter_0/github-contributors-tb1.png)
+
+La captura corresponde al historial mostrado en `main`; no representa un conteo exclusivo del Sprint 2. Los cambios integrados en `develop` se consultan en su historial y en el Registro de Versiones. Las cifras de commits describen la actividad registrada y se complementan con los artefactos elaborados y las responsabilidades del equipo para evaluar la participación.
 
 <div style="page-break-after: always;"></div>
 
