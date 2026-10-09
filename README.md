@@ -1840,25 +1840,157 @@ La arquitectura propuesta de SkyCrop comprende una Landing Page desarrollada con
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
-Las vistas de componentes detallan las responsabilidades internas de la landing, la aplicación web y el API. La propuesta utiliza Material Design como referencia visual, inglés como idioma predeterminado y soporte para español latinoamericano. La landing y la aplicación contemplan diseño adaptable y accesibilidad mediante atributos ARIA. Los diagramas describen la organización prevista de la solución.
+Las vistas C4 de componentes describen la estructura interna de la landing, la aplicación web y el backend RESTful API de la arquitectura propuesta. Cada componente incluye su tecnología y responsabilidad; las relaciones indican las operaciones o los protocolos de comunicación. Los Bounded Contexts agrupan responsabilidades dentro de cada contenedor y no representan unidades de despliegue independientes.
 
 **Landing Page**
 
-Los componentes organizan la navegación, las funcionalidades y beneficios, los planes, el formulario de contacto y el pie de página. El cambio de idioma proporciona los textos de la interfaz y los llamados a la acción contemplan la redirección hacia la aplicación. El formulario considera una integración con un servicio externo para recibir consultas.
+Los componentes organizan la navegación, las funcionalidades y beneficios, los planes, el formulario de contacto y el pie de página. El cambio de idioma proporciona los textos de la interfaz y los llamados a la acción contemplan la redirección hacia la aplicación.
 
-<img src="resources/imgs/Software Architecture Diagram/Components-Landing-updated.png" alt="Diagrama de componentes de la Landing Page de SkyCrop">
+<img src="resources/imgs/Software Architecture Diagram/Components-Landing-updated.png" alt="Componentes de la Landing Page de SkyCrop">
 
-**Frontend Web Application**
+**Frontend Web Application: vista general**
 
-La organización prevista de la aplicación Vue sigue el catálogo de contextos: Diagnoses Generation y Report Management; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management; Notification Service e IAM. La vista general reúne las áreas funcionales de la aplicación. Los componentes compartidos reúnen la navegación, los estados de interfaz y la selección de idioma. PrimeVue proporciona la biblioteca de componentes visuales y el cliente HTTP centraliza la comunicación con el API y el manejo de errores.
+La vista general presenta los ocho contextos en el orden del catálogo del dominio. El layout organiza la navegación entre vistas; los módulos de cada contexto utilizan el cliente HTTP compartido para comunicarse con el API. La propuesta utiliza Vue, JavaScript y PrimeVue, con soporte para inglés y español, diseño adaptable y atributos ARIA.
 
-<img src="resources/imgs/Software Architecture Diagram/Components-Frontend-updated.png" alt="Diagrama de componentes del frontend de SkyCrop">
+<img src="resources/imgs/Software Architecture Diagram/Components-Frontend-updated.png" alt="C4: vista general de componentes del frontend de SkyCrop">
 
-**Backend RESTful API**
+**Backend RESTful API: vista general**
 
-Los controladores de ASP.NET Core delegan las operaciones a servicios de aplicación organizados por los contextos del dominio. El modelo de dominio reúne entidades, reglas y objetos de valor, mientras que los repositorios y DbContext utilizan Entity Framework Core para la persistencia. Los adaptadores encapsulan las integraciones externas de pagos, mensajería, mapas, meteorología y almacenamiento. OpenAPI y Swagger describen los endpoints y contratos del API.
+La vista general distribuye las operaciones entre los ocho contextos y muestra los componentes de persistencia e integración externa. Los repositorios acceden a la base de datos mediante Entity Framework Core. Los adaptadores encapsulan la comunicación con los proveedores y dispositivos. El diseño utiliza C# y ASP.NET Core; la documentación de los contratos HTTP se representa mediante OpenAPI y Swagger.
 
-<img src="resources/imgs/Software Architecture Diagram/Components-Backend-updated.png" alt="Diagrama de componentes del backend de SkyCrop">
+<img src="resources/imgs/Software Architecture Diagram/Components-Backend-updated.png" alt="C4: vista general de componentes del backend de SkyCrop">
+
+**Vistas de componentes por Bounded Context**
+
+En el frontend, las vistas delegan las acciones y el estado al store del contexto. El cliente del API envía las solicitudes mediante el cliente HTTP compartido y el assembler transforma las respuestas en modelos de la aplicación. En el backend, los controladores reciben las solicitudes, los servicios de aplicación coordinan las operaciones y el dominio mantiene sus reglas. Los repositorios y adaptadores implementan las responsabilidades de infraestructura. Las vistas amplían el diseño por capas de la sección 4.7.1.
+
+**Diagnoses Generation**
+
+En el frontend se organizan las vistas de diagnósticos, mapa de resultados e historial. En el backend, el contexto solicita análisis y conserva diagnósticos y anomalías. La integración utiliza `ImageAnalysisAdapter` para resultados y anomalías.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/diagnoses-frontend-components.png" alt="C4: componentes del frontend de Diagnoses Generation" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/diagnoses-backend-components.png" alt="C4: componentes del backend de Diagnoses Generation" width="700">
+</div>
+
+**Report Management**
+
+En el frontend se organizan las vistas de reportes, comparación y descarga de documentos. En el backend, el contexto consolida diagnósticos y genera documentos. La integración utiliza `CloudReportStorage` para archivos de reportes.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/reports-frontend-components.png" alt="C4: componentes del frontend de Report Management" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/reports-backend-components.png" alt="C4: componentes del backend de Report Management" width="700">
+</div>
+
+**Agricultural Plot Management**
+
+En el frontend se organizan las vistas de registro, detalles, cultivos y colaboración en parcelas. En el backend, el contexto administra parcelas, cultivos y acceso colaborativo. La integración utiliza `PlotMapAdapter` para representación geográfica.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/plots-frontend-components.png" alt="C4: componentes del frontend de Agricultural Plot Management" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/plots-backend-components.png" alt="C4: componentes del backend de Agricultural Plot Management" width="700">
+</div>
+
+**Drone Management**
+
+En el frontend se organizan las vistas de registro de drones, configuración y vuelos. En el backend, el contexto administra dispositivos, planes y ejecuciones de vuelo. La integración utiliza `DroneGatewayAdapter` para configuración y telemetría.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/drones-frontend-components.png" alt="C4: componentes del frontend de Drone Management" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/drones-backend-components.png" alt="C4: componentes del backend de Drone Management" width="700">
+</div>
+
+**Subscriptions and Payment Management**
+
+En el frontend se organizan las vistas de planes, pagos y estado de suscripción. En el backend, el contexto administra vigencia y transacciones de suscripción. La integración utiliza `PaymentGatewayAdapter` para autorización de transacciones.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/subscriptions-frontend-components.png" alt="C4: componentes del frontend de Subscriptions and Payment Management" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/subscriptions-backend-components.png" alt="C4: componentes del backend de Subscriptions and Payment Management" width="700">
+</div>
+
+**Profiles and Preferences Management**
+
+En el frontend se organizan las vistas de consulta y edición de datos del perfil. En el backend, el contexto administra datos de contacto del usuario.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/profiles-frontend-components.png" alt="C4: componentes del frontend de Profiles and Preferences Management" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/profiles-backend-components.png" alt="C4: componentes del backend de Profiles and Preferences Management" width="700">
+</div>
+
+**Notification Service**
+
+En el frontend se organizan las vistas de avisos, detalle y estado de lectura. En el backend, el contexto registra avisos y coordina su entrega. La integración utiliza `MessageDeliveryAdapter` para entrega de avisos.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/notifications-frontend-components.png" alt="C4: componentes del frontend de Notification Service" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/notifications-backend-components.png" alt="C4: componentes del backend de Notification Service" width="700">
+</div>
+
+**IAM — Identity and Access Management**
+
+En el frontend se organizan las vistas de registro, inicio de sesión y recuperación de acceso. En el backend, el contexto administra identidades, credenciales y autorización. La integración utiliza `PasswordHashVerifier` para verificación de credenciales. La emisión de credenciales se realiza mediante `AccessTokenIssuer`.
+
+Frontend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/iam-frontend-components.png" alt="C4: componentes del frontend de IAM — Identity and Access Management" width="700">
+</div>
+
+Backend:
+
+<div align="center">
+<img src="resources/imgs/Software Architecture Diagram/contexts/iam-backend-components.png" alt="C4: componentes del backend de IAM — Identity and Access Management" width="700">
+</div>
 
 ## 4.7. Software Object-Oriented Design. 
 
