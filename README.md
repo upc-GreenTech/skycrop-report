@@ -78,6 +78,7 @@ El registro reúne las modificaciones principales del informe mediante identific
 | [5ba924e](https://github.com/upc-GreenTech/skycrop-report/commit/5ba924e) | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
 | TB1.1 | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
 | TB1.2 | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
+| TB1.3 | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
 
 # Project Report Collaboration Insights
 
@@ -244,11 +245,16 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 
   <br> Luis Sebastián Rubio Ortiz  <br> AV1: <br>
   Aporto en el diseño de la solución
+
+  <br><br> TB1: <br>
+  La matriz de responsabilidades del Sprint 2 asigna liderazgo en documentación a Sunio Danilo Landa Sánchez, Yam Antony Gabriel Cano Gomez y Diego Rodrigo Pumahualcca Garcia; liderazgo en frontend a Yam Antony Gabriel Cano Gomez y Luis Sebastián Rubio Ortiz; liderazgo en mock API a Oliver Jonseck Choque y Luis Sebastián Rubio Ortiz; y liderazgo en despliegue a Luis Sebastián Rubio Ortiz. Los integrantes figuran como colaboradores en los demás aspectos de la matriz. El historial de desarrollo y las capturas de colaboración de las secciones 5.2.2.4 y 5.2.2.8 registran aportes a la implementación de la aplicación web.
   </td>
 
   <td>
   AV1: <br>
   El grupo trabajó en equipo para proponer una solución y diseñarla de forma progresiva.
+  <br><br> TB1: <br>
+  La distribución de responsabilidades relaciona el trabajo de frontend, mock API, documentación y despliegue. Las evidencias del Sprint 2 permiten examinar la contribución conjunta mediante tareas, commits y resultados de ejecución, complementando las métricas de actividad del repositorio.
   </td>
   </tr>
 
@@ -269,11 +275,16 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 
   <br>  Luis Sebastián Rubio Ortiz<br> AV1: <br>
   Promovió el trabajo en equipo durante la elaboración del proyecto.
+
+  <br><br> TB1: <br>
+  La planificación del Sprint 2 establece el objetivo de implementar la primera versión del frontend y selecciona nueve historias de usuario. El Sprint Backlog 2 distribuye tareas, responsables, estimaciones y estados de avance. Las ramas de desarrollo y su integración permiten organizar los cambios de la aplicación. Las capturas de ejecución muestran las vistas de parcelas, drones, diagnósticos y reportes; la documentación de despliegue registra la configuración de la aplicación en Vercel y de la mock API en Azure.
   </td>
 
   <td>
   AV1: <br>
   El grupo coopero en todo momento durante la elaboración del avance, aportando ideas entre sí y ayudandose unos entre otros.
+  <br><br> TB1: <br>
+  La planificación, el backlog y las evidencias de implementación vinculan las metas del sprint con entregables verificables. La publicación del frontend permite acceder a la primera versión de la aplicación. Las capturas documentan los estados visibles de las vistas y complementan el historial de desarrollo para evaluar el alcance presentado.
   </td>
   </tr>
 </table>
@@ -3245,7 +3256,11 @@ Las entrevistas identificaron dificultades relacionadas con el tiempo y esfuerzo
 
 El refinamiento del dominio distingue Diagnoses Generation y Report Management como contextos core; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management como soporte; y Notification Service e IAM como genéricos. Esta separación distribuye las responsabilidades del modelo de dominio. Los diagramas de clases distinguen raíces de agregado, entidades internas y referencias externas por identificador. Los objetos de valor representan nombres, teléfonos, direcciones, fechas, correos, superficies, ubicaciones y datos meteorológicos. El patrón Money vincula cada importe con su moneda y SubscriptionPeriod delimita la vigencia de una suscripción.
 
-La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución; el desarrollo de la aplicación y la integración de sus capacidades requieren evaluaciones propias.
+La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución.
+
+Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con Vue y Vite y se configuró su publicación en Vercel. Los módulos consumen recursos de la mock API de Azure mediante variables de entorno. Las evidencias de ejecución presentan los listados de parcelas, drones y diagnósticos, además del estado vacío del historial de reportes. La consulta HTTP de las rutas publicadas complementa las capturas con una comprobación de disponibilidad del documento de entrada de la aplicación.
+
+El alcance implementado utiliza registros de una mock API y diagnósticos simulados. El estado de un dron y el registro de un vuelo representan información de la aplicación y no acreditan una conexión física con equipos agrícolas. Estas condiciones delimitan los resultados del sprint y permiten distinguir la implementación de las vistas de la validación operativa y agronómica de SkyCrop.
 
 Las hipótesis de conversión a suscripciones, uso recurrente y retención deberán contrastarse mediante un producto funcional y pruebas con usuarios. También será necesario verificar la integración con los drones seleccionados y evaluar la calidad de los diagnósticos. Los resultados de estas validaciones orientarán los ajustes del producto y las prioridades del roadmap, antes de atribuir mejoras de productividad o resultados agronómicos.
 
