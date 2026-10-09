@@ -1,53 +1,56 @@
 @startuml
 skinparam monochrome true
 skinparam shadowing false
-skinparam dpi 150
+skinparam dpi 120
 skinparam defaultFontName SansSerif
-skinparam wrapWidth 220
-skinparam maxMessageSize 70
 skinparam componentStyle rectangle
-left to right direction
-title SkyCrop - Componentes de Backend RESTful API
+skinparam wrapWidth 180
+skinparam nodesep 35
+skinparam ranksep 45
+top to bottom direction
+title SkyCrop - C4 - Vista general de componentes del backend
 component "Frontend Web Application\n[Contenedor: Vue]\n\nConsume operaciones REST." as web
-rectangle "Backend RESTful API [Contenedor: C# / ASP.NET Core]" {
-component "Controladores REST\n[Componente: ASP.NET Core]\n\nEndpoints de cuentas, parcelas, vuelos y resultados." as controllers
-component "Servicios de cuentas y suscripciones\n[Componente: C#]\n\nAutenticación, perfiles, suscripciones y pagos." as accountsvc
-component "Servicios de parcelas y drones\n[Componente: C#]\n\nParcelas, cultivos, configuración y vuelos." as plotsvc
-component "Servicios de diagnósticos y reportes\n[Componente: C#]\n\nAnálisis, historial, reportes y notificaciones." as diagnosissvc
-component "Modelo de dominio\n[Componente: C#]\n\nEntidades, reglas, Money y objetos de valor." as domain
-component "Repositorios y DbContext\n[Componente: Entity Framework Core]\n\nPersistencia de los contextos del dominio." as repos
-component "Adaptadores de servicios externos\n[Componente: C#]\n\nIntegración de pagos, mensajes, mapas, clima y archivos." as adapters
-component "Documentación del API\n[Componente: OpenAPI / Swagger]\n\nDescribe endpoints y contratos REST." as docs
+rectangle "Backend RESTful API\n[Contenedor: C# / ASP.NET Core]" {
+component "Diagnoses Generation / Core\n[Componente: ASP.NET Core / C#]\n\nSolicita análisis y conserva diagnósticos y anomalías." as diagnoses
+component "Report Management / Core\n[Componente: ASP.NET Core / C#]\n\nConsolida diagnósticos y genera documentos." as reports
+component "Agricultural Plot Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra parcelas, cultivos y acceso colaborativo." as plots
+component "Drone Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra dispositivos, planes y ejecuciones de vuelo." as drones
+component "Subscriptions and Payment Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra vigencia y transacciones de suscripción." as subscriptions
+component "Profiles and Preferences Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra datos de contacto del usuario." as profiles
+component "Notification Service / Genérico\n[Componente: ASP.NET Core / C#]\n\nRegistra avisos y coordina su entrega." as notifications
+component "IAM — Identity and Access Management / Genérico\n[Componente: ASP.NET Core / C#]\n\nAdministra identidades, credenciales y autorización." as iam
+component "Persistencia\n[Componente: Entity Framework Core]\n\nRepositorios por agregado y acceso a datos." as persistence
+component "Integraciones externas\n[Componente: C# / HTTPS]\n\nAdaptadores de análisis, mapas, drones, pagos, mensajes y archivos." as integrations
 }
-database "Base de datos relacional\n[MySQL Server o PostgreSQL]\n\nPersiste cuentas, parcelas, vuelos y resultados." as db
-component "Pasarela de pagos\n[Sistema externo]\n\nProcesa transacciones." as payment
-component "Servicio de mensajería\n[Sistema externo]\n\nEntrega correos y notificaciones." as messaging
-component "Mapas y meteorología\n[Sistemas externos]\n\nMapas y datos meteorológicos." as maps
-component "Almacenamiento de archivos\n[Sistema externo]\n\nImágenes y reportes." as storage
-web --> controllers : REST [HTTPS / JSON]
-controllers --> accountsvc : Delega operaciones
-controllers --> plotsvc : Delega operaciones
-controllers --> diagnosissvc : Delega operaciones
-accountsvc --> domain : Aplica reglas
-plotsvc --> domain : Aplica reglas
-diagnosissvc --> domain : Aplica reglas
-accountsvc --> repos : Persiste y consulta
-plotsvc --> repos : Persiste y consulta
-diagnosissvc --> repos : Persiste y consulta
-repos --> domain : Mapea entidades
-repos --> db : Lectura y escritura [SQL]
-accountsvc --> adapters : Pagos y mensajes
-plotsvc --> adapters : Mapas y archivos
-diagnosissvc --> adapters : Mapas, clima, archivos y avisos
-adapters --> payment : [HTTPS]
-adapters --> messaging : [HTTPS]
-adapters --> maps : [HTTPS]
-adapters --> storage : [HTTPS]
-docs ..> controllers : Documenta contratos
-note bottom of controllers
-Arquitectura propuesta.
-Mensajes y documentación en inglés.
-Soporte de internacionalización en_US / es_419.
-end note
-
+database "Base de datos relacional\n[Contenedor: MySQL Server o PostgreSQL]" as db
+component "Proveedores externos\n[Sistemas externos: Servicios / Dispositivos]\n\nAnálisis, mapas, drones, pagos, mensajería y almacenamiento." as providers
+web --> diagnoses : REST [HTTPS / JSON]
+diagnoses --> persistence : Consulta y persiste
+diagnoses --> integrations : Solicita integración
+web --> reports : REST [HTTPS / JSON]
+reports --> persistence : Consulta y persiste
+reports --> integrations : Solicita integración
+web --> plots : REST [HTTPS / JSON]
+plots --> persistence : Consulta y persiste
+plots --> integrations : Solicita integración
+web --> drones : REST [HTTPS / JSON]
+drones --> persistence : Consulta y persiste
+drones --> integrations : Solicita integración
+web --> subscriptions : REST [HTTPS / JSON]
+subscriptions --> persistence : Consulta y persiste
+subscriptions --> integrations : Solicita integración
+web --> profiles : REST [HTTPS / JSON]
+profiles --> persistence : Consulta y persiste
+web --> notifications : REST [HTTPS / JSON]
+notifications --> persistence : Consulta y persiste
+notifications --> integrations : Solicita integración
+web --> iam : REST [HTTPS / JSON]
+iam --> persistence : Consulta y persiste
+persistence --> db : Lectura y escritura [SQL]
+integrations --> providers : HTTPS / protocolo del dispositivo
+legend bottom
+C4 - Vista de componentes de la arquitectura propuesta.
+Cada vista amplía un único contenedor.
+Los contextos agrupan responsabilidades dentro del contenedor.
+endlegend
 @enduml
