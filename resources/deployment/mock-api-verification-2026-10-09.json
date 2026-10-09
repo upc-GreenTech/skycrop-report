@@ -1,0 +1,55 @@
+{
+  "verificationDate": "2026-10-09",
+  "baseUrl": "https://skycrop-fake-api-fre4gthff0hudyew.chilecentral-01.azurewebsites.net",
+  "checks": [
+    {
+      "endpoint": "/api/v1/health",
+      "httpStatus": 200,
+      "responseType": "object",
+      "serviceStatus": "ok"
+    },
+    {
+      "endpoint": "/",
+      "httpStatus": 200,
+      "responseType": "object",
+      "resourceCount": 29,
+      "resources": [
+        "users",
+        "userProfiles",
+        "accounts",
+        "subscriptionPlans",
+        "subscriptions",
+        "payments",
+        "recoveryCodes",
+        "twoFactorAuthentications",
+        "plots",
+        "plotUsers",
+        "plotInvitations",
+        "crops",
+        "drones",
+        "droneConfigurations",
+        "flightRoutes",
+        "flights",
+        "aerialImages",
+        "monitoringSessions",
+        "diagnoses",
+        "anomalies",
+        "terrainMaps",
+        "reports",
+        "reportDiagnoses",
+        "notifications",
+        "plotMaps",
+        "terrainData",
+        "agronomicRules",
+        "diagnosticHistories",
+        "contactMessages"
+      ]
+    },
+    {
+      "endpoint": "/api/v1/plots",
+      "httpStatus": 200,
+      "responseType": "array",
+      "recordCount": 0
+    }
+  ]
+}
