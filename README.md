@@ -2425,6 +2425,15 @@ La estimación inicial de story points cubre nueve historias seleccionadas: US-1
 
 #### 5.2.2.2. Aspect Leaders and Collaborators. 
 
+A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para los aspectos clave abordados durante el sprint 2.
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend (Angular)<br>Leader (L) / Collaborator (C) | Mock API<br>Leader (L) / Collaborator (C) | Project Documentation<br>Leader (L) / Collaborator (C) | Software deployment<br>Leader (L) / Collaborator (C)|
+| :--- | :--- | :---: | :---: | :---: | :----:|
+| Landa Sanchez, Sunio Danilo  | DanLandio | C | C | L | C |
+| Cano Gomez, Yam Antony  | Yam-1CG  | L | C | L | C |
+| Jonseck Choque, Oliver | Olizzy-upc| C | L | C | C |
+| Rubio Ortiz, Luis Sebastián | notoriussxd | L | L | C | L |
+| Pumahualcca Garcia, Diego Rodrigo | DiegoPumahualcca | C | C | L | C |
 
 #### 5.2.2.3. Sprint Backlog 2. 
 
