@@ -1825,7 +1825,7 @@ El refinamiento distingue las responsabilidades del dominio y ordena su presenta
 
 Los nombres mantienen las denominaciones del EventStorming para el monitoreo agrícola y adoptan las denominaciones del enunciado para IAM, perfiles y suscripciones. La landing (US-36–US-43) es un producto de presentación pública que comunica estas capacidades; no constituye por sí misma un Bounded Context. Las épicas agrupan requisitos y tampoco equivalen necesariamente a los límites de un contexto: EP-01 comprende historias de IAM y de perfiles, y EP-09 reúne contratos de varios contextos.
 
-La captura del paso 7 conserva el trabajo original. Su agrupación `Account management` se refina en IAM y Profiles and Preferences Management; `Subscriptions and payment` se denomina Subscriptions and Payment Management. El catálogo documenta esta corrección, mientras que la actualización de las capturas del tablero y el desglose de los diagramas por contexto quedan pendientes en los bloques de modelado y arquitectura.
+En la captura del paso 7, la agrupación `Account management` comprende operaciones de identidad y de perfil. El modelo distingue estas responsabilidades mediante IAM y Profiles and Preferences Management. La agrupación `Subscriptions and payment` corresponde a Subscriptions and Payment Management.
 
 ### 4.6.2. Software Architecture Context Diagram. 
 
@@ -1850,7 +1850,7 @@ Los componentes organizan la navegación, las funcionalidades y beneficios, los 
 
 **Frontend Web Application**
 
-La organización prevista de la aplicación Vue sigue el catálogo de contextos: Diagnoses Generation y Report Management; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management; Notification Service e IAM. El diagrama general actual conserva agrupaciones de la versión anterior y deberá desglosarse con estos límites en el bloque de corrección de C4. Los componentes compartidos reúnen la navegación, los estados de interfaz y la selección de idioma. PrimeVue proporciona la biblioteca de componentes visuales y el cliente HTTP centraliza la comunicación con el API y el manejo de errores.
+La organización prevista de la aplicación Vue sigue el catálogo de contextos: Diagnoses Generation y Report Management; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management; Notification Service e IAM. La vista general reúne las áreas funcionales de la aplicación. Los componentes compartidos reúnen la navegación, los estados de interfaz y la selección de idioma. PrimeVue proporciona la biblioteca de componentes visuales y el cliente HTTP centraliza la comunicación con el API y el manejo de errores.
 
 <img src="resources/imgs/Software Architecture Diagram/Components-Frontend-updated.png" alt="Diagrama de componentes del frontend de SkyCrop">
 
@@ -1864,11 +1864,11 @@ Los controladores de ASP.NET Core delegan las operaciones a servicios de aplicac
 
 ### 4.7.1. Class Diagrams. 
 
-El diseño de clases propuesto incorpora objetos de valor (`<<value object>>`) sin identificador, inmutables y con igualdad definida por sus atributos. La notación `{readOnly}` indica que sus atributos son de solo lectura. Las relaciones de composición representan los objetos de valor pertenecientes a una entidad, mientras que las dependencias de los servicios indican su uso como parámetros o resultados.
+El diseño de clases representa las entidades, los objetos de valor y los servicios del dominio de SkyCrop. Las raíces de agregado se identifican mediante `<<aggregate root>>` y las referencias a objetos de otros contextos mediante `<<external reference>>`. Los objetos de valor (`<<value object>>`) carecen de identificador y son inmutables. La notación `{readOnly}` indica atributos de solo lectura; la composición representa pertenencia al agregado o a la entidad y las dependencias expresan el uso de valores, servicios o referencias por identificador.
 
 En la gestión de pagos, el patrón `Money` agrupa el importe decimal y la moneda. Dos valores monetarios son iguales cuando coinciden ambos atributos; las operaciones de suma y resta requieren la misma moneda y generan un nuevo valor. `EmailAddress` representa el correo electrónico, `Area` expresa la superficie en hectáreas y `Location` encapsula la ubicación textual. `WeatherData` representa una instantánea meteorológica cuya igualdad considera la temperatura, la humedad, la precipitación y la fecha de registro.
 
-El refinamiento sustituye los nombres, teléfonos, direcciones y fechas primitivas por objetos de valor. Estas reglas forman parte de la propuesta de diseño y deberán aplicarse en las implementaciones; los diagramas no constituyen evidencia de que la mock API ya las valide.
+Los nombres, teléfonos, direcciones y fechas se representan mediante objetos de valor. Cada tipo agrupa su información y sus reglas de validación dentro del modelo de dominio.
 
 | Value Object | Uso | Invariantes e igualdad |
 |---|---|---|
@@ -1881,35 +1881,43 @@ El refinamiento sustituye los nombres, teléfonos, direcciones y fechas primitiv
 
 Todos estos valores se validan al construirlos y se sustituyen completos al cambiar; no tienen setters ni identificadores. Un teléfono o una dirección no proporcionados se representan por ausencia del objeto, en lugar de crear valores vacíos. `verifiedAt` permanece ausente antes de verificar el segundo factor. En un vuelo, el inicio y el fin permanecen ausentes hasta sus respectivos eventos y, cuando ambos existen, el fin no puede preceder al inicio. Un código de recuperación deja de ser válido al alcanzar su instante de vencimiento.
 
-
 Los agregados delimitan las entidades cuya consistencia se mantiene a través de una raíz. La composición indica pertenencia al mismo agregado; las relaciones entre agregados se expresan mediante identificadores. Los servicios consultan los datos asociados a estos identificadores sin incorporar las entidades de otros contextos al estado del agregado.
 
 | Contexto | Raíces de agregado y entidades internas | Referencias por identificador |
 |---|---|---|
-| IAM | `User` identifica al usuario; `Account` administra credenciales, `TwoFactorAuthentication` y `RecoveryCode`. | `Account.userId` identifica al usuario. |
-| Profiles and Preferences Management | `UserProfile` administra los datos del perfil. | `userId` relaciona el perfil con la identidad. |
-| Subscriptions and Payment Management | `Subscription` controla la vigencia; `Payment` mantiene el estado de una transacción. | `Subscription.userId` y `Payment.subscriptionId`. |
-| Agricultural Plot Management | `AgriculturalPlot` contiene `Crop` y `PlotMap`. | `ownerId` y `memberIds` identifican a los usuarios autorizados. |
-| Drone Management | `Drone` contiene `DroneConfiguration`; `FlightPlan` conserva la configuración de la ruta; `Flight` contiene sus `AerialImage`. | `Drone.ownerId`, `FlightPlan.plotId`, `Flight.flightPlanId` y `Flight.droneId`. |
 | Diagnoses Generation | `Diagnosis` contiene `TerrainData`, `Anomaly`, `TerrainMap` y su entrada de `DiagnosticHistory`; `AgronomicRule` conserva una regla de análisis. | `plotId`, `imageIds`, `cropIds` y `ruleIds`. |
 | Report Management | `Report` conserva el contenido y los diagnósticos utilizados. | `plotId`, `createdById` y `diagnosisIds`. |
+| Agricultural Plot Management | `AgriculturalPlot` contiene `Crop` y `PlotMap`. | `ownerId` y `memberIds` identifican a los usuarios autorizados. |
+| Drone Management | `Drone` contiene `DroneConfiguration`; `FlightPlan` conserva la configuración de la ruta; `Flight` contiene sus `AerialImage`. | `Drone.ownerId`, `FlightPlan.plotId`, `Flight.flightPlanId` y `Flight.droneId`. |
+| Subscriptions and Payment Management | `Subscription` controla la vigencia; `Payment` mantiene el estado de una transacción. | `Subscription.userId` y `Payment.subscriptionId`. |
+| Profiles and Preferences Management | `UserProfile` administra los datos del perfil. | `userId` relaciona el perfil con la identidad. |
 | Notification Service | `Notification` administra el aviso y su estado de envío o lectura. | `recipientId` y, para avisos de anomalías, `diagnosisId` y `anomalyId`. |
+| IAM | `User` identifica al usuario; `Account` administra credenciales, `TwoFactorAuthentication` y `RecoveryCode`. | `Account.userId` identifica al usuario. |
 
 Los identificadores se representan mediante `Long`, sin añadir comportamiento de negocio al identificador. Las clases marcadas como `external reference` muestran únicamente la identidad del objeto referenciado. Una anomalía se identifica junto con el diagnóstico al que pertenece, ya que forma parte de ese agregado. Un vuelo puede contener cero imágenes antes de la captura y un diagnóstico puede carecer de resultados mientras se encuentra en procesamiento.
 
-**SkyCrop - Gestión de Usuarios, Autenticación y Suscripciones**
+**Diagnoses Generation, Report Management y Notification Service**
+
+Esta vista muestra a `Diagnosis` como raíz del agregado que contiene los resultados del análisis, las anomalías, el mapa y la entrada del historial. `AgronomicRule` mantiene las reglas utilizadas durante el análisis. `Report` conserva las referencias a los diagnósticos incluidos mediante `diagnosisIds`, mientras que `Notification` identifica al destinatario mediante `recipientId` y relaciona los avisos de anomalías con `diagnosisId` y `anomalyId`.
+
 <div align="center">
-<img src="resources/imgs/Diagrams/ClassDiagram1-updated.png" alt="ClassDiagram1" width="600">
+<img src="resources/imgs/Diagrams/ClassDiagram3-updated.png" alt="Agregados de diagnósticos, reportes y notificaciones" width="600">
 </div>
 
-**SkyCrop - Gestión de Parcelas y Drones**
+**Agricultural Plot Management y Drone Management**
+
+`AgriculturalPlot` contiene los cultivos y el mapa de la parcela, y relaciona a los usuarios autorizados mediante `ownerId` y `memberIds`. `Drone` contiene su configuración. `FlightPlan` referencia la parcela mediante `plotId`, y `Flight` relaciona el plan y el dron mediante `flightPlanId` y `droneId`. Las imágenes capturadas pertenecen al agregado del vuelo.
+
 <div align="center">
-<img src="resources/imgs/Diagrams/ClassDiagram2-updated.png" alt="ClassDiagram2" width="600">
+<img src="resources/imgs/Diagrams/ClassDiagram2-updated.png" alt="Agregados de parcelas y drones" width="600">
 </div>
 
-**SkyCrop - Diagnóstico, Análisis, Reportes y Notificaciones**
+**Subscriptions and Payment Management, Profiles and Preferences Management e IAM**
+
+`Subscription` administra la vigencia y el estado de la suscripción. Cada `Payment` conserva su propio estado y referencia la suscripción mediante `subscriptionId`. `UserProfile` relaciona los datos del perfil con `userId`. En IAM, `User` representa la identidad del usuario y `Account` administra las credenciales, la autenticación de dos factores y los códigos de recuperación. `Account.userId` relaciona ambos agregados.
+
 <div align="center">
-<img src="resources/imgs/Diagrams/ClassDiagram3-updated.png" alt="ClassDiagram3" width="600">
+<img src="resources/imgs/Diagrams/ClassDiagram1-updated.png" alt="Agregados de suscripciones, perfiles e IAM" width="600">
 </div>
 
 ## 4.8. Database Design.
@@ -1918,28 +1926,11 @@ El diseño de base de datos de SkyCrop tiene como objetivo definir la estructura
 
 Se utiliza un modelo de base de datos relacional, representando las entidades principales mediante tablas relacionadas a través de claves primarias y claves foráneas. Asimismo, se utilizan restricciones de unicidad, obligatoriedad e integridad referencial para mantener la consistencia de los datos. En las relaciones de muchos a muchos se utilizan tablas asociativas que permiten representar correctamente la participación de usuarios en parcelas y otros elementos compartidos de la plataforma.
 
-Los Database Diagrams actuales agrupan tablas en tres vistas de lectura. Estas agrupaciones no equivalen a tres Bounded Contexts: las responsabilidades se distribuyen según el catálogo de la sección 4.6.1. Su desglose por contexto y las relaciones entre agregados se revisarán en los siguientes bloques de modelado.
+Los Database Diagrams agrupan las tablas en tres vistas de lectura que reúnen responsabilidades de distintos Bounded Contexts. La distribución del dominio se establece en el catálogo de la sección 4.6.1. Las claves foráneas y las tablas asociativas representan relaciones de persistencia; en el modelo de dominio, la comunicación entre agregados se expresa mediante identificadores.
 
 ### 4.8.1. Database Diagrams. 
 
-**SkyCrop - Gestión de Usuarios, Autenticación y Suscripciones**
-
-<div align="center">
-<img src="resources/imgs/Diagrams/DataBaseDiagram1.png" alt="DataBaseDiagram1" width="600">
-</div>
-
-Esta vista reúne persistencia de tres contextos distintos: IAM administra identidades y recuperación de acceso; Profiles and Preferences Management mantiene perfiles; Subscriptions and Payment Management administra planes, suscripciones y pagos. Las referencias al usuario relacionan estos contextos sin fusionar sus responsabilidades. La tabla users constituye la entidad principal, mientras que user_profiles permite separar los datos adicionales del perfil. Las suscripciones se relacionan con subscription_plans, permitiendo mantener los diferentes planes disponibles sin duplicar sus características en cada suscripción. Finalmente, payments conserva las transacciones relacionadas con cada suscripción y recovery_codes permite soportar el proceso de recuperación de cuenta.
-
-**SkyCrop - Gestión de Parcelas y Drones**
-
-<div align="center">
-<img src="resources/imgs/Diagrams/DataBaseDiagram2.png" alt="DataBaseDiagram2" width="600">
-</div>
-
-Esta vista reúne Agricultural Plot Management y Drone Management. El primero persiste parcelas, cultivos y colaboración; el segundo conserva drones, configuraciones, rutas, vuelos e imágenes capturadas. Son contextos separados que se relacionan mediante referencias a la parcela. La relación entre usuarios y parcelas se representa mediante la tabla asociativa plot_users, permitiendo que una parcela pueda ser administrada colaborativamente por diferentes agricultores o agrónomos.
-Asimismo, cada dron puede almacenar una configuración asociada y ejecutar diferentes vuelos utilizando rutas previamente definidas para una parcela. Cada ejecución se registra mediante flights, permitiendo conservar su estado y tiempos de ejecución. Finalmente, las imágenes capturadas durante cada vuelo son registradas mediante aerial_images, almacenando además la referencia hacia el archivo correspondiente en el almacenamiento externo.
-
-**SkyCrop - Diagnóstico, Análisis, Reportes y Notificaciones**
+**Diagnoses Generation, Report Management y Notification Service**
 
 <div align="center">
 <img src="resources/imgs/Diagrams/DataBaseDiagram3.png" alt="DataBaseDiagram3" width="600">
@@ -1948,6 +1939,23 @@ Asimismo, cada dron puede almacenar una configuración asociada y ejecutar difer
 Esta vista reúne Diagnoses Generation, Report Management y Notification Service. El primero conserva resultados del análisis; el segundo consolida documentos a partir de esos resultados; el tercero registra avisos derivados de eventos. Sus responsabilidades permanecen separadas. Cada sesión de monitoreo puede producir uno o más diagnósticos, los cuales contienen información sobre el estado del cultivo y pueden identificar diferentes anomalías.
 Las anomalías almacenan el tipo de problema detectado, su severidad y ubicación dentro de la parcela. Los diagnósticos también pueden producir mapas visuales, cuya ubicación en el almacenamiento externo se registra mediante terrain_maps.
 Los reportes permiten consolidar diferentes diagnósticos mediante la tabla asociativa report_diagnoses, posibilitando la generación de reportes históricos y estacionales. Finalmente, notifications registra los avisos enviados a los usuarios como consecuencia de anomalías detectadas u otros eventos relevantes de la plataforma.
+
+**Agricultural Plot Management y Drone Management**
+
+<div align="center">
+<img src="resources/imgs/Diagrams/DataBaseDiagram2.png" alt="DataBaseDiagram2" width="600">
+</div>
+
+Esta vista reúne Agricultural Plot Management y Drone Management. El primero persiste parcelas, cultivos y colaboración; el segundo conserva drones, configuraciones, rutas, vuelos e imágenes capturadas. Son contextos separados que se relacionan mediante referencias a la parcela. La relación entre usuarios y parcelas se representa mediante la tabla asociativa plot_users, permitiendo que una parcela pueda ser administrada colaborativamente por diferentes agricultores o agrónomos.
+Asimismo, cada dron puede almacenar una configuración asociada y ejecutar diferentes vuelos utilizando rutas previamente definidas para una parcela. Cada ejecución se registra mediante flights, permitiendo conservar su estado y tiempos de ejecución. Finalmente, las imágenes capturadas durante cada vuelo son registradas mediante aerial_images, almacenando además la referencia hacia el archivo correspondiente en el almacenamiento externo.
+
+**Subscriptions and Payment Management, Profiles and Preferences Management e IAM**
+
+<div align="center">
+<img src="resources/imgs/Diagrams/DataBaseDiagram1.png" alt="DataBaseDiagram1" width="600">
+</div>
+
+Esta vista reúne persistencia de tres contextos distintos: IAM administra identidades y recuperación de acceso; Profiles and Preferences Management mantiene perfiles; Subscriptions and Payment Management administra planes, suscripciones y pagos. Las referencias al usuario relacionan estos contextos sin fusionar sus responsabilidades. La tabla users constituye la entidad principal, mientras que user_profiles permite separar los datos adicionales del perfil. Las suscripciones se relacionan con subscription_plans, permitiendo mantener los diferentes planes disponibles sin duplicar sus características en cada suscripción. Finalmente, payments conserva las transacciones relacionadas con cada suscripción y recovery_codes permite soportar el proceso de recuperación de cuenta.
 
 <div style="page-break-after: always;"></div>
 
@@ -2250,7 +2258,7 @@ La captura de Contributors presenta aportes de notoriussxd, DanLandio, DiegoPuma
 
 Las entrevistas identificaron dificultades relacionadas con el tiempo y esfuerzo necesarios para supervisar parcelas y obtener información del estado de los cultivos. Los registros aportaron sustento a necesidades de planificación de vuelos, visualización mediante mapas, seguimiento histórico y colaboración, así como operación ante conectividad limitada, con distinto respaldo entre participantes. Estos hallazgos permiten relacionar los problemas y supuestos iniciales con las historias de usuario de SkyCrop, sin generalizar los resultados a toda la población agrícola ni considerar validadas las funcionalidades propuestas.
 
-El refinamiento del dominio distingue Diagnoses Generation y Report Management como contextos core; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management como soporte; y Notification Service e IAM como genéricos. Esta separación establece una base para distribuir responsabilidades y orientar la corrección de los diagramas existentes. Los diagramas de arquitectura, clases y datos describen las relaciones necesarias para desarrollar la propuesta. En el modelo de clases, el patrón Money vincula cada importe con su moneda, mientras que los objetos de valor representan correos, superficies, ubicaciones y datos meteorológicos mediante atributos inmutables e igualdad por valor.
+El refinamiento del dominio distingue Diagnoses Generation y Report Management como contextos core; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management como soporte; y Notification Service e IAM como genéricos. Esta separación distribuye las responsabilidades del modelo de dominio. Los diagramas de clases distinguen raíces de agregado, entidades internas y referencias externas por identificador. Los objetos de valor representan nombres, teléfonos, direcciones, fechas, correos, superficies, ubicaciones y datos meteorológicos. El patrón Money vincula cada importe con su moneda y SubscriptionPeriod delimita la vigencia de una suscripción.
 
 La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución; el desarrollo de la aplicación y la integración de sus capacidades requieren evaluaciones propias.
 
