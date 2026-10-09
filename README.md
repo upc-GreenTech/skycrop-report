@@ -233,53 +233,79 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
   <tr>
   <th>Trabaja en equipo para proporcionar liderazgo en forma conjunta</th>
 
-  <td> Pumahualcca Garcia, Diego Rodrigo
-  	<br> AV1: <br> Aportó en la elaboración de artefactos en grupo
+  <td>
+  <strong>Pumahualcca Garcia, Diego Rodrigo</strong><br>
+  AV1:<br>
+  Aportó en la elaboración de artefactos en grupo.<br>
+  TB1:<br>
+  Asumió el desarrollo del registro de drones, sus vistas de detalle y la gestión de rutas, como parte de la distribución de funcionalidades del equipo.
 
-  <br> Sunio Danilo Landa Sánchez <br> AV1: <br>
-  Promovió el uso de convenciones para el versionado del proyecto.
+  <strong>Sunio Danilo Landa Sánchez</strong><br>
+  AV1:<br>
+  Promovió el uso de convenciones para el versionado del proyecto.<br>
+  TB1:<br>
+  Asumió el módulo de diagnósticos, con generación de datos estáticos y vistas de consulta, para integrar el seguimiento del cultivo en el avance del frontend.
 
-  <br> Cano Gomez Yam Antony Gabriel<br> AV1: <br>
-  Facilitó la realización de hitos durante el proyecto.
+  <strong>Cano Gomez Yam Antony Gabriel</strong><br>
+  AV1:<br>
+  Facilitó la realización de hitos durante el proyecto.<br>
+  TB1:<br>
+  Asumió el registro de cultivos y sus vistas de detalle, relacionando la información de los cultivos con las parcelas de SkyCrop.
 
-  <br>  Jonseck Choque Oliver<br> AV1: <br>
-  Ayudó en la elaboración de diagramas.
+  <strong>Jonseck Choque Oliver</strong><br>
+  AV1:<br>
+  Ayudó en la elaboración de diagramas.<br>
+  TB1:<br>
+  Asumió el módulo de reportes, con listado y vistas de detalle, como parte de la implementación conjunta de las funcionalidades del sprint.
 
-  <br> Luis Sebastián Rubio Ortiz  <br> AV1: <br>
-  Aporto en el diseño de la solución
-
-  <br><br> TB1: <br>
-  La matriz de responsabilidades del Sprint 2 asigna liderazgo en documentación a Sunio Danilo Landa Sánchez, Yam Antony Gabriel Cano Gomez y Diego Rodrigo Pumahualcca Garcia; liderazgo en frontend a Yam Antony Gabriel Cano Gomez y Luis Sebastián Rubio Ortiz; liderazgo en mock API a Oliver Jonseck Choque y Luis Sebastián Rubio Ortiz; y liderazgo en despliegue a Luis Sebastián Rubio Ortiz. Los integrantes figuran como colaboradores en los demás aspectos de la matriz. El historial de desarrollo y las capturas de colaboración de las secciones 5.2.2.4 y 5.2.2.8 registran aportes a la implementación de la aplicación web.
+  <strong>Luis Sebastián Rubio Ortiz</strong><br>
+  AV1:<br>
+  Aportó en el diseño de la solución.<br>
+  TB1:<br>
+  Asumió el registro de parcelas y sus vistas de detalle. Complementó este trabajo con la integración de la mock API, la configuración de despliegue y la actualización del informe.
   </td>
 
   <td>
   AV1: <br>
   El grupo trabajó en equipo para proponer una solución y diseñarla de forma progresiva.
   <br><br> TB1: <br>
-  La distribución de responsabilidades relaciona el trabajo de frontend, mock API, documentación y despliegue. Las evidencias del Sprint 2 permiten examinar la contribución conjunta mediante tareas, commits y resultados de ejecución, complementando las métricas de actividad del repositorio.
+  La distribución de módulos permitió organizar el trabajo conjunto en parcelas, cultivos, drones, diagnósticos y reportes. Las contribuciones se relacionan con el objetivo compartido de presentar una primera versión del frontend y con las evidencias de desarrollo y ejecución del Sprint 2.
   </td>
   </tr>
 
   <tr>
   <th>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.  </th>
 
-  <td>Pumahualcca Garcia, Diego Rodrigo
-	<br> AV1: <br> Facilitó el reparto de tareas.
+  <td>
+  <strong>Pumahualcca Garcia, Diego Rodrigo</strong><br>
+  AV1:<br>
+  Facilitó el reparto de tareas.<br>
+  TB1:<br>
+  Participó en la distribución de módulos y tomó como responsabilidad el registro de drones, sus detalles y rutas, delimitando su parte del trabajo del Sprint 2.
 
-  <br> Sunio Danilo Landa Sánchez <br> AV1: <br>
-  Proporcionó espacios de trabajo para distintas partes del proyecto.
+  <strong>Sunio Danilo Landa Sánchez</strong><br>
+  AV1:<br>
+  Proporcionó espacios de trabajo para distintas partes del proyecto.<br>
+  TB1:<br>
+  Trabajó en el módulo de diagnósticos con datos estáticos, de acuerdo con el alcance definido para esta entrega, diferenciando la simulación del análisis de imágenes del producto propuesto.
 
-  <br> Cano Gomez Yam Antony Gabriel<br> AV1: <br>
-  Propuso reuniones en equipo para la realización de partes del proyecto.
+  <strong>Cano Gomez Yam Antony Gabriel</strong><br>
+  AV1:<br>
+  Propuso reuniones en equipo para la realización de partes del proyecto.<br>
+  TB1:<br>
+  Desarrolló las vistas de registro y consulta de cultivos dentro de la distribución acordada, aportando al objetivo de gestionar la información agrícola desde el frontend.
 
-  <br> Jonseck Choque Oliver <br> AV1: <br>
-  Aportó en la participación de reuniones
+  <strong>Jonseck Choque Oliver</strong><br>
+  AV1:<br>
+  Aportó en la participación de reuniones.<br>
+  TB1:<br>
+  Trabajó en el listado y los detalles de reportes, completando su módulo dentro del conjunto de vistas seleccionado para el avance.
 
-  <br>  Luis Sebastián Rubio Ortiz<br> AV1: <br>
-  Promovió el trabajo en equipo durante la elaboración del proyecto.
-
-  <br><br> TB1: <br>
-  La planificación del Sprint 2 establece el objetivo de implementar la primera versión del frontend y selecciona nueve historias de usuario. El Sprint Backlog 2 distribuye tareas, responsables, estimaciones y estados de avance. Las ramas de desarrollo y su integración permiten organizar los cambios de la aplicación. Las capturas de ejecución muestran los listados de parcelas, drones, diagnósticos y reportes, los formularios de registro de parcelas y drones, los paneles de generación de diagnósticos y reportes y los detalles de parcela, dron y diagnóstico; la documentación de despliegue registra la configuración de la aplicación en Vercel y de la mock API en Azure.
+  <strong>Luis Sebastián Rubio Ortiz</strong><br>
+  AV1:<br>
+  Promovió el trabajo en equipo durante la elaboración del proyecto.<br>
+  TB1:<br>
+  Organizó los cambios de parcelas y las correcciones del informe en ramas y commits. Incorporó las capturas de ejecución y la documentación de los servicios y del despliegue para relacionar el avance con sus evidencias.
   </td>
 
   <td>
