@@ -2414,8 +2414,8 @@ El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versi
 | **Location** | Reunión virtual mediante Discord |
 | **Prepared By** | Landa Sanchez, Sunio Danilo |
 | **Attendees (to planning meeting)** | Landa Sanchez, Sunio Danilo / Cano Gomez, Yam Antony Gabriel / Jonseck Choque, Oliver / Rubio Ortiz, Luis Sebastián / Pumahualcca Garcia, Diego Rodrigo |
-| **Sprint 1 Review Summary** |  |
-| **Sprint 1 Retrospective Summary** | |
+| **Sprint 1 Review Summary** | Durante el sprint 1 desarrollamos e implementamos la primera versión de nuestra Landing Page para la promoción de nuestra plataforma. Los integrantes del grupo realizaron un buen trabajo durante el desarrollo de la Landing Page, con algunas de las correcciones a hacer consistiendo en temas de diseño. |
+| **Sprint 1 Retrospective Summary** | Durante el desarrollo del sprint 1 identificamos la importancia de la coordinación en equipo para la elaboración de proyectos de software en entornos como GitHub. Haber identificado esto y hacer algo respecto a ello será muy importante para llevar a cabo el desarrollo ordenado del frontend y backend de nuestra aplicación. |
 | **Sprint Goal & User Stories** | |
 | **Sprint 2 Goal** | Nuestro enfoque está en implementar el la aplicación web frontend de SkyCrop, que contenga funcionalidades clave para nuestro negocio, tales como el registro y consulta de información de las parcelas y los drones, la visualización de informes y diagnosticos, y la revisión de las rutinas de vuelo plaificadas. Creemos que esta aplicación facilitará la realización de transacciones dentro de la plataforma y permitirá que se agreguen y accedan a nuevas funcionalidades a ser desarrolladas. Esto se confirmará cuando los usuarios puedan acceder a los servicios de la plataforma SkyCrop y generar registros en el sistema dentro de la aplicación web. |
 | **Sprint 2 Velocity** | 14 |
