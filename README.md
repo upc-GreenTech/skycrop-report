@@ -3283,6 +3283,12 @@ El 9 de octubre de 2026 se consultaron las rutas de producción siguientes. Amba
 
 El [registro de verificación del frontend](resources/deployment/website-verification-2026-10-09.json) conserva las direcciones, los códigos de respuesta y el título del documento recibido. Esta comprobación corresponde al acceso HTTP de las rutas publicadas; las funcionalidades de las vistas se evalúan mediante sus evidencias de ejecución.
 
+**Actualización de la landing page para TB1**
+
+La landing page se publica en [SkyCrop en GitHub Pages](https://upc-greentech.github.io/skycrop-platform/) desde el repositorio [skycrop-platform](https://github.com/upc-GreenTech/skycrop-platform). La actualización del 9 de octubre de 2026 incorpora accesos a la aplicación web publicada en Vercel. El [commit c5e9a53](https://github.com/upc-GreenTech/skycrop-platform/commit/c5e9a53578ef371c5d92b7df5dca8da909464991) modifica los controles de acceso y añade el manejador que dirige a `https://skycrop-website.vercel.app/home`.
+
+El cambio se integra en `main` mediante el [commit c3249b5](https://github.com/upc-GreenTech/skycrop-platform/commit/c3249b5), correspondiente al cierre de la rama `release/2.0.0`. La consulta HTTP del 9 de octubre de 2026 devuelve HTTP 200 para la landing y para su archivo `assets/scripts/main.js`; el script publicado contiene el selector `data-open-platform` y la dirección del frontend. Esta evidencia registra una actualización del contenido publicado respecto de la versión anterior de la landing.
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
 
@@ -3312,7 +3318,7 @@ Las entrevistas identificaron dificultades relacionadas con el tiempo y esfuerzo
 
 El refinamiento del dominio distingue Diagnoses Generation y Report Management como contextos core; Agricultural Plot Management, Drone Management, Subscriptions and Payment Management y Profiles and Preferences Management como soporte; y Notification Service e IAM como genéricos. Esta separación distribuye las responsabilidades del modelo de dominio. Los diagramas de clases distinguen raíces de agregado, entidades internas y referencias externas por identificador. Los objetos de valor representan nombres, teléfonos, direcciones, fechas, correos, superficies, ubicaciones y datos meteorológicos. El patrón Money vincula cada importe con su moneda y SubscriptionPeriod delimita la vigencia de una suscripción.
 
-La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución.
+La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución. La actualización publicada para TB1 incorpora controles de acceso a la aplicación web de Vercel, con trazabilidad al commit c5e9a53 y a su integración en main.
 
 Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con Vue y Vite y se configuró su publicación en Vercel. Los módulos consumen recursos de la mock API de Azure mediante variables de entorno. Las evidencias de ejecución presentan los listados de parcelas, drones y diagnósticos, el estado vacío del historial de reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes. La consulta HTTP de las rutas publicadas complementa las capturas con una comprobación de disponibilidad del documento de entrada de la aplicación.
 
