@@ -171,14 +171,17 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
     - [4.4.2. Web Applications Wireflow Diagrams.](#442-web-applications-wireflow-diagrams)
     - [4.4.3. Web Applications Mock-ups.](#443-web-applications-mock-ups)
     - [4.4.4. Web Applications User Flow Diagrams.](#444-web-applications-user-flow-diagrams)
+      - [Asignación de un dron al vuelo de una parcela](#asignación-de-un-dron-al-vuelo-de-una-parcela)
   - [4.5. Web Applications Prototyping.](#45-web-applications-prototyping)
   - [4.6. Domain-Driven Software Architecture.](#46-domain-driven-software-architecture)
     - [4.6.1. Design-Level EventStorming.](#461-design-level-eventstorming)
+    - [Catálogo de Bounded Contexts](#catálogo-de-bounded-contexts)
     - [4.6.2. Software Architecture Context Diagram.](#462-software-architecture-context-diagram)
     - [4.6.3. Software Architecture Container Diagrams.](#463-software-architecture-container-diagrams)
     - [4.6.4. Software Architecture Components Diagrams.](#464-software-architecture-components-diagrams)
   - [4.7. Software Object-Oriented Design.](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams.](#471-class-diagrams)
+      - [Diseño de clases por capas](#diseño-de-clases-por-capas)
   - [4.8. Database Design.](#48-database-design)
     - [4.8.1. Database Diagrams.](#481-database-diagrams)
 - [Capítulo V: Product Implementation, Validation \& Deployment](#capítulo-v-product-implementation-validation--deployment)
@@ -202,6 +205,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
       - [5.2.2.2. Aspect Leaders and Collaborators.](#5222-aspect-leaders-and-collaborators)
       - [5.2.2.3. Sprint Backlog 2.](#5223-sprint-backlog-2)
       - [5.2.2.4. Development Evidence for Sprint Review.](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review-1)
       - [5.2.2.5. Execution Evidence for Sprint Review.](#5225-execution-evidence-for-sprint-review)
       - [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
       - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
@@ -3068,6 +3072,42 @@ Las User Stories fueron repartidas por cada integrante, para así desarrollar di
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo de GreenTech desarrolló e integró nuevas funcionalidades para la aplicación web SkyCrop. Las actividades comprendieron la implementación de la estructura de navegación, gestión de parcelas y cultivos, registro de drones, generación de diagnósticos y reportes, así como la preparación del despliegue de la aplicación.
+
+Como evidencia del trabajo realizado, se presentan los commits más representativos registrados en el repositorio de GitHub, los cuales permiten verificar los avances alcanzados durante el sprint.
+
+**Tabla. Development Evidence for Sprint Review - Sprint 2**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/layout | [12f26759](https://github.com/upc-GreenTech/skycrop-website/commit/12f26759ff76801418650b5590478992fcc4b7ed) | feat(shared): add layout component | Implementa el componente base de distribución de la aplicación web, estableciendo la estructura visual reutilizable para las diferentes vistas del sistema. | 06/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/routing-and-layout | [d8297b43](https://github.com/upc-GreenTech/skycrop-website/commit/d8297b434fd3c6bc7fc74fee41f3981065074743) | feat: implement Vue Router and basic routing structure | Implementa Vue Router y la estructura inicial de rutas, permitiendo la navegación entre las diferentes secciones de la plataforma SkyCrop. | 06/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/routing-and-layout | [1b01038b](https://github.com/upc-GreenTech/skycrop-website/commit/1b01038b1adc821bf20d3d9ae6d1462f8dbc7937) | feat(shared): add header and sidebar layout | Incorpora los componentes Header y Sidebar, proporcionando una estructura de navegación consistente para acceder a los distintos módulos de la aplicación. | 06/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/parcel-registration-details | [9b44d4fd](https://github.com/upc-GreenTech/skycrop-website/commit/9b44d4fda59650cad0812897290385bb63b989d6) | feat(plots): add registration and detail views. | Desarrolla las interfaces de registro y visualización de detalles de parcelas agrícolas, facilitando la gestión de los terrenos registrados en SkyCrop. | 07/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/parcel-registration-details | [5fedc829](https://github.com/upc-GreenTech/skycrop-website/commit/5fedc8293bc705024c8994bae3fa745a1d4e438b) | feat(i18n): add English and Spanish support for plots. | Agrega soporte de internacionalización en inglés y español para las funcionalidades relacionadas con parcelas, mejorando la accesibilidad de la plataforma. | 07/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-management | [4aa846ad](https://github.com/upc-GreenTech/skycrop-website/commit/4aa846ad9faacb6c17c05f5ccbae28fa8d1a4eab) | feat: add initial crop list view | Implementa la vista inicial del listado de cultivos, permitiendo visualizar los cultivos registrados dentro de la plataforma. | 08/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-management | [e08e99fd](https://github.com/upc-GreenTech/skycrop-website/commit/e08e99fde1f196c35285d7085276940467e627b9) | feat: connect crop list to store and API | Conecta el listado de cultivos con el almacenamiento de estado y la API, permitiendo obtener y administrar la información utilizada por la interfaz. | 08/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-registration | [62f7fadb](https://github.com/upc-GreenTech/skycrop-website/commit/62f7fadba2ec5f6c33e4635d27397dc1b0a6fe95) | feat: implement crop registration | Implementa la funcionalidad de registro de cultivos, permitiendo ingresar nuevos cultivos y sus datos correspondientes en la plataforma. | 08/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-registration | [526f89a9](https://github.com/upc-GreenTech/skycrop-website/commit/526f89a90ec40e0dddb90c265e024f55950d01e0) | feat: add additional crop registration fields | Incorpora campos adicionales al formulario de registro de cultivos, ampliando la información que puede proporcionar el usuario. | 08/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-details | [42c7157a](https://github.com/upc-GreenTech/skycrop-website/commit/42c7157ae92fd39b8169f10592e070e37e866abd) | feat: implement crop details view | Implementa la vista de detalles de cultivos, permitiendo consultar información específica de cada cultivo registrado. | 08/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-details | [e8092343](https://github.com/upc-GreenTech/skycrop-website/commit/e809234320a29099c846eff888ba568f068e6501) | feat: implement crop editing | Desarrolla la funcionalidad de edición de cultivos, permitiendo actualizar la información previamente registrada. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/plot-wireframe-aligment | [473bcadf](https://github.com/upc-GreenTech/skycrop-website/commit/473bcadf4203e692ec6689503be000f7fcc88dbb) | feat(plots): align registration and details with wireframes. | Ajusta las interfaces de registro y detalles de parcelas para mantener coherencia visual con los wireframes definidos durante el diseño del producto. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/drone-registration-details-routes | [90602cce](https://github.com/upc-GreenTech/skycrop-website/commit/90602ccefdb4950591b71aa7d73e4a4d76029de4) | feat(drones): implement registration details and flight routes. | Implementa las funcionalidades de registro y consulta de detalles de drones, además de la visualización de rutas de vuelo dentro de la plataforma. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/report-list-details | [b67a2117](https://github.com/upc-GreenTech/skycrop-website/commit/b67a21178874f426d0051de3b5864ab5cad32ff9) | feat(reports): implement history details seasonal generation and PDF export. | Implementa el historial y la consulta de detalles de reportes, incorpora la generación estacional y permite exportar los resultados en formato PDF. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/diagnoses | [64ce98c9](https://github.com/upc-GreenTech/skycrop-website/commit/64ce98c9d406f8d14a83fedcca471c2961660579) | feat(diagnoses): add diagnoses api | Incorpora la capa de comunicación con la API de diagnósticos, estableciendo la estructura necesaria para gestionar la información de diagnósticos desde la aplicación. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/diagnoses-generation-details | [053244a4](https://github.com/upc-GreenTech/skycrop-website/commit/053244a43d6eafb4af8c4ce252508a4e0577533d) | feat(diagnoses): complete simulated generation history and details. | Completa las funcionalidades de generación simulada de diagnósticos, consulta de historial y visualización de sus detalles. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-details | [d88f83db](https://github.com/upc-GreenTech/skycrop-website/commit/d88f83db743711eea54a7cd30c72b1d8df274edd) | feat(crops): add variety autocomplete | Incorpora el autocompletado de variedades de cultivos, facilitando el ingreso de información y mejorando la experiencia de usuario durante el registro o edición. | 09/10/2026 |
+| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | develop | [a15cab30](https://github.com/upc-GreenTech/skycrop-website/commit/a15cab30842051d4976801b44d582862a791f8fe) | feat(vercel): add vercel.json. | Incorpora el archivo de configuración de Vercel, preparando la aplicación web para su despliegue en la plataforma. | 09/10/2026 |
+
+**Repositorio de evidencia:** https://github.com/upc-GreenTech/skycrop-website
+
+Los commits seleccionados evidencian el desarrollo progresivo de las funcionalidades del Sprint 2. Asimismo, reflejan la distribución del trabajo en distintas ramas de desarrollo, la incorporación de nuevos módulos y los ajustes realizados para integrar las funcionalidades de la plataforma SkyCrop.
+
+Estas evidencias permiten sustentar los avances presentados durante el Sprint Review mediante registros verificables del control de versiones del proyecto.
+
+
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
@@ -3115,6 +3155,25 @@ El 9 de octubre de 2026 se consultaron las rutas de producción siguientes. Amba
 El [registro de verificación del frontend](resources/deployment/website-verification-2026-10-09.json) conserva las direcciones, los códigos de respuesta y el título del documento recibido. Esta comprobación corresponde al acceso HTTP de las rutas publicadas; las funcionalidades de las vistas se evalúan mediante sus evidencias de ejecución.
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+
+Durante el Sprint 2, se realizó el seguimiento de la colaboración y participación de los integrantes del equipo mediante las herramientas de análisis proporcionadas por GitHub. Estas permitieron visualizar las contribuciones individuales, la frecuencia de los commits y la evolución del repositorio a lo largo del sprint.
+
+A través de la sección **Contributors**, se identificaron las aportaciones realizadas por cada integrante del equipo, permitiendo evaluar su participación en el desarrollo del proyecto.
+
+<div align="center">
+  <img src="resources/imgs/chapter_5/Contributors-website.png" alt="Contributors Website - Sprint 2" style="max-width: 90%;">
+</div>
+
+Asimismo, mediante la sección **Insights**, se analizó la actividad general del repositorio, incluyendo la frecuencia de los commits y los cambios realizados durante el Sprint 2. Esta información permitió realizar un seguimiento del progreso del equipo y del trabajo colaborativo desarrollado.
+
+<div align="center">
+  <img src="resources/imgs/chapter_5/Insights-website.png" alt="Insights Website - Sprint 2" style="max-width: 90%;">
+</div>
+
+En conclusión, las herramientas de GitHub facilitaron el monitoreo de las contribuciones y la evolución del proyecto durante el Sprint 2, proporcionando información relevante sobre la participación del equipo y el avance de las actividades de desarrollo.
+
+---
 
 
 
