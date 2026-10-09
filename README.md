@@ -2328,8 +2328,8 @@ En esta sección, el equipo establece los medios y esquemas de organización par
 **Repositorios del Proyecto:**
 *   **Organización:** https://github.com/upc-GreenTech
 *   **Informe (skycrop-report):** https://github.com/upc-GreenTech/skycrop-report
-*   **Landing Page:** https://github.com/upc-GreenTech/skycrop-website
-*   **Aplicación web:** https://github.com/upc-GreenTech/skycrop-platform
+*   **Landing Page:** https://github.com/upc-GreenTech/skycrop-platform
+*   **Aplicación web:** https://github.com/upc-GreenTech/skycrop-website
 *   **Mock API:** https://github.com/upc-GreenTech/skycrop-mock-api
 
 **Flujo de Trabajo (Workflow): GitFlow**
@@ -2737,24 +2737,24 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
 
 #### 5.2.1.4. Development Evidence for Sprint Review. 
 
-La columna de repositorio usa la ubicación actual en `upc-GreenTech`. Los hashes y mensajes de la tabla se conservan como registro histórico de los aportes anteriores a la migración; los commits de la landing no están presentes en el clon actual de `skycrop-website`, por lo que esta tabla no acredita su disponibilidad en el nuevo repositorio.
+La columna de repositorio identifica la ubicación actual de la landing page en `upc-GreenTech/skycrop-platform`. Los hashes y mensajes de la tabla se conservan como registro histórico de los aportes anteriores a la migración. Los catorce commits referenciados están presentes en el clon del repositorio de la landing page.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :---: | :--- | :--- | :---: |
-| upc-GreenTech/skycrop-website | develop | 8e8ed5b | Merge pull request #3 from GreenTech-upc/feature/landing-contact-footer | Integra en `develop`, mediante el Pull Request #3, la rama `feature/landing-contact-footer` con el formulario de contacto validado y el pie de página. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/landing-contact-footer | 1f43784 | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Ajusta la indentación a dos espacios en el menú de navegación y en las listas de beneficios de `index.html`, según la convención de la sección 5.1.3, con un cambio menor en `style.css`. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | develop | 47f4734 | Merge pull request feature/landing-contact-footer | Integra en `develop` los cambios de contacto y pie de página, ya combinados con los de planes y precios. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/landing-contact-footer | db891db | merge: resolve conflicts with develop | Incorpora en la rama de la funcionalidad los cambios de `develop`, incluida la sección de planes, y resuelve los conflictos de integración. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/landing-contact-footer | 947818e | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Agrega la sección de contacto con formulario (nombre, correo y mensaje) y validación en el cliente con mensajes de error accesibles; incorpora el pie de página con los diálogos de privacidad y términos. Modifica `index.html`, `style.css` y `main.js`. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | develop | b9efc89 | Merge branch 'feature/plans-and-pricing' into develop | Integra en `develop` la sección de planes y precios. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/plans-and-pricing | 41eb331 | feat(styles): add styles to pricing cards | Agrega en `style.css` los estilos de las tarjetas de precios y su cuadrícula adaptable a pantallas pequeñas. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/plans-and-pricing | 145c749 | feat(index): add plans structure | Agrega en `index.html` la sección de planes con las tarjetas Basic, Professional y Corporate, su costo mensual y sus características. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | develop | b0f411f | Merge branch 'feature/landing-features-benefits' into develop | Integra en `develop` las secciones de funcionalidades y beneficios. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/landing-features-benefits | 05a0644 | feat: add landing features and benefits. | Agrega la sección de funcionalidades (parcelas, rutas de dron, diagnóstico de cultivos y reportes estacionales) y la de beneficios para agricultores y agrónomos, con sus estilos. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | develop | df5c8d4 | Merge branch 'feature/landing-foundation' into develop | Integra en `develop` la base de la landing y la sección Hero. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | feature/landing-foundation | 76136a6 | feat: build landing foundation and hero. | Construye la base de la página: cabecera con navegación fija y menú móvil, sección Hero, mensaje informativo del botón «Access Platform», hojas de estilo adaptables, imágenes e íconos SVG, y el script `main.js`. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | develop | eb6c793 | chore: add landing page gitignore. | Agrega el archivo `.gitignore` del proyecto. | 20/09/2026 |
-| upc-GreenTech/skycrop-website | main | cc4445c | chore: initial commit | Crea el repositorio con `README.md`, un `index.html` inicial, las carpetas `assets/images`, `assets/scripts` y `assets/styles`, el favicon y los logotipos de SkyCrop. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | develop | 8e8ed5b | Merge pull request #3 from GreenTech-upc/feature/landing-contact-footer | Integra en `develop`, mediante el Pull Request #3, la rama `feature/landing-contact-footer` con el formulario de contacto validado y el pie de página. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/landing-contact-footer | 1f43784 | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Ajusta la indentación a dos espacios en el menú de navegación y en las listas de beneficios de `index.html`, según la convención de la sección 5.1.3, con un cambio menor en `style.css`. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | develop | 47f4734 | Merge pull request feature/landing-contact-footer | Integra en `develop` los cambios de contacto y pie de página, ya combinados con los de planes y precios. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/landing-contact-footer | db891db | merge: resolve conflicts with develop | Incorpora en la rama de la funcionalidad los cambios de `develop`, incluida la sección de planes, y resuelve los conflictos de integración. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/landing-contact-footer | 947818e | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Agrega la sección de contacto con formulario (nombre, correo y mensaje) y validación en el cliente con mensajes de error accesibles; incorpora el pie de página con los diálogos de privacidad y términos. Modifica `index.html`, `style.css` y `main.js`. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | develop | b9efc89 | Merge branch 'feature/plans-and-pricing' into develop | Integra en `develop` la sección de planes y precios. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/plans-and-pricing | 41eb331 | feat(styles): add styles to pricing cards | Agrega en `style.css` los estilos de las tarjetas de precios y su cuadrícula adaptable a pantallas pequeñas. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/plans-and-pricing | 145c749 | feat(index): add plans structure | Agrega en `index.html` la sección de planes con las tarjetas Basic, Professional y Corporate, su costo mensual y sus características. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | develop | b0f411f | Merge branch 'feature/landing-features-benefits' into develop | Integra en `develop` las secciones de funcionalidades y beneficios. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/landing-features-benefits | 05a0644 | feat: add landing features and benefits. | Agrega la sección de funcionalidades (parcelas, rutas de dron, diagnóstico de cultivos y reportes estacionales) y la de beneficios para agricultores y agrónomos, con sus estilos. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | develop | df5c8d4 | Merge branch 'feature/landing-foundation' into develop | Integra en `develop` la base de la landing y la sección Hero. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | feature/landing-foundation | 76136a6 | feat: build landing foundation and hero. | Construye la base de la página: cabecera con navegación fija y menú móvil, sección Hero, mensaje informativo del botón «Access Platform», hojas de estilo adaptables, imágenes e íconos SVG, y el script `main.js`. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | develop | eb6c793 | chore: add landing page gitignore. | Agrega el archivo `.gitignore` del proyecto. | 20/09/2026 |
+| upc-GreenTech/skycrop-platform | main | cc4445c | chore: initial commit | Crea el repositorio con `README.md`, un `index.html` inicial, las carpetas `assets/images`, `assets/scripts` y `assets/styles`, el favicon y los logotipos de SkyCrop. | 20/09/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review. 
 
@@ -2813,7 +2813,7 @@ El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluy
 
 ![Responsive_Landing](resources/imgs/chapter_5/Responsive_Landing.png)
 
-**Publicación del Landing Page tras la migración:** pendiente de verificar. La dirección correspondiente al nuevo repositorio es https://upc-greentech.github.io/skycrop-website/; al revisarla el 8 de octubre de 2026 devolvió HTTP 404.
+**Publicación de la landing page:** [SkyCrop en GitHub Pages](https://upc-greentech.github.io/skycrop-platform/). La consulta del 9 de octubre de 2026 devolvió HTTP 200 y el documento con título SkyCrop | Smarter crop monitoring. El código fuente se encuentra en [skycrop-platform](https://github.com/upc-GreenTech/skycrop-platform). La aplicación web se publica por separado en [Vercel](https://skycrop-website.vercel.app/home).
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
