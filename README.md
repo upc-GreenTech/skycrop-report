@@ -2438,6 +2438,7 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
 #### 5.2.2.3. Sprint Backlog 2. 
 
 
+
 <div align="center">
 <table border="1">
   <tr>
@@ -2464,181 +2465,181 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
   <tr>
     <td rowspan="2">US-11</td>
     <td rowspan="2">Registro de parcela</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-19</td>
+    <td>Diseñar el formulario</td>
+    <td>Diseñar la estructura y los campos que se tomarán en cuenta para el registro</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-20</td>
+    <td>Guardar el registro</td>
+    <td>Registrar una nueva parcela a partir de los datos ingresados</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-12</td>
     <td rowspan="2">Consulta de estado de una parcela</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-21</td>
+    <td>Diseño de la vista de detalles</td>
+    <td>Diseñar y elaborar la vista con los detalles de la parcela</td>
+    <td>2</td>
+    <td>Sebastián Rubio</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-22</td>
+    <td>Presentación de datos de la parcela</td>
+    <td>Mostrar los datos registrados de la parcela en el diseño de la vista</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-14</td>
     <td rowspan="2">Registro de cultivos en una parcela</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-23</td>
+    <td>Diseño de formulario</td>
+    <td>Diseñar e implementar el formulario de registro de cultivos</td>
+    <td>1</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-24</td>
+    <td>Registro de cultivos</td>
+    <td>Generar registros de cultivos mediante el formulario diseñado</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-15</td>
     <td rowspan="2">Consulta de información de los cultivos</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-25</td>
+    <td>Estructurar la vista de detalles</td>
+    <td>Diseñar la vista de detalles de cultivos y que campos se considerarán</td>
+    <td>1</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-26</td>
+    <td>Presentar datos de los cultivos</td>
+    <td>Mostrar los datos de los cultivos mediante la vista diseñada</td>
+    <td>2</td>
+    <td>Yam Cano</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-17</td>
     <td rowspan="2">Conectar el dron</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-27</td>
+    <td>Diseñar el registro del dron</td>
+    <td>Estructurar y elaborar la interfaz de registro de dron</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
     <td></td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-28</td>
+    <td>Registrar drones</td>
+    <td>Generar registros de drones mediante la interfaz de registro</td>
+    <td>3</td>
+    <td>Oliver Jonseck</td>
     <td></td>
   </tr>
 
   <tr>
     <td rowspan="2">US-18</td>
     <td rowspan="2">Gestionar la rutina de vuelo</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-29</td>
+    <td>Diseñar interfaz de planificación</td>
+    <td>Estructurar y elaborar la interfaz para la planificación de los vuelos</td>
+    <td>3</td>
+    <td>Sebastián Rubio</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-30</td>
+    <td>Registrar datos de planificación</td>
+    <td>Guardar y mostrar en la plataforma los datos de la planificación realizada</td>
+    <td>2</td>
+    <td>Oliver Jonseck</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-23</td>
     <td rowspan="2">Generación de diagnóstico</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-31</td>
+    <td>Estructurar el diagnostico</td>
+    <td>Definir los campos y datos que se tomarán en cuenta para un diagnostico</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-32</td>
+    <td>Registrar diagnosticos</td>
+    <td>Guardar un historial de diagnosticos generados para una parcela</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-25</td>
     <td rowspan="2">Historial de diagnósticos</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-33</td>
+    <td>Diseñar la vista del historial</td>
+    <td>Definir la estructura visual del historial y los campos a considerar</td>
+    <td>1</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-34</td>
+    <td>Vista de datos del historial</td>
+    <td>Visualizar los datos registrados de los diagnosticos en el historial</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Done</td>
   </tr>
 
   <tr>
     <td rowspan="2">US-31</td>
     <td rowspan="2">Creación de reporte según la estación</td>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-35</td>
+    <td>Estructurar el reporte</td>
+    <td>Diseñar y desarrollar la vista del reporte</td>
+    <td>2</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
   </tr>
 
   <tr>
-    <td>T</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>UT-36</td>
+    <td>Generar el reporte</td>
+    <td>Usar datos historicos de los diagnosticos para registrar un reporte con ellos</td>
+    <td>3</td>
+    <td>Diego Pumahualcca</td>
+    <td>Done</td>
   </tr>
 
 </table>
