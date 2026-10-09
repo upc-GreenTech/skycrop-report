@@ -1,0 +1,54 @@
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm;
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #444;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #202020;
+  background: white;
+  font: 10pt/1.45 Arial, sans-serif;
+}
+h1 { font-size: 18pt; }
+h2 { font-size: 15pt; }
+h3 { font-size: 12pt; }
+h4 { font-size: 11pt; }
+h1, h2, h3, h4 { break-after: avoid; }
+p { orphans: 3; widows: 3; }
+a { color: #202020; overflow-wrap: anywhere; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12pt 0;
+  font-size: 8pt;
+  line-height: 1.35;
+  table-layout: fixed;
+}
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th, td {
+  border: 0.5pt solid #777;
+  padding: 5pt;
+  text-align: left !important;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+th { background: #ededed; font-weight: bold; }
+img {
+  display: block;
+  max-width: 100% !important;
+  max-height: 235mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 10pt auto;
+  break-inside: avoid;
+}
+div[align="center"] { break-inside: avoid; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+code { font-family: monospace; font-size: 0.9em; }
