@@ -206,7 +206,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
       - [5.2.2.2. Aspect Leaders and Collaborators.](#5222-aspect-leaders-and-collaborators)
       - [5.2.2.3. Sprint Backlog 2.](#5223-sprint-backlog-2)
       - [5.2.2.4. Development Evidence for Sprint Review.](#5224-development-evidence-for-sprint-review)
-      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review-1)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
       - [5.2.2.5. Execution Evidence for Sprint Review.](#5225-execution-evidence-for-sprint-review)
       - [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
       - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
@@ -697,7 +697,7 @@ El análisis competitivo orienta las siguientes estrategias propuestas para SkyC
 
 ### 2.2.1. Diseño de entrevistas. 
 
-El diseño de entrevistas comprende preguntas principales dirigidas a los segmentos objetivo y preguntas complementarias para obtener información adicional. 
+El diseño de entrevistas comprende preguntas principales dirigidas a los segmentos objetivo y preguntas complementarias para obtener información adicional.
 La entrevista incluye una presentación de la propuesta de SkyCrop para brindar contexto a los participantes.
 Al comenzar la entrevista, se realizarán preguntas cortas para recaudar información básica del entrevistado, como su nombre, edad y distrito de residencia. Luego de esto, se realizarán las preguntas principales.
 
