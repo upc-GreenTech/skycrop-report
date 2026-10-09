@@ -1269,7 +1269,7 @@ Enlace al tablero: [Product Backlog en Trello](https://trello.com/b/L5lihF6B)
 | 42 | US-28 | Notificación de anomalía detectada | Como usuario, deseo recibir una notificación especial cuando se detecte una anomalía. | 2 |
 | 43 | US-29 | Notificación de fallo del dron | Como usuario, deseo recibir una alerta inmediata si el dron presenta una falla durante una ruta. | 2 |
 | 44 | US-30 | Recordatorio de renovación de subscripción | Como usuario registrado, quiero recibir un aviso antes del vencimiento de mi subscripción. | 1 |
-| 45 | TS-06 | Gestión de notificacines | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
+| 45 | TS-06 | Gestión de notificaciones | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
 | 46 | US-04 | Recuperación de acceso | Como usuario registrado, deseo recuperar el acceso a mi cuenta en caso olvide mi contraseña. | 3 |
 | 47 | US-05 | Autenticación de dos factores | Como usuario registrado, quiero activar la autenticación de dos factores para contar con una segunda capa de seguridad. | 2 |
 | 48 | TS-07 | Servicio de autenticación | Como desarrollador, quiero autenticar usuarios mediante la API para acceder a las operaciones autorizadas desde una aplicación cliente. | 3 |
@@ -1278,17 +1278,17 @@ Enlace al tablero: [Product Backlog en Trello](https://trello.com/b/L5lihF6B)
 
 ### Technical Stories
 
-Las siguientes Technical Stories complementan las funcionalidades del producto mediante la RESTful API. La columna de orden remite a su posición en la tabla principal y sigue el mismo orden de contextos. Las diferencias entre las estimaciones de ambas tablas se revisarán en el bloque de consistencia del sprint; esta reorganización no modifica los Story Points.
+Las siguientes Technical Stories complementan las funcionalidades del producto mediante la RESTful API. La columna de orden remite a su posición en la tabla principal y sigue el mismo orden de contextos. Las estimaciones corresponden a las registradas en la tabla principal del Product Backlog.
 
 | # Orden | Technical Story ID | Título | Descripción | Story Points |
 |:---:|:---:|---|---|:---:|
-| 05 | TS-05 | Solicitud de procesamiento de imágenes | Como desarrollador, quiero solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | 8 |
+| 05 | TS-05 | Solicitud de procesamiento de imágenes | Como desarrollador, quiero solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | 5 |
 | 11 | TS-03 | Manejo de reportes | Como desarrollador, quiero consultar y descargar reportes mediante la API para utilizarlos desde otras aplicaciones. | 5 |
 | 18 | TS-02 | Manejo de datos de parcelas | Como desarrollador, quiero registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | 5 |
-| 25 | TS-04 | Manejo de datos de drones | Como desarrollador, quiero registrar el estado de los drones mediante la API para consultar información actualizada. | 8 |
+| 25 | TS-04 | Manejo de datos de drones | Como desarrollador, quiero registrar el estado de los drones mediante la API para consultar información actualizada. | 5 |
 | 32 | TS-01 | Manejo de datos de usuarios | Como desarrollador, quiero consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | 5 |
-| 45 | TS-06 | Gestión de notificaciones | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 5 |
-| 48 | TS-07 | Servicio de autenticación | Como desarrollador, quiero autenticar usuarios mediante la API para acceder a operaciones autorizadas. | 8 |
+| 45 | TS-06 | Gestión de notificaciones | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
+| 48 | TS-07 | Servicio de autenticación | Como desarrollador, quiero autenticar usuarios mediante la API para acceder a operaciones autorizadas. | 3 |
 
 <div style="page-break-after: always;"></div>
 
@@ -2325,7 +2325,7 @@ El equipo utilizará nombres en inglés para archivos, variables, funciones, cla
 **Gherkin.** Los criterios describirán una condición inicial con `Given`, una acción o evento con `When` y un resultado comprobable con `Then`. Se usarán `And` y `But` para continuar los pasos sin mezclar escenarios distintos. El informe mantendrá las palabras clave en inglés y las descripciones en español, conforme al formato de sus historias. La referencia será la [documentación de Gherkin](https://cucumber.io/docs/gherkin/reference/).
 
 ### 5.1.4. Software Deployment Configuration.
-Para poder publicar nuestra landing page, seguimos una serie de pasos específicos utilizando GitHub Pages, que permite alojar sitios web estáticos directamente desde un repositorio.
+La publicación de la landing page utiliza GitHub Pages para alojar el sitio web estático desde su repositorio.
 
 El despliegue en GitHub Pages requiere que los archivos estén organizados de una manera particular para que la plataforma los reconozca y los sirva correctamente.
 
@@ -2356,6 +2356,46 @@ El despliegue en GitHub Pages requiere que los archivos estén organizados de un
 
 - Al finalizar, se genera una URL pública para acceder a la landing page.
 
+**Mock API de SkyCrop en Azure App Service**
+
+La mock API utiliza Node.js y JSON Server 0.17.4 para exponer los recursos de integración del frontend. El proyecto se encuentra en [skycrop-mock-api](https://github.com/upc-GreenTech/skycrop-mock-api). El comando de inicio es `npm start`; `server.js` utiliza `PORT` para el puerto y `JSON_SERVER_DB_PATH` para la ubicación del archivo de datos cuando esta variable está definida.
+
+La URL base utilizada por el frontend es `https://skycrop-fake-api-fre4gthff0hudyew.chilecentral-01.azurewebsites.net/api/v1`, configurada mediante `VITE_SKYCROP_API_URL`. La mock API ofrece operaciones de consulta y modificación sobre sus colecciones. Esta integración no sustituye las reglas de dominio ni acredita la implementación de análisis de imágenes, pagos o autenticación del backend propuesto.
+
+**Capturas de configuración**
+
+Las capturas siguientes documentan el proceso inicial de creación del servicio. En ellas figuran la organización anterior `GreenTech-upc`, el repositorio `Fake-Api` y la región Central US. Estos datos corresponden a esa configuración histórica, no a la ubicación actual del repositorio ni a una comprobación del estado operativo del servicio.
+
+| Evidencia | Contenido |
+|---|---|
+| Configuración básica | Aplicación `skycrop-fake-api`, publicación de código, Node 24 LTS, Linux y plan Basic B1. |
+| Despliegue continuo | Integración de GitHub Actions con el repositorio y la rama `main` de la organización anterior. |
+| Revisión previa | Resumen de la configuración antes de crear el recurso. |
+
+<div align="center">
+<img src="resources/imgs/chapter_5/azure-mock-api/03-web-app-configuracion-basica-node-linux.png" alt="Configuración inicial de Node.js y Linux en Azure App Service" width="700">
+</div>
+
+<div align="center">
+<img src="resources/imgs/chapter_5/azure-mock-api/04-despliegue-continuo-github-fake-api.png" alt="Configuración histórica de despliegue continuo con GitHub Actions" width="700">
+</div>
+
+<div align="center">
+<img src="resources/imgs/chapter_5/azure-mock-api/08-revision-configuracion-antes-de-crear.png" alt="Revisión de parámetros antes de crear el App Service" width="700">
+</div>
+
+**Comprobación del servicio: 9 de octubre de 2026**
+
+La consulta HTTP del servicio permitió comprobar la disponibilidad de los endpoints siguientes. El [registro de verificación](resources/deployment/mock-api-verification-2026-10-09.json) conserva los códigos de respuesta y el inventario de recursos, sin incluir datos personales de las colecciones.
+
+| Endpoint | Resultado | Alcance de la comprobación |
+|---|---|---|
+| `GET /api/v1/health` | HTTP 200; `status: ok`. | Respuesta del endpoint de salud de la aplicación. |
+| `GET /` | HTTP 200; 29 recursos. | Inventario de colecciones expuestas por la mock API. |
+| `GET /api/v1/plots` | HTTP 200; respuesta JSON de tipo arreglo. | Disponibilidad de consulta de parcelas desde la ruta utilizada por el frontend. |
+
+Estas consultas comprueban disponibilidad y formato de respuesta en la fecha indicada. No comprueban el funcionamiento de todas las operaciones de escritura ni la persistencia de datos tras un reinicio.
+
 ## 5.2. Landing Page, Services & Applications Implementation. 
 
 ### 5.2.1. Sprint 1 
@@ -2375,11 +2415,23 @@ El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera 
 | **Sprint 0 Review Summary** | Este es el primer sprint del proyecto. |
 | **Sprint 0 Retrospective Summary** | Este es el primer sprint del proyecto. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | Nuestro enfoque está en implementar la landing page de SkyCrop, que presenta la propuesta de valor, las funcionalidades, los beneficios por segmento, los planes de suscripción y un canal de contacto. Creemos que esto entrega una comprensión rápida de la plataforma y una vía clara de registro a los agricultores y a los ingenieros agrónomos que evalúan adoptar SkyCrop. Esto se confirmará cuando un visitante pueda llegar a cualquier sección de la página, incluidos los planes y el formulario de contacto, con un solo clic desde la barra de navegación fija, y la página se visualice sin desbordes ni elementos cortados en pantallas móviles y de escritorio, publicada en GitHub Pages. |
+| **Sprint 1 Goal** | **Objetivo:** implementar la landing page de SkyCrop con su propuesta de valor, funcionalidades, beneficios por segmento, planes de suscripción y contacto.<br><br>**Hipótesis:** una presentación organizada facilita la comprensión de la plataforma a agricultores e ingenieros agrónomos.<br><br>**Criterio de comprobación:** el visitante puede acceder a las secciones desde la navegación y visualizar la página en móvil y escritorio sin desbordes ni elementos cortados. El objetivo contempla su publicación en GitHub Pages. |
 | **Sprint 1 Velocity** | 14 Story Points (estimación inicial revisada) |
 | **Sum of Story Points** | 14 Story Points |
 
-La estimación inicial revisada de capacidad cubre las ocho historias seleccionadas: US-36 (1), US-37 (2), US-38 (1), US-39 (1), US-40 (2), US-41 (3), US-42 (2) y US-43 (2), que suman 14 Story Points. Al tratarse del primer sprint, este valor corresponde a una referencia de planificación y no a una velocidad histórica medida. Las estimaciones de tareas expresan esfuerzo en horas-persona y se mantienen separadas de los Story Points.
+La capacidad estimada de 14 Story Points sirve como referencia para la planificación. Las ocho historias seleccionadas son: US-36 (1), US-37 (2), US-38 (1), US-39 (1), US-40 (2), US-41 (3), US-42 (2) y US-43 (2), que suman 14 Story Points. Al tratarse del primer sprint, este valor corresponde a una referencia de planificación y no a una velocidad histórica medida. Las estimaciones de tareas expresan esfuerzo en horas-persona y se mantienen separadas de los Story Points.
+
+**Resumen de estimaciones del Sprint 1**
+
+| Concepto | Valor | Interpretación |
+|---|---|---|
+| Capacidad inicial estimada | 14 Story Points | Referencia de planificación del primer sprint. |
+| Historias seleccionadas | 8: US-36 a US-43 | Alcance de la landing, correspondiente a EP-08. |
+| Suma del alcance seleccionado | 14 Story Points | 1 + 2 + 1 + 1 + 2 + 3 + 2 + 2. |
+| Bloques de tareas | 11 | Agrupan los 20 identificadores UT-01 a UT-20. |
+| Esfuerzo estimado | 63 horas-persona | Suma de las estimaciones de tareas; no representa tiempo ejecutado. |
+
+Los Story Points expresan esfuerzo relativo y las horas-persona estiman dedicación. La coincidencia entre capacidad y alcance en esta planificación no establece una equivalencia entre ambas unidades. Los estados de tareas consignados en el backlog son registros de seguimiento; la revisión del resultado utiliza las evidencias de desarrollo, ejecución y despliegue.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators. 
 
@@ -2460,7 +2512,9 @@ ilustrativos.
 ![Pricing_Landing](resources/imgs/chapter_5/Pricing_Landing.png)
 
 
-#### 5.2.1.6. Services Documentation Evidence for Sprint Review. 
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review.
+
+El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluye la entrega de los contratos RESTful API de EP-09. La documentación de la mock API se presenta en la configuración de despliegue de la sección 5.1.4 como un avance de integración distinto del alcance de este sprint.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review. 
 
