@@ -3081,6 +3081,25 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
 </table>
 </div>
 
+**Trazabilidad y esfuerzo estimado del Sprint 2**
+
+Las nueve historias seleccionadas se descomponen en dieciocho tareas, con una estimación total de 38 horas-persona. Esta cifra representa esfuerzo estimado y se mantiene separada de los 24 Story Points del alcance seleccionado y de la referencia de capacidad de 14 puntos.
+
+| Historia | Tareas | Estimación (horas-persona) | Módulo de la aplicación |
+|---|---|---:|---|
+| US-11 | UT-19, UT-20 | 4 | Registro de parcelas. |
+| US-12 | UT-21, UT-22 | 5 | Detalles de parcelas. |
+| US-14 | UT-23, UT-24 | 3 | Registro de cultivos. |
+| US-15 | UT-25, UT-26 | 3 | Detalles de cultivos. |
+| US-17 | UT-27, UT-28 | 6 | Registro de drones y representación de su estado de conexión. |
+| US-18 | UT-29, UT-30 | 5 | Planificación y registro de vuelos. |
+| US-23 | UT-31, UT-32 | 4 | Generación de diagnósticos con datos simulados. |
+| US-25 | UT-33, UT-34 | 3 | Historial de diagnósticos. |
+| US-31 | UT-35, UT-36 | 5 | Reportes estacionales. |
+| **Total** | **18 tareas** | **38** | **9 historias** |
+
+La selección de historias identifica las funcionalidades abordadas durante el sprint. El estado de las tareas del backlog no acredita por sí solo el cumplimiento de todos los criterios de aceptación del producto. En este avance, la conexión de drones se representa mediante registros de la aplicación y los diagnósticos utilizan resultados simulados. Las secciones 5.2.2.4, 5.2.2.5 y 5.2.2.6 relacionan el desarrollo, las capturas de ejecución y las operaciones de la mock API con estos módulos.
+
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
 Durante el Sprint 2, el equipo de GreenTech desarrolló e integró nuevas funcionalidades para la aplicación web SkyCrop. Las actividades comprendieron la implementación de la estructura de navegación, gestión de parcelas y cultivos, registro de drones, generación de diagnósticos y reportes, así como la preparación del despliegue de la aplicación.
