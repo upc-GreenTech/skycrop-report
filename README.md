@@ -2437,6 +2437,15 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
 
 #### 5.2.2.3. Sprint Backlog 2. 
 
+El objetivo principal de este sprint es desarrollar la primera versión del frontend de nuestra aplicación. En esta ocasión se tomaron en cuenta User Stories principales que permitan demostrar la funcionalidad basica de nuestra aplicación, tomando como apoyo un Mock API antes del desarrollo del backend.
+
+**Tablero en trello del Sprint Backlog 2:** [https://trello.com/b/Vt1ncJsa](https://trello.com/b/Vt1ncJsa)
+
+<div align="center">
+<img src="resources/imgs/sprintbacklog-2-greentech.jpg" width="700" alt="Sprint backlog 2">
+</div>
+
+Las User Stories fueron repartidas por cada integrante, para así desarrollar distintas partes del proyecto de forma simultanea, ocasionalmente realizandose una retroalimentación grupal.
 
 
 <div align="center">
@@ -2466,7 +2475,7 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
     <td rowspan="2">US-11</td>
     <td rowspan="2">Registro de parcela</td>
     <td>UT-19</td>
-    <td>Diseñar el formulario</td>
+    <td>Diseñar el formulario de la parcela</td>
     <td>Diseñar la estructura y los campos que se tomarán en cuenta para el registro</td>
     <td>2</td>
     <td>Yam Cano</td>
@@ -2475,7 +2484,7 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
 
   <tr>
     <td>UT-20</td>
-    <td>Guardar el registro</td>
+    <td>Guardar el registro de parcela</td>
     <td>Registrar una nueva parcela a partir de los datos ingresados</td>
     <td>2</td>
     <td>Yam Cano</td>
@@ -2506,7 +2515,7 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
     <td rowspan="2">US-14</td>
     <td rowspan="2">Registro de cultivos en una parcela</td>
     <td>UT-23</td>
-    <td>Diseño de formulario</td>
+    <td>Diseño de formulario de cultivos</td>
     <td>Diseñar e implementar el formulario de registro de cultivos</td>
     <td>1</td>
     <td>Yam Cano</td>
