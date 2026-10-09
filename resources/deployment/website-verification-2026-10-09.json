@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-09",
+  "checks": [
+    {
+      "url": "https://skycrop-website.vercel.app/home",
+      "status": 200,
+      "title": "SkyCrop",
+      "contentType": "text/html; charset=utf-8",
+      "hasAppContainer": true
+    },
+    {
+      "url": "https://skycrop-website.vercel.app/plots",
+      "status": 200,
+      "title": "SkyCrop",
+      "contentType": "text/html; charset=utf-8",
+      "hasAppContainer": true
+    }
+  ],
+  "scope": "HTTP availability and SkyCrop application entry document"
+}

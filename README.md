@@ -77,6 +77,7 @@ El registro reúne las modificaciones principales del informe mediante identific
 | [1d90594](https://github.com/upc-GreenTech/skycrop-report/commit/1d90594) | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
 | [5ba924e](https://github.com/upc-GreenTech/skycrop-report/commit/5ba924e) | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
 | TB1.1 | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
+| TB1.2 | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
 
 # Project Report Collaboration Insights
 
@@ -195,8 +196,9 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
       - [5.2.1.5. Execution Evidence for Sprint Review.](#5215-execution-evidence-for-sprint-review)
       - [5.2.1.6. Services Documentation Evidence for Sprint Review.](#5216-services-documentation-evidence-for-sprint-review)
       - [5.2.1.7. Software Deployment Evidence for Sprint Review.](#5217-software-deployment-evidence-for-sprint-review)
-      - [5.2.X.8. Team Collaboration Insights during Sprint.](#52x8-team-collaboration-insights-during-sprint)
-  - [](#)
+      - [5.2.1.8. Team Collaboration Insights during Sprint.](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -2424,6 +2426,22 @@ La consulta HTTP del servicio permitió comprobar la disponibilidad de los endpo
 
 Estas consultas comprueban disponibilidad y formato de respuesta en la fecha indicada. No comprueban el funcionamiento de todas las operaciones de escritura ni la persistencia de datos tras un reinicio.
 
+**Aplicación web de SkyCrop en Vercel**
+
+La aplicación web utiliza Vue y Vite y se publica desde el [repositorio skycrop-website](https://github.com/upc-GreenTech/skycrop-website). La importación en Vercel selecciona la rama `main` y la raíz del repositorio (`./`). La instalación de dependencias se realiza con `npm ci`; la compilación utiliza `npm run build` y genera los archivos estáticos en `dist`.
+
+El archivo [vercel.json](https://github.com/upc-GreenTech/skycrop-website/blob/main/vercel.json), incorporado en el [commit a15cab3](https://github.com/upc-GreenTech/skycrop-website/commit/a15cab3), define el framework Vite, el comando de compilación, el directorio de salida y la reescritura de las rutas hacia `/index.html`. Esta regla permite abrir directamente rutas de la aplicación, como `/plots`, y mantener la navegación de Vue Router al recargar la página.
+
+La configuración utiliza las siguientes variables de entorno para Production y Preview:
+
+| Variable | Servicio configurado |
+|---|---|
+| `VITE_SKYCROP_API_URL` | Recursos de SkyCrop en la mock API de Azure. |
+| `VITE_GEOCODING_URL` | Búsqueda de ubicaciones de las parcelas. |
+| `VITE_MAP_TILE_URL` | Imágenes del mapa mediante la plantilla de coordenadas `{z}`, `{x}` y `{y}`. |
+
+Los valores se incorporan durante la compilación del frontend. La URL de producción de la aplicación es [https://skycrop-website.vercel.app/home](https://skycrop-website.vercel.app/home). Las capturas de configuración y la comprobación de las rutas se presentan en la sección 5.2.2.7.
+
 ## 5.2. Landing Page, Services & Applications Implementation. 
 
 ### 5.2.1. Sprint 1 
@@ -2577,7 +2595,7 @@ El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluy
 
 **Publicación del Landing Page tras la migración:** pendiente de verificar. La dirección correspondiente al nuevo repositorio es https://upc-greentech.github.io/skycrop-website/; al revisarla el 8 de octubre de 2026 devolvió HTTP 404.
 
-#### 5.2.X.8. Team Collaboration Insights during Sprint. 
+#### 5.2.1.8. Team Collaboration Insights during Sprint.
 
 La captura de Pulse del repositorio de la Landing Page corresponde al período del 13 al 20 de septiembre de 2026. Muestra cinco pull requests integrados, cuatro autores y nueve commits, excluyendo merges. Estas cifras describen la actividad registrada durante el intervalo seleccionado.
 
@@ -2587,6 +2605,49 @@ La captura de Pulse del repositorio de la Landing Page corresponde al período d
 La captura de Contributors presenta aportes de notoriussxd, DanLandio, DiegoPumahualcca y Yam-1CG, con tres, tres, dos y un commit, respectivamente. El período del filtro no aparece en la imagen, por lo que estos valores se describen de forma independiente del intervalo de Pulse. La evidencia de ejecución y las responsabilidades del sprint complementan estas métricas para evaluar la calidad, el cumplimiento y la participación del equipo.
 
 ![Contributors.png](resources/imgs/chapter_5/Contributors.png)
+
+### 5.2.2. Sprint 2
+
+El avance del Sprint 2 incorpora la publicación de la aplicación web de SkyCrop en Vercel y la configuración de los servicios utilizados por el frontend.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+
+El proceso de publicación parte del repositorio `upc-GreenTech/skycrop-website`. Vercel compila el proyecto Vue con Vite y publica el contenido del directorio `dist`. Las siguientes capturas registran la importación y los parámetros utilizados para la aplicación web.
+
+**Importación del repositorio**
+
+En la opción de importación de Git se selecciona la organización `upc-GreenTech` y el repositorio `skycrop-website`.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/vercel-website/02-importacion-repositorio-skycrop-website.png" alt="Selección del repositorio skycrop-website en Vercel" width="700">
+</div>
+
+**Configuración de la aplicación y compilación**
+
+El proyecto se denomina `skycrop-website`. La captura muestra la importación desde `main`, el directorio raíz `./`, el preset Vite, el comando `npm run build`, la salida `dist` y la instalación con `npm ci`. Los parámetros de framework y compilación se encuentran definidos en `vercel.json`.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/vercel-website/03-configuracion-vite-build-output.png" alt="Configuración de Vite, compilación, instalación y directorio de salida" width="600">
+</div>
+
+**Configuración de servicios externos**
+
+Se incorporan `VITE_SKYCROP_API_URL`, `VITE_GEOCODING_URL` y `VITE_MAP_TILE_URL` en los entornos Production y Preview. Estas variables permiten configurar la mock API, la búsqueda de ubicaciones y el mapa desde el entorno de publicación. La captura mantiene ocultos sus valores.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/vercel-website/04-variables-entorno-production-preview.png" alt="Variables de entorno del frontend en Production y Preview" width="550">
+</div>
+
+**Verificación de la publicación**
+
+El 9 de octubre de 2026 se consultaron las rutas de producción siguientes. Ambas respondieron con HTTP 200 y el documento HTML de SkyCrop, que contiene el punto de montaje de Vue y las referencias a los archivos compilados.
+
+| Ruta | Resultado | Comprobación |
+|---|---|---|
+| [Inicio](https://skycrop-website.vercel.app/home) | HTTP 200 | Disponibilidad del documento de entrada de la aplicación. |
+| [Mis parcelas](https://skycrop-website.vercel.app/plots) | HTTP 200 | Disponibilidad de una ruta interna mediante acceso directo. |
+
+El [registro de verificación del frontend](resources/deployment/website-verification-2026-10-09.json) conserva las direcciones, los códigos de respuesta y el título del documento recibido. Esta comprobación corresponde al acceso HTTP de las rutas publicadas; las funcionalidades de las vistas se evalúan mediante sus evidencias de ejecución.
 
 # Conclusiones 
 
