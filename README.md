@@ -297,11 +297,12 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 ## 1.1. Startup Profile 
 
 ### 1.1.1. Descripción de la Startup
-**GreenTech** es una pequeña empresa de reciente creación dentro del sector *AgTech* , destacada por su alto potencial innovador y tecnológico. Ya que nuestro modelo de negocio es altamente escalable y nuestro crecimiento está proyectado para ser exponencial, abarcando desde pequeños productores independientes hasta grandes asociaciones agrarias. 
 
-Nacemos con el firme propósito de democratizar el acceso a la agricultura de precisión. Actualmente, el sector agrícola enfrenta un desafío crítico que es el monitoreo manual de las parcelas,ya que requiere una inversión insostenible de tiempo y esfuerzo físico, y suele detectar problemas cuando el daño en los cultivos es irreversible. Por otro lado, las tecnologías modernas que podrían solucionar esto se caracterizan por ser ecosistemas cerrados, de costos prohibitivos y sin opciones de modificación, dejando a gran parte de los productores en desventaja tecnológica y competitiva.
+**GreenTech** es una startup del sector AgTech que desarrolla SkyCrop, una propuesta de software para apoyar el monitoreo de parcelas agrícolas. El proyecto se dirige a pequeños y medianos productores, ingenieros agrónomos y cooperativas agrarias.
 
-Ante este panorama, **GreenTech** se enfoca en el desarrollo de plataformas de software accesibles, automatizadas y personalizables que rompen con los monopolios del software comercial tradicional. Buscamos transformar la gestión del campo reemplazando las inspecciones manuales por recolección y análisis de datos de vanguardia. Nuestro objetivo es empoderar a los agricultores, ingenieros agrónomos y cooperativas, brindándoles las capacidades tecnológicas necesarias para identificar de manera temprana amenazas como el estrés hídrico, las plagas o las deficiencias de fertilizantes. Al impulsar la toma de decisiones basadas en datos precisos y diagnósticos visuales, no solo ayudamos a incrementar la rentabilidad de las cosechas, sino que promovemos prácticas agrícolas mucho más eficientes y sostenibles a largo plazo.
+La propuesta responde a dificultades relacionadas con el tiempo y el esfuerzo de las inspecciones manuales y con el acceso a herramientas tecnológicas para el seguimiento de los cultivos. Los registros de entrevistas del capítulo II describen estas necesidades y sus diferencias entre agricultores e ingenieros agrónomos.
+
+SkyCrop propone centralizar información de parcelas, cultivos, drones, diagnósticos y reportes. Su objetivo es apoyar la identificación de condiciones que requieren atención, como estrés hídrico, plagas y deficiencias de fertilización. La mejora de productividad y el impacto agronómico se consideran objetivos del producto, sujetos a validación; el avance del Sprint 2 corresponde al frontend integrado con una mock API.
 
 **Misión :**
 Proveer a los productores agrícolas de soluciones tecnológicas accesibles y automatizadas para el monitoreo inteligente de sus parcelas, facilitando la detección temprana de anomalías y optimizando el uso de recursos críticos para lograr una agricultura más rentable y sostenible.
@@ -383,36 +384,36 @@ El proyecto se centra en el software, sin fabricar drones propios. La integraci�
 #### 1.2.2.2. Lean UX Assumptions. 
 
 **Business Assumptions:**
-* Creemos que los pequeños y medianos productores agrícolas y las cooperativas agrarias están dispuestos a pagar suscripciones (Básico, Profesional y Cooperativa) por una plataforma accesible que se adapte a las necesidades agronómicas específicas de sus terrenos.
-* Creemos que nuestro modelo de negocio será altamente escalable al integrarse con drones comerciales estándar, evitando la necesidad de fabricar hardware propio.
-* Creemos que existe un espacio en el mercado para una alternativa abierta, personalizable y de menor costo frente a otras soluciones comerciales
-* Creemos que nuestro equipo cuenta con las capacidades técnicas necesarias para desarrollar la planificación automática de vuelos y el procesamiento de imágenes aéreas.
+* Se plantea como supuesto que los pequeños y medianos productores agrícolas y las cooperativas agrarias están dispuestos a pagar suscripciones (Básico, Profesional y Cooperativa) por una plataforma accesible que se adapte a las necesidades agronómicas específicas de sus terrenos.
+* Se plantea como supuesto que el modelo de negocio de SkyCrop será altamente escalable al integrarse con drones comerciales estándar, evitando la necesidad de fabricar hardware propio.
+* Se plantea como supuesto que existe un espacio en el mercado para una alternativa abierta, personalizable y de menor costo frente a otras soluciones comerciales
+* Se plantea como supuesto que el equipo cuenta con las capacidades técnicas necesarias para desarrollar la planificación automática de vuelos y el procesamiento de imágenes aéreas.
 
 **Business Outcome Assumptions:**
-* Creemos que lograremos una tasa de conversión del 25% hacia nuestras suscripciones de pago durante los primeros 6 meses.
-* Creemos que al menos el 60% de los suscriptores de pago generará como mínimo un mapa del terreno al mes durante los primeros 6 meses, evidenciando un uso recurrente de la plataforma.
-* Creemos que retendremos al menos al 70% de los suscriptores de pago después de los primeros 6 meses.
+* Se plantea como supuesto que se alcanzará una tasa de conversión del 25% hacia las suscripciones de pago durante los primeros 6 meses.
+* Se plantea como supuesto que al menos el 60% de los suscriptores de pago generará como mínimo un mapa del terreno al mes durante los primeros 6 meses, evidenciando un uso recurrente de la plataforma.
+* Se plantea como supuesto que se retendrá al menos al 70% de los suscriptores de pago después de los primeros 6 meses.
 
 **User Assumptions:**
-* Creemos que los agricultores (pequeños y medianos productores, independientes o asociados a cooperativas) supervisan sus parcelas mediante recorridos físicos y no cuentan con herramientas digitales de monitoreo.
-* Creemos que los usuarios tienen acceso a drones comerciales (propios, de la cooperativa o de su ingeniero agrónomo), pero carecen de los conocimientos técnicos o de herramientas de software abiertas para automatizar sus vuelos.
-* Creemos que los ingenieros agrónomos atienden varias parcelas o clientes a la vez y necesitan centralizar la información de todas ellas para diagnosticar con mayor rapidez.
-* Creemos que los gestores de cooperativas coordinan a varios productores y equipos de trabajo sobre grandes extensiones de terreno.
-* Creemos que los usuarios prefieren revisar datos consolidados desde una pantalla antes que realizar inspecciones físicas extenuantes y propensas a errores humanos.
+* Se plantea como supuesto que los agricultores (pequeños y medianos productores, independientes o asociados a cooperativas) supervisan sus parcelas mediante recorridos físicos y no cuentan con herramientas digitales de monitoreo.
+* Se plantea como supuesto que los usuarios tienen acceso a drones comerciales (propios, de la cooperativa o de su ingeniero agrónomo), pero carecen de los conocimientos técnicos o de herramientas de software abiertas para automatizar sus vuelos.
+* Se plantea como supuesto que los ingenieros agrónomos atienden varias parcelas o clientes a la vez y necesitan centralizar la información de todas ellas para diagnosticar con mayor rapidez.
+* Se plantea como supuesto que los gestores de cooperativas coordinan a varios productores y equipos de trabajo sobre grandes extensiones de terreno.
+* Se plantea como supuesto que los usuarios prefieren revisar datos consolidados desde una pantalla antes que realizar inspecciones físicas extenuantes y propensas a errores humanos.
 
 **User Outcome and Benefit Assumptions:**
-* Creemos que los usuarios desean detectar a tiempo el estrés hídrico, las plagas o las deficiencias de fertilizante, y que al lograrlo mitigarán la pérdida económica en sus cosechas.
-* Creemos que los agricultores desean reducir el tiempo y el esfuerzo físico que dedican a recorrer sus parcelas, y que la plataforma les permitirá supervisarlas desde una pantalla.
-* Creemos que los ingenieros agrónomos desean mejorar la precisión de sus diagnósticos y atender más parcelas en menos tiempo, apoyándose en mapas visuales e información histórica.
-* Creemos que los gestores de cooperativas desean coordinar de forma colaborativa múltiples parcelas y equipos de trabajo, obteniendo una visión consolidada de toda la extensión.
+* Se plantea como supuesto que los usuarios desean detectar a tiempo el estrés hídrico, las plagas o las deficiencias de fertilizante, y que al lograrlo mitigarán la pérdida económica en sus cosechas.
+* Se plantea como supuesto que los agricultores desean reducir el tiempo y el esfuerzo físico que dedican a recorrer sus parcelas, y que la plataforma les permitirá supervisarlas desde una pantalla.
+* Se plantea como supuesto que los ingenieros agrónomos desean mejorar la precisión de sus diagnósticos y atender más parcelas en menos tiempo, apoyándose en mapas visuales e información histórica.
+* Se plantea como supuesto que los gestores de cooperativas desean coordinar de forma colaborativa múltiples parcelas y equipos de trabajo, obteniendo una visión consolidada de toda la extensión.
 
 
 **Feature Assumptions:**
-* Creemos que la funcionalidad de **Planificación automatizada de rutas de vuelo** solucionará la necesidad de trazar y personalizar el recorrido del dron sobre áreas delimitadas sin requerir control manual intensivo.
-* Creemos que la funcionalidad de **Generación de mapas visuales del terreno** satisfará la necesidad de procesar imágenes aéreas para resaltar anomalías y la salud general del cultivo.
-* Creemos que la funcionalidad de **Análisis avanzado de imágenes** cruzará datos visuales de forma automatizada para diagnosticar problemas agronómicos específicos en los planes superiores.
-* Creemos que la funcionalidad de **Historial de cultivos y reportes** respaldará la toma de decisiones mediante el almacenamiento seguro en la nube para comparar ciclos agrícolas estacionales.
-* Creemos que la consola de **Gestión multiparcela y multiusuario** ayudará a las cooperativas a organizar de forma colaborativa grandes extensiones de tierra y múltiples equipos de trabajo.
+* Se plantea como supuesto que la funcionalidad de **Planificación automatizada de rutas de vuelo** solucionará la necesidad de trazar y personalizar el recorrido del dron sobre áreas delimitadas sin requerir control manual intensivo.
+* Se plantea como supuesto que la funcionalidad de **Generación de mapas visuales del terreno** satisfará la necesidad de procesar imágenes aéreas para resaltar anomalías y la salud general del cultivo.
+* Se plantea como supuesto que la funcionalidad de **Análisis avanzado de imágenes** cruzará datos visuales de forma automatizada para diagnosticar problemas agronómicos específicos en los planes superiores.
+* Se plantea como supuesto que la funcionalidad de **Historial de cultivos y reportes** respaldará la toma de decisiones mediante el almacenamiento seguro en la nube para comparar ciclos agrícolas estacionales.
+* Se plantea como supuesto que la consola de **Gestión multiparcela y multiusuario** ayudará a las cooperativas a organizar de forma colaborativa grandes extensiones de tierra y múltiples equipos de trabajo.
   
 #### 1.2.2.3. Lean UX Hypothesis Statements. 
 
@@ -1591,7 +1592,7 @@ La propuesta visual de la aplicación web SkyCrop se desarrolla en Figma para lo
 
 El diseño adopta Material Design como referencia, los verdes y azules definidos para SkyCrop, controles amplios y una jerarquía de información orientada al monitoreo de cultivos. Las pantallas previstas cubrirán acceso, parcelas, drones, reportes, diagnósticos y colaboración, con adaptación a escritorio y móvil e inglés predeterminado con soporte para español latinoamericano.
 
-**Estado del avance:** fundamentos creados; componentes reutilizables, pantallas, flujos y prototipos pendientes. La cuota de la integración de Figma impidió completar la revisión visual y exportar las capturas de este primer bloque. No se presenta este avance como un prototipo terminado.
+**Estado del avance:** fundamentos creados; componentes reutilizables, pantallas, flujos y prototipos pendientes. No se presenta este avance como un prototipo terminado.
 
 - [Fundamentos visuales en Figma](https://www.figma.com/design/1nlenowk3dSY0qdNiG6hYD/Diseno-UX-UI---SkyCrop?node-id=45-3).
 - [Detalle de la entrega incremental y sus verificaciones](resources/design/web-app/README.md).
@@ -2318,7 +2319,7 @@ La documentación y la publicación del proyecto se manejaron con herramientas q
 | Markdown   | Formato base para la presentación y documentación del proyecto | https://markdown.es/                     |
 
 El equipo sigue el esquema GitFlow descrito en 5.1.2. Los cambios del informe se trabajan en ramas específicas y se integran en `develop`; GitHub aloja el repositorio y su historial de versiones.
-Para el despliegue de la Landing Page se utilizó GitHub Pages, una herramienta perfecta para publicar sitios web estáticos.
+Para el despliegue de la Landing Page se utilizó GitHub Pages, un servicio para publicar sitios web estáticos.
 
 <br>
 ### 5.1.2. Source Code Management.
@@ -2351,7 +2352,7 @@ Para las ramas de apoyo temporales que se derivan de `develop` o `main`, se apli
 Los releases de software seguirán [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html), con el formato `MAJOR.MINOR.PATCH`. Una vez establecida la API pública en `1.0.0`, se incrementará `MAJOR` ante cambios incompatibles, `MINOR` al agregar funcionalidades compatibles y `PATCH` al corregir errores sin romper compatibilidad. Durante el desarrollo inicial se utilizará `0.y.z`. Estos números corresponden a releases de software; el registro de versiones del informe identifica sus revisiones mediante commits.
 
 **Convenciones de Commits (Conventional Commits 1.0.0):**
-Para asegurar la trazabilidad y mantener un historial estructurado, se aplica el estándar [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) para los mensajes de los commits en todos los repositorios, utilizando el idioma inglés de forma predeterminada. Basándonos en la Convención Angular, se emplearán los siguientes prefijos estandarizados:
+Para asegurar la trazabilidad y mantener un historial estructurado, se aplica el estándar [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) para los mensajes de los commits en todos los repositorios, utilizando el idioma inglés de forma predeterminada. Como referencia para la convención de mensajes, se emplean los siguientes prefijos estandarizados:
 
 *   `feat:` Introduce una nueva característica a la base de código.
 *   `fix:` Corrige un error (bug) en el código.
