@@ -4,20 +4,26 @@ skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 150
 hide empty members
+legend bottom
+Todos los value objects carecen de identidad y son inmutables.
+Se validan al construirlos; una modificación crea un nuevo valor.
+La igualdad compara sus atributos, salvo Timestamp (instante UTC).
+CalendarDate representa una fecha válida sin hora ni zona horaria.
+endlegend
 title SkyCrop - Gestión de Parcelas y Drones
 class User  {
 -id: Long
--name: String
+-name: Name
 -email: EmailAddress
 +managePlot(plot: AgriculturalPlot): void
 +manageDrone(drone: Drone): void
 }
 class AgriculturalPlot  {
 -id: Long
--name: String
+-name: Name
 -areaHectares: Area
 -location: Location
--createdAt: DateTime
+-createdAt: Timestamp
 -status: PlotStatus
 +register(): void
 +updateInformation(): void
@@ -32,10 +38,10 @@ interface MapService  {
 }
 class Crop  {
 -id: Long
--name: String
+-name: Name
 -variety: String
 -growthStage: String
--registrationDate: Date
+-registrationDate: CalendarDate
 +register(): void
 +updateInformation(): void
 +assignToPlot(plot: AgriculturalPlot): void
@@ -43,7 +49,7 @@ class Crop  {
 class PlotMap  {
 -id: Long
 -mapUrl: String
--generatedAt: DateTime
+-generatedAt: Timestamp
 -source: String
 +generate(): void
 +display(): void
@@ -51,7 +57,7 @@ class PlotMap  {
 }
 class FlightPlan  {
 -id: Long
--name: String
+-name: Name
 -altitude: Decimal
 -speed: Decimal
 -overlap: Decimal
@@ -92,8 +98,8 @@ class DroneConfiguration  {
 }
 class Flight  {
 -id: Long
--startTime: DateTime
--endTime: DateTime
+-startTime: Timestamp [0..1]
+-endTime: Timestamp [0..1]
 -status: FlightStatus
 +start(): void
 +pause(): void
@@ -103,7 +109,7 @@ class Flight  {
 }
 class AerialImage  {
 -id: Long
--capturedAt: DateTime
+-capturedAt: Timestamp
 -resolution: String
 -fileUrl: String
 -quality: ImageQuality
@@ -186,5 +192,37 @@ AerialImage --> ImageQuality : quality
 note bottom of Area
 Inmutable; unidad fija en hectáreas.
 Igualdad por sus valores, sin identidad.
+end note
+class Name <<value object>> {
+-value: String {readOnly}
+}
+note right of Name
+Texto no vacío después de quitar espacios externos.
+Conserva caracteres y escritura del nombre.
+Sin exigir cantidad de palabras.
+end note
+class Timestamp <<value object>> {
+-value: DateTimeOffset {readOnly}
+}
+note right of Timestamp
+Instante válido con desplazamiento horario.
+Igualdad y comparación por instante UTC.
+end note
+User "1" *-- "1" Name : name
+AgriculturalPlot "1" *-- "1" Name : name
+Crop "1" *-- "1" Name : name
+FlightPlan "1" *-- "1" Name : name
+AgriculturalPlot ..> Timestamp : temporal values
+PlotMap ..> Timestamp : temporal values
+Flight ..> Timestamp : temporal values
+AerialImage ..> Timestamp : temporal values
+class CalendarDate <<value object>> {
+-value: Date {readOnly}
+}
+Crop "1" *-- "1" CalendarDate : registrationDate
+note bottom of Flight
+startTime está ausente antes del inicio.
+endTime está ausente antes del fin del vuelo.
+Cuando ambos existen, endTime >= startTime.
 end note
 @enduml

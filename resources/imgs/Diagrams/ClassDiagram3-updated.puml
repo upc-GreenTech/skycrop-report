@@ -4,23 +4,29 @@ skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 150
 hide empty members
+legend bottom
+Todos los value objects carecen de identidad y son inmutables.
+Se validan al construirlos; una modificación crea un nuevo valor.
+La igualdad compara sus atributos, salvo Timestamp (instante UTC).
+CalendarDate representa una fecha válida sin hora ni zona horaria.
+endlegend
 title SkyCrop - Diagnóstico, Análisis, Reportes y Notificaciones
 class User  {
 -id: Long
--name: String
+-name: Name
 -email: EmailAddress
 +viewReports(): void
 +viewNotifications(): void
 }
 class AgriculturalPlot  {
 -id: Long
--name: String
+-name: Name
 -location: Location
 +viewMonitoringHistory(): void
 }
 class Crop  {
 -id: Long
--name: String
+-name: Name
 -variety: String
 -growthStage: String
 +updateInformation(): void
@@ -28,7 +34,7 @@ class Crop  {
 class Report  {
 -id: Long
 -title: String
--generatedAt: DateTime
+-generatedAt: Timestamp
 -type: ReportType
 -content: String
 +generate(): void
@@ -37,7 +43,7 @@ class Report  {
 }
 class Diagnosis  {
 -id: Long
--generatedAt: DateTime
+-generatedAt: Timestamp
 -observations: String
 -status: DiagnosisStatus
 +generate(): void
@@ -55,7 +61,7 @@ class TerrainData  {
 }
 class AerialImage  {
 -id: Long
--capturedAt: DateTime
+-capturedAt: Timestamp
 -resolution: String
 -fileUrl: String
 -quality: ImageQuality
@@ -64,7 +70,7 @@ class AerialImage  {
 class TerrainMap  {
 -id: Long
 -mapUrl: String
--generatedAt: DateTime
+-generatedAt: Timestamp
 -resolution: String
 +generate(): void
 +display(): void
@@ -79,14 +85,14 @@ class Anomaly  {
 }
 class AgronomicRule  {
 -id: Long
--name: String
+-name: Name
 -description: String
 -condition: String
 +evaluate(): boolean
 }
 class DiagnosticHistory  {
 -id: Long
--savedAt: DateTime
+-savedAt: Timestamp
 -reference: String
 +save(diagnosis: Diagnosis): void
 +retrieve(): Diagnosis
@@ -94,7 +100,7 @@ class DiagnosticHistory  {
 class Notification  {
 -id: Long
 -message: String
--createdAt: DateTime
+-createdAt: Timestamp
 -type: NotificationType
 -status: NotificationStatus
 +create(): void
@@ -187,7 +193,7 @@ class WeatherData <<value object>> {
 -temperature: Decimal {readOnly}
 -humidity: Decimal {readOnly}
 -precipitation: Decimal {readOnly}
--recordedAt: DateTime {readOnly}
+-recordedAt: Timestamp {readOnly}
 
 }
 User "1" -- "0..*" Report : views
@@ -236,4 +242,29 @@ Instantánea inmutable, sin identificador.
 Igualdad por todos sus atributos.
 El servicio devuelve el valor; no lo posee.
 end note
+class Name <<value object>> {
+-value: String {readOnly}
+}
+note right of Name
+Texto no vacío después de quitar espacios externos.
+Conserva caracteres y escritura del nombre.
+Sin exigir cantidad de palabras.
+end note
+class Timestamp <<value object>> {
+-value: DateTimeOffset {readOnly}
+}
+note right of Timestamp
+Instante válido con desplazamiento horario.
+Igualdad y comparación por instante UTC.
+end note
+User "1" *-- "1" Name : name
+AgriculturalPlot "1" *-- "1" Name : name
+Crop "1" *-- "1" Name : name
+AgronomicRule "1" *-- "1" Name : name
+Report ..> Timestamp : temporal values
+Diagnosis ..> Timestamp : temporal values
+AerialImage ..> Timestamp : temporal values
+TerrainMap ..> Timestamp : temporal values
+DiagnosticHistory ..> Timestamp : temporal values
+Notification ..> Timestamp : temporal values
 @enduml

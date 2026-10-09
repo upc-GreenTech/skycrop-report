@@ -1868,6 +1868,20 @@ El diseño de clases propuesto incorpora objetos de valor (`<<value object>>`) s
 
 En la gestión de pagos, el patrón `Money` agrupa el importe decimal y la moneda. Dos valores monetarios son iguales cuando coinciden ambos atributos; las operaciones de suma y resta requieren la misma moneda y generan un nuevo valor. `EmailAddress` representa el correo electrónico, `Area` expresa la superficie en hectáreas y `Location` encapsula la ubicación textual. `WeatherData` representa una instantánea meteorológica cuya igualdad considera la temperatura, la humedad, la precipitación y la fecha de registro.
 
+El refinamiento sustituye los nombres, teléfonos, direcciones y fechas primitivas por objetos de valor. Estas reglas forman parte de la propuesta de diseño y deberán aplicarse en las implementaciones; los diagramas no constituyen evidencia de que la mock API ya las valide.
+
+| Value Object | Uso | Invariantes e igualdad |
+|---|---|---|
+| `Name` | Nombres de usuarios, parcelas, cultivos, planes de vuelo y reglas agronómicas. | Texto no vacío después de quitar espacios externos. Conserva la escritura y no exige un número de palabras. Igualdad por el texto resultante. |
+| `PhoneNumber` | Teléfono opcional de `UserProfile`. | Formato internacional con `+` y hasta 15 dígitos, sin separadores. Igualdad por esa representación. La validación del formato no prueba titularidad. |
+| `PostalAddress` | Dirección opcional de `UserProfile`. | Texto no vacío después de quitar espacios externos. Igualdad por el texto resultante; no se impone código postal ni una distribución de campos no especificada. |
+| `CalendarDate` | Fecha de registro del cultivo y límites del período de suscripción. | Fecha de calendario válida, sin hora ni zona horaria. Igualdad por año, mes y día. |
+| `Timestamp` | Instantes de creación, pago, verificación, vencimiento, vuelo, captura, generación y registro meteorológico. | Fecha y hora válidas con desplazamiento horario explícito. Igualdad y comparación por el instante UTC, independientemente del desplazamiento original. |
+| `SubscriptionPeriod` | Vigencia de una suscripción. | Fechas válidas con fin posterior al inicio. Intervalo con inicio incluido y fin excluido. Igualdad por ambos límites; renovar sustituye el objeto completo. |
+
+Todos estos valores se validan al construirlos y se sustituyen completos al cambiar; no tienen setters ni identificadores. Un teléfono o una dirección no proporcionados se representan por ausencia del objeto, en lugar de crear valores vacíos. `verifiedAt` permanece ausente antes de verificar el segundo factor. En un vuelo, el inicio y el fin permanecen ausentes hasta sus respectivos eventos y, cuando ambos existen, el fin no puede preceder al inicio. Un código de recuperación deja de ser válido al alcanzar su instante de vencimiento.
+
+
 **SkyCrop - Gestión de Usuarios, Autenticación y Suscripciones**
 <div align="center">
 <img src="resources/imgs/Diagrams/ClassDiagram1-updated.png" alt="ClassDiagram1" width="600">
