@@ -264,7 +264,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | **Código del Estudiante** |u202219266|
 | **Carrera** |Ingenieria de software|
 | **Descripción** |Mi nombre es Diego, tengo 21 años. Tengo interés sobre la tecnología y sobre aprender a programar, sobretodo quisiera centrarme en ciberseguridad y aparte crear un juego que otro como tiempo libre|
-| **Foto** | |
+| **Foto** | <img src="resources/imgs/IntegranteDiego.jpeg" alt="Diego" width="200" height="240">  |
 
 --------------
 
