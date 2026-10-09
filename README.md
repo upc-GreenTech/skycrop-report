@@ -1162,7 +1162,7 @@ A continuación se presentan las User Stories que indicarán las funcionalidades
 | TS-02 | Manejo de datos de parcelas | Como desarrollador, quiero registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | **Scenario: Registro de parcela** <br> *Given* que la aplicación cliente está autenticada y tiene permiso para registrar parcelas <br> *When* envía una solicitud con los datos obligatorios y válidos de una parcela <br> *Then* la API guarda la parcela y devuelve su identificador. | EP-09 |
 | **EP-04** | Gestión de drones|Como usuario de la plataforma SkyCrop, quiero un sistema de registro y configuración de drones conectar mi dron y configurar una rutina de vuelo.|-Conexión del dron.<br>- Gestión de la rutina de vuelo.||
 | US-17 | Conectar el dron | Como usuario, deseo conectar el aplicativo con mi dron | **Scenario 1: La conexion es exitosa** <br> *Given* El usuario presiona el botón "Conectar Dron" <br> *When* El dron funciona adecuadamente y esta suficientemente cerca del dispositivo con el aplicativo <br> *Then* Se mostrara el mensaje "Conexión exitosa" <br> **Scenario 2: La conexión es no exitosa** <br> *Given* El usuario presiona el botón "Conectar Dron" <br> *When* El dron no funciona adecuadamente y/o está lejos del dispositivo con el aplicativo <br> *Then* Se mostrará el mensaje "Conexión fallida" | EP-04 |
-| US-18 | Gestionar la rutina de vuelo | Como usuario, deseo gestionar la rutina de vuelo que el dron va a patrullar | **Scenario 1: Se ingresa la rutina dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina registrada exitosamente". <br> **Scenario 2: La rutina no se encuentra dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo no se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina debe encontrarse en los parámetros permitidos". <br> | EP-04 |
+| US-18 | Gestionar la rutina de vuelo | Como usuario, deseo gestionar la rutina de vuelo que el dron va a patrullar | **Scenario 1: Se ingresa la rutina dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina registrada exitosamente". <br> **Scenario 2: La rutina no se encuentra dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo no se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina debe encontrarse en los parámetros permitidos". <br>  **Scenario 3: Asignación de un dron al vuelo de la parcela** <br> *Given* que el usuario tiene permiso para gestionar vuelos sobre la parcela y dispone de un plan válido y de un dron accesible y disponible <br> *When* confirma la selección del dron para ese plan <br> *Then* el sistema registra un vuelo planificado con los identificadores del plan y del dron. <br> **Scenario 4: Selección no válida** <br> *Given* que el usuario selecciona un dron para un plan de vuelo <br> *When* el sistema detecta falta de permisos, un plan no válido o un dron no disponible <br> *Then* informa el motivo y no registra el vuelo. <br> **Scenario 5: Cancelación** <br> *Given* que la selección no ha sido confirmada <br> *When* el usuario cancela la operación <br> *Then* no se registra un vuelo ni se modifica el plan. | EP-04 |
 | US-19 | Captura de imágenes mediante dron | Como usuario de la plataforma SkyCrop, quiero que el dron capture imágenes automáticamente durante su rutina para recolectar datos visuales de la parcela. | **Scenario 1: Captura automática de imágenes** <br> *Given* el dron se encuentra ejecutando una rutina de vuelo activa <br> *When* alcanza un punto de control (waypoint) programado <br> *Then* la cámara del dron captura una imagen de alta resolución.| EP-04 |
 | US-20 | Parametrización de vuelo del dron | Como usuario de la plataforma SkyCrop, quiero configurar los parámetros técnicos de vuelo para optimizar la toma de capturas. | **Scenario 1: Guardar parámetros válidos** <br>  *Given* el usuario se encuentra en el panel de parametrización <br> *When* ingresa valores de altura y velocidad permitidos And presiona "Guardar" <br> *Then* el sistema actualiza la configuración del dron. <br> **Scenario 2: Parámetros fuera de rango** <br> *Given* el usuario ingresa una altura que excede el límite legal o técnico <br> *When* intenta guardar la configuración <br> *Then* el sistema muestra la alerta "Valor fuera de rango permitido". | EP-04 |
 | US-21 | Envío de imágenes tomadas por el dron | Como usuario de la plataforma SkyCrop, deseo que el dron envíe las imágenes capturadas al servidor para que puedan ser procesadas por el sistema. | **Scenario 1: Envío exitoso con buena señal** <br> *Given* el dron ha finalizado la captura de imágenes <br> *When* detecta una conexión a internet o enlace estable <br> *Then* transfiere las imágenes al servidor *And* muestra el progreso en el aplicativo. <br> **Scenario 2: Pérdida de conexión durante el envío** <br> *Given* el dron está enviando las imágenes <br> *When* la conexión se interrumpe <br> *Then* el sistema pausa la transferencia *And* la reanuda automáticamente al recuperar la señal. | EP-04 |
@@ -1746,6 +1746,49 @@ Userflow 5: Lectura de diagnosticos
 
 <div align="center">
 <img src="resources/imgs/chapter_4/userflow-5.jpg" alt="Wireflow 5" width="600">
+</div>
+
+#### Asignación de un dron al vuelo de una parcela
+
+**Objetivo del usuario:** seleccionar un dron para ejecutar el plan de monitoreo de una parcela y consultar la relación antes de iniciar el vuelo.
+
+La propuesta utiliza una sección de vuelos dentro del detalle de la parcela. La acción de asignación presenta el plan y los drones disponibles en el mismo contexto de navegación. El usuario selecciona el dispositivo, revisa su estado y confirma la operación. La selección registra un vuelo planificado; la confirmación no inicia el dispositivo. Esta interacción complementa US-18 y se relaciona con la conexión del dron de US-17 y la parametrización de US-20.
+
+**Sustento de la propuesta**
+
+| Decisión | Sustento | Alcance |
+|---|---|---|
+| Seleccionar el dron desde la parcela y su plan. | A1 y A2 describen interés en recorridos automatizados; G1 y G2 aportan necesidades de seguimiento de varias parcelas. US-18 contempla la gestión de la rutina de vuelo. | La relación se establece para el vuelo planificado, sin atribuir a las entrevistas una preferencia por esta distribución de pantalla. |
+| Presentar estado y disponibilidad del dispositivo. | US-17 contempla la conexión; US-20, la configuración. El modelo de `Drone` incluye estado y batería. | La selección requiere un dispositivo disponible y accesible; los valores de operación dependen de su configuración. |
+| Relacionar parcela, plan y dron mediante identificadores. | `FlightPlan.plotId`, `Flight.flightPlanId` y `Flight.droneId` forman parte del modelo del dominio. | No se necesita una entidad adicional para una asignación permanente entre parcela y dron. |
+| Evitar un máximo fijo de drones por parcela. | Los registros de entrevistas no especifican ese límite. | El diseño no impone una cantidad máxima por terreno ni presupone vuelos simultáneos. |
+
+**Reglas de la operación**
+
+| Regla | Comportamiento |
+|---|---|
+| Acceso | El usuario debe tener permiso para gestionar vuelos de la parcela y utilizar el dron seleccionado. |
+| Plan | El plan seleccionado debe pertenecer a la parcela y encontrarse válido para la operación. |
+| Disponibilidad | El estado del dron se consulta al seleccionar y se verifica nuevamente al confirmar. Un dispositivo no disponible no permite registrar la asignación. |
+| Referencias | El vuelo conserva `flightPlanId` y `droneId`; la parcela se obtiene mediante `FlightPlan.plotId`. |
+| Confirmación | La operación registra un vuelo en estado `PLANNED`. El inicio del vuelo constituye una acción distinta. |
+| Cancelación | Cerrar o cancelar la selección no registra un vuelo ni modifica el plan. |
+| Error de guardado | La interfaz conserva los datos seleccionados e informa el error, sin mostrar una confirmación exitosa. |
+
+**Wireframe de la interacción propuesta**
+
+El esquema muestra la selección dentro del detalle de la parcela. Los elementos de la lista representan la estructura de información, sin utilizar datos de dispositivos reales. Cuando no existen drones disponibles, la lista se sustituye por un mensaje y la confirmación permanece deshabilitada. Si ocurre un error de consulta, se ofrece una acción para volver a consultar.
+
+<div align="center">
+<img src="resources/imgs/chapter_4/drone-plot-assignment-wireframe.svg" alt="Wireframe de selección de dron para el vuelo de una parcela" width="700">
+</div>
+
+**Flujo de interacción**
+
+El recorrido incluye la confirmación, la cancelación y los casos sin permisos, sin plan válido o sin drones disponibles. La validación al confirmar evita utilizar un estado del dispositivo que haya cambiado durante la selección.
+
+<div align="center">
+<img src="resources/imgs/chapter_4/drone-plot-assignment-flow.png" alt="Flujo de asignación de un dron al vuelo de una parcela" width="650">
 </div>
 
 ## 4.5. Web Applications Prototyping. 

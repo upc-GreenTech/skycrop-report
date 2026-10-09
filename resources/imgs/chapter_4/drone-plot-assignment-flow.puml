@@ -1,0 +1,38 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam dpi 120
+title SkyCrop - Asignación de un dron al vuelo de una parcela
+start
+:Abrir detalles de una parcela;
+if (¿Tiene permiso para gestionar vuelos?) then (Sí)
+ :Consultar planes de vuelo de la parcela;
+ if (¿Existe un plan válido?) then (Sí)
+  :Seleccionar plan y solicitar asignación de dron;
+  :Consultar drones accesibles y su estado;
+  if (¿Hay un dron disponible?) then (Sí)
+   :Seleccionar dron;
+   if (¿Se confirma la selección?) then (Sí)
+    :Validar permisos, plan y disponibilidad actual;
+    if (¿La validación es correcta?) then (Sí)
+     :Registrar vuelo planificado con
+flightPlanId y droneId;
+     :Mostrar dron, parcela y estado del vuelo;
+    else (No)
+     :Mostrar motivo y conservar selección
+para corregir o volver a consultar;
+    endif
+   else (No)
+    :Cerrar selección sin registrar un vuelo;
+   endif
+  else (No)
+   :Mostrar estado sin drones disponibles;
+  endif
+ else (No)
+  :Informar que se requiere un plan de vuelo válido;
+ endif
+else (No)
+ :Mostrar acceso de consulta sin acciones de gestión;
+endif
+stop
+@enduml
