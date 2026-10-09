@@ -3114,6 +3114,33 @@ Estas evidencias permiten sustentar los avances presentados durante el Sprint Re
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
+La aplicación web consume la mock API de SkyCrop desplegada en Azure. El servidor utiliza `json-server`, recibe cuerpos JSON y expone las colecciones de `db.json` mediante el prefijo `/api/v1`. El frontend obtiene la dirección base desde `VITE_SKYCROP_API_URL`.
+
+**URL base:** `https://skycrop-fake-api-fre4gthff0hudyew.chilecentral-01.azurewebsites.net/api/v1`.
+
+La siguiente tabla describe las operaciones utilizadas por los adaptadores HTTP del frontend. Las rutas se expresan respecto de la URL base y `{id}` identifica el registro consultado o modificado.
+
+| Recurso | Operaciones utilizadas | Aplicación en las vistas |
+|---|---|---|
+| `/plots` | `GET`, `POST`; `GET /plots/{id}` | Listar y registrar parcelas; consultar sus detalles y seleccionarlas en otros módulos. |
+| `/crops` | `GET`, `POST`; `GET` y `PUT /crops/{id}` | Consultar, registrar y editar cultivos; relacionarlos con las parcelas. |
+| `/drones` | `GET`, `POST`; `GET` y `PATCH /drones/{id}` | Registrar drones, consultar sus detalles y actualizar su información. |
+| `/flightRoutes` | `GET`, `POST`; `PATCH /flightRoutes/{id}` | Consultar, guardar y modificar las rutas de vuelo. |
+| `/flights` | `GET`, `POST`; `PATCH /flights/{id}` | Consultar y registrar vuelos; actualizar su estado a `CANCELLED` al cancelarlos. |
+| `/aerialImages` | `GET` | Consultar los registros de imágenes asociados a los vuelos. |
+| `/diagnoses` | `GET`, `POST`; `GET /diagnoses/{id}` | Listar diagnósticos, registrar resultados simulados y consultar sus detalles. |
+| `/reports` | `GET`, `POST`; `GET /reports/{id}` | Listar, registrar y consultar los reportes de seguimiento. |
+| `/health` | `GET` | Consultar el estado del servicio; devuelve `status` y `time`. |
+
+Las consultas de colecciones devuelven arreglos JSON y las consultas por identificador devuelven un objeto. Las solicitudes de registro y modificación envían el recurso mediante un cuerpo JSON. `PUT` reemplaza el registro indicado y `PATCH` modifica los campos enviados. Las relaciones entre recursos se representan mediante identificadores almacenados en los registros.
+
+El servidor también contiene colecciones para perfiles, suscripciones, pagos, notificaciones y otros elementos del modelo. Su disponibilidad como recursos de la mock API no acredita que sus vistas ni las reglas de negocio correspondientes estén implementadas.
+
+**Trazabilidad con el código**
+
+El [repositorio de la mock API](https://github.com/upc-GreenTech/skycrop-mock-api) contiene `mock-api-server.js`, que configura el middleware JSON, el endpoint de salud y la reescritura de rutas, y `db.json`, que declara las colecciones. En el [repositorio del frontend](https://github.com/upc-GreenTech/skycrop-website), los adaptadores `plots-api.js`, `crops-api.js`, `drones-api.js`, `diagnoses-api.js` y `reports-api.js` concentran las llamadas descritas en la tabla.
+
+La mock API permite almacenar y consultar registros para las vistas del sprint. Los diagnósticos utilizan datos simulados; el registro de un vuelo no ejecuta una conexión física con un dron. La evidencia de disponibilidad del servicio en Azure se presenta en la sección 5.1.4 y la configuración del frontend publicado en la sección 5.2.2.7.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
