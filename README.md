@@ -1920,6 +1920,83 @@ Esta vista muestra a `Diagnosis` como raíz del agregado que contiene los result
 <img src="resources/imgs/Diagrams/ClassDiagram1-updated.png" alt="Agregados de suscripciones, perfiles e IAM" width="600">
 </div>
 
+#### Diseño de clases por capas
+
+Las siguientes vistas representan el diseño propuesto para el backend RESTful API en ASP.NET Core. Cada diagrama presenta un caso de uso de su Bounded Context y complementa el detalle de entidades y objetos de valor de los diagramas de dominio. Las clases de infraestructura implementan los contratos de repositorio y de integración; el dominio mantiene sus reglas sin depender de Entity Framework Core ni de proveedores externos.
+
+| Capa | Responsabilidad | Clases y contratos |
+|---|---|---|
+| Interfaces / Presentation | Recibir solicitudes HTTP, construir comandos y devolver recursos. | Controladores, requests, resources y assemblers. |
+| Application | Coordinar el caso de uso, las consultas y las integraciones necesarias. | Servicios de aplicación, comandos y contratos de integración. |
+| Domain | Mantener el estado y las reglas del agregado y definir su contrato de persistencia. | Raíces de agregado, entidades, objetos de valor e interfaces de repositorio. |
+| Infrastructure | Implementar persistencia y comunicación con proveedores. | Repositorios, DbContext y adaptadores. |
+
+Los requests contienen los datos recibidos por el API; los comandos expresan la operación solicitada. Los servicios de aplicación acceden al agregado a través de su repositorio y construyen la respuesta mediante un assembler. Los recursos devueltos contienen los datos del contrato HTTP y no exponen las entidades de persistencia. En IAM, la respuesta de autenticación se obtiene mediante `AccessTokenIssuer`, sin incluir la contraseña ni su hash.
+
+**Diagnoses Generation**
+
+La generación de un diagnóstico recibe el identificador de la parcela y los de las imágenes. El servicio de aplicación solicita el análisis mediante `IImageAnalysis`, coordina el agregado `Diagnosis` y utiliza `IDiagnosisRepository` para su persistencia.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/diagnoses-layered-classes.png" alt="Diseño de clases por capas de Diagnoses Generation" width="700">
+</div>
+
+**Report Management**
+
+La generación de un reporte utiliza referencias a la parcela y a sus diagnósticos. `ReportApplicationService` coordina el agregado y el almacenamiento del documento mediante `IReportStorage`.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/reports-layered-classes.png" alt="Diseño de clases por capas de Report Management" width="700">
+</div>
+
+**Agricultural Plot Management**
+
+El registro de una parcela recibe nombre, superficie, ubicación e identificador del propietario. `AgriculturalPlotApplicationService` coordina el registro y utiliza `IPlotMapProvider` para obtener su representación geográfica.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/plots-layered-classes.png" alt="Diseño de clases por capas de Agricultural Plot Management" width="700">
+</div>
+
+**Drone Management**
+
+El registro de un dron relaciona el dispositivo con su propietario. `DroneApplicationService` utiliza `IDroneRepository` para conservar sus datos e `IDroneGateway` para encapsular la conexión con el dispositivo.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/drones-layered-classes.png" alt="Diseño de clases por capas de Drone Management" width="700">
+</div>
+
+**Subscriptions and Payment Management**
+
+La adquisición de una suscripción recibe el usuario y el tipo de plan. `SubscriptionApplicationService` coordina la vigencia y solicita la autorización de pago mediante `IPaymentGateway`.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/subscriptions-layered-classes.png" alt="Diseño de clases por capas de Subscriptions and Payment Management" width="700">
+</div>
+
+**Profiles and Preferences Management**
+
+La actualización de un perfil recibe el identificador del usuario, el teléfono y la dirección. `UserProfileApplicationService` coordina la modificación del agregado y su persistencia, sin administrar credenciales ni transacciones.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/profiles-layered-classes.png" alt="Diseño de clases por capas de Profiles and Preferences Management" width="700">
+</div>
+
+**Notification Service**
+
+El envío de una notificación recibe el destinatario, el mensaje y las referencias al diagnóstico y a la anomalía cuando corresponden. `NotificationApplicationService` coordina el estado del aviso y utiliza `INotificationDelivery` para su entrega.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/notifications-layered-classes.png" alt="Diseño de clases por capas de Notification Service" width="700">
+</div>
+
+**IAM — Identity and Access Management**
+
+La autenticación consulta la cuenta mediante el nombre de usuario. `ICredentialVerifier` verifica la contraseña contra el hash almacenado y `AccessTokenIssuer` produce el recurso de acceso. El repositorio mantiene separada la consulta de credenciales de la respuesta HTTP.
+
+<div align="center">
+<img src="resources/imgs/Diagrams/layers/iam-layered-classes.png" alt="Diseño de clases por capas de IAM — Identity and Access Management" width="700">
+</div>
+
 ## 4.8. Database Design.
 
 El diseño de base de datos de SkyCrop tiene como objetivo definir la estructura necesaria para almacenar de manera persistente la información generada por los diferentes bounded contexts de la plataforma. El modelo considera la gestión de usuarios y suscripciones, parcelas agrícolas, cultivos, drones y vuelos de monitoreo, así como los diagnósticos, anomalías, reportes y notificaciones generados a partir de la información recolectada.
