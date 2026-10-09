@@ -3111,6 +3111,41 @@ Estas evidencias permiten sustentar los avances presentados durante el Sprint Re
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
+Las capturas del 9 de octubre de 2026 presentan cuatro vistas de la aplicación web de SkyCrop durante su ejecución. En todas se observa la estructura compartida de navegación, con el encabezado, el selector de idioma, el menú lateral y el área de contenido correspondiente al módulo seleccionado.
+
+**Listado de parcelas agrícolas**
+
+La vista Registered Agricultural Plots muestra un total de una parcela. La tarjeta de Sector Las Palmas presenta la imagen de referencia, el cultivo Maíz Amarillo, las coordenadas de ubicación, una superficie de 6 ha, suelo arcilloso, cero alertas activas y estado Active. También se observan los controles de búsqueda y filtro por estado, junto con los accesos Add plot, Details y View crops.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/01-listado-parcelas.png" alt="Listado de parcelas con el registro Sector Las Palmas" width="900">
+</div>
+
+**Listado de drones**
+
+La vista Registered Drones muestra un registro denominado Drone, con modelo DJI Agras T30, cámara 48 MP FR, estado Disconnected, batería de 100 % y autonomía de 30 minutos. Los campos de última parcela asignada y último vuelo muestran Not available. La pantalla incluye búsqueda por nombre, modelo o número de serie, filtro por estado y los accesos Add drone y Details.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/02-listado-drones.png" alt="Listado de drones con un DJI Agras T30 en estado desconectado" width="900">
+</div>
+
+**Historial de diagnósticos**
+
+La vista Diagnoses History presenta el diagnóstico `diag_001`, con resultado Water stress y estado Completed. La columna Plot muestra Not available. Se observan la búsqueda por identificador, parcela o resultado, el filtro por estado, el acceso Generate diagnosis y el botón Details. La paginación muestra cinco filas por página y una única página para el registro visible. Los resultados del módulo corresponden a datos simulados utilizados en el sprint.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/03-historial-diagnosticos.png" alt="Historial con el diagnóstico diag_001 de estrés hídrico" width="900">
+</div>
+
+**Historial de reportes estacionales**
+
+La vista Seasonal Report History presenta un total de cero reportes y el mensaje No reports recorded. La captura evidencia la presentación del estado vacío, con el campo de búsqueda por título, estación o año, el selector de estación y el acceso Generate.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/04-historial-reportes-vacio.png" alt="Historial de reportes estacionales sin registros" width="900">
+</div>
+
+Las evidencias corresponden a la visualización de los listados y del estado vacío de reportes. Los controles visibles identifican los accesos disponibles en cada pantalla; las capturas no registran la ejecución de los formularios de registro, las vistas de detalle, la generación de resultados ni la exportación de PDF. Las operaciones de la mock API utilizadas por los módulos se describen en la sección 5.2.2.6.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
