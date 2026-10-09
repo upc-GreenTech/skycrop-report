@@ -2,7 +2,7 @@
 
 <img src="resources/imgs/UPC_logo_transparente.png"
 alt="UPC_logo_transparente"
-style="width: 18%; height: auto; margin-bottom: -40px;">
+style="width: 18%; height: auto; margin-bottom: 12px;">
 
 <br>
 Universidad Peruana de Ciencias Aplicadas
@@ -67,6 +67,14 @@ Se registran cambios principales del informe grupal usando el commit como identi
 | [2252774](https://github.com/upc-GreenTech/skycrop-report/commit/2252774) | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
 | [cbbef45](https://github.com/upc-GreenTech/skycrop-report/commit/cbbef45) | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
 | [d3c3f1a](https://github.com/upc-GreenTech/skycrop-report/commit/d3c3f1a) | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
+| [afe3e3f](https://github.com/upc-GreenTech/skycrop-report/commit/afe3e3f) | 2026-10-09 | Equipo GreenTech | Definición de contextos y orden de requisitos por importancia del negocio. |
+| [ad288c4](https://github.com/upc-GreenTech/skycrop-report/commit/ad288c4) | 2026-10-09 | Equipo GreenTech | Incorporación de objetos de valor para nombres, datos de contacto y fechas. |
+| [ffcc46d](https://github.com/upc-GreenTech/skycrop-report/commit/ffcc46d) | 2026-10-09 | Equipo GreenTech | Relaciones entre agregados mediante identificadores. |
+| [1291cc8](https://github.com/upc-GreenTech/skycrop-report/commit/1291cc8) | 2026-10-09 | Equipo GreenTech | Coherencia del texto con el modelo del dominio. |
+| [ea241f0](https://github.com/upc-GreenTech/skycrop-report/commit/ea241f0) | 2026-10-09 | Equipo GreenTech | Diagramas de clases por capas y contexto. |
+| [2187054](https://github.com/upc-GreenTech/skycrop-report/commit/2187054) | 2026-10-09 | Equipo GreenTech | Vistas generales C4 y componentes de frontend y backend por contexto. |
+| [70cc8cf](https://github.com/upc-GreenTech/skycrop-report/commit/70cc8cf) | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
+| [1d90594](https://github.com/upc-GreenTech/skycrop-report/commit/1d90594) | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
 
 # Project Report Collaboration Insights
 
@@ -1716,7 +1724,7 @@ A partir de los wireframes elaborados, se realizaron los Mock-ups de la aplicaci
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
-Tomando como referencia a los Wire Flows realizados, usando los Mock-ups de la aplicación web elaboramos los siguientes User Flow Diagrams.
+Los User Flow Diagrams representan los recorridos de la aplicación a partir de los wireflows y mock-ups.
 
 Userflow 1: Acceso a la plataforma
 
@@ -1793,7 +1801,7 @@ El recorrido incluye la confirmación, la cancelación y los casos sin permisos,
 
 ## 4.5. Web Applications Prototyping. 
 
-Con los Mock-ups realizados y los User flows elaborados, elaboramos un prototipo de nuestra aplicación web usando como base la estructura de los Mock-ups y siguiendo los flujos dictados por los User Flows. Como se menciono previamente, estos user flows guiarán al usuario a las partes principales de nuestra plataforma.
+El prototipo de la aplicación web utiliza la estructura de los mock-ups y los recorridos definidos en los User Flow Diagrams para representar la navegación entre las funciones principales.
 
 Enlace del prototipo realizado en Figma: [https://www.figma.com/proto/1nlenowk3dSY0qdNiG6hYD/Dise%C3%B1o-UX-UI---SkyCrop?node-id=85-266&p=f&t=3mUFit5D9c68mFrX-1&scaling=min-zoom&content-scaling=fixed&page-id=5%3A2&starting-point-node-id=85%3A266](https://www.figma.com/proto/1nlenowk3dSY0qdNiG6hYD/Dise%C3%B1o-UX-UI---SkyCrop?node-id=85-266&p=f&t=3mUFit5D9c68mFrX-1&scaling=min-zoom&content-scaling=fixed&page-id=5%3A2&starting-point-node-id=85%3A266)
 
@@ -1807,7 +1815,7 @@ Enlace al video de presentación del prototipo: [https://upcedupe-my.sharepoint.
 
 ### 4.6.1. Design-Level EventStorming. 
 
-Para la elaboración del Design Level EventStorming nos hemos basado en los eventos del Big Picture Eventstorming, agregando mayor detalle entre ellos. A continuación se presenta el proceso seguido para su elaboración.
+El Design-Level EventStorming detalla los eventos identificados en el Big Picture EventStorming. El proceso incorpora comandos, actores, políticas y modelos de lectura para organizar las responsabilidades del dominio.
 
 Paso 1: Agregar eventos de dominio
 
