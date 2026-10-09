@@ -1882,6 +1882,21 @@ El refinamiento sustituye los nombres, teléfonos, direcciones y fechas primitiv
 Todos estos valores se validan al construirlos y se sustituyen completos al cambiar; no tienen setters ni identificadores. Un teléfono o una dirección no proporcionados se representan por ausencia del objeto, en lugar de crear valores vacíos. `verifiedAt` permanece ausente antes de verificar el segundo factor. En un vuelo, el inicio y el fin permanecen ausentes hasta sus respectivos eventos y, cuando ambos existen, el fin no puede preceder al inicio. Un código de recuperación deja de ser válido al alcanzar su instante de vencimiento.
 
 
+Los agregados delimitan las entidades cuya consistencia se mantiene a través de una raíz. La composición indica pertenencia al mismo agregado; las relaciones entre agregados se expresan mediante identificadores. Los servicios consultan los datos asociados a estos identificadores sin incorporar las entidades de otros contextos al estado del agregado.
+
+| Contexto | Raíces de agregado y entidades internas | Referencias por identificador |
+|---|---|---|
+| IAM | `User` identifica al usuario; `Account` administra credenciales, `TwoFactorAuthentication` y `RecoveryCode`. | `Account.userId` identifica al usuario. |
+| Profiles and Preferences Management | `UserProfile` administra los datos del perfil. | `userId` relaciona el perfil con la identidad. |
+| Subscriptions and Payment Management | `Subscription` controla la vigencia; `Payment` mantiene el estado de una transacción. | `Subscription.userId` y `Payment.subscriptionId`. |
+| Agricultural Plot Management | `AgriculturalPlot` contiene `Crop` y `PlotMap`. | `ownerId` y `memberIds` identifican a los usuarios autorizados. |
+| Drone Management | `Drone` contiene `DroneConfiguration`; `FlightPlan` conserva la configuración de la ruta; `Flight` contiene sus `AerialImage`. | `Drone.ownerId`, `FlightPlan.plotId`, `Flight.flightPlanId` y `Flight.droneId`. |
+| Diagnoses Generation | `Diagnosis` contiene `TerrainData`, `Anomaly`, `TerrainMap` y su entrada de `DiagnosticHistory`; `AgronomicRule` conserva una regla de análisis. | `plotId`, `imageIds`, `cropIds` y `ruleIds`. |
+| Report Management | `Report` conserva el contenido y los diagnósticos utilizados. | `plotId`, `createdById` y `diagnosisIds`. |
+| Notification Service | `Notification` administra el aviso y su estado de envío o lectura. | `recipientId` y, para avisos de anomalías, `diagnosisId` y `anomalyId`. |
+
+Los identificadores se representan mediante `Long`, sin añadir comportamiento de negocio al identificador. Las clases marcadas como `external reference` muestran únicamente la identidad del objeto referenciado. Una anomalía se identifica junto con el diagnóstico al que pertenece, ya que forma parte de ese agregado. Un vuelo puede contener cero imágenes antes de la captura y un diagnóstico puede carecer de resultados mientras se encuentra en procesamiento.
+
 **SkyCrop - Gestión de Usuarios, Autenticación y Suscripciones**
 <div align="center">
 <img src="resources/imgs/Diagrams/ClassDiagram1-updated.png" alt="ClassDiagram1" width="600">

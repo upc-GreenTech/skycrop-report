@@ -5,33 +5,28 @@ skinparam classAttributeIconSize 0
 skinparam dpi 150
 hide empty members
 legend bottom
+aggregate root: acceso a las entidades del agregado.
+external reference: identidad de un objeto de otro contexto.
+Las dependencias rotuladas con Id representan referencias por identificador.
 Todos los value objects carecen de identidad y son inmutables.
 Se validan al construirlos; una modificación crea un nuevo valor.
 La igualdad compara sus atributos, salvo Timestamp (instante UTC).
 CalendarDate representa una fecha válida sin hora ni zona horaria.
 endlegend
 title SkyCrop - Diagnóstico, Análisis, Reportes y Notificaciones
-class User  {
+class User <<external reference>> {
 -id: Long
--name: Name
--email: EmailAddress
-+viewReports(): void
-+viewNotifications(): void
 }
-class AgriculturalPlot  {
+class AgriculturalPlot <<external reference>> {
 -id: Long
--name: Name
--location: Location
-+viewMonitoringHistory(): void
 }
-class Crop  {
+class Crop <<external reference>> {
 -id: Long
--name: Name
--variety: String
--growthStage: String
-+updateInformation(): void
 }
-class Report  {
+class Report <<aggregate root>> {
+-plotId: Long
+-createdById: Long
+-diagnosisIds: Set<Long>
 -id: Long
 -title: String
 -generatedAt: Timestamp
@@ -41,7 +36,11 @@ class Report  {
 +export(): void
 +saveToHistory(): void
 }
-class Diagnosis  {
+class Diagnosis <<aggregate root>> {
+-plotId: Long
+-imageIds: Set<Long>
+-cropIds: Set<Long>
+-ruleIds: Set<Long>
 -id: Long
 -generatedAt: Timestamp
 -observations: String
@@ -59,13 +58,8 @@ class TerrainData  {
 -pH: Decimal
 +update(): void
 }
-class AerialImage  {
+class AerialImage <<external reference>> {
 -id: Long
--capturedAt: Timestamp
--resolution: String
--fileUrl: String
--quality: ImageQuality
-+validateQuality(): boolean
 }
 class TerrainMap  {
 -id: Long
@@ -83,7 +77,7 @@ class Anomaly  {
 -location: Location
 +classify(): void
 }
-class AgronomicRule  {
+class AgronomicRule <<aggregate root>> {
 -id: Long
 -name: Name
 -description: String
@@ -97,7 +91,10 @@ class DiagnosticHistory  {
 +save(diagnosis: Diagnosis): void
 +retrieve(): Diagnosis
 }
-class Notification  {
+class Notification <<aggregate root>> {
+-recipientId: Long
+-diagnosisId: Long [0..1]
+-anomalyId: Long [0..1]
 -id: Long
 -message: String
 -createdAt: Timestamp
@@ -115,7 +112,7 @@ interface CloudStorageService  {
 }
 interface ImageAnalysisService  {
 
-+process(image: AerialImage): Diagnosis
++process(imageId: Long): Diagnosis
 +analyzeTerrain(data: TerrainData): Diagnosis
 +applyRules(diagnosis: Diagnosis): void
 }
@@ -129,7 +126,7 @@ interface WeatherService  {
 }
 interface NotificationService  {
 
-+createNotification(anomaly: Anomaly): Notification
++createNotification(diagnosisId: Long, anomalyId: Long, recipientId: Long): Notification
 +route(notification: Notification): void
 }
 interface NotificationChannel  {
@@ -154,11 +151,6 @@ PROCESSING
 COMPLETED
 FAILED
 }
-enum ImageQuality {
-LOW
-MEDIUM
-HIGH
-}
 enum Severity {
 LOW
 MEDIUM
@@ -181,10 +173,6 @@ PENDING
 SENT
 READ
 }
-class EmailAddress <<value object>> {
--value: String {readOnly}
-
-}
 class Location <<value object>> {
 -value: String {readOnly}
 
@@ -196,43 +184,41 @@ class WeatherData <<value object>> {
 -recordedAt: Timestamp {readOnly}
 
 }
-User "1" -- "0..*" Report : views
-User "1" -- "0..*" Notification : receives
-User "1" *-- "1" EmailAddress : email
-AgriculturalPlot "1" *-- "1" Location : location
+Report ..> User : createdById
+Notification ..> User : recipientId
 Anomaly "1" *-- "1" Location : location
 Report --> ReportType : type
-Report "1" o-- "0..*" Diagnosis : contains
-AgriculturalPlot "1" -- "0..*" Diagnosis : monitored by
-AgriculturalPlot "1" -- "0..1" TerrainMap : has
-AgriculturalPlot "1" -- "0..*" Crop : contains
-Diagnosis "1" -- "1" TerrainData : analyzed
-Diagnosis "1" -- "0..*" AerialImage : analyzed in
-Diagnosis "1" -- "0..*" Crop : analyzed
-Diagnosis "1" -- "0..*" Anomaly : detects
-Diagnosis "1" -- "1..*" AgronomicRule : evaluates
-Diagnosis "1" -- "0..1" DiagnosticHistory : saved in / retrieves
+Report ..> Diagnosis : diagnosisIds
+Diagnosis ..> AgriculturalPlot : plotId
+Report ..> AgriculturalPlot : plotId
+Diagnosis "1" *-- "0..1" TerrainMap : resultMap
+
+Diagnosis "1" *-- "0..1" TerrainData : analyzed
+Diagnosis ..> AerialImage : imageIds
+Diagnosis ..> Crop : cropIds
+Diagnosis "1" *-- "0..*" Anomaly : detects
+Diagnosis ..> AgronomicRule : ruleIds
+Diagnosis "1" *-- "0..1" DiagnosticHistory : historyEntry
 Diagnosis --> DiagnosisStatus : status
 Anomaly --> Severity : severity
 Anomaly --> AnomalyType : type
-Anomaly "1" -- "0..*" Notification : triggers
+Notification ..> Diagnosis : diagnosisId / anomalyId
 Notification --> NotificationType : type
 Notification --> NotificationStatus : status
-AerialImage --> ImageQuality : quality
 CloudStorageService ..> Report : stores
 CloudStorageService ..> Diagnosis : stores
 CloudStorageService ..> DiagnosticHistory : stores
 ImageAnalysisService ..> TerrainData : analyzes
 ImageAnalysisService ..> AerialImage : processes
 ImageAnalysisService ..> Diagnosis : generates
-ImageAnalysisService ..> Crop : analyzes
+
 ImageAnalysisService ..> AgronomicRule : applies
 ImageAnalysisService ..> TerrainMap : uses
 MapService ..> TerrainMap : generates
 WeatherService ..> WeatherData : obtains
 WeatherService ..> Location
 WeatherData ..> TerrainData : provides data
-NotificationService ..> Anomaly : detects
+NotificationService ..> Diagnosis : diagnosisId / anomalyId
 NotificationService ..> Notification : creates
 NotificationService ..> NotificationChannel : routes
 NotificationChannel <|.. SMSNotificationChannel
@@ -257,13 +243,9 @@ note right of Timestamp
 Instante válido con desplazamiento horario.
 Igualdad y comparación por instante UTC.
 end note
-User "1" *-- "1" Name : name
-AgriculturalPlot "1" *-- "1" Name : name
-Crop "1" *-- "1" Name : name
 AgronomicRule "1" *-- "1" Name : name
 Report ..> Timestamp : temporal values
 Diagnosis ..> Timestamp : temporal values
-AerialImage ..> Timestamp : temporal values
 TerrainMap ..> Timestamp : temporal values
 DiagnosticHistory ..> Timestamp : temporal values
 Notification ..> Timestamp : temporal values
