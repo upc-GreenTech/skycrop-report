@@ -2842,7 +2842,7 @@ El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versi
 | **Sprint #** | Sprint 2 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| **Date** | 2026-05-10 |
+| **Date** | 2026-10-01 |
 | **Time** | 14:00 PM |
 | **Location** | Reunión virtual mediante Discord |
 | **Prepared By** | Landa Sanchez, Sunio Danilo |
