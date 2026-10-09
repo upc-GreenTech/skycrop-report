@@ -150,14 +150,17 @@ Las métricas reflejan la actividad registrada en GitHub. La calidad de los apor
     - [4.4.2. Web Applications Wireflow Diagrams.](#442-web-applications-wireflow-diagrams)
     - [4.4.3. Web Applications Mock-ups.](#443-web-applications-mock-ups)
     - [4.4.4. Web Applications User Flow Diagrams.](#444-web-applications-user-flow-diagrams)
+      - [Asignación de un dron al vuelo de una parcela](#asignación-de-un-dron-al-vuelo-de-una-parcela)
   - [4.5. Web Applications Prototyping.](#45-web-applications-prototyping)
   - [4.6. Domain-Driven Software Architecture.](#46-domain-driven-software-architecture)
     - [4.6.1. Design-Level EventStorming.](#461-design-level-eventstorming)
+    - [Catálogo de Bounded Contexts](#catálogo-de-bounded-contexts)
     - [4.6.2. Software Architecture Context Diagram.](#462-software-architecture-context-diagram)
     - [4.6.3. Software Architecture Container Diagrams.](#463-software-architecture-container-diagrams)
     - [4.6.4. Software Architecture Components Diagrams.](#464-software-architecture-components-diagrams)
   - [4.7. Software Object-Oriented Design.](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams.](#471-class-diagrams)
+      - [Diseño de clases por capas](#diseño-de-clases-por-capas)
   - [4.8. Database Design.](#48-database-design)
     - [4.8.1. Database Diagrams.](#481-database-diagrams)
 - [Capítulo V: Product Implementation, Validation \& Deployment](#capítulo-v-product-implementation-validation--deployment)
@@ -185,6 +188,7 @@ Las métricas reflejan la actividad registrada en GitHub. La calidad de los apor
       - [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
       - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
       - [5.2.2.8. Team Collaboration Insights during Sprint.](#5228-team-collaboration-insights-during-sprint)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint-1)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -3042,6 +3046,26 @@ Las User Stories fueron repartidas por cada integrante, para así desarrollar di
 
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, se realizó el seguimiento de la colaboración y participación de los integrantes del equipo mediante las herramientas de análisis proporcionadas por GitHub. Estas permitieron visualizar las contribuciones individuales, la frecuencia de los commits y la evolución del repositorio a lo largo del sprint.
+
+A través de la sección **Contributors**, se identificaron las aportaciones realizadas por cada integrante del equipo, permitiendo evaluar su participación en el desarrollo del proyecto.
+
+<div align="center">
+  <img src="resources/imgs/chapter_5/Contributors-website.png" alt="Contributors Website - Sprint 2" style="max-width: 90%;">
+</div>
+
+Asimismo, mediante la sección **Insights**, se analizó la actividad general del repositorio, incluyendo la frecuencia de los commits y los cambios realizados durante el Sprint 2. Esta información permitió realizar un seguimiento del progreso del equipo y del trabajo colaborativo desarrollado.
+
+<div align="center">
+  <img src="resources/imgs/chapter_5/Insights-website.png" alt="Insights Website - Sprint 2" style="max-width: 90%;">
+</div>
+
+En conclusión, las herramientas de GitHub facilitaron el monitoreo de las contribuciones y la evolución del proyecto durante el Sprint 2, proporcionando información relevante sobre la participación del equipo y el avance de las actividades de desarrollo.
+
+---
 
 
 
