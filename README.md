@@ -53,24 +53,24 @@ Se registran cambios principales del informe grupal usando el commit como identi
 
 | Versión (commit) | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| [cec5325](https://github.com/GreenTech-upc/Report/commit/cec5325) | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
-| [2c87943](https://github.com/GreenTech-upc/Report/commit/2c87943) | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
-| [bc6eb7c](https://github.com/GreenTech-upc/Report/commit/bc6eb7c) | 2026-09-10 | Equipo GreenTech | Incorporación de registros e imágenes de entrevistas. |
-| [73cdf85](https://github.com/GreenTech-upc/Report/commit/73cdf85) | 2026-09-14 | Equipo GreenTech | Desarrollo y análisis de la matriz de tareas. |
-| [ce65d09](https://github.com/GreenTech-upc/Report/commit/ce65d09) | 2026-09-15 | Equipo GreenTech | Documentación del Big Picture EventStorming con imágenes. |
-| [76dd380](https://github.com/GreenTech-upc/Report/commit/76dd380) | 2026-09-18 | Equipo GreenTech | Registro de la segunda entrevista de agricultores. |
-| [88e9191](https://github.com/GreenTech-upc/Report/commit/88e9191) | 2026-09-18 | Equipo GreenTech | Documentación del avance parcial de fundamentos visuales en Figma. |
-| [0908eb9](https://github.com/GreenTech-upc/Report/commit/0908eb9) | 2026-09-19 | Equipo GreenTech | Ampliación de las User Stories. |
-| [9fa32e4](https://github.com/GreenTech-upc/Report/commit/9fa32e4) | 2026-09-19 | Equipo GreenTech | Actualización de las hipótesis Lean UX. |
-| [4519a4a](https://github.com/GreenTech-upc/Report/commit/4519a4a) | 2026-09-19 | Equipo GreenTech | Actualización de los registros de entrevistas. |
-| [b7a4291](https://github.com/GreenTech-upc/Report/commit/b7a4291) | 2026-09-19 | Equipo GreenTech | Corrección de listas de EventStorming y ampliación del glosario. |
-| [2252774](https://github.com/GreenTech-upc/Report/commit/2252774) | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
-| [cbbef45](https://github.com/GreenTech-upc/Report/commit/cbbef45) | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
-| [d3c3f1a](https://github.com/GreenTech-upc/Report/commit/d3c3f1a) | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
+| [cec5325](https://github.com/upc-GreenTech/skycrop-report/commit/cec5325) | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
+| [2c87943](https://github.com/upc-GreenTech/skycrop-report/commit/2c87943) | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
+| [bc6eb7c](https://github.com/upc-GreenTech/skycrop-report/commit/bc6eb7c) | 2026-09-10 | Equipo GreenTech | Incorporación de registros e imágenes de entrevistas. |
+| [73cdf85](https://github.com/upc-GreenTech/skycrop-report/commit/73cdf85) | 2026-09-14 | Equipo GreenTech | Desarrollo y análisis de la matriz de tareas. |
+| [ce65d09](https://github.com/upc-GreenTech/skycrop-report/commit/ce65d09) | 2026-09-15 | Equipo GreenTech | Documentación del Big Picture EventStorming con imágenes. |
+| [76dd380](https://github.com/upc-GreenTech/skycrop-report/commit/76dd380) | 2026-09-18 | Equipo GreenTech | Registro de la segunda entrevista de agricultores. |
+| [88e9191](https://github.com/upc-GreenTech/skycrop-report/commit/88e9191) | 2026-09-18 | Equipo GreenTech | Documentación del avance parcial de fundamentos visuales en Figma. |
+| [0908eb9](https://github.com/upc-GreenTech/skycrop-report/commit/0908eb9) | 2026-09-19 | Equipo GreenTech | Ampliación de las User Stories. |
+| [9fa32e4](https://github.com/upc-GreenTech/skycrop-report/commit/9fa32e4) | 2026-09-19 | Equipo GreenTech | Actualización de las hipótesis Lean UX. |
+| [4519a4a](https://github.com/upc-GreenTech/skycrop-report/commit/4519a4a) | 2026-09-19 | Equipo GreenTech | Actualización de los registros de entrevistas. |
+| [b7a4291](https://github.com/upc-GreenTech/skycrop-report/commit/b7a4291) | 2026-09-19 | Equipo GreenTech | Corrección de listas de EventStorming y ampliación del glosario. |
+| [2252774](https://github.com/upc-GreenTech/skycrop-report/commit/2252774) | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
+| [cbbef45](https://github.com/upc-GreenTech/skycrop-report/commit/cbbef45) | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
+| [d3c3f1a](https://github.com/upc-GreenTech/skycrop-report/commit/d3c3f1a) | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
 
 # Project Report Collaboration Insights
 
-El informe se mantiene en el [repositorio Report de GreenTech](https://github.com/GreenTech-upc/Report). Los aportes se registran mediante commits y se integran en `develop` desde ramas de trabajo. El [historial de la rama develop](https://github.com/GreenTech-upc/Report/commits/develop/) permite consultar los cambios integrados en investigación, requisitos, diseño y documentación, incluidos el análisis de entrevistas, las historias de diagnósticos y la configuración de despliegue.
+El informe se mantiene en el [repositorio skycrop-report de GreenTech](https://github.com/upc-GreenTech/skycrop-report). Los aportes se registran mediante commits y se integran en `develop` desde ramas de trabajo. El [historial de la rama develop](https://github.com/upc-GreenTech/skycrop-report/commits/develop/) permite consultar los cambios integrados en investigación, requisitos, diseño y documentación, incluidos el análisis de entrevistas, las historias de diagnósticos y la configuración de despliegue.
 
 La captura de Pulse corresponde al período del 1 de septiembre al 1 de octubre de 2026 y muestra 29 pull requests integrados y actividad de cinco autores. Estos registros describen la actividad del repositorio durante el intervalo seleccionado.
 
@@ -1965,9 +1965,11 @@ Para el despliegue de la Landing Page se utilizó GitHub Pages, una herramienta 
 En esta sección, el equipo establece los medios y esquemas de organización para el seguimiento de modificaciones durante el ciclo de vida del proyecto. Para ello, se utiliza **GitHub** como plataforma y sistema de control de versiones.
 
 **Repositorios del Proyecto:**
-*   **Organización:** https://github.com/GreenTech-upc
-*   **Informe (Report):** https://github.com/GreenTech-upc/Report
-*   **Landing Page:** https://github.com/GreenTech-upc/Landing-Page
+*   **Organización:** https://github.com/upc-GreenTech
+*   **Informe (skycrop-report):** https://github.com/upc-GreenTech/skycrop-report
+*   **Landing Page:** https://github.com/upc-GreenTech/skycrop-website
+*   **Aplicación web:** https://github.com/upc-GreenTech/skycrop-platform
+*   **Mock API:** https://github.com/upc-GreenTech/skycrop-mock-api
 
 **Flujo de Trabajo (Workflow): GitFlow**
 Se adopta como referencia el modelo [GitFlow de Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) como esquema de control de versiones, definiendo las siguientes ramas principales para proteger el código de producción:
@@ -2110,22 +2112,24 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
 
 #### 5.2.1.4. Development Evidence for Sprint Review. 
 
+La columna de repositorio usa la ubicación actual en `upc-GreenTech`. Los hashes y mensajes de la tabla se conservan como registro histórico de los aportes anteriores a la migración; los commits de la landing no están presentes en el clon actual de `skycrop-website`, por lo que esta tabla no acredita su disponibilidad en el nuevo repositorio.
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :---: | :--- | :--- | :---: |
-| GreenTech-upc/Landing-Page | develop | 8e8ed5b | Merge pull request #3 from GreenTech-upc/feature/landing-contact-footer | Integra en `develop`, mediante el Pull Request #3, la rama `feature/landing-contact-footer` con el formulario de contacto validado y el pie de página. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/landing-contact-footer | 1f43784 | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Ajusta la indentación a dos espacios en el menú de navegación y en las listas de beneficios de `index.html`, según la convención de la sección 5.1.3, con un cambio menor en `style.css`. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | develop | 47f4734 | Merge pull request feature/landing-contact-footer | Integra en `develop` los cambios de contacto y pie de página, ya combinados con los de planes y precios. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/landing-contact-footer | db891db | merge: resolve conflicts with develop | Incorpora en la rama de la funcionalidad los cambios de `develop`, incluida la sección de planes, y resuelve los conflictos de integración. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/landing-contact-footer | 947818e | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Agrega la sección de contacto con formulario (nombre, correo y mensaje) y validación en el cliente con mensajes de error accesibles; incorpora el pie de página con los diálogos de privacidad y términos. Modifica `index.html`, `style.css` y `main.js`. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | develop | b9efc89 | Merge branch 'feature/plans-and-pricing' into develop | Integra en `develop` la sección de planes y precios. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/plans-and-pricing | 41eb331 | feat(styles): add styles to pricing cards | Agrega en `style.css` los estilos de las tarjetas de precios y su cuadrícula adaptable a pantallas pequeñas. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/plans-and-pricing | 145c749 | feat(index): add plans structure | Agrega en `index.html` la sección de planes con las tarjetas Basic, Professional y Corporate, su costo mensual y sus características. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | develop | b0f411f | Merge branch 'feature/landing-features-benefits' into develop | Integra en `develop` las secciones de funcionalidades y beneficios. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/landing-features-benefits | 05a0644 | feat: add landing features and benefits. | Agrega la sección de funcionalidades (parcelas, rutas de dron, diagnóstico de cultivos y reportes estacionales) y la de beneficios para agricultores y agrónomos, con sus estilos. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | develop | df5c8d4 | Merge branch 'feature/landing-foundation' into develop | Integra en `develop` la base de la landing y la sección Hero. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | feature/landing-foundation | 76136a6 | feat: build landing foundation and hero. | Construye la base de la página: cabecera con navegación fija y menú móvil, sección Hero, mensaje informativo del botón «Access Platform», hojas de estilo adaptables, imágenes e íconos SVG, y el script `main.js`. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | develop | eb6c793 | chore: add landing page gitignore. | Agrega el archivo `.gitignore` del proyecto. | 20/09/2026 |
-| GreenTech-upc/Landing-Page | main | cc4445c | chore: initial commit | Crea el repositorio con `README.md`, un `index.html` inicial, las carpetas `assets/images`, `assets/scripts` y `assets/styles`, el favicon y los logotipos de SkyCrop. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | develop | 8e8ed5b | Merge pull request #3 from GreenTech-upc/feature/landing-contact-footer | Integra en `develop`, mediante el Pull Request #3, la rama `feature/landing-contact-footer` con el formulario de contacto validado y el pie de página. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/landing-contact-footer | 1f43784 | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Ajusta la indentación a dos espacios en el menú de navegación y en las listas de beneficios de `index.html`, según la convención de la sección 5.1.3, con un cambio menor en `style.css`. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | develop | 47f4734 | Merge pull request feature/landing-contact-footer | Integra en `develop` los cambios de contacto y pie de página, ya combinados con los de planes y precios. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/landing-contact-footer | db891db | merge: resolve conflicts with develop | Incorpora en la rama de la funcionalidad los cambios de `develop`, incluida la sección de planes, y resuelve los conflictos de integración. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/landing-contact-footer | 947818e | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Agrega la sección de contacto con formulario (nombre, correo y mensaje) y validación en el cliente con mensajes de error accesibles; incorpora el pie de página con los diálogos de privacidad y términos. Modifica `index.html`, `style.css` y `main.js`. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | develop | b9efc89 | Merge branch 'feature/plans-and-pricing' into develop | Integra en `develop` la sección de planes y precios. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/plans-and-pricing | 41eb331 | feat(styles): add styles to pricing cards | Agrega en `style.css` los estilos de las tarjetas de precios y su cuadrícula adaptable a pantallas pequeñas. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/plans-and-pricing | 145c749 | feat(index): add plans structure | Agrega en `index.html` la sección de planes con las tarjetas Basic, Professional y Corporate, su costo mensual y sus características. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | develop | b0f411f | Merge branch 'feature/landing-features-benefits' into develop | Integra en `develop` las secciones de funcionalidades y beneficios. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/landing-features-benefits | 05a0644 | feat: add landing features and benefits. | Agrega la sección de funcionalidades (parcelas, rutas de dron, diagnóstico de cultivos y reportes estacionales) y la de beneficios para agricultores y agrónomos, con sus estilos. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | develop | df5c8d4 | Merge branch 'feature/landing-foundation' into develop | Integra en `develop` la base de la landing y la sección Hero. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | feature/landing-foundation | 76136a6 | feat: build landing foundation and hero. | Construye la base de la página: cabecera con navegación fija y menú móvil, sección Hero, mensaje informativo del botón «Access Platform», hojas de estilo adaptables, imágenes e íconos SVG, y el script `main.js`. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | develop | eb6c793 | chore: add landing page gitignore. | Agrega el archivo `.gitignore` del proyecto. | 20/09/2026 |
+| upc-GreenTech/skycrop-website | main | cc4445c | chore: initial commit | Crea el repositorio con `README.md`, un `index.html` inicial, las carpetas `assets/images`, `assets/scripts` y `assets/styles`, el favicon y los logotipos de SkyCrop. | 20/09/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review. 
 
@@ -2180,7 +2184,7 @@ ilustrativos.
 
 ![Responsive_Landing](resources/imgs/chapter_5/Responsive_Landing.png)
 
-**URL del Landing Page desplegado:** https://greentech-upc.github.io/Landing-Page/
+**Publicación del Landing Page tras la migración:** pendiente de verificar. La dirección correspondiente al nuevo repositorio es https://upc-greentech.github.io/skycrop-website/; al revisarla el 8 de octubre de 2026 devolvió HTTP 404.
 
 #### 5.2.X.8. Team Collaboration Insights during Sprint. 
 
