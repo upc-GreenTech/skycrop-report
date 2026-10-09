@@ -278,7 +278,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
   Promovió el trabajo en equipo durante la elaboración del proyecto.
 
   <br><br> TB1: <br>
-  La planificación del Sprint 2 establece el objetivo de implementar la primera versión del frontend y selecciona nueve historias de usuario. El Sprint Backlog 2 distribuye tareas, responsables, estimaciones y estados de avance. Las ramas de desarrollo y su integración permiten organizar los cambios de la aplicación. Las capturas de ejecución muestran los listados de parcelas, drones, diagnósticos y reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes; la documentación de despliegue registra la configuración de la aplicación en Vercel y de la mock API en Azure.
+  La planificación del Sprint 2 establece el objetivo de implementar la primera versión del frontend y selecciona nueve historias de usuario. El Sprint Backlog 2 distribuye tareas, responsables, estimaciones y estados de avance. Las ramas de desarrollo y su integración permiten organizar los cambios de la aplicación. Las capturas de ejecución muestran los listados de parcelas, drones, diagnósticos y reportes, los formularios de registro de parcelas y drones, los paneles de generación de diagnósticos y reportes y los detalles de parcela, dron y diagnóstico; la documentación de despliegue registra la configuración de la aplicación en Vercel y de la mock API en Azure.
   </td>
 
   <td>
@@ -3212,7 +3212,31 @@ El panel Generate presenta campos para título, año, estación y fechas de inic
 <img src="resources/imgs/chapter_5/website-execution/08-formulario-generacion-reporte.png" alt="Formulario de generación de reportes" width="900">
 </div>
 
-Las evidencias presentan los listados, el estado vacío de reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes. Los formularios capturados muestran su estado inicial, sin una confirmación de guardado ni un resultado recién generado. Las operaciones de la mock API utilizadas por los módulos se describen en la sección 5.2.2.6.
+**Confirmación de registro y detalle de parcela**
+
+La vista Parcela 2 presenta el mensaje Terreno Registrado y la información del registro: responsable Sebastian, cultivo Maiz, suelo Fertil, tierra, fecha de siembra 13 de octubre de 2026, superficie de 10 ha, estado Activa y fecha de registro 9 de octubre de 2026. La sección Ubicación muestra el mapa y las coordenadas; la pantalla incluye el acceso Ver cultivos. Esta captura evidencia la confirmación del registro y la presentación de sus detalles.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/09-parcela-registrada-detalles.png" alt="Confirmación de registro y detalle de parcela" width="900">
+</div>
+
+**Consulta de información del dron**
+
+La pestaña Resumen de Información del dron muestra el registro Drone 1, modelo DJI, cámara 48 MP FR, estado Desconectado, batería de 100 % y autonomía de 30 minutos. La última parcela asignada figura como No disponible y la actividad reciente indica que no hay vuelos registrados. Se observan las pestañas Detalles, Análisis, Archivos y Opciones, además del acceso para volver al listado.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/10-detalle-dron-registrado.png" alt="Consulta de información del dron" width="900">
+</div>
+
+**Consulta del resultado de un diagnóstico simulado**
+
+La vista Detalles del diagnóstico muestra un resultado asociado a Sector Las Palmas, con fecha y hora del 9 de octubre de 2026, estado Completado, Sin vuelo y NDVI promedio de 0,55. Las observaciones describen indicadores simulados de plagas. La sección Anomalías presenta Plagas con severidad Alta y el mapa incluye un marcador y la leyenda de severidades. El aviso de la pantalla identifica los datos como demostración predefinida y delimita su alcance respecto del análisis de imágenes y de la evaluación del cultivo real.
+
+<div align="center">
+<img src="resources/imgs/chapter_5/website-execution/11-detalle-diagnostico-simulado.png" alt="Consulta del resultado de un diagnóstico simulado" width="900">
+</div>
+
+Las evidencias presentan listados, formularios de registro, paneles de generación, la confirmación y el detalle de una parcela, el resumen de un dron y el detalle de un diagnóstico simulado. Las operaciones de la mock API utilizadas por los módulos se describen en la sección 5.2.2.6.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
@@ -3320,7 +3344,7 @@ El refinamiento del dominio distingue Diagnoses Generation y Report Management c
 
 La landing documentada presenta la propuesta de SkyCrop, sus funcionalidades, beneficios y planes con precios ilustrativos. Las evidencias del sprint muestran un avance en la comunicación del producto mediante una página con soporte de idiomas y diseño adaptable. Este avance corresponde a la presentación pública de la solución. La actualización publicada para TB1 incorpora controles de acceso a la aplicación web de Vercel, con trazabilidad al commit c5e9a53 y a su integración en main.
 
-Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con Vue y Vite y se configuró su publicación en Vercel. Los módulos consumen recursos de la mock API de Azure mediante variables de entorno. Las evidencias de ejecución presentan los listados de parcelas, drones y diagnósticos, el estado vacío del historial de reportes, los formularios de registro de parcelas y drones y los paneles de generación de diagnósticos y reportes. La consulta HTTP de las rutas publicadas complementa las capturas con una comprobación de disponibilidad del documento de entrada de la aplicación.
+Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con Vue y Vite y se configuró su publicación en Vercel. Los módulos consumen recursos de la mock API de Azure mediante variables de entorno. Las evidencias de ejecución presentan los listados de parcelas, drones y diagnósticos, el estado vacío del historial de reportes, los formularios de registro de parcelas y drones, los paneles de generación de diagnósticos y reportes y las vistas de detalle de parcela, dron y diagnóstico. La consulta HTTP de las rutas publicadas complementa las capturas con una comprobación de disponibilidad del documento de entrada de la aplicación.
 
 El alcance implementado utiliza registros de una mock API y diagnósticos simulados. El estado de un dron y el registro de un vuelo representan información de la aplicación y no acreditan una conexión física con equipos agrícolas. Estas condiciones delimitan los resultados del sprint y permiten distinguir la implementación de las vistas de la validación operativa y agronómica de SkyCrop.
 
