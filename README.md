@@ -2831,7 +2831,7 @@ La captura de Contributors presenta aportes de notoriussxd, DanLandio, DiegoPuma
 
 #### 5.2.2.1. Sprint Planning 2.
 
-El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versión funcional de la pagina Frontend de SkyCrop.
+El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versión de la aplicación web de SkyCrop, con integración a la mock API.
 
 | **Sprint #** | Sprint 2 |
 | :--- | :--- |
@@ -2841,20 +2841,20 @@ El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versi
 | **Location** | Reunión virtual mediante Discord |
 | **Prepared By** | Landa Sanchez, Sunio Danilo |
 | **Attendees (to planning meeting)** | Landa Sanchez, Sunio Danilo / Cano Gomez, Yam Antony Gabriel / Jonseck Choque, Oliver / Rubio Ortiz, Luis Sebastián / Pumahualcca Garcia, Diego Rodrigo |
-| **Sprint 1 Review Summary** | Durante el sprint 1 desarrollamos e implementamos la primera versión de nuestra Landing Page para la promoción de nuestra plataforma. Los integrantes del grupo realizaron un buen trabajo durante el desarrollo de la Landing Page, con algunas de las correcciones a hacer consistiendo en temas de diseño. |
-| **Sprint 1 Retrospective Summary** | Durante el desarrollo del sprint 1 identificamos la importancia de la coordinación en equipo para la elaboración de proyectos de software en entornos como GitHub. Haber identificado esto y hacer algo respecto a ello será muy importante para llevar a cabo el desarrollo ordenado del frontend y backend de nuestra aplicación. |
+| **Sprint 1 Review Summary** | Durante el Sprint 1 se implementó la primera versión de la landing page para presentar SkyCrop. La revisión identificó ajustes de diseño para mejorar su presentación. |
+| **Sprint 1 Retrospective Summary** | La retrospectiva del Sprint 1 destacó la coordinación del equipo y la organización del trabajo mediante GitHub. Estos aspectos orientan la distribución de tareas y la integración de cambios del frontend durante el Sprint 2. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 2 Goal** | Nuestro enfoque está en implementar el la aplicación web frontend de SkyCrop, que contenga funcionalidades clave para nuestro negocio, tales como el registro y consulta de información de las parcelas y los drones, la visualización de informes y diagnosticos, y la revisión de las rutinas de vuelo plaificadas. Creemos que esta aplicación facilitará la realización de transacciones dentro de la plataforma y permitirá que se agreguen y accedan a nuevas funcionalidades a ser desarrolladas. Esto se confirmará cuando los usuarios puedan acceder a los servicios de la plataforma SkyCrop y generar registros en el sistema dentro de la aplicación web. |
+| **Sprint 2 Goal** | Implementar y publicar la primera versión de la aplicación web de SkyCrop, con registro y consulta de parcelas, cultivos y drones, planificación de vuelos y visualización de diagnósticos y reportes mediante una mock API. El alcance del sprint corresponde a las vistas y al manejo de registros de la aplicación; los diagnósticos utilizan datos simulados. |
 | **Sprint 2 Velocity** | 14 |
 | **Sum of Story Points** | 24 |
 
-La estimación inicial de story points cubre nueve historias seleccionadas: US-11 (2), US-12 (1), US-14 (2), US-15 (1), US-17 (5), US-18 (5), US-23 (3), US-25 (2), US-31 (3) que suman 24 Story Points. Al tratarse del primer sprint, este valor corresponde a una referencia de planificación y no a una velocidad histórica medida. Las estimaciones de tareas expresan esfuerzo en horas-persona y se mantienen separadas de los Story Points.
+La estimación inicial de story points cubre nueve historias seleccionadas: US-11 (2), US-12 (1), US-14 (2), US-15 (1), US-17 (5), US-18 (5), US-23 (3), US-25 (2), US-31 (3) que suman 24 Story Points. La suma de 24 Story Points representa el alcance seleccionado. El valor de 14 registrado como Sprint 2 Velocity corresponde a la referencia de capacidad utilizada en la planificación; no equivale a la suma de historias ni acredita una velocidad completada. La selección supera esa referencia en 10 Story Points. Las estimaciones de tareas expresan esfuerzo en horas-persona y se mantienen separadas de los Story Points.
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 
 A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para los aspectos clave abordados durante el sprint 2.
 
-| Team Member (Last Name, First Name) | GitHub Username | Frontend (Angular)<br>Leader (L) / Collaborator (C) | Mock API<br>Leader (L) / Collaborator (C) | Project Documentation<br>Leader (L) / Collaborator (C) | Software deployment<br>Leader (L) / Collaborator (C)|
+| Team Member (Last Name, First Name) | GitHub Username | Frontend (Vue)<br>Leader (L) / Collaborator (C) | Mock API<br>Leader (L) / Collaborator (C) | Project Documentation<br>Leader (L) / Collaborator (C) | Software deployment<br>Leader (L) / Collaborator (C)|
 | :--- | :--- | :---: | :---: | :---: | :----:|
 | Landa Sanchez, Sunio Danilo  | DanLandio | C | C | L | C |
 | Cano Gomez, Yam Antony  | Yam-1CG  | L | C | L | C |
@@ -2864,7 +2864,7 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
 
 #### 5.2.2.3. Sprint Backlog 2.
 
-El objetivo principal de este sprint es desarrollar la primera versión del frontend de nuestra aplicación. En esta ocasión se tomaron en cuenta User Stories principales que permitan demostrar la funcionalidad basica de nuestra aplicación, tomando como apoyo un Mock API antes del desarrollo del backend.
+El Sprint Backlog 2 reúne las tareas de la primera versión del frontend de SkyCrop. Las historias seleccionadas cubren parcelas, cultivos, drones, planificación de vuelos, diagnósticos y reportes. La mock API proporciona los recursos utilizados por las vistas durante este avance.
 
 **Tablero en trello del Sprint Backlog 2:** [https://trello.com/b/Vt1ncJsa](https://trello.com/b/Vt1ncJsa)
 
@@ -2872,7 +2872,7 @@ El objetivo principal de este sprint es desarrollar la primera versión del fron
 <img src="resources/imgs/sprintbacklog-2-greentech.jpg" width="700" alt="Sprint backlog 2">
 </div>
 
-Las User Stories fueron repartidas por cada integrante, para así desarrollar distintas partes del proyecto de forma simultanea, ocasionalmente realizandose una retroalimentación grupal.
+La tabla relaciona cada historia de usuario con sus tareas, estimaciones en horas, responsables y estados registrados.
 
 
 <div align="center">
@@ -3082,8 +3082,6 @@ Las User Stories fueron repartidas por cada integrante, para así desarrollar di
 </div>
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
-
-#### 5.2.2.4. Development Evidence for Sprint Review
 
 Durante el Sprint 2, el equipo de GreenTech desarrolló e integró nuevas funcionalidades para la aplicación web SkyCrop. Las actividades comprendieron la implementación de la estructura de navegación, gestión de parcelas y cultivos, registro de drones, generación de diagnósticos y reportes, así como la preparación del despliegue de la aplicación.
 
