@@ -3404,3 +3404,7 @@ Vue.js. (s. f.). *[Style guide](https://vuejs.org/style-guide/)*. Recuperado el 
 Enlace al video de navegación al prototipo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQDnRI9W8acKTphuXimXgKQZAZwHkoPGAoMBGMpwR7lqt9Y?e=Dd7Czn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
 
 Enlace al video de entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQAs_PnoTE5iRpSbVLalpTuEAXN0uFDhZLx91ilex0f1F4s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Hz1f5O
+
+Enlace al Sprint Navigation 2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQDhF1dMbAU1R4u6WSnbjIWYAd2SjkGT6bbca2dyF2NeBkY?e=m6YUYr
+
+Enlace al video de exposicion: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQC7-9lfjgHpQ4bt-_6qzEckAakmUPUCAoJjSVcUw-FifaQ?e=XQGhZZ
