@@ -83,6 +83,8 @@ El registro reúne las modificaciones principales del informe mediante identific
 | [TB1.4](https://github.com/upc-GreenTech/skycrop-report/commit/1c25eda) | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
 | [TB1.5](https://github.com/upc-GreenTech/skycrop-report/commit/bf3af2d) | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
 
+<div style="page-break-after: always;"></div>
+
 # Project Report Collaboration Insights
 
 El informe se elabora en el [repositorio skycrop-report de GreenTech](https://github.com/upc-GreenTech/skycrop-report). Las modificaciones se organizan en ramas de trabajo y se integran en `develop`. El [historial de develop](https://github.com/upc-GreenTech/skycrop-report/commits/develop/) permite consultar los cambios de investigación, requisitos, diseño y documentación.
@@ -3360,9 +3362,8 @@ Asimismo, mediante la sección **Insights**, se analizó la actividad general de
 
 En conclusión, las herramientas de GitHub facilitaron el monitoreo de las contribuciones y la evolución del proyecto durante el Sprint 2, proporcionando información relevante sobre la participación del equipo y el avance de las actividades de desarrollo.
 
----
 
-
+<div style="page-break-after: always;"></div>
 
 # Conclusiones 
 
@@ -3377,6 +3378,9 @@ Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con
 El alcance implementado utiliza registros de una mock API y diagnósticos simulados. El estado de un dron y el registro de un vuelo representan información de la aplicación y no acreditan una conexión física con equipos agrícolas. Estas condiciones delimitan los resultados del sprint y permiten distinguir la implementación de las vistas de la validación operativa y agronómica de SkyCrop.
 
 Las hipótesis de conversión a suscripciones, uso recurrente y retención deberán contrastarse mediante un producto funcional y pruebas con usuarios. También será necesario verificar la integración con los drones seleccionados y evaluar la calidad de los diagnósticos. Los resultados de estas validaciones orientarán los ajustes del producto y las prioridades del roadmap, antes de atribuir mejoras de productividad o resultados agronómicos.
+
+
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 
@@ -3395,6 +3399,9 @@ Microsoft. (s. f.). *[C# identifier naming rules and conventions](https://learn.
 Preston-Werner, T. (s. f.). *[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)*.
 
 Vue.js. (s. f.). *[Style guide](https://vuejs.org/style-guide/)*. Recuperado el 19 de septiembre de 2026.
+
+
+<div style="page-break-after: always;"></div>
 
 # Anexos
 
