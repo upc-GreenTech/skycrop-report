@@ -1,8 +1,8 @@
-<div align="center" style="margin-top: -5px;">
+<div align="center" style="margin-top: -5px; font-size: 18pt;">
 
 <img src="resources/imgs/UPC_logo_transparente.png"
 alt="UPC_logo_transparente"
-style="width: 18%; height: auto; margin-bottom: 12px;">
+style="width: 15%; height: auto;">
 
 <br>
 Universidad Peruana de Ciencias Aplicadas
@@ -32,7 +32,7 @@ Proyecto
 **SkyCrop**
 
 
-#### Integrantes
+**Integrantes**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="resources/imgs/integrantes-dark.png">
@@ -41,7 +41,8 @@ Proyecto
 </picture>
 
 **Período 202620**
-<h3>Octubre 2026</h3>
+
+**Octubre 2026**
 
 </div>
 
