@@ -2523,7 +2523,7 @@ El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera 
 | **Sprint 0 Review Summary** | Este es el primer sprint del proyecto. |
 | **Sprint 0 Retrospective Summary** | Este es el primer sprint del proyecto. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Objetivo:** implementar la landing page de SkyCrop con su propuesta de valor, funcionalidades, beneficios por segmento, planes de suscripción y contacto.<br><br>**Hipótesis:** una presentación organizada facilita la comprensión de la plataforma a agricultores e ingenieros agrónomos.<br><br>**Criterio de comprobación:** el visitante puede acceder a las secciones desde la navegación y visualizar la página en móvil y escritorio sin desbordes ni elementos cortados. El objetivo contempla su publicación en GitHub Pages. |
+| **Sprint 1 Goal** | **Nuestro enfoque está en** implementar la landing page de SkyCrop con su propuesta de valor, funcionalidades, beneficios por segmento, planes de suscripción y contacto.<br>**Creemos que esto entrega** una presentación organizada que facilitará la comprensión de la plataforma a agricultores e ingenieros agrónomos.<br>**Esto será confirmado cuando** el visitante pueda acceder a las secciones desde la navegación y visualizar la página en móvil y escritorio sin desbordes ni elementos cortados. |
 | **Sprint 1 Velocity** | 14 Story Points (estimación inicial revisada) |
 | **Sum of Story Points** | 14 Story Points |
 
@@ -2884,7 +2884,7 @@ El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versi
 | **Sprint 1 Review Summary** | Durante el Sprint 1 se implementó la primera versión de la landing page para presentar SkyCrop. La revisión identificó ajustes de diseño para mejorar su presentación. |
 | **Sprint 1 Retrospective Summary** | La retrospectiva del Sprint 1 destacó la coordinación del equipo y la organización del trabajo mediante GitHub. Estos aspectos orientan la distribución de tareas y la integración de cambios del frontend durante el Sprint 2. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 2 Goal** | Implementar y publicar la primera versión de la aplicación web de SkyCrop, con registro y consulta de parcelas, cultivos y drones, planificación de vuelos y visualización de diagnósticos y reportes mediante una mock API. El alcance del sprint corresponde a las vistas y al manejo de registros de la aplicación; los diagnósticos utilizan datos simulados. |
+| **Sprint 2 Goal** | **Nuestro enfoque está en** implementar y publicar la primera versión de la aplicación web de SkyCrop, con registro y consulta de parcelas, cultivos y drones, planificación de vuelos y visualización de diagnósticos y reportes mediante una mock API. <br>**Creemos que esto entrega** una version integrada y funcional de nuestra plataforma donde los usuarios son capaces de realizar operaciones fundamentales de nuestro negocio. <br>**Esto será confirmado cuando** la plataforma sea accesible desde cualquier navegador y los usuarios puedan completar tareas básicas dentro de ella sin complicaciones|
 | **Sprint 2 Velocity** | 14 |
 | **Sum of Story Points** | 24 |
 
