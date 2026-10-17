@@ -50,38 +50,38 @@ Proyecto
 
 # Registro de Versiones del Informe
 
-El registro reúne las modificaciones principales del informe mediante identificadores de versión y referencias a commits. Las fechas de los commits corresponden al historial de Git. La autoría del documento se presenta a nombre del equipo GreenTech.
+El registro reúne las modificaciones principales del informe. La autoría del documento se presenta a nombre del equipo GreenTech.
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| [cec5325](https://github.com/upc-GreenTech/skycrop-report/commit/cec5325) | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
-| [2c87943](https://github.com/upc-GreenTech/skycrop-report/commit/2c87943) | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
-| [bc6eb7c](https://github.com/upc-GreenTech/skycrop-report/commit/bc6eb7c) | 2026-09-10 | Equipo GreenTech | Incorporación de registros e imágenes de entrevistas. |
-| [73cdf85](https://github.com/upc-GreenTech/skycrop-report/commit/73cdf85) | 2026-09-14 | Equipo GreenTech | Desarrollo y análisis de la matriz de tareas. |
-| [ce65d09](https://github.com/upc-GreenTech/skycrop-report/commit/ce65d09) | 2026-09-15 | Equipo GreenTech | Documentación del Big Picture EventStorming con imágenes. |
-| [76dd380](https://github.com/upc-GreenTech/skycrop-report/commit/76dd380) | 2026-09-18 | Equipo GreenTech | Registro de la segunda entrevista de agricultores. |
-| [88e9191](https://github.com/upc-GreenTech/skycrop-report/commit/88e9191) | 2026-09-18 | Equipo GreenTech | Documentación del avance parcial de fundamentos visuales en Figma. |
-| [0908eb9](https://github.com/upc-GreenTech/skycrop-report/commit/0908eb9) | 2026-09-19 | Equipo GreenTech | Ampliación de las User Stories. |
-| [9fa32e4](https://github.com/upc-GreenTech/skycrop-report/commit/9fa32e4) | 2026-09-19 | Equipo GreenTech | Actualización de las hipótesis Lean UX. |
-| [4519a4a](https://github.com/upc-GreenTech/skycrop-report/commit/4519a4a) | 2026-09-19 | Equipo GreenTech | Actualización de los registros de entrevistas. |
-| [b7a4291](https://github.com/upc-GreenTech/skycrop-report/commit/b7a4291) | 2026-09-19 | Equipo GreenTech | Corrección de listas de EventStorming y ampliación del glosario. |
-| [2252774](https://github.com/upc-GreenTech/skycrop-report/commit/2252774) | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
-| [cbbef45](https://github.com/upc-GreenTech/skycrop-report/commit/cbbef45) | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
-| [d3c3f1a](https://github.com/upc-GreenTech/skycrop-report/commit/d3c3f1a) | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
-| [afe3e3f](https://github.com/upc-GreenTech/skycrop-report/commit/afe3e3f) | 2026-10-09 | Equipo GreenTech | Definición de contextos y orden de requisitos por importancia del negocio. |
-| [ad288c4](https://github.com/upc-GreenTech/skycrop-report/commit/ad288c4) | 2026-10-09 | Equipo GreenTech | Incorporación de objetos de valor para nombres, datos de contacto y fechas. |
-| [ffcc46d](https://github.com/upc-GreenTech/skycrop-report/commit/ffcc46d) | 2026-10-09 | Equipo GreenTech | Relaciones entre agregados mediante identificadores. |
-| [1291cc8](https://github.com/upc-GreenTech/skycrop-report/commit/1291cc8) | 2026-10-09 | Equipo GreenTech | Coherencia del texto con el modelo del dominio. |
-| [ea241f0](https://github.com/upc-GreenTech/skycrop-report/commit/ea241f0) | 2026-10-09 | Equipo GreenTech | Diagramas de clases por capas y contexto. |
-| [2187054](https://github.com/upc-GreenTech/skycrop-report/commit/2187054) | 2026-10-09 | Equipo GreenTech | Vistas generales C4 y componentes de frontend y backend por contexto. |
-| [70cc8cf](https://github.com/upc-GreenTech/skycrop-report/commit/70cc8cf) | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
-| [1d90594](https://github.com/upc-GreenTech/skycrop-report/commit/1d90594) | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
-| [5ba924e](https://github.com/upc-GreenTech/skycrop-report/commit/5ba924e) | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
-| [TB1.1](https://github.com/upc-GreenTech/skycrop-report/commit/9f39774) | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
-| [TB1.2](https://github.com/upc-GreenTech/skycrop-report/commit/d4a8a9d) | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
-| [TB1.3](https://github.com/upc-GreenTech/skycrop-report/commit/fa371fe) | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
-| [TB1.4](https://github.com/upc-GreenTech/skycrop-report/commit/1c25eda) | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
-| [TB1.5](https://github.com/upc-GreenTech/skycrop-report/commit/bf3af2d) | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
+| 1  | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
+| 2  | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
+| 3  | 2026-09-10 | Equipo GreenTech | Incorporación de registros e imágenes de entrevistas. |
+| 4  | 2026-09-14 | Equipo GreenTech | Desarrollo y análisis de la matriz de tareas. |
+| 5  | 2026-09-15 | Equipo GreenTech | Documentación del Big Picture EventStorming con imágenes. |
+| 6  | 2026-09-18 | Equipo GreenTech | Registro de la segunda entrevista de agricultores. |
+| 7  | 2026-09-18 | Equipo GreenTech | Documentación del avance parcial de fundamentos visuales en Figma. |
+| 8  | 2026-09-19 | Equipo GreenTech | Ampliación de las User Stories. |
+| 9  | 2026-09-19 | Equipo GreenTech | Actualización de las hipótesis Lean UX. |
+| 10 | 2026-09-19 | Equipo GreenTech | Actualización de los registros de entrevistas. |
+| 11 | 2026-09-19 | Equipo GreenTech | Corrección de listas de EventStorming y ampliación del glosario. |
+| 12 | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
+| 13 | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
+| 14 | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
+| 15 | 2026-10-09 | Equipo GreenTech | Definición de contextos y orden de requisitos por importancia del negocio. |
+| 16 | 2026-10-09 | Equipo GreenTech | Incorporación de objetos de valor para nombres, datos de contacto y fechas. |
+| 17 | 2026-10-09 | Equipo GreenTech | Relaciones entre agregados mediante identificadores. |
+| 18 | 2026-10-09 | Equipo GreenTech | Coherencia del texto con el modelo del dominio. |
+| 19 | 2026-10-09 | Equipo GreenTech | Diagramas de clases por capas y contexto. |
+| 20 | 2026-10-09 | Equipo GreenTech | Vistas generales C4 y componentes de frontend y backend por contexto. |
+| 21 | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
+| 22 | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
+| 23 | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
+| 24 | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
+| 25 | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
+| 26 | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
+| 27 | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
+| 28 | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
 
 <div style="page-break-after: always;"></div>
 
