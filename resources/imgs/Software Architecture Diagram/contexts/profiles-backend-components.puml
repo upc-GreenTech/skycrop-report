@@ -9,25 +9,37 @@ skinparam nodesep 35
 skinparam ranksep 45
 top to bottom direction
 title SkyCrop - C4 - Profiles and Preferences Management - backend
-component "Frontend Web Application\n[Contenedor: Vue]\n\nSolicita operaciones del contexto." as web
-rectangle "Backend RESTful API\n[Contenedor: C# / ASP.NET Core]" {
+component "Frontend Web Application\n[Container: Vue]\n\nRequests context operations." as web
+rectangle "Backend RESTful API\n[Container: C# / ASP.NET Core]" {
 rectangle "Profiles and Preferences Management" {
-component "UserProfileController / Interfaces\n[Componente: ASP.NET Core]\n\nRecibe requests, construye comandos y devuelve recursos." as controller
-component "UserProfileApplicationService / Application\n[Componente: C#]\n\nAdministra datos de contacto del usuario." as service
-component "Modelo de dominio / Domain\n[Componente: C#]\n\nAgregados, entidades, objetos de valor y reglas del contexto." as domain
-component "Repositorios / Infrastructure\n[Componente: Entity Framework Core]\n\nImplementan contratos de persistencia de los agregados." as repository
+rectangle "Interfaces / Presentation" {
+component "UserProfileController / Interfaces\n[Component: ASP.NET Core]\n\nReceives requests, builds commands and returns resources." as controller
+}
+rectangle "Application" {
+component "UserProfileApplicationService / Application\n[Component: C#]\n\nManages user contact information." as service
+}
+rectangle "Domain" {
+component "Domain Model\n[Component: C#]\n\nAggregates, entities, value objects and context rules." as domain
+component "Repository Contracts\n[Component: C# interfaces]\n\nDefine aggregate persistence without depending on EF Core." as repositoryContract
+}
+rectangle "Infrastructure" {
+component "Repositories / Infrastructure\n[Component: Entity Framework Core]\n\nImplement aggregate persistence contracts." as repository
 }
 }
-database "Base de datos relacional\n[Contenedor: MySQL Server o PostgreSQL]" as db
+}
+database "Relational Database\n[Container: MySQL Server or PostgreSQL]" as db
 web --> controller : REST [HTTPS / JSON]
-controller --> service : Delega operaciones
-service --> domain : Aplica reglas
-service --> repository : Consulta y persiste
-repository --> domain : Reconstruye agregados
-repository --> db : Lectura y escritura [EF Core / SQL]
+controller --> service : Delegates operations
+service --> domain : Applies rules
+service --> repositoryContract : Queries and persists through a contract
+repository ..|> repositoryContract : Implements
+repository --> domain : Reconstructs aggregates
+repository --> db : Reads and writes [EF Core / SQL]
 legend bottom
-C4 - Vista de componentes de la arquitectura propuesta.
-Cada vista amplía un único contenedor.
-Los contextos agrupan responsabilidades dentro del contenedor.
+C4 - Component view of the proposed architecture.
+Each view expands a single container.
+Contexts group responsibilities within the container.
+Solid arrows indicate usage; dashed arrows with a triangle indicate implementation.
+Application uses internal contracts; Infrastructure implements them.
 endlegend
 @enduml
