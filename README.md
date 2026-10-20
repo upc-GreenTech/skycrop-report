@@ -336,7 +336,7 @@ SkyCrop propone centralizar información de parcelas, cultivos, drones, diagnós
 Proveer a los productores agrícolas de soluciones tecnológicas accesibles y automatizadas para el monitoreo inteligente de sus parcelas, facilitando la detección temprana de anomalías y optimizando el uso de recursos críticos para lograr una agricultura más rentable y sostenible.
 
 **Visión :**
-Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empoderando a agricultores y cooperativas de todos los tamaños mediante tecnología innovadora que elimine las barreras de entrada a la agricultura de precisión.
+Consolidarse como una empresa *AgTech* líder y referente en Latinoamérica, empoderando a agricultores y cooperativas de todos los tamaños mediante tecnología innovadora que elimine las barreras de entrada a la agricultura de precisión.
 
 ### 1.1.2. Perfiles de integrantes del equipo 
 
@@ -344,7 +344,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** |u202219266|
 | **Carrera** |Ingeniería de software|
-| **Descripción** |Mi nombre es Diego, tengo 21 años. Tengo interés sobre la tecnología y sobre aprender a programar, sobretodo quisiera centrarme en ciberseguridad y aparte crear un juego que otro en su tiempo libre|
+| **Descripción** | Tiene 21 años e interés en la tecnología y la programación. Busca especializarse en ciberseguridad y desarrollar videojuegos en su tiempo libre. |
 | **Foto** | <img src="resources/imgs/IntegranteDiego.jpeg" alt="Diego" width="200" height="240">  |
 
 --------------
@@ -354,7 +354,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202423775 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Mi nombre es Yam Cano, tengo 20 años y soy estudiante de la carrera de ingeniería de software, además soy una persona proactiva; cuento con habilidades analíticas y lógicas en programación, lo que me permite abordar problemas en base a mi carrera, además estoy buscando nuevas oportunidades para aprender y aplicar mis conocimientos, lo que me ayuda a crecer tanto a nivel académico como personal.|
+| **Descripción** | Estudia Ingeniería de Software y tiene 20 años. Cuenta con habilidades analíticas y lógicas aplicadas a la programación. Busca oportunidades para ampliar sus conocimientos y aplicarlos en proyectos académicos y personales. |
 | **Foto** | <img src="resources/imgs/chapter_2/Yam.png" alt="Yam" width="200" height="240">  |
 
 ----------------------
@@ -363,7 +363,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202312912 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Mi nombre es Oliver, poseo 21 años. Poseo mucho interés en la programación y llevo haciendo varios proyectos personales desde que ingrese a la universidad. No trabajo bajo contrato actualmente, pero trabajo cómo freelancer por periodos de tiempo. |
+| **Descripción** | Tiene 21 años y desarrolla proyectos personales de programación desde su ingreso a la universidad. Realiza trabajos independientes de forma ocasional. |
 | **Foto** | <img src="resources/imgs/Integrante Oliver.jpeg" alt="Integrante Oliver"> |
 
 ---------------------
@@ -372,7 +372,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202423973 |
 | **Carrera** |Ingeniería de Software|
-| **Descripción** |Soy Sunio Landa, tengo 20 años. Suelo aprender cosas rápido y siempre busco que mi equipo realice el mejor trabajo posible.|
+| **Descripción** | Tiene 20 años, facilidad para aprender y disposición para colaborar con su equipo. |
 | **Foto** | <img src="resources/imgs/foto-landa.jpeg" alt="Sunio" width="200" height="240"> |
 
 ---------------------
@@ -381,7 +381,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202310349 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy Sebastián, soy estudiante de la carrera de ingeniería de software, tengo 20 años y me gusta lograr grandes cosas programando, suelo interesarme mucho por aprender cosas nuevas en el mundo de la programación más que nada. Me gusta apoyar a mis compañeros para los trabajos, considero que soy de trabajar en equipo. Tengo conocimientos en C#, C++, JavaScript, Python y TypeScript. |
+| **Descripción** | Estudia Ingeniería de Software y tiene 20 años. Se interesa por aprender tecnologías de programación y colaborar en proyectos de equipo. Cuenta con conocimientos de C#, C++, JavaScript, Python y TypeScript. |
 | **Foto** | <img src="resources/imgs/foto-sebastian.jpeg" alt="Luis Sebastián Rubio Ortiz" width="200"> |
 
 ## 1.2. Solution Profile 
@@ -452,14 +452,14 @@ Como criterio propuesto de evaluación, se plantea una tasa de conversión del 2
 
 **Hipótesis 1**
 
-*Se plantea como hipótesis alcanzar* una tasa de conversión del 25% hacia nuestras suscripciones de pago durante los primeros 6 meses
+*Se plantea como hipótesis alcanzar* una tasa de conversión del 25% hacia las suscripciones de pago de SkyCrop durante los primeros 6 meses
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una reducción del tiempo y del esfuerzo manual necesarios para planificar vuelos de drones sobre sus parcelas
 *Con* la funcionalidad de Planificación automatizada de rutas de vuelo, que permite delimitar áreas y generar automáticamente rutas de vuelo personalizadas.
 
 **Hipótesis 2**
 
-*Se plantea como hipótesis alcanzar* un uso mensual recurrente de la herramienta de mapeo por parte de al menos el 60% de nuestros suscriptores de pago
+*Se plantea como hipótesis alcanzar* un uso mensual recurrente de la herramienta de mapeo por parte de al menos el 60% de los suscriptores de pago
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una visualización más rápida y comprensible del estado de sus cultivos y del terreno
 *Con* la funcionalidad de Generación de mapas visuales del terreno, que procesa imágenes aéreas y genera mapas visuales que resaltan anomalías en los cultivos.
@@ -540,7 +540,7 @@ Los segmentos se distinguen por su actividad y sus necesidades de monitoreo. Las
 
 ## 2.1. Competidores. 
 
-Hemos identificado a tres empresas con ofertas similares a la de nuestra startup:
+Se identificaron tres empresas con ofertas similares a la propuesta de GreenTech:
 
 - **Pix4D**: Es una empresa de software de fotogrametría, ofrece varios programas bajo licencia para usarse en varias industrias como en la agricultura. Uno de sus productos es Pix4D fields, un software híbrido de mapeo con drones para el análisis de cultivos y agricultura precisa. 
 - **DJI Enterprise**: Es una empresa que ofrece drones y software para drones. Uno de sus programas es DJI Terra, el cual consiste en la reconstrucción de terrenos para la adquisición y procesamiento de datos. Este programa es aplicable a la agricultura, permitiendo programar rutas de vuelo y generar mapas de vegetación para obtener información sobre la salud y crecimiento de los cultivos.
@@ -556,7 +556,7 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
   <tr>
     <th colspan="2">¿Por qué llevar a cabo este análisis?</th>
     <td colspan="4">
-      El objetivo de este análisis es conocer más sobre lo que ofrece nuestra competencia para, en base a ello, identificar en qué aspectos podemos diferenciarnos y cómo podemos mejorar nuestro producto. Con estos avances podremos tener un mejor puesto en el mercado.
+      El análisis compara las ofertas de la competencia para identificar oportunidades de diferenciación y mejoras para SkyCrop. Sus resultados orientan el posicionamiento del producto en el mercado.
     </td>
   </tr>
   
@@ -876,7 +876,7 @@ En esta entrevista, Ana Camila Patricio, una ingeniera agrónoma de 25 años res
 </div>
 
 **Resumen**:  
-Suzy Vásquez, de 48 años, es una ingeniera agrónoma que en esta entrevista nos cuenta sobre su trabajo. En su trabajo ella asesora a productores y agroexportadores, revisando varios cultivos con diferentes hortalizas de invierno o de verano.
+Suzy Vásquez, de 48 años, es una ingeniera agrónoma que describe su trabajo en esta entrevista. En su trabajo ella asesora a productores y agroexportadores, revisando varios cultivos con diferentes hortalizas de invierno o de verano.
 Ella cuenta que el monitoreo de los cultivos que realiza depende de los clientes que asesora y del cultivo, algunos procesos que realiza es la toma de muestras, recorridos por el campo en diferentes formas, el control de plantas al azar por hectárea y la colocación de trampas para plagas. Los datos que suele recolectar son la humedad del suelo, la concentración de nutrientes, el pH, la etapa de desarrollo de los cultivos y el ambiente.
 Nos cuenta también sus dificultades, tales como la resistencia de los clientes agricultores por sus costumbres, los casos donde no se realiza un estudio del suelo y lo largo que puede ser un monitoreo al trabajar con varias hectáreas.
 La entrevistada no trabajó mucho con drones, pero contó que le gustaría que el sistema pueda capturar imágenes del campo con gran resolución, precisión y claridad, además de que pueda moverse a través de 10 o más hectáreas para tomar imágenes automáticamente y contar con otras funciones como aplicación de fertilizantes o riego.
@@ -1173,7 +1173,7 @@ En esta última fase los integrantes identificaron problemas que podrían ocurri
 
 ![Big Picture Event Storming - Problemas](resources/imgs/chapter_2/big-picture-eventstorming-4.jpg)
 
-A partir de este proceso, identificamos lo siguiente:
+A partir de este proceso, se identificaron los siguientes aspectos:
 
 **Procesos clave:**
 
@@ -1433,7 +1433,7 @@ Las siguientes Technical Stories complementan las funcionalidades del producto m
 
 ## 4.1. Style Guidelines. 
 ### 4.1.1. General Style Guidelines. 
-Las guías generales de estilo de SkyCrop establecen la identidad visual y los principios de diseño que guiarán la experiencia en la plataforma web y dispositivos móviles. Su propósito es democratizar el acceso a la agricultura de precisión mediante un diseño que transmita confianza y accesibilidad, asegurando la eficiencia en la interacción para nuestros usuarios principales: agricultores e ingenieros agrónomos.
+Las guías generales de estilo de SkyCrop establecen la identidad visual y los principios de diseño que guiarán la experiencia en la plataforma web y dispositivos móviles. Su propósito es democratizar el acceso a la agricultura de precisión mediante un diseño que transmita confianza y accesibilidad, asegurando la eficiencia en la interacción para los usuarios principales: agricultores e ingenieros agrónomos.
 
 **Paleta de colores**
 - **Primarios y Secundarios:** Se priorizarán tonos verdes (que representan los cultivos y la salud vegetal), combinados con tonos azules o grises tecnológicos (que representan el cielo, el agua y los drones) para reflejar la fusión entre agricultura y tecnología AgTech.
@@ -1457,7 +1457,7 @@ Las guías generales de estilo de SkyCrop establecen la identidad visual y los p
 - **Modo Offline First:** La interfaz debe indicar de forma clara e inequívoca qué herramientas, mapas y reportes están disponibles sin conexión a internet. Esto prevé los problemas de conectividad intermitente que caracterizan a los campos de cultivo y zonas rurales.
 
 ### 4.1.2. Web Style Guidelines. 
-La versión web de SkyCrop está diseñada para ofrecer una experiencia simple, confiable e intuitiva, enfocada en democratizar el acceso a la agricultura de precisión para nuestros principales usuarios: agricultores e ingenieros agrónomos. Su diseño visual y funcional está pensado para operar eficientemente tanto en la planificación desde un escritorio como durante el trabajo físico en los campos de cultivo.
+La versión web de SkyCrop está diseñada para ofrecer una experiencia simple, confiable e intuitiva, enfocada en democratizar el acceso a la agricultura de precisión para los principales usuarios: agricultores e ingenieros agrónomos. Su diseño visual y funcional está pensado para operar eficientemente tanto en la planificación desde un escritorio como durante el trabajo físico en los campos de cultivo.
 - **Diseño responsivo e interfaces amplias:** La plataforma se adapta de manera óptima a navegadores web, así como a dispositivos móviles y tablets, que son las herramientas principales que los usuarios llevarán a las parcelas. Es un requisito estricto que los botones, tarjetas y controles de mapas sean lo suficientemente grandes para poder ser operados con total facilidad en el campo y bajo condiciones de movilidad.
 - **Feedback visual y semaforización (Hover & Alerts):** Los elementos interactivos proporcionarán retroalimentación inmediata para confirmar acciones. Sobre los mapas visuales del terreno, se implementará un sistema de semaforización (rojo, amarillo, verde) que resaltará visualmente y de forma rápida las anomalías detectadas por los drones, alertando tempranamente sobre problemas críticos como estrés hídrico, presencia de plagas o deficiencia de fertilizantes.
 - **Navegación principal y contextual:** La navegación principal se ubicará en un menú lateral (sidebar) colapsable, asegurando el acceso rápido a módulos vitales como: Mis Parcelas, Planificar Vuelo (Rutas Automatizadas), Mapas de Salud, Historial de Cultivos y Configuración de Suscripción. Adicionalmente, se habilitará una navegación contextual directamente sobre los mapas: al interactuar con un área marcada con anomalías, el usuario podrá saltar directamente hacia el historial de reportes de esa misma ubicación geográfica.
@@ -1466,7 +1466,7 @@ La versión web de SkyCrop está diseñada para ofrecer una experiencia simple, 
 
 ## 4.2. Information Architecture. 
 En esta sección se definen las decisiones de arquitectura de información que guiarán la organización del contenido en la experiencia web y móvil de SkyCrop, incluyendo la Landing Page y las futuras interfaces de gestión agrícola.
-El objetivo principal es garantizar que nuestros segmentos objetivo, conformados por agricultores e ingenieros agrónomos, se adapten de manera intuitiva a la funcionalidad del producto. Se busca que los usuarios encuentren fácilmente lo que necesitan, como la planificación de rutas de vuelo, la visualización de mapas de salud del terreno y el historial de reportes, disfrutando de una navegación fluida y satisfactoria incluso en entornos de campo con conectividad limitada.
+El objetivo principal es garantizar que los segmentos objetivo, conformados por agricultores e ingenieros agrónomos, se adapten de manera intuitiva a la funcionalidad del producto. Se busca que los usuarios encuentren fácilmente lo que necesitan, como la planificación de rutas de vuelo, la visualización de mapas de salud del terreno y el historial de reportes, disfrutando de una navegación fluida y satisfactoria incluso en entornos de campo con conectividad limitada.
 Las propuestas de arquitectura están diseñadas siguiendo principios de usabilidad, claridad, adaptabilidad offline y el uso estricto del lenguaje ubicuo del sector agrícola, considerando los siguientes componentes estructurales:
 
 - Organization Systems
@@ -1520,7 +1520,7 @@ Según el tipo de contenido y el módulo de la plataforma, se aplicarán distint
 - **Alfabético:** Para el listado de miembros del equipo de trabajo o la búsqueda rápida de parcelas guardadas por nombre dentro de la barra de búsqueda global.
 
 ### 4.2.2. Labeling Systems. 
-La representación de los datos en la plataforma SkyCrop busca ser clara, intuitiva y sin ambigüedades, empleando el lenguaje ubicuo recopilado de nuestros usuarios. Para ello se establecen las siguientes directrices de etiquetado:
+La representación de los datos en la plataforma SkyCrop busca ser clara, intuitiva y sin ambigüedades, empleando el lenguaje ubicuo recopilado de los usuarios. Para ello se establecen las siguientes directrices de etiquetado:
 
 **Principios de Etiquetado**
 - Utilizar un mínimo número de palabras para agilizar la lectura, especialmente en exteriores.
@@ -1634,7 +1634,7 @@ El sistema de navegación de SkyCrop está diseñado para guiar a los usuarios (
 
 ### 4.3.1. Landing Page Wireframe. 
 
-A continuación se presentan los Wireframes realizados para la Landing Page. El diseño buscó seguir la heurística de la usabilidad de 'Diseño estético y minimalista' mediante el uso de una estructura y figuras simples para la página. Además, la barra de navegación superior ayuda a que se cumpla la heurística de 'Flexibilidad y eficiencia en el uso' al brindar atajos a ciertas partes de la página.
+Los wireframes de la landing page utilizan una estructura simple para presentar sus secciones, de acuerdo con la heurística de diseño estético y minimalista. La barra de navegación ofrece accesos directos a las secciones y responde a la heurística de flexibilidad y eficiencia de uso.
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-landing-1.jpg" alt="Landing Page Wireframe - Parte 1" width="600">
@@ -1683,7 +1683,7 @@ El diseño adopta Material Design como referencia, los verdes y azules definidos
 
 ### 4.4.1. Web Applications Wireframes. 
 
-En esta sección se presentarán los Wireframes de nuestra aplicación web. Gracias a los encabezados en gran parte de los wireframes es posible conocer en qué parte de la aplicación el usuario se puede encontrar y determinar qué acciones puede hacer, esto va de acuerdo con la heurística de usabilidad 'Visibilidad del Estado del Sistema'. Además, el uso del mismo menú superior y lateral, junto con la estructura similar entre secciones, logra cumplir con el principio del diseño inclusivo sobre 'Ser Consistente'.
+Los wireframes de la aplicación web incluyen encabezados que permiten identificar la sección actual y las acciones disponibles, de acuerdo con la heurística de visibilidad del estado del sistema. La navegación superior y lateral mantiene una estructura común entre las secciones para facilitar su uso.
 
 **Página de inicio de sesión:**
 
@@ -1747,15 +1747,15 @@ En esta sección se presentarán los Wireframes de nuestra aplicación web. Grac
 
 ### 4.4.2. Web Applications Wireflow Diagrams. 
 
-Antes de la elaboración de los Wireflow Diagramas, definimos las User goals:
+Antes de elaborar los diagramas de wireflow, se definieron los siguientes objetivos de usuario:
 
-- Como agricultor e ingeniero agrónomo, queremos acceder a la plataforma mediante una cuenta.
-- Como agricultor, quiero ser capaz de registrar una parcela agrícola en la plataforma.
-- Como ingeniero agrónomo, quiero ser capaz de monitorear el estado de los drones agrícolas desde la plataforma.
-- Como agricultor e ingeniero agrónomo, queremos recibir y leer reportes por estación sobre nuestras parcelas agrícolas.
-- Como agricultor e ingeniero agrónomo, queremos recibir y leer diagnósticos sobre el estado de nuestros cultivos.
+- Los agricultores e ingenieros agrónomos requieren acceder a la plataforma mediante una cuenta.
+- Los agricultores requieren registrar sus parcelas agrícolas en la plataforma.
+- Los ingenieros agrónomos requieren monitorear el estado de los drones agrícolas desde la plataforma.
+- Los agricultores e ingenieros agrónomos requieren consultar reportes estacionales de sus parcelas agrícolas.
+- Los agricultores e ingenieros agrónomos requieren consultar diagnósticos sobre el estado de sus cultivos.
 
-En base a estas User Goals, elaboramos los siguientes wireflows:
+A partir de estos objetivos, se elaboraron los siguientes wireflows:
 
 Wireflow 1: Acceso a la plataforma
 
