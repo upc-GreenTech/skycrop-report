@@ -76,11 +76,11 @@ El registro reúne las modificaciones principales del informe mediante identific
 | [70cc8cf](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/70cc8cf) | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
 | [1d90594](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/1d90594) | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
 | [5ba924e](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/5ba924e) | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
-| [TB1.1](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/9f39774) | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
-| [TB1.2](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/d4a8a9d) | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
-| [TB1.3](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/fa371fe) | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
-| [TB1.4](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/1c25eda) | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
-| [TB1.5](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/bf3af2d) | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
+| [9f39774](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/9f39774) | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
+| [d4a8a9d](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/d4a8a9d) | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
+| [fa371fe](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/fa371fe) | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
+| [1c25eda](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/1c25eda) | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
+| [bf3af2d](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/bf3af2d) | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
 
 # Project Report Collaboration Insights
 
@@ -123,7 +123,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Contenido](#contenido)
   - [Tabla de contenidos](#tabla-de-contenidos)
-- [Student Outcome](#student-outcome)
+- [Student Outcome 5](#student-outcome-5)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -220,7 +220,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 
 <div style="page-break-after: always;"></div>
 
-# Student Outcome 
+# Student Outcome 5
 
 <div align="center">
 <table border="1">
