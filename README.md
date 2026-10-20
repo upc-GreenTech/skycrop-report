@@ -2566,7 +2566,7 @@ Estas consultas comprueban disponibilidad y formato de respuesta en la fecha ind
 
 **Aplicación web de SkyCrop en Vercel**
 
-La aplicación web utiliza Vue y Vite y se publica desde el [repositorio skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp). La importación en Vercel selecciona la rama `main` y la raíz del repositorio (`./`). La instalación de dependencias se realiza con `npm ci`; la compilación utiliza `npm run build` y genera los archivos estáticos en `dist`.
+La aplicación web utiliza Vue y Vite y se publica desde el [repositorio skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp). La importación en Vercel selecciona la rama `main` y la raíz del repositorio (`./`). La instalación de dependencias se realiza con `npm ci`; la compilación utiliza `npm run build` y genera los archivos estáticos en `dist`.
 
 El archivo [vercel.json](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/blob/main/vercel.json), incorporado en el [commit a15cab3](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/a15cab3), define el framework Vite, el comando de compilación, el directorio de salida y la reescritura de las rutas hacia `/index.html`. Esta regla permite abrir directamente rutas de la aplicación, como `/plots`, y mantener la navegación de Vue Router al recargar la página.
 
