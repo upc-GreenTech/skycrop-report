@@ -2524,6 +2524,16 @@ El despliegue en GitHub Pages requiere que los archivos estén organizados de un
 
 - Al finalizar, se genera una URL pública para acceder a la landing page.
 
+**Direcciones públicas verificadas el 20 de octubre de 2026:**
+
+| Producto | Dirección | Resultado HTTP |
+|---|---|---|
+| Landing page | [SkyCrop en GitHub Pages](https://upc-pre-202620-1asi0730-8093-greentech.github.io/skycrop-website/) | 200 |
+| Aplicación web | [SkyCrop en Vercel](https://skycrop-website.vercel.app/home) | 200 |
+
+La URL de la landing utiliza el identificador actual de la organización y el repositorio `skycrop-website`. La dirección anterior, `https://upc-greentech.github.io/skycrop-platform/`, devuelve HTTP 404 en esta comprobación. La aplicación web conserva su dominio de Vercel aunque su repositorio se denomine `skycrop-webapp`. Los registros del 9 de octubre documentan las direcciones vigentes en aquella fecha.
+
+
 **Mock API de SkyCrop en Azure App Service**
 
 La mock API utiliza Node.js y JSON Server 0.17.4 para exponer los recursos de integración del frontend. El proyecto se encuentra en [skycrop-mock-api](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-mock-api). El comando de inicio es `npm start`; `server.js` utiliza `PORT` para el puerto y `JSON_SERVER_DB_PATH` para la ubicación del archivo de datos cuando esta variable está definida.
@@ -2929,7 +2939,7 @@ El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluy
 
 ![Responsive_Landing](resources/imgs/chapter_5/Responsive_Landing.png)
 
-**Publicación de la landing page:** [SkyCrop en GitHub Pages](https://upc-greentech.github.io/skycrop-platform/). La consulta del 9 de octubre de 2026 devolvió HTTP 200 y el documento con título SkyCrop | Smarter crop monitoring. El código fuente se encuentra en [skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website). La aplicación web se publica por separado en [Vercel](https://skycrop-website.vercel.app/home).
+**Publicación de la landing page:** [SkyCrop en GitHub Pages](https://upc-pre-202620-1asi0730-8093-greentech.github.io/skycrop-website/). La consulta del 20 de octubre de 2026 a la dirección actual devolvió HTTP 200 y el documento con título SkyCrop | Smarter crop monitoring. El código fuente se encuentra en [skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website). La aplicación web se publica por separado en [Vercel](https://skycrop-website.vercel.app/home).
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
@@ -3418,7 +3428,7 @@ El [registro de verificación del frontend](resources/deployment/website-verific
 
 **Actualización de la landing page para TB1**
 
-La landing page se publica en [SkyCrop en GitHub Pages](https://upc-greentech.github.io/skycrop-platform/) desde el repositorio [skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website). La actualización del 9 de octubre de 2026 incorpora accesos a la aplicación web publicada en Vercel. El [commit c5e9a53](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website/commit/c5e9a53578ef371c5d92b7df5dca8da909464991) modifica los controles de acceso y añade el manejador que dirige a `https://skycrop-website.vercel.app/home`.
+La landing page se publica en [SkyCrop en GitHub Pages](https://upc-pre-202620-1asi0730-8093-greentech.github.io/skycrop-website/) desde el repositorio [skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website). La actualización del 9 de octubre de 2026 incorpora accesos a la aplicación web publicada en Vercel. El [commit c5e9a53](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website/commit/c5e9a53578ef371c5d92b7df5dca8da909464991) modifica los controles de acceso y añade el manejador que dirige a `https://skycrop-website.vercel.app/home`.
 
 El cambio se integra en `main` mediante el [commit c3249b5](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website/commit/c3249b5), correspondiente al cierre de la rama `release/2.0.0`. La consulta HTTP del 9 de octubre de 2026 devuelve HTTP 200 para la landing y para su archivo `assets/scripts/main.js`; el script publicado contiene el selector `data-open-platform` y la dirección del frontend. Esta evidencia registra una actualización del contenido publicado respecto de la versión anterior de la landing.
 
