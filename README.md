@@ -2202,6 +2202,22 @@ Los nombres, teléfonos, direcciones y fechas se representan mediante objetos de
 | `Timestamp` | Instantes de creación, pago, verificación, vencimiento, vuelo, captura, generación y registro meteorológico. | Fecha y hora válidas con desplazamiento horario explícito. Igualdad y comparación por el instante UTC, independientemente del desplazamiento original. |
 | `SubscriptionPeriod` | Vigencia de una suscripción. | Fechas válidas con fin posterior al inicio. Intervalo con inicio incluido y fin excluido. Igualdad por ambos límites; renovar sustituye el objeto completo. |
 
+La revisión incorpora tipos para medidas, identificación de drones y recursos digitales. Sus unidades forman parte del contrato del dominio; los límites operativos específicos del dron o de las reglas agronómicas se validan por separado.
+
+| Value Object | Uso | Invariantes e igualdad |
+|---|---|---|
+| `Altitude` | Altura de `FlightPlan`. | Altura no negativa en metros respecto de la referencia del vuelo. Igualdad por metros; los límites operativos se validan al planificar el vuelo. |
+| `Speed` | Velocidad de `FlightPlan`. | Valor positivo en metros por segundo. Igualdad por el valor en esa unidad; los límites del dispositivo se validan por separado. |
+| `Percentage` | Solapamiento de imágenes, batería del dron y humedad del terreno o del clima. | Valor entre 0 y 100, incluidos ambos extremos. Igualdad numérica; no confunde porcentaje con una fracción entre 0 y 1. Las políticas de batería mínima y solapamiento se aplican según el caso de uso. |
+| `Distance` | Alcance de `Drone`. | Distancia no negativa en metros. Igualdad por metros. |
+| `DroneSerialNumber` | Número de serie de `Drone`. | Texto no vacío después de quitar espacios externos; conserva mayúsculas y minúsculas. Igualdad por el texto resultante. La unicidad se comprueba al registrar el dron. |
+| `ImageResolution` | Resolución de `AerialImage` y `TerrainMap`. | Ancho y alto enteros positivos, expresados en píxeles. Igualdad por ambas dimensiones en ese orden. |
+| `ResourceUrl` | Ubicación de mapas, imágenes y archivos devueltos por almacenamiento. | URL absoluta HTTP o HTTPS con host. Igualdad por la URL completa almacenada, incluidos ruta y parámetros. La validez del formato no acredita disponibilidad ni autorización de acceso. |
+| `Temperature` | Temperatura de `TerrainData` y `WeatherData`. | Valor expresado en grados Celsius; admite valores negativos. Igualdad por el valor en esa unidad. Los umbrales agronómicos corresponden a la regla aplicable. |
+| `Precipitation` | Precipitación de `WeatherData`. | Acumulado no negativo en milímetros para el intervalo informado por el proveedor meteorológico. Igualdad por milímetros; las comparaciones requieren intervalos compatibles. |
+
+El título de `Report` utiliza `Name`, que ya representa texto no vacío. Las vistas que repiten un objeto de valor conservan su nombre, estructura y reglas. Los identificadores de agregados siguen representados mediante `Long`; no se añaden tipos sin comportamiento propio para cada identificador.
+
 Todos estos valores se validan al construirlos y se sustituyen completos al cambiar; no tienen setters ni identificadores. Un teléfono o una dirección no proporcionados se representan por ausencia del objeto, en lugar de crear valores vacíos. `verifiedAt` permanece ausente antes de verificar el segundo factor. En un vuelo, el inicio y el fin permanecen ausentes hasta sus respectivos eventos y, cuando ambos existen, el fin no puede preceder al inicio. Un código de recuperación deja de ser válido al alcanzar su instante de vencimiento.
 
 Los agregados delimitan las entidades cuya consistencia se mantiene a través de una raíz. La composición indica pertenencia al mismo agregado; las relaciones entre agregados se expresan mediante identificadores. Los servicios consultan los datos asociados a estos identificadores sin incorporar las entidades de otros contextos al estado del agregado.
@@ -2255,6 +2271,8 @@ Las siguientes vistas representan el diseño propuesto para el backend RESTful A
 | Application | Coordinar el caso de uso, las consultas y las integraciones necesarias. | Servicios de aplicación, comandos y contratos de integración. |
 | Domain | Mantener el estado y las reglas del agregado y definir su contrato de persistencia. | Raíces de agregado, entidades, objetos de valor e interfaces de repositorio. |
 | Infrastructure | Implementar persistencia y comunicación con proveedores. | Repositorios, DbContext y adaptadores. |
+
+Los requests y comandos pueden conservar primitivas para representar los datos de entrada. Antes de modificar el agregado, el servicio de aplicación construye los objetos de valor correspondientes; una entrada no válida no debe persistirse. Por ejemplo, el registro de drones recibe el número de serie como texto y lo convierte en `DroneSerialNumber`. Los contratos de mapas y almacenamiento devuelven `ResourceUrl` en lugar de una cadena sin significado explícito.
 
 Los requests contienen los datos recibidos por el API; los comandos expresan la operación solicitada. Los servicios de aplicación acceden al agregado a través de su repositorio y construyen la respuesta mediante un assembler. Los recursos devueltos contienen los datos del contrato HTTP y no exponen las entidades de persistencia. En IAM, la respuesta de autenticación se obtiene mediante `AccessTokenIssuer`, sin incluir la contraseña ni su hash.
 

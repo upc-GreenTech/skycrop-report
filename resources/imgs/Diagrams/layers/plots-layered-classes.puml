@@ -3,9 +3,10 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 120
+scale max 2800 width
 hide empty members
 top to bottom direction
-title SkyCrop - Agricultural Plot Management - Diseño por capas
+title SkyCrop - Agricultural Plot Management - Layered Class Design
 package "Interfaces / Presentation" {
 class AgriculturalPlotController <<controller>> {
 -service: IAgriculturalPlotApplicationService
@@ -65,42 +66,52 @@ class SkyCropDbContext <<EF Core>> {
 +saveChanges(): int
 }
 }
-AgriculturalPlotController --> IAgriculturalPlotApplicationService : delega
-AgriculturalPlotController ..> RegisterPlotRequest : recibe
-AgriculturalPlotController ..> RegisterPlotCommand : construye
-AgriculturalPlotController ..> AgriculturalPlotResource : responde
+AgriculturalPlotController --> IAgriculturalPlotApplicationService : delegates
+AgriculturalPlotController ..> RegisterPlotRequest : receives
+AgriculturalPlotController ..> RegisterPlotCommand : builds
+AgriculturalPlotController ..> AgriculturalPlotResource : responds
 AgriculturalPlotApplicationService ..|> IAgriculturalPlotApplicationService
-IAgriculturalPlotApplicationService ..> RegisterPlotCommand : recibe
-AgriculturalPlotApplicationService --> IAgriculturalPlotRepository : consulta y persiste
-AgriculturalPlotApplicationService ..> AgriculturalPlot : ejecuta operaciones
-AgriculturalPlotApplicationService ..> AgriculturalPlotResourceAssembler : transforma
-AgriculturalPlotResourceAssembler ..> AgriculturalPlot : lee
-AgriculturalPlotResourceAssembler ..> AgriculturalPlotResource : produce
+IAgriculturalPlotApplicationService ..> RegisterPlotCommand : receives
+AgriculturalPlotApplicationService --> IAgriculturalPlotRepository : queries and persists
+AgriculturalPlotApplicationService ..> AgriculturalPlot : executes operations
+AgriculturalPlotApplicationService ..> AgriculturalPlotResourceAssembler : transforms
+AgriculturalPlotResourceAssembler ..> AgriculturalPlot : reads
+AgriculturalPlotResourceAssembler ..> AgriculturalPlotResource : produces
 AgriculturalPlotRepository ..|> IAgriculturalPlotRepository
-IAgriculturalPlotRepository ..> AgriculturalPlot : contrato de persistencia
-AgriculturalPlotRepository --> SkyCropDbContext : acceso a datos
+IAgriculturalPlotRepository ..> AgriculturalPlot : persistence contract
+AgriculturalPlotRepository --> SkyCropDbContext : data access
 package "Application" {
 interface IPlotMapProvider <<integration contract>> {
-+getMap(plotId: Long): String
++getMap(plotId: Long): ResourceUrl
 }
 }
 package "Infrastructure" {
 class PlotMapAdapter <<adapter>> {
-+getMap(plotId: Long): String
++getMap(plotId: Long): ResourceUrl
 }
 }
-AgriculturalPlotApplicationService --> IPlotMapProvider : solicita operación
+AgriculturalPlotApplicationService --> IPlotMapProvider : requests an operation
 PlotMapAdapter ..|> IPlotMapProvider
 note bottom of PlotMapAdapter
-Obtiene la representación geográfica de la parcela.
+Retrieves the plot's geographic representation.
 end note
 AgriculturalPlotController -[hidden]down-> AgriculturalPlotApplicationService
 AgriculturalPlotApplicationService -[hidden]down-> AgriculturalPlot
 AgriculturalPlot -[hidden]down-> AgriculturalPlotRepository
 legend bottom
-Arquitectura de clases propuesta para el backend RESTful API.
-La vista muestra un caso de uso del contexto y su consulta por identidad.
-Los atributos del agregado se detallan en las vistas del dominio.
-Las dependencias de infraestructura implementan contratos internos.
+Proposed class architecture for the backend RESTful API.
+The view shows a context use case and retrieval by identifier.
+Aggregate attributes are detailed in the domain views.
+Infrastructure dependencies implement internal contracts.
 endlegend
+package "Domain" {
+class ResourceUrl <<value object>> {
+-value: String {readOnly}
+}
+note right of ResourceUrl
+Absolute HTTP or HTTPS URL with a host.
+Equality uses the complete stored URL, including path and query.
+A valid URL does not guarantee availability or access permission.
+end note
+}
 @enduml

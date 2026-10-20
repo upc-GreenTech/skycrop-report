@@ -3,9 +3,10 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 120
+scale max 2800 width
 hide empty members
 top to bottom direction
-title SkyCrop - Diagnoses Generation - Diseño por capas
+title SkyCrop - Diagnoses Generation - Layered Class Design
 package "Interfaces / Presentation" {
 class DiagnosisController <<controller>> {
 -service: IDiagnosisApplicationService
@@ -60,20 +61,20 @@ class SkyCropDbContext <<EF Core>> {
 +saveChanges(): int
 }
 }
-DiagnosisController --> IDiagnosisApplicationService : delega
-DiagnosisController ..> GenerateDiagnosisRequest : recibe
-DiagnosisController ..> GenerateDiagnosisCommand : construye
-DiagnosisController ..> DiagnosisResource : responde
+DiagnosisController --> IDiagnosisApplicationService : delegates
+DiagnosisController ..> GenerateDiagnosisRequest : receives
+DiagnosisController ..> GenerateDiagnosisCommand : builds
+DiagnosisController ..> DiagnosisResource : responds
 DiagnosisApplicationService ..|> IDiagnosisApplicationService
-IDiagnosisApplicationService ..> GenerateDiagnosisCommand : recibe
-DiagnosisApplicationService --> IDiagnosisRepository : consulta y persiste
-DiagnosisApplicationService ..> Diagnosis : ejecuta operaciones
-DiagnosisApplicationService ..> DiagnosisResourceAssembler : transforma
-DiagnosisResourceAssembler ..> Diagnosis : lee
-DiagnosisResourceAssembler ..> DiagnosisResource : produce
+IDiagnosisApplicationService ..> GenerateDiagnosisCommand : receives
+DiagnosisApplicationService --> IDiagnosisRepository : queries and persists
+DiagnosisApplicationService ..> Diagnosis : executes operations
+DiagnosisApplicationService ..> DiagnosisResourceAssembler : transforms
+DiagnosisResourceAssembler ..> Diagnosis : reads
+DiagnosisResourceAssembler ..> DiagnosisResource : produces
 DiagnosisRepository ..|> IDiagnosisRepository
-IDiagnosisRepository ..> Diagnosis : contrato de persistencia
-DiagnosisRepository --> SkyCropDbContext : acceso a datos
+IDiagnosisRepository ..> Diagnosis : persistence contract
+DiagnosisRepository --> SkyCropDbContext : data access
 package "Application" {
 interface IImageAnalysis <<integration contract>> {
 +analyze(imageIds: List<Long>): String
@@ -84,18 +85,18 @@ class ImageAnalysisAdapter <<adapter>> {
 +analyze(imageIds: List<Long>): String
 }
 }
-DiagnosisApplicationService --> IImageAnalysis : solicita operación
+DiagnosisApplicationService --> IImageAnalysis : requests an operation
 ImageAnalysisAdapter ..|> IImageAnalysis
 note bottom of ImageAnalysisAdapter
-Analiza las imágenes referenciadas y devuelve resultados.
+Analyzes the referenced images and returns results.
 end note
 DiagnosisController -[hidden]down-> DiagnosisApplicationService
 DiagnosisApplicationService -[hidden]down-> Diagnosis
 Diagnosis -[hidden]down-> DiagnosisRepository
 legend bottom
-Arquitectura de clases propuesta para el backend RESTful API.
-La vista muestra un caso de uso del contexto y su consulta por identidad.
-Los atributos del agregado se detallan en las vistas del dominio.
-Las dependencias de infraestructura implementan contratos internos.
+Proposed class architecture for the backend RESTful API.
+The view shows a context use case and retrieval by identifier.
+Aggregate attributes are detailed in the domain views.
+Infrastructure dependencies implement internal contracts.
 endlegend
 @enduml

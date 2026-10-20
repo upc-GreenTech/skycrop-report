@@ -3,9 +3,10 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 120
+scale max 2800 width
 hide empty members
 top to bottom direction
-title SkyCrop - Subscriptions and Payment Management - Diseño por capas
+title SkyCrop - Subscriptions and Payment Management - Layered Class Design
 package "Interfaces / Presentation" {
 class SubscriptionController <<controller>> {
 -service: ISubscriptionApplicationService
@@ -60,20 +61,20 @@ class SkyCropDbContext <<EF Core>> {
 +saveChanges(): int
 }
 }
-SubscriptionController --> ISubscriptionApplicationService : delega
-SubscriptionController ..> AcquireSubscriptionRequest : recibe
-SubscriptionController ..> AcquireSubscriptionCommand : construye
-SubscriptionController ..> SubscriptionResource : responde
+SubscriptionController --> ISubscriptionApplicationService : delegates
+SubscriptionController ..> AcquireSubscriptionRequest : receives
+SubscriptionController ..> AcquireSubscriptionCommand : builds
+SubscriptionController ..> SubscriptionResource : responds
 SubscriptionApplicationService ..|> ISubscriptionApplicationService
-ISubscriptionApplicationService ..> AcquireSubscriptionCommand : recibe
-SubscriptionApplicationService --> ISubscriptionRepository : consulta y persiste
-SubscriptionApplicationService ..> Subscription : ejecuta operaciones
-SubscriptionApplicationService ..> SubscriptionResourceAssembler : transforma
-SubscriptionResourceAssembler ..> Subscription : lee
-SubscriptionResourceAssembler ..> SubscriptionResource : produce
+ISubscriptionApplicationService ..> AcquireSubscriptionCommand : receives
+SubscriptionApplicationService --> ISubscriptionRepository : queries and persists
+SubscriptionApplicationService ..> Subscription : executes operations
+SubscriptionApplicationService ..> SubscriptionResourceAssembler : transforms
+SubscriptionResourceAssembler ..> Subscription : reads
+SubscriptionResourceAssembler ..> SubscriptionResource : produces
 SubscriptionRepository ..|> ISubscriptionRepository
-ISubscriptionRepository ..> Subscription : contrato de persistencia
-SubscriptionRepository --> SkyCropDbContext : acceso a datos
+ISubscriptionRepository ..> Subscription : persistence contract
+SubscriptionRepository --> SkyCropDbContext : data access
 package "Application" {
 interface IPaymentGateway <<integration contract>> {
 +authorize(subscriptionId: Long, amount: Money): boolean
@@ -84,18 +85,18 @@ class PaymentGatewayAdapter <<adapter>> {
 +authorize(subscriptionId: Long, amount: Money): boolean
 }
 }
-SubscriptionApplicationService --> IPaymentGateway : solicita operación
+SubscriptionApplicationService --> IPaymentGateway : requests an operation
 PaymentGatewayAdapter ..|> IPaymentGateway
 note bottom of PaymentGatewayAdapter
-Solicita autorización de una transacción a la pasarela.
+Requests transaction authorization from the payment gateway.
 end note
 SubscriptionController -[hidden]down-> SubscriptionApplicationService
 SubscriptionApplicationService -[hidden]down-> Subscription
 Subscription -[hidden]down-> SubscriptionRepository
 legend bottom
-Arquitectura de clases propuesta para el backend RESTful API.
-La vista muestra un caso de uso del contexto y su consulta por identidad.
-Los atributos del agregado se detallan en las vistas del dominio.
-Las dependencias de infraestructura implementan contratos internos.
+Proposed class architecture for the backend RESTful API.
+The view shows a context use case and retrieval by identifier.
+Aggregate attributes are detailed in the domain views.
+Infrastructure dependencies implement internal contracts.
 endlegend
 @enduml

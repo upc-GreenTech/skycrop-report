@@ -3,9 +3,10 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 120
+scale max 2800 width
 hide empty members
 top to bottom direction
-title SkyCrop - Profiles and Preferences Management - Diseño por capas
+title SkyCrop - Profiles and Preferences Management - Layered Class Design
 package "Interfaces / Presentation" {
 class UserProfileController <<controller>> {
 -service: IUserProfileApplicationService
@@ -62,27 +63,27 @@ class SkyCropDbContext <<EF Core>> {
 +saveChanges(): int
 }
 }
-UserProfileController --> IUserProfileApplicationService : delega
-UserProfileController ..> UpdateProfileRequest : recibe
-UserProfileController ..> UpdateProfileCommand : construye
-UserProfileController ..> UserProfileResource : responde
+UserProfileController --> IUserProfileApplicationService : delegates
+UserProfileController ..> UpdateProfileRequest : receives
+UserProfileController ..> UpdateProfileCommand : builds
+UserProfileController ..> UserProfileResource : responds
 UserProfileApplicationService ..|> IUserProfileApplicationService
-IUserProfileApplicationService ..> UpdateProfileCommand : recibe
-UserProfileApplicationService --> IUserProfileRepository : consulta y persiste
-UserProfileApplicationService ..> UserProfile : ejecuta operaciones
-UserProfileApplicationService ..> UserProfileResourceAssembler : transforma
-UserProfileResourceAssembler ..> UserProfile : lee
-UserProfileResourceAssembler ..> UserProfileResource : produce
+IUserProfileApplicationService ..> UpdateProfileCommand : receives
+UserProfileApplicationService --> IUserProfileRepository : queries and persists
+UserProfileApplicationService ..> UserProfile : executes operations
+UserProfileApplicationService ..> UserProfileResourceAssembler : transforms
+UserProfileResourceAssembler ..> UserProfile : reads
+UserProfileResourceAssembler ..> UserProfileResource : produces
 UserProfileRepository ..|> IUserProfileRepository
-IUserProfileRepository ..> UserProfile : contrato de persistencia
-UserProfileRepository --> SkyCropDbContext : acceso a datos
+IUserProfileRepository ..> UserProfile : persistence contract
+UserProfileRepository --> SkyCropDbContext : data access
 UserProfileController -[hidden]down-> UserProfileApplicationService
 UserProfileApplicationService -[hidden]down-> UserProfile
 UserProfile -[hidden]down-> UserProfileRepository
 legend bottom
-Arquitectura de clases propuesta para el backend RESTful API.
-La vista muestra un caso de uso del contexto y su consulta por identidad.
-Los atributos del agregado se detallan en las vistas del dominio.
-Las dependencias de infraestructura implementan contratos internos.
+Proposed class architecture for the backend RESTful API.
+The view shows a context use case and retrieval by identifier.
+Aggregate attributes are detailed in the domain views.
+Infrastructure dependencies implement internal contracts.
 endlegend
 @enduml

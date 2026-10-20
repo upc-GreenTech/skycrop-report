@@ -3,9 +3,10 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 120
+scale max 2800 width
 hide empty members
 top to bottom direction
-title SkyCrop - Report Management - Diseño por capas
+title SkyCrop - Report Management - Layered Class Design
 package "Interfaces / Presentation" {
 class ReportController <<controller>> {
 -service: IReportApplicationService
@@ -41,7 +42,7 @@ class ReportApplicationService <<application service>> {
 package "Domain" {
 class Report <<aggregate root>> {
 -id: Long
--title: String
+-title: Name
 -type: ReportType
 +export(): void
 }
@@ -60,42 +61,60 @@ class SkyCropDbContext <<EF Core>> {
 +saveChanges(): int
 }
 }
-ReportController --> IReportApplicationService : delega
-ReportController ..> GenerateReportRequest : recibe
-ReportController ..> GenerateReportCommand : construye
-ReportController ..> ReportResource : responde
+ReportController --> IReportApplicationService : delegates
+ReportController ..> GenerateReportRequest : receives
+ReportController ..> GenerateReportCommand : builds
+ReportController ..> ReportResource : responds
 ReportApplicationService ..|> IReportApplicationService
-IReportApplicationService ..> GenerateReportCommand : recibe
-ReportApplicationService --> IReportRepository : consulta y persiste
-ReportApplicationService ..> Report : ejecuta operaciones
-ReportApplicationService ..> ReportResourceAssembler : transforma
-ReportResourceAssembler ..> Report : lee
-ReportResourceAssembler ..> ReportResource : produce
+IReportApplicationService ..> GenerateReportCommand : receives
+ReportApplicationService --> IReportRepository : queries and persists
+ReportApplicationService ..> Report : executes operations
+ReportApplicationService ..> ReportResourceAssembler : transforms
+ReportResourceAssembler ..> Report : reads
+ReportResourceAssembler ..> ReportResource : produces
 ReportRepository ..|> IReportRepository
-IReportRepository ..> Report : contrato de persistencia
-ReportRepository --> SkyCropDbContext : acceso a datos
+IReportRepository ..> Report : persistence contract
+ReportRepository --> SkyCropDbContext : data access
 package "Application" {
 interface IReportStorage <<integration contract>> {
-+save(reportId: Long, content: String): String
++save(reportId: Long, content: String): ResourceUrl
 }
 }
 package "Infrastructure" {
 class CloudReportStorage <<adapter>> {
-+save(reportId: Long, content: String): String
++save(reportId: Long, content: String): ResourceUrl
 }
 }
-ReportApplicationService --> IReportStorage : solicita operación
+ReportApplicationService --> IReportStorage : requests an operation
 CloudReportStorage ..|> IReportStorage
 note bottom of CloudReportStorage
-Almacena el archivo del reporte y devuelve su ubicación.
+Stores the report file and returns its location.
 end note
 ReportController -[hidden]down-> ReportApplicationService
 ReportApplicationService -[hidden]down-> Report
 Report -[hidden]down-> ReportRepository
 legend bottom
-Arquitectura de clases propuesta para el backend RESTful API.
-La vista muestra un caso de uso del contexto y su consulta por identidad.
-Los atributos del agregado se detallan en las vistas del dominio.
-Las dependencias de infraestructura implementan contratos internos.
+Proposed class architecture for the backend RESTful API.
+The view shows a context use case and retrieval by identifier.
+Aggregate attributes are detailed in the domain views.
+Infrastructure dependencies implement internal contracts.
 endlegend
+package "Domain" {
+class ResourceUrl <<value object>> {
+-value: String {readOnly}
+}
+note right of ResourceUrl
+Absolute HTTP or HTTPS URL with a host.
+Equality uses the complete stored URL, including path and query.
+A valid URL does not guarantee availability or access permission.
+end note
+class Name <<value object>> {
+-value: String {readOnly}
+}
+note right of Name
+Non-empty text after trimming outer whitespace.
+Equality compares the resulting text; original case is preserved.
+end note
+}
+Report "1" *-- "1" Name : title
 @enduml
