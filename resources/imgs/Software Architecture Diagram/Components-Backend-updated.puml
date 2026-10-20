@@ -8,49 +8,62 @@ skinparam wrapWidth 180
 skinparam nodesep 35
 skinparam ranksep 45
 top to bottom direction
-title SkyCrop - C4 - Vista general de componentes del backend
-component "Frontend Web Application\n[Contenedor: Vue]\n\nConsume operaciones REST." as web
-rectangle "Backend RESTful API\n[Contenedor: C# / ASP.NET Core]" {
-component "Diagnoses Generation / Core\n[Componente: ASP.NET Core / C#]\n\nSolicita análisis y conserva diagnósticos y anomalías." as diagnoses
-component "Report Management / Core\n[Componente: ASP.NET Core / C#]\n\nConsolida diagnósticos y genera documentos." as reports
-component "Agricultural Plot Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra parcelas, cultivos y acceso colaborativo." as plots
-component "Drone Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra dispositivos, planes y ejecuciones de vuelo." as drones
-component "Subscriptions and Payment Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra vigencia y transacciones de suscripción." as subscriptions
-component "Profiles and Preferences Management / Soporte\n[Componente: ASP.NET Core / C#]\n\nAdministra datos de contacto del usuario." as profiles
-component "Notification Service / Genérico\n[Componente: ASP.NET Core / C#]\n\nRegistra avisos y coordina su entrega." as notifications
-component "IAM — Identity and Access Management / Genérico\n[Componente: ASP.NET Core / C#]\n\nAdministra identidades, credenciales y autorización." as iam
-component "Persistencia\n[Componente: Entity Framework Core]\n\nRepositorios por agregado y acceso a datos." as persistence
-component "Integraciones externas\n[Componente: C# / HTTPS]\n\nAdaptadores de análisis, mapas, drones, pagos, mensajes y archivos." as integrations
+title SkyCrop - C4 - Backend Component Overview
+component "Frontend Web Application\n[Container: Vue]\n\nConsumes REST operations." as web
+rectangle "Backend RESTful API\n[Container: C# / ASP.NET Core]" {
+rectangle "Interfaces / Presentation" {
+component "HTTP Controllers per Context\n[Component: ASP.NET Core]\n\nReceive requests and return HTTP resources." as controllers
 }
-database "Base de datos relacional\n[Contenedor: MySQL Server o PostgreSQL]" as db
-component "Proveedores externos\n[Sistemas externos: Servicios / Dispositivos]\n\nAnálisis, mapas, drones, pagos, mensajería y almacenamiento." as providers
-web --> diagnoses : REST [HTTPS / JSON]
-diagnoses --> persistence : Consulta y persiste
-diagnoses --> integrations : Solicita integración
-web --> reports : REST [HTTPS / JSON]
-reports --> persistence : Consulta y persiste
-reports --> integrations : Solicita integración
-web --> plots : REST [HTTPS / JSON]
-plots --> persistence : Consulta y persiste
-plots --> integrations : Solicita integración
-web --> drones : REST [HTTPS / JSON]
-drones --> persistence : Consulta y persiste
-drones --> integrations : Solicita integración
-web --> subscriptions : REST [HTTPS / JSON]
-subscriptions --> persistence : Consulta y persiste
-subscriptions --> integrations : Solicita integración
-web --> profiles : REST [HTTPS / JSON]
-profiles --> persistence : Consulta y persiste
-web --> notifications : REST [HTTPS / JSON]
-notifications --> persistence : Consulta y persiste
-notifications --> integrations : Solicita integración
-web --> iam : REST [HTTPS / JSON]
-iam --> persistence : Consulta y persiste
-persistence --> db : Lectura y escritura [SQL]
-integrations --> providers : HTTPS / protocolo del dispositivo
+rectangle "Application" {
+component "Application Services per Context\n[Component: C#]\n\nCoordinate use cases through internal contracts." as application
+component "Integration Contracts\n[Component: C# interfaces]\n\nDefine required provider and device operations." as integrationContracts
+}
+rectangle "Domain" {
+component "Diagnoses Generation / Core\n[Component: C# domain model]\n\nRequests analysis and stores diagnoses and anomalies." as diagnoses
+component "Report Management / Core\n[Component: C# domain model]\n\nConsolidates diagnoses and generates documents." as reports
+component "Agricultural Plot Management / Supporting\n[Component: C# domain model]\n\nManages plots, crops and collaborative access." as plots
+component "Drone Management / Supporting\n[Component: C# domain model]\n\nManages devices, flight plans and flight executions." as drones
+component "Subscriptions and Payment Management / Supporting\n[Component: C# domain model]\n\nManages subscription validity and transactions." as subscriptions
+component "Profiles and Preferences Management / Supporting\n[Component: C# domain model]\n\nManages user contact information." as profiles
+component "Notification Service / Generic\n[Component: C# domain model]\n\nRecords notifications and coordinates delivery." as notifications
+component "IAM — Identity and Access Management / Generic\n[Component: C# domain model]\n\nManages identities, credentials and authorization." as iam
+component "Repository Contracts\n[Component: C# interfaces]\n\nDefine aggregate persistence." as repositoryContracts
+}
+rectangle "Infrastructure" {
+component "Persistence\n[Component: Entity Framework Core]\n\nRepositories per aggregate and data access." as persistence
+component "External Integrations\n[Component: C# / HTTPS]\n\nAdapters for analysis, maps, drones, payments, messaging and files." as integrations
+}
+}
+database "Relational Database\n[Container: MySQL Server or PostgreSQL]" as db
+component "External Providers\n[External systems: Services / Devices]\n\nAnalysis, maps, drones, payments, messaging and storage." as providers
+web --> controllers : REST [HTTPS / JSON]
+controllers --> application : Delegates use cases
+application --> repositoryContracts : Queries and persists
+application --> integrationContracts : Requests an operation
+persistence ..|> repositoryContracts : Implements
+integrations ..|> integrationContracts : Implements
+application --> diagnoses : Applies rules
+application --> reports : Applies rules
+application --> plots : Applies rules
+application --> drones : Applies rules
+application --> subscriptions : Applies rules
+application --> profiles : Applies rules
+application --> notifications : Applies rules
+application --> iam : Applies rules
+persistence --> db : Reads and writes [SQL]
+integrations --> providers : HTTPS / device protocol
+diagnoses -[hidden]right-> reports
+reports -[hidden]right-> plots
+plots -[hidden]right-> drones
+drones -[hidden]right-> subscriptions
+subscriptions -[hidden]right-> profiles
+profiles -[hidden]right-> notifications
+notifications -[hidden]right-> iam
 legend bottom
-C4 - Vista de componentes de la arquitectura propuesta.
-Cada vista amplía un único contenedor.
-Los contextos agrupan responsabilidades dentro del contenedor.
+C4 - Component view of the proposed architecture.
+Each view expands a single container.
+The domain catalog follows the core, supporting and generic context order.
+Each context distributes its components across the four layers.
+Individual views detail the corresponding contracts and adapters.
 endlegend
 @enduml

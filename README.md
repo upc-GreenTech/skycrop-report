@@ -2030,19 +2030,30 @@ Los componentes organizan la navegación, las funcionalidades y beneficios, los 
 
 **Frontend Web Application: vista general**
 
-La vista general presenta los ocho contextos en el orden del catálogo del dominio. El layout organiza la navegación entre vistas; los módulos de cada contexto utilizan el cliente HTTP compartido para comunicarse con el API. La propuesta utiliza Vue, JavaScript y PrimeVue, con soporte para inglés y español, diseño adaptable y atributos ARIA.
+La vista general organiza el frontend en Presentation, Application, Domain e Infrastructure. Presentation reúne el layout y las vistas de los ocho contextos, en el orden del catálogo del dominio. Los stores de Application coordinan las acciones y el estado; los modelos de Domain representan los datos del cliente; los clientes del API, assemblers y el cliente HTTP pertenecen a Infrastructure. La propuesta utiliza Vue, JavaScript y PrimeVue, con soporte para inglés y español, diseño adaptable y atributos ARIA.
 
 <img src="resources/imgs/Software Architecture Diagram/Components-Frontend-updated.png" alt="C4: vista general de componentes del frontend de SkyCrop">
 
 **Backend RESTful API: vista general**
 
-La vista general distribuye las operaciones entre los ocho contextos y muestra los componentes de persistencia e integración externa. Los repositorios acceden a la base de datos mediante Entity Framework Core. Los adaptadores encapsulan la comunicación con los proveedores y dispositivos. El diseño utiliza C# y ASP.NET Core; la documentación de los contratos HTTP se representa mediante OpenAPI y Swagger.
+La vista general separa Interfaces / Presentation, Application, Domain e Infrastructure. Los controladores reciben solicitudes HTTP y delegan los casos de uso a los servicios de aplicación. Domain conserva las reglas de los ocho contextos y los contratos de repositorio. Application define los contratos de integración que necesita. Los repositorios de Infrastructure implementan la persistencia mediante Entity Framework Core y los adaptadores implementan la comunicación con proveedores y dispositivos. El diseño utiliza C# y ASP.NET Core; la documentación de los contratos HTTP se representa mediante OpenAPI y Swagger.
 
 <img src="resources/imgs/Software Architecture Diagram/Components-Backend-updated.png" alt="C4: vista general de componentes del backend de SkyCrop">
 
 **Vistas de componentes por Bounded Context**
 
-En el frontend, las vistas delegan las acciones y el estado al store del contexto. El cliente del API envía las solicitudes mediante el cliente HTTP compartido y el assembler transforma las respuestas en modelos de la aplicación. En el backend, los controladores reciben las solicitudes, los servicios de aplicación coordinan las operaciones y el dominio mantiene sus reglas. Los repositorios y adaptadores implementan las responsabilidades de infraestructura. Las vistas amplían el diseño por capas de la sección 4.7.1.
+Las vistas individuales agrupan los componentes por capa dentro de cada Bounded Context. Las flechas continuas representan relaciones de uso; las discontinuas con triángulo indican que una implementación satisface un contrato.
+
+| Capa | Frontend | Backend |
+|---|---|---|
+| Presentation / Interfaces | Vistas y componentes de interacción. | Controladores, entrada de solicitudes y respuesta HTTP. |
+| Application | Stores que coordinan acciones, datos, carga y errores. | Servicios de aplicación y contratos de integración. |
+| Domain | Modelos de datos utilizados por el cliente. | Agregados, entidades, objetos de valor, reglas y contratos de repositorio. |
+| Infrastructure | Clientes del API, assemblers y transporte HTTP compartido. | Repositorios con Entity Framework Core y adaptadores externos. |
+
+En el frontend, las vistas delegan las acciones al store del contexto. El cliente del API utiliza el transporte HTTP compartido y el assembler construye los modelos a partir de las respuestas. Estos modelos facilitan la interacción del cliente; las reglas de negocio y su validación autoritativa permanecen en el backend.
+
+En el backend, los servicios de aplicación utilizan contratos de repositorio e integración, cuyas implementaciones pertenecen a Infrastructure. El dominio no depende de Entity Framework Core ni de los proveedores externos. Las vistas describen la arquitectura propuesta y complementan el diseño de clases de la sección 4.7.1.
 
 **Diagnoses Generation**
 
@@ -2158,7 +2169,7 @@ Backend:
 
 **IAM — Identity and Access Management**
 
-En el frontend se organizan las vistas de registro, inicio de sesión y recuperación de acceso. En el backend, el contexto administra identidades, credenciales y autorización. La integración utiliza `PasswordHashVerifier` para verificación de credenciales. La emisión de credenciales se realiza mediante `AccessTokenIssuer`.
+En el frontend se organizan las vistas de registro, inicio de sesión y recuperación de acceso. En el backend, el contexto administra identidades, credenciales y autorización. La integración utiliza `PasswordHashVerifier` para verificación de credenciales. Tras una autenticación correcta, el controlador utiliza `AccessTokenIssuer` para producir la credencial de acceso en la capa de presentación.
 
 Frontend:
 
