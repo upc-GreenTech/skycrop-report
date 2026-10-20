@@ -225,7 +225,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 <div align="center">
 <table border="1">
   <tr>
-  <th>Criterio Especifico</th>
+  <th>Criterio Específico</th>
   <th>Acciones Realizadas</th>
   <th>Conclusiones</th>
   </tr>
@@ -343,8 +343,8 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | **Integrante** |Pumahualcca Garcia, Diego Rodrigo|
 | :--- | :--- |
 | **Código del Estudiante** |u202219266|
-| **Carrera** |Ingenieria de software|
-| **Descripción** |Mi nombre es Diego, tengo 21 años. Tengo interés sobre la tecnología y sobre aprender a programar, sobretodo quisiera centrarme en ciberseguridad y aparte crear un juego que otro como tiempo libre|
+| **Carrera** |Ingeniería de software|
+| **Descripción** |Mi nombre es Diego, tengo 21 años. Tengo interés sobre la tecnología y sobre aprender a programar, sobretodo quisiera centrarme en ciberseguridad y aparte crear un juego que otro en su tiempo libre|
 | **Foto** | <img src="resources/imgs/IntegranteDiego.jpeg" alt="Diego" width="200" height="240">  |
 
 --------------
@@ -354,7 +354,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202423775 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Mi nombre es Yam Cano, tengo 20 años y soy estudiante de la carrera de ingeniería de software,ademas soy una persona proactiva ;cuento con habilidades analíticas y lógicas en programación, lo que me permite abordar problemas en base a mi carrera,además estoy buscando nuevas oportunidades para aprender y aplicar mis conocimientos, lo que me ayuda a crecer tanto a nivel académico como personal.|
+| **Descripción** | Mi nombre es Yam Cano, tengo 20 años y soy estudiante de la carrera de ingeniería de software, además soy una persona proactiva; cuento con habilidades analíticas y lógicas en programación, lo que me permite abordar problemas en base a mi carrera, además estoy buscando nuevas oportunidades para aprender y aplicar mis conocimientos, lo que me ayuda a crecer tanto a nivel académico como personal.|
 | **Foto** | <img src="resources/imgs/chapter_2/Yam.png" alt="Yam" width="200" height="240">  |
 
 ----------------------
@@ -371,7 +371,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | **Integrante** | Sunio Danilo Landa Sánchez |
 | :--- | :--- |
 | **Código del Estudiante** | U202423973 |
-| **Carrera** |Ingenieria de Software|
+| **Carrera** |Ingeniería de Software|
 | **Descripción** |Soy Sunio Landa, tengo 20 años. Suelo aprender cosas rápido y siempre busco que mi equipo realice el mejor trabajo posible.|
 | **Foto** | <img src="resources/imgs/foto-landa.jpeg" alt="Sunio" width="200" height="240"> |
 
@@ -381,14 +381,14 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202310349 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy Sebastián, soy estudiante de la carrera de ingenieria de software, tengo 20 años y me gusta lograr grandes cosas programando, suelo interesarme mucho por aprender cosas nuevas en el mundo de la programacián más que nada. Me gusta apoyar a mis compañeros para los trabajos, considero que soy de trabajar en equipo. Tengo conocimientos en C#, C++, JavaScript, Python y TypeScript. |
+| **Descripción** | Soy Sebastián, soy estudiante de la carrera de ingeniería de software, tengo 20 años y me gusta lograr grandes cosas programando, suelo interesarme mucho por aprender cosas nuevas en el mundo de la programación más que nada. Me gusta apoyar a mis compañeros para los trabajos, considero que soy de trabajar en equipo. Tengo conocimientos en C#, C++, JavaScript, Python y TypeScript. |
 | **Foto** | <img src="resources/imgs/foto-sebastian.jpeg" alt="Luis Sebastián Rubio Ortiz" width="200"> |
 
 ## 1.2. Solution Profile 
 
 ### 1.2.1 Antecedentes y problemática 
 
-| 5w & 2H | Descripcion|
+| 5w & 2H | Descripción|
 |---------|------------|
 | **What: ¿Cuál es el problema?**| El monitoreo agrícola manual requiere un alto costo de tiempo y esfuerzo físico, debido a la necesidad de supervisar extensas áreas de cultivo de manera constante. A esto se suma la falta de acceso a software comercial de automatización de vuelos de drones y análisis de imágenes agrícolas, debido a su alto costo y naturaleza cerrada, lo que limita la posibilidad de contar con soluciones personalizables y obliga a los agricultores a depender de procesos manuales poco eficientes.|
 | **When: ¿Cuándo sucede este problema?**| Durante las revisiones periódicas del terreno, siendo especialmente crítico cuando las plagas, el estrés hídrico o las deficiencias de fertilizante avanzan rápidamente sin ser detectados a tiempo.|
@@ -396,7 +396,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | **Who: ¿Quiénes están involucrados?** | Los productores y agricultores que deben gestionar los cultivos, así como el personal encargado de la inspección física en el campo.|
 | **Why: ¿Cuál es la causa del problema?** | Las alternativas tecnológicas actuales operan como ecosistemas cerrados y rígidos. Al no integrarse con las dinámicas y necesidades agronómicas específicas de cada cultivo, resultan inoperantes para el entorno real del productor, forzándolo a depender de las inspecciones físicas tradicionales. |
 | **How: ¿Qué llevó a la persona a llegar a esta situación?** | Se manifiesta a través del monitoreo manual de las parcelas agrícolas, un proceso que requiere de mucho tiempo y esfuerzo físico, y que a menudo no detecta problemas hasta que están muy avanzados|
-| **How Much: ¿Cuánto es el impacto financiero?** | Representa grandes pérdidas de cultivos por la identificación tardía de anomalías, además de los altos costos incurridos en la cantidad de horas  necesarias de un trabajador para recorrer la parcela físicamente.|
+| **How Much: ¿Cuánto es el impacto financiero?** | Representa grandes pérdidas de cultivos por la identificación tardía de anomalías, además de los altos costos incurridos en la cantidad de horas necesarias de un trabajador para recorrer la parcela físicamente.|
 
 **Objetivo y alcance de la solución**
 
@@ -556,7 +556,7 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
   <tr>
     <th colspan="2">¿Por qué llevar a cabo este análisis?</th>
     <td colspan="4">
-      El objetivo de este analisis es conocer más sobre lo que ofrece nuestra competencia para, en base a ello, identificar en que aspectos podemos diferenciarnos y como podemos mejorar nuestro producto. Con estos avances podremos tener un mejor puesto en el mercado.
+      El objetivo de este análisis es conocer más sobre lo que ofrece nuestra competencia para, en base a ello, identificar en qué aspectos podemos diferenciarnos y cómo podemos mejorar nuestro producto. Con estos avances podremos tener un mejor puesto en el mercado.
     </td>
   </tr>
   
@@ -599,7 +599,7 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
     <th>Ventaja Competitiva</th>
     <td>Enfoque en la agricultura, compatibilidad con la mayoría de drones y almacenamiento de datos históricos y de reportes avanzados.
     </td>
-    <td>Alta compatibilidad con la mayoría de drones y análisis avanzado a partir de imagenes para generar prescripciones.
+    <td>Alta compatibilidad con la mayoría de drones y análisis avanzado a partir de imágenes para generar prescripciones.
     </td>
     <td>Elaboración y venta de drones especializados en la agricultura junto con un programa de análisis y procesamiento.
     </td>
@@ -651,7 +651,7 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
     </td>
     <td>Prueba gratuita y planes anuales a partir de $300.
     </td>
-    <td>Cotizable segun servicio.
+    <td>Cotizable según servicio.
     </td>
   </tr>
     <tr>
@@ -704,9 +704,9 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
     <th>Amenazas</th>
     <td>Competencia con plataformas similares con mayor experiencia en el mercado.
     </td>
-    <td>Las subscripciones de alto precio que ofrece pueden alejar a empresas agricolas pequeñas.
+    <td>Las subscripciones de alto precio que ofrece pueden alejar a empresas agrícolas pequeñas.
     </td>
-    <td>Sus planes de alto precio, así como la complejidad del software, pueden alejar a empresas agricolas pequeñas.
+    <td>Sus planes de alto precio, así como la complejidad del software, pueden alejar a empresas agrícolas pequeñas.
     </td>
     <td>Posibles problemas con la disponibilidad de los proveedores de servicios.
     </td>
@@ -1634,7 +1634,7 @@ El sistema de navegación de SkyCrop está diseñado para guiar a los usuarios (
 
 ### 4.3.1. Landing Page Wireframe. 
 
-A continuación se presentan los Wireframes realizados para la Landing Page. El diseño buscó seguir la heuristica de la usabilidad de 'Diseño estético y minimalista' mediante el uso de una estructura y figuras simples para la pagina. Además, la barra de navegación superior ayuda a que se cumpla la heuristica de 'Flexibilidad y eficiencia en el uso' al brindar atajos a ciertas partes de la pagina.
+A continuación se presentan los Wireframes realizados para la Landing Page. El diseño buscó seguir la heurística de la usabilidad de 'Diseño estético y minimalista' mediante el uso de una estructura y figuras simples para la página. Además, la barra de navegación superior ayuda a que se cumpla la heurística de 'Flexibilidad y eficiencia en el uso' al brindar atajos a ciertas partes de la página.
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-landing-1.jpg" alt="Landing Page Wireframe - Parte 1" width="600">
@@ -1683,39 +1683,39 @@ El diseño adopta Material Design como referencia, los verdes y azules definidos
 
 ### 4.4.1. Web Applications Wireframes. 
 
-En esta sección se presentarán los Wireframes de nuestra aplicación web. Gracias a los encabezados en gran parte de los wireframes es posible conocer en que parte de la aplicación el usuario se puede encontrar y determinar que acciones puede hacer, esto va de acuerdo con la heuristica de usabilidad 'Visibilidad del Estado del Sistema'. Además, el uso del mismo menu superior y lateral, junto con la estructura similar entre secciones, logra cumplir con el principio del diseño inclusivo sobre 'Ser Consistente'.
+En esta sección se presentarán los Wireframes de nuestra aplicación web. Gracias a los encabezados en gran parte de los wireframes es posible conocer en qué parte de la aplicación el usuario se puede encontrar y determinar qué acciones puede hacer, esto va de acuerdo con la heurística de usabilidad 'Visibilidad del Estado del Sistema'. Además, el uso del mismo menú superior y lateral, junto con la estructura similar entre secciones, logra cumplir con el principio del diseño inclusivo sobre 'Ser Consistente'.
 
-**Pagina de inicio de sesión:**
+**Página de inicio de sesión:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-1.jpg" alt="Web App Wireframe 1" width="600">
 </div>
 
-**Pagina de pago de subscripción:**
+**Página de pago de subscripción:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-2.jpg" alt="Web App Wireframe 2" width="600">
 </div>
 
-**Pagina de inicio**
+**Página de inicio**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-3.jpg" alt="Web App Wireframe 3" width="600">
 </div>
 
-**Pagina de parcelas agricolas registradas**
+**Página de parcelas agrícolas registradas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-4.jpg" alt="Web App Wireframe 4" width="600">
 </div>
 
-**Pagina de drones registrados**
+**Página de drones registrados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-5.jpg" alt="Web App Wireframe 5" width="600">
 </div>
 
-**Sección de registro de parcelas agricolas**
+**Sección de registro de parcelas agrícolas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-6.jpg" alt="Web App Wireframe 6" width="600">
@@ -1739,7 +1739,7 @@ En esta sección se presentarán los Wireframes de nuestra aplicación web. Grac
 <img src="resources/imgs/chapter_4/wireframe-desktop-9.jpg" alt="Web App Wireframe 9" width="600">
 </div>
 
-**Historial de diagnosticos generados**
+**Historial de diagnósticos generados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-10.jpg" alt="Web App Wireframe 10" width="600">
@@ -1747,13 +1747,13 @@ En esta sección se presentarán los Wireframes de nuestra aplicación web. Grac
 
 ### 4.4.2. Web Applications Wireflow Diagrams. 
 
-Antes de la elaooración de los Wireflow Diagramas, definimos las User goals:
+Antes de la elaboración de los Wireflow Diagramas, definimos las User goals:
 
 - Como agricultor e ingeniero agrónomo, queremos acceder a la plataforma mediante una cuenta.
-- Como agricultor, quiero ser capaz de registrar una parcela agricola en la plataforma.
+- Como agricultor, quiero ser capaz de registrar una parcela agrícola en la plataforma.
 - Como ingeniero agrónomo, quiero ser capaz de monitorear el estado de los drones agrícolas desde la plataforma.
 - Como agricultor e ingeniero agrónomo, queremos recibir y leer reportes por estación sobre nuestras parcelas agrícolas.
-- Como agricultor e ingeniero agrónomo, queremos recibir y leer diagnosticos sobre el estado de nuestros cultivos.
+- Como agricultor e ingeniero agrónomo, queremos recibir y leer diagnósticos sobre el estado de nuestros cultivos.
 
 En base a estas User Goals, elaboramos los siguientes wireflows:
 
@@ -1781,7 +1781,7 @@ Wireflow 4: Visualización de reportes
 <img src="resources/imgs/chapter_4/wireflow-4.jpg" alt="Wireflow 4" width="600">
 </div>
 
-Wireflow 5: Lectura de diagnosticos
+Wireflow 5: Lectura de diagnósticos
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireflow-5.jpg" alt="Wireflow 5" width="600">
@@ -1791,37 +1791,37 @@ Wireflow 5: Lectura de diagnosticos
 
 A partir de los wireframes elaborados, se realizaron los Mock-ups de la aplicación web. Estos diseños siguen la misma paleta de colores definida en las pautas y usada en la Landing Page, lo cual fortalece la consistencia entre diseño.
 
-**Pagina de inicio de sesión:**
+**Página de inicio de sesión:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-1.jpg" alt="Web App Mock-up 1" width="600">
 </div>
 
-**Pagina de pago de subscripción:**
+**Página de pago de subscripción:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-2.jpg" alt="Web App Mock-up 2" width="600">
 </div>
 
-**Pagina de inicio**
+**Página de inicio**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-3.jpg" alt="Web App Mock-up 3" width="600">
 </div>
 
-**Pagina de parcelas agricolas registradas**
+**Página de parcelas agrícolas registradas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-4.jpg" alt="Web App Mock-up 4" width="600">
 </div>
 
-**Pagina de drones registrados**
+**Página de drones registrados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-5.jpg" alt="Web App Mock-up 5" width="600">
 </div>
 
-**Sección de registro de parcelas agricolas**
+**Sección de registro de parcelas agrícolas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-6.jpg" alt="Web App Mock-up 6" width="600">
@@ -1845,7 +1845,7 @@ A partir de los wireframes elaborados, se realizaron los Mock-ups de la aplicaci
 <img src="resources/imgs/chapter_4/mockup-desktop-9.jpg" alt="Web App Mock-up 9" width="600">
 </div>
 
-**Historial de diagnosticos generados**
+**Historial de diagnósticos generados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-10.jpg" alt="Web App Mock-up 10" width="600">
@@ -1879,7 +1879,7 @@ Userflow 4: Visualización de reportes
 <img src="resources/imgs/chapter_4/userflow-4.jpg" alt="Wireflow 4" width="600">
 </div>
 
-Userflow 5: Lectura de diagnosticos
+Userflow 5: Lectura de diagnósticos
 
 <div align="center">
 <img src="resources/imgs/chapter_4/userflow-5.jpg" alt="Wireflow 5" width="600">
@@ -1958,7 +1958,7 @@ Paso 2: Agregar comandos
 <img src="resources/imgs/chapter_4/design-level-eventstorming-2.png" alt="Eventstorming paso 2" width="600">
 </div>
 
-Paso 3: Agregar actores y politicas
+Paso 3: Agregar actores y políticas
 
 <div align="center">
 <img src="resources/imgs/chapter_4/design-level-eventstorming-3.png" alt="Eventstorming paso 3" width="600">
@@ -2596,7 +2596,7 @@ Los valores se incorporan durante la compilación del frontend. La URL de produc
 
 #### 5.2.1.1. Sprint Planning 1. 
 
-El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera versión funcional de la Landing Page de SkyCrop . El objetivo principal de esta iteración es establecer la presencia digital del producto, comunicando su propuesta de valor a los agricultores y a los ingenieros agrónomos, e integrando la presentación de sus funcionalidades, los beneficios para cada segmento, los planes de suscripción y un canal de contacto.
+El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera versión funcional de la Landing Page de SkyCrop. El objetivo principal de esta iteración es establecer la presencia digital del producto, comunicando su propuesta de valor a los agricultores y a los ingenieros agrónomos, e integrando la presentación de sus funcionalidades, los beneficios para cada segmento, los planes de suscripción y un canal de contacto.
 
 | **Sprint #** | Sprint 1 |
 | :--- | :--- |
@@ -2691,7 +2691,7 @@ Los responsables originales se mantienen. Las subtareas remiten al estado regist
 
   <tr>
     <td>UT-02</td>
-    <td>Preparar la presentación de la pagina</td>
+    <td>Preparar la presentación de la página</td>
     <td>Maquetar la sección Hero con descripción y botón de acceso provisional</td>
     <td>3</td>
     <td>Diego Pumahualcca</td>
@@ -2711,8 +2711,8 @@ Los responsables originales se mantienen. Las subtareas remiten al estado regist
 
   <tr>
     <td>UT-04</td>
-    <td>Agregar imagenes de funcionalidades</td>
-    <td>Incorporar imagenes a la sección de funcionalidades</td>
+    <td>Agregar imágenes de funcionalidades</td>
+    <td>Incorporar imágenes a la sección de funcionalidades</td>
     <td>2</td>
     <td>Yam Cano</td>
     <td>Done</td>
@@ -2820,7 +2820,7 @@ Los responsables originales se mantienen. Las subtareas remiten al estado regist
 
   <tr>
     <td rowspan="2">US-43</td>
-    <td rowspan="2">Pie de pagina informativo</td>
+    <td rowspan="2">Pie de página informativo</td>
     <td>UT-12.1</td>
     <td>Maquetar el contenido del pie de página</td>
     <td>Organizar la información institucional y los medios de contacto en el pie de página.</td>
@@ -3140,7 +3140,7 @@ La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una pr
     <td rowspan="2">Consulta de información de los cultivos</td>
     <td>UT-25</td>
     <td>Estructurar la vista de detalles</td>
-    <td>Diseñar la vista de detalles de cultivos y que campos se considerarán</td>
+    <td>Diseñar la vista de detalles de cultivos y definir los campos que incluirá</td>
     <td>1</td>
     <td>Diego Pumahualcca</td>
     <td>Done</td>
@@ -3199,8 +3199,8 @@ La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una pr
     <td rowspan="2">US-23</td>
     <td rowspan="2">Generación de diagnóstico</td>
     <td>UT-31</td>
-    <td>Estructurar el diagnostico</td>
-    <td>Definir los campos y datos que se tomarán en cuenta para un diagnostico</td>
+    <td>Estructurar el diagnóstico</td>
+    <td>Definir los campos y datos que se tomarán en cuenta para un diagnóstico</td>
     <td>2</td>
     <td>Sunio Landa</td>
     <td>Done</td>
@@ -3208,8 +3208,8 @@ La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una pr
 
   <tr>
     <td>UT-32</td>
-    <td>Registrar diagnosticos</td>
-    <td>Guardar un historial de diagnosticos generados para una parcela</td>
+    <td>Registrar diagnósticos</td>
+    <td>Guardar un historial de diagnósticos generados para una parcela</td>
     <td>2</td>
     <td>Sunio Landa</td>
     <td>Done</td>
@@ -3229,7 +3229,7 @@ La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una pr
   <tr>
     <td>UT-34</td>
     <td>Vista de datos del historial</td>
-    <td>Visualizar los datos registrados de los diagnosticos en el historial</td>
+    <td>Visualizar los datos registrados de los diagnósticos en el historial</td>
     <td>2</td>
     <td>Sunio Landa</td>
     <td>Done</td>
@@ -3249,7 +3249,7 @@ La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una pr
   <tr>
     <td>UT-36</td>
     <td>Generar el reporte</td>
-    <td>Usar datos historicos de los diagnosticos para registrar un reporte con ellos</td>
+    <td>Usar datos históricos de los diagnósticos para registrar un reporte con ellos</td>
     <td>3</td>
     <td>Diego Pumahualcca</td>
     <td>Done</td>
@@ -3550,4 +3550,4 @@ Enlace al video de entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/persona
 
 Enlace al Sprint Navigation 2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQDhF1dMbAU1R4u6WSnbjIWYAd2SjkGT6bbca2dyF2NeBkY?e=m6YUYr
 
-Enlace al video de exposicion: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQC7-9lfjgHpQ4bt-_6qzEckAakmUPUCAoJjSVcUw-FifaQ?e=XQGhZZ
+Enlace al video de exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQC7-9lfjgHpQ4bt-_6qzEckAakmUPUCAoJjSVcUw-FifaQ?e=XQGhZZ
