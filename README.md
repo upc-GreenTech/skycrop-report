@@ -2623,7 +2623,7 @@ La capacidad estimada de 14 Story Points sirve como referencia para la planifica
 | Historias seleccionadas | 8: US-36 a US-43 | Alcance de la landing, correspondiente a EP-08. |
 | Suma del alcance seleccionado | 14 Story Points | 1 + 2 + 1 + 1 + 2 + 3 + 2 + 2. |
 | Bloques de tareas | 11 | Agrupan los 20 identificadores UT-01 a UT-20. |
-| Esfuerzo estimado | 63 horas-persona | Suma de las estimaciones de tareas; no representa tiempo ejecutado. |
+| Esfuerzo estimado | 53 horas-persona | Suma de las estimaciones de tareas de 5.2.1.3; no representa tiempo ejecutado. |
 
 Los Story Points expresan esfuerzo relativo y las horas-persona estiman dedicación. La coincidencia entre capacidad y alcance en esta planificación no establece una equivalencia entre ambas unidades. Los estados de tareas consignados en el backlog son registros de seguimiento; la revisión del resultado utiliza las evidencias de desarrollo, ejecución y despliegue.
 
@@ -2649,14 +2649,16 @@ Enlace: https://trello.com/b/v9IDjQLu/sprint-backlog-1
 
 ![Sprint 1 Backlog - Trello](resources/imgs/chapter_5/sprint-1-backlog-trello.png)
 
-Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. Los identificadores originales se conservan para relacionar cada bloque con las evidencias existentes y los aportes de sus responsables. La revisión mantiene un esfuerzo total estimado de 63 horas-persona; redistribuye el esfuerzo de beneficios entre el filtro compartido y su integración por segmento. Las horas corresponden a estimaciones revisadas, no a registros de tiempo ejecutado. La captura de Trello conserva la organización anterior; la tabla siguiente presenta la agrupación revisada.
+Cada historia se descompone en al menos dos tareas. Para US-39, US-40, US-42 y US-43 se presenta un desglose documental de las tareas originales UT-07, UT-08, UT-11 y UT-12 mediante identificadores con sufijos. Las estimaciones se distribuyen entre las subtareas sin incrementar el esfuerzo original. La tabla suma 53 horas-persona: 32 asociadas a historias y 21 correspondientes a tareas generales. Estas horas son estimaciones, no registros de tiempo ejecutado.
+
+Los responsables originales se mantienen. Las subtareas remiten al estado registrado de su tarea de origen; no constituyen nuevos registros de ejecución ni acreditan por separado el cumplimiento de criterios de aceptación. La captura de Trello conserva la organización anterior y no se modifica en esta revisión.
 
 
 <div align="center">
 <table border="1">
   <tr>
     <th>Sprint #</th>
-    <th colspan="7">Sprint 2</th>
+    <th colspan="7">Sprint 1</th>
   </tr>
 
   <tr>
@@ -2701,7 +2703,7 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
     <td rowspan="2">Demostración de funcionalidades de SkyCrop</td>
     <td>UT-03</td>
     <td>Implementar la sección de funcionalidades</td>
-    <td>Maquetar los bloques ded mapeo, telemetria y drones e </td>
+    <td>Maquetar los bloques de mapeo, telemetría y drones.</td>
     <td>2</td>
     <td>Oliver Jonseck</td>
     <td>Done</td>
@@ -2737,25 +2739,43 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
   </tr>
 
   <tr>
-    <td>US-39</td>
-    <td>Muestra de beneficios para agrónomos</td>
-    <td>UT-07</td>
-    <td>Integrar los beneficios para agrónomos</td>
-    <td>Redactar y maquetar los beneficios para agrónomos y verificar su visualización al cambiar de perfil mediante el filtro compartido.</td>
-    <td>5</td>
+    <td rowspan="2">US-39</td>
+    <td rowspan="2">Muestra de beneficios para agrónomos</td>
+    <td>UT-07.1</td>
+    <td>Maquetar los beneficios para agrónomos</td>
+    <td>Redactar y estructurar las tarjetas de beneficios del segmento Agrónomo.</td>
+    <td>3</td>
     <td>Oliver Jonseck</td>
-    <td>Done</td>
+    <td>Ver UT-07</td>
   </tr>
 
   <tr>
-    <td>US-40</td>
-    <td>Planes de subscripciones y precios</td>
-    <td>UT-08</td>
-    <td>Implementar la cuadrícula de planes</td>
-    <td>Maquetar costos mensuales, características y botones de subscripción de cada plan</td>
-    <td>4</td>
+    <td>UT-07.2</td>
+    <td>Integrar los beneficios con el filtro compartido</td>
+    <td>Integrar el contenido del segmento Agrónomo y comprobar su visualización al cambiar de perfil.</td>
+    <td>2</td>
+    <td>Oliver Jonseck</td>
+    <td>Ver UT-07</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-40</td>
+    <td rowspan="2">Planes de subscripciones y precios</td>
+    <td>UT-08.1</td>
+    <td>Maquetar la información de los planes</td>
+    <td>Presentar el costo mensual y las características de cada plan en una cuadrícula.</td>
+    <td>2</td>
     <td>Sunio Landa</td>
-    <td>Done</td>
+    <td>Ver UT-08</td>
+  </tr>
+
+  <tr>
+    <td>UT-08.2</td>
+    <td>Incorporar los botones de suscripción</td>
+    <td>Añadir los botones de acceso de cada plan y relacionarlos con la navegación prevista.</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Ver UT-08</td>
   </tr>
 
   <tr>
@@ -2763,7 +2783,7 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
     <td rowspan="2">Opción de contacto</td>
     <td>UT-09</td>
     <td>Implementar el diseño del formulario</td>
-    <td>Crear los campos de contacto, </td>
+    <td>Crear los campos de nombre, correo electrónico y mensaje del formulario de contacto.</td>
     <td>2</td>
     <td>Yam Cano</td>
     <td>Done</td>
@@ -2779,25 +2799,43 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
   </tr>
 
   <tr>
-    <td>US-42</td>
-    <td>Navegación rápida por la Landing Page</td>
-    <td>UT-11</td>
-    <td>Implementar la navegación por las secciones de la pagina</td>
-    <td>Crear un menú fijo con desplazamiento a secciones</td>
-    <td>3</td>
+    <td rowspan="2">US-42</td>
+    <td rowspan="2">Navegación rápida por la Landing Page</td>
+    <td>UT-11.1</td>
+    <td>Estructurar el menú de secciones</td>
+    <td>Crear el menú fijo y sus enlaces a las secciones de la landing.</td>
+    <td>1</td>
     <td>Diego Pumahualcca</td>
-    <td>Done</td>
+    <td>Ver UT-11</td>
   </tr>
 
   <tr>
-    <td>US-43</td>
-    <td>Pie de pagina informativo</td>
-    <td>UT-12</td>
-    <td>Implementar el pie de página</td>
-    <td>Agregar enlace, politicas y medios de contacto en el footer</td>
+    <td>UT-11.2</td>
+    <td>Implementar el desplazamiento entre secciones</td>
+    <td>Configurar el desplazamiento a las secciones desde los enlaces del menú.</td>
     <td>2</td>
+    <td>Diego Pumahualcca</td>
+    <td>Ver UT-11</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-43</td>
+    <td rowspan="2">Pie de pagina informativo</td>
+    <td>UT-12.1</td>
+    <td>Maquetar el contenido del pie de página</td>
+    <td>Organizar la información institucional y los medios de contacto en el pie de página.</td>
+    <td>1</td>
     <td>Yam Cano</td>
-    <td>Done</td>
+    <td>Ver UT-12</td>
+  </tr>
+
+  <tr>
+    <td>UT-12.2</td>
+    <td>Incorporar los enlaces legales y de contacto</td>
+    <td>Añadir los enlaces a las políticas y los canales de contacto del pie de página.</td>
+    <td>1</td>
+    <td>Yam Cano</td>
+    <td>Ver UT-12</td>
   </tr>
 
 
@@ -2860,6 +2898,19 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
 
 </table>
 </div>
+
+
+
+**Estado original de las tareas desglosadas**
+
+| Tarea de origen | Subtareas documentadas | Estimación original (horas-persona) | Estado original |
+|---|---|---:|---|
+| UT-07 | UT-07.1, UT-07.2 | 5 | Done |
+| UT-08 | UT-08.1, UT-08.2 | 4 | Done |
+| UT-11 | UT-11.1, UT-11.2 | 3 | Done |
+| UT-12 | UT-12.1, UT-12.2 | 2 | Done |
+
+Esta tabla conserva los estados de origen; sus estimaciones ya están distribuidas en la tabla principal y no se suman nuevamente. El desglose presenta 16 tareas asociadas a ocho historias y seis tareas generales. Las tareas generales UT-13 y UT-14, relacionadas con Figma, se conservan sin cambios.
 
 #### 5.2.1.4. Development Evidence for Sprint Review. 
 
@@ -2998,7 +3049,7 @@ El Sprint Backlog 2 reúne las tareas de la primera versión del frontend de Sky
 <img src="resources/imgs/sprintbacklog-2-greentech.jpg" width="700" alt="Sprint backlog 2">
 </div>
 
-La tabla relaciona cada historia de usuario con sus tareas, estimaciones en horas, responsables y estados registrados.
+La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una prepara la interfaz o la estructura de información y otra integra el registro o la consulta de datos. Se conservan los identificadores, las estimaciones y los responsables registrados. La expresión «No registrado» señala que el documento original no especifica un estado; no equivale a Done ni a una evaluación del avance.
 
 
 <div align="center">
@@ -3112,7 +3163,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
     <td>Estructurar y elaborar la interfaz de registro de dron</td>
     <td>3</td>
     <td>Oliver Jonseck</td>
-    <td></td>
+    <td>No registrado</td>
   </tr>
 
   <tr>
@@ -3121,7 +3172,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
     <td>Generar registros de drones mediante la interfaz de registro</td>
     <td>3</td>
     <td>Oliver Jonseck</td>
-    <td></td>
+    <td>No registrado</td>
   </tr>
 
   <tr>
