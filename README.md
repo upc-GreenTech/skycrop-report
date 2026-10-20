@@ -2014,7 +2014,7 @@ alt="Context-Diagram">
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-La arquitectura propuesta de SkyCrop comprende una Landing Page desarrollada con HTML5, CSS3 y JavaScript, una aplicación web basada en Vue y PrimeVue, y un RESTful API con C# y ASP.NET Core. Entity Framework Core proporciona el acceso a la base de datos relacional, para la cual se consideran MySQL Server o PostgreSQL. La landing presenta el producto y contempla llamados a la acción hacia las vistas de la aplicación correspondientes a cada segmento. La aplicación consume el API mediante HTTPS, mientras que el backend concentra las operaciones del dominio y las integraciones externas.
+La arquitectura propuesta de SkyCrop comprende una Landing Page desarrollada con HTML5, CSS3 y JavaScript, una aplicación web de página única (Single Page Application o SPA) basada en Vue y PrimeVue, y un RESTful API con C# y ASP.NET Core. Entity Framework Core proporciona el acceso a la base de datos relacional, para la cual se consideran MySQL Server o PostgreSQL. La landing presenta el producto y contempla llamados a la acción hacia las vistas de la aplicación correspondientes a cada segmento. La SPA se ejecuta en el navegador y utiliza Vue Router para la navegación del lado del cliente. Consume el API mediante solicitudes HTTPS con datos en formato JSON, mientras que el backend concentra las operaciones del dominio y las integraciones externas.
 
 <img src="resources/imgs/Software Architecture Diagram/Container-Diagram-updated.png" alt="Diagrama de contenedores de SkyCrop">
 
