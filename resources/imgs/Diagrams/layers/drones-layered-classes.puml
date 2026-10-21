@@ -3,9 +3,10 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 120
+scale max 2800 width
 hide empty members
 top to bottom direction
-title SkyCrop - Drone Management - Diseño por capas
+title SkyCrop - Drone Management - Layered Class Design
 package "Interfaces / Presentation" {
 class DroneController <<controller>> {
 -service: IDroneApplicationService
@@ -43,7 +44,7 @@ class DroneApplicationService <<application service>> {
 package "Domain" {
 class Drone <<aggregate root>> {
 -id: Long
--serialNumber: String
+-serialNumber: DroneSerialNumber
 -status: DroneStatus
 +configure(): void
 }
@@ -62,20 +63,20 @@ class SkyCropDbContext <<EF Core>> {
 +saveChanges(): int
 }
 }
-DroneController --> IDroneApplicationService : delega
-DroneController ..> RegisterDroneRequest : recibe
-DroneController ..> RegisterDroneCommand : construye
-DroneController ..> DroneResource : responde
+DroneController --> IDroneApplicationService : delegates
+DroneController ..> RegisterDroneRequest : receives
+DroneController ..> RegisterDroneCommand : builds
+DroneController ..> DroneResource : responds
 DroneApplicationService ..|> IDroneApplicationService
-IDroneApplicationService ..> RegisterDroneCommand : recibe
-DroneApplicationService --> IDroneRepository : consulta y persiste
-DroneApplicationService ..> Drone : ejecuta operaciones
-DroneApplicationService ..> DroneResourceAssembler : transforma
-DroneResourceAssembler ..> Drone : lee
-DroneResourceAssembler ..> DroneResource : produce
+IDroneApplicationService ..> RegisterDroneCommand : receives
+DroneApplicationService --> IDroneRepository : queries and persists
+DroneApplicationService ..> Drone : executes operations
+DroneApplicationService ..> DroneResourceAssembler : transforms
+DroneResourceAssembler ..> Drone : reads
+DroneResourceAssembler ..> DroneResource : produces
 DroneRepository ..|> IDroneRepository
-IDroneRepository ..> Drone : contrato de persistencia
-DroneRepository --> SkyCropDbContext : acceso a datos
+IDroneRepository ..> Drone : persistence contract
+DroneRepository --> SkyCropDbContext : data access
 package "Application" {
 interface IDroneGateway <<integration contract>> {
 +connect(droneId: Long): boolean
@@ -86,18 +87,34 @@ class DroneGatewayAdapter <<adapter>> {
 +connect(droneId: Long): boolean
 }
 }
-DroneApplicationService --> IDroneGateway : solicita operación
+DroneApplicationService --> IDroneGateway : requests an operation
 DroneGatewayAdapter ..|> IDroneGateway
 note bottom of DroneGatewayAdapter
-Encapsula la comunicación con el dispositivo registrado.
+Encapsulates communication with the registered device.
 end note
 DroneController -[hidden]down-> DroneApplicationService
 DroneApplicationService -[hidden]down-> Drone
 Drone -[hidden]down-> DroneRepository
 legend bottom
-Arquitectura de clases propuesta para el backend RESTful API.
-La vista muestra un caso de uso del contexto y su consulta por identidad.
-Los atributos del agregado se detallan en las vistas del dominio.
-Las dependencias de infraestructura implementan contratos internos.
+Proposed class architecture for the backend RESTful API.
+The view shows a context use case and retrieval by identifier.
+Aggregate attributes are detailed in the domain views.
+Infrastructure dependencies implement internal contracts.
 endlegend
+package "Domain" {
+class DroneSerialNumber <<value object>> {
+-value: String {readOnly}
+}
+note right of DroneSerialNumber
+Non-empty text after trimming outer whitespace.
+Preserves case; equality compares the stored value.
+Uniqueness is checked by the registration use case.
+end note
+}
+Drone "1" *-- "1" DroneSerialNumber : serialNumber
+note right of RegisterDroneCommand
+The application service creates a validated DroneSerialNumber
+before assigning the serial number to the aggregate.
+Invalid input must not be persisted.
+end note
 @enduml

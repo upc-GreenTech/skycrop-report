@@ -12,7 +12,7 @@ actor "Agricultor\n[Persona]\n\nSupervisa parcelas y consulta información." as 
 actor "Ingeniero agrónomo\n[Persona]\n\nEvalúa cultivos y consulta diagnósticos." as agronomist
 rectangle "SkyCrop [Sistema de software]" {
 component "Landing Page\n[Contenedor: HTML5, CSS3, JavaScript]\n\nPresenta propuesta, beneficios, planes y contacto." as landing
-component "Frontend Web Application\n[Contenedor: Vue, JavaScript, PrimeVue]\n\nGestiona la interacción de agricultores y agrónomos." as web
+component "Single Page Application (SPA)\n[Contenedor: Vue, JavaScript, PrimeVue]\n\nSe ejecuta en el navegador y gestiona\nla interacción de agricultores y agrónomos." as web
 component "Backend RESTful API\n[Contenedor: C#, ASP.NET Core, EF Core]\n\nExpone operaciones del dominio y acceso a datos." as api
 database "Base de datos relacional\n[MySQL Server o PostgreSQL]\n\nPersiste cuentas, parcelas, vuelos y resultados." as db
 }
@@ -32,6 +32,7 @@ api --> messaging : Solicita notificaciones [HTTPS]
 api --> agri : Consulta información [HTTPS]
 api --> storage : Guarda y recupera archivos [HTTPS]
 note bottom of web
+Navegación del lado del cliente: Vue Router.
 Referencia visual: Material Design.
 Idioma predeterminado: inglés; soporte es_419.
 end note

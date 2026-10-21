@@ -3,17 +3,18 @@ skinparam monochrome true
 skinparam shadowing false
 skinparam classAttributeIconSize 0
 skinparam dpi 150
+scale max 2200 width
 hide empty members
 legend bottom
-aggregate root: acceso a las entidades del agregado.
-external reference: identidad de un objeto de otro contexto.
-Las dependencias rotuladas con Id representan referencias por identificador.
-Todos los value objects carecen de identidad y son inmutables.
-Se validan al construirlos; una modificación crea un nuevo valor.
-La igualdad compara sus atributos, salvo Timestamp (instante UTC).
-CalendarDate representa una fecha válida sin hora ni zona horaria.
+aggregate root: entry point to the aggregate's entities.
+external reference: identity of an object from another context.
+Dependencies labeled with Id represent references by identifier.
+All value objects have no identity and are immutable.
+Values are validated on construction; changes create a new value.
+Equality compares attributes, except for Timestamp (UTC instant).
+CalendarDate represents a valid date without a time or time zone.
 endlegend
-title SkyCrop - Gestión de Usuarios, Autenticación y Suscripciones
+title SkyCrop - Users, Authentication and Subscriptions
 abstract class User <<aggregate root>> {
 -id: Long
 -name: Name
@@ -145,9 +146,9 @@ class Money <<value object>> {
 +subtract(other: Money): Money
 }
 note right of Money
-Inmutable; igualdad por amount y currency.
-add/subtract requieren la misma moneda
-y devuelven un nuevo Money.
+Immutable; equality compares amount and currency.
+add/subtract require the same currency
+and return a new Money value.
 end note
 User <|-- Farmer
 User <|-- Agronomist
@@ -175,16 +176,16 @@ class Name <<value object>> {
 -value: String {readOnly}
 }
 note right of Name
-Texto no vacío después de quitar espacios externos.
-Conserva caracteres y escritura del nombre.
-Sin exigir cantidad de palabras.
+Non-empty text after trimming outer whitespace.
+Preserves the name's characters and original case.
+Does not require a specific word count.
 end note
 class Timestamp <<value object>> {
 -value: DateTimeOffset {readOnly}
 }
 note right of Timestamp
-Instante válido con desplazamiento horario.
-Igualdad y comparación por instante UTC.
+Valid instant with an explicit time zone offset.
+Equality and ordering compare the UTC instant.
 end note
 User "1" *-- "1" Name : name
 User ..> Timestamp : temporal values
@@ -195,16 +196,16 @@ class PhoneNumber <<value object>> {
 -value: String {readOnly}
 }
 note right of PhoneNumber
-Representación internacional: + y hasta 15 dígitos.
-Sin espacios ni separadores en el valor almacenado.
-La sintaxis no comprueba la titularidad del número.
+International format: + followed by up to 15 digits.
+No whitespace or separators in the stored value.
+Syntax validation does not verify number ownership.
 end note
 class PostalAddress <<value object>> {
 -value: String {readOnly}
 }
 note right of PostalAddress
-Dirección textual no vacía, sin espacios externos.
-Sin exigir código postal o una distribución fija.
+Non-empty address text with outer whitespace removed.
+No required postal code or fixed address structure.
 end note
 class CalendarDate <<value object>> {
 -value: Date {readOnly}
@@ -215,16 +216,16 @@ class SubscriptionPeriod <<value object>> {
 +contains(date: CalendarDate): boolean
 }
 note right of SubscriptionPeriod
-Fechas válidas; endDate > startDate.
-Intervalo [startDate, endDate).
-renew sustituye el período por un nuevo valor.
+Valid dates; endDate > startDate.
+Interval [startDate, endDate).
+renew replaces the period with a new value.
 end note
 UserProfile "1" *-- "0..1" PhoneNumber : phone
 UserProfile "1" *-- "0..1" PostalAddress : address
 Subscription "1" *-- "1" SubscriptionPeriod : period
 SubscriptionPeriod "1" *-- "2" CalendarDate : boundaries
 note bottom of TwoFactorAuthentication
-verifiedAt puede estar ausente antes de la verificación.
-RecoveryCode expira cuando now >= expiresAt.
+verifiedAt may be absent before verification.
+RecoveryCode expires when now >= expiresAt.
 end note
 @enduml

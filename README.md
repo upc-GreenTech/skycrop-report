@@ -87,7 +87,7 @@ El registro reúne las modificaciones principales del informe. La autoría del d
 
 # Project Report Collaboration Insights
 
-El informe se elabora en el [repositorio skycrop-report de GreenTech](https://github.com/upc-GreenTech/skycrop-report). Las modificaciones se organizan en ramas de trabajo y se integran en `develop`. El [historial de develop](https://github.com/upc-GreenTech/skycrop-report/commits/develop/) permite consultar los cambios de investigación, requisitos, diseño y documentación.
+El informe se elabora en el [repositorio skycrop-report de GreenTech](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report). Las modificaciones se organizan en ramas de trabajo y se integran en `develop`. El [historial de develop](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commits/develop/) permite consultar los cambios de investigación, requisitos, diseño y documentación.
 
 **Evidencias anteriores**
 
@@ -126,7 +126,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Contenido](#contenido)
   - [Tabla de contenidos](#tabla-de-contenidos)
-- [Student Outcome](#student-outcome)
+- [Student Outcome 5](#student-outcome-5)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -223,7 +223,7 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 
 <div style="page-break-after: always;"></div>
 
-# Student Outcome 
+# Student Outcome
 
 A continuación, por cada integrante del grupo y por cada entregable, se presentan los logros realizados que están relacionados con el **ABET - EAC - Student Outcome 5**:   
 *La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.*
@@ -231,7 +231,7 @@ A continuación, por cada integrante del grupo y por cada entregable, se present
 <div align="center">
 <table border="1">
   <tr>
-  <th>Criterio Especifico</th>
+  <th>Criterio Específico</th>
   <th>Acciones Realizadas</th>
   <th>Conclusiones</th>
   </tr>
@@ -338,19 +338,19 @@ La propuesta responde a dificultades relacionadas con el tiempo y el esfuerzo de
 
 SkyCrop propone centralizar información de parcelas, cultivos, drones, diagnósticos y reportes. Su objetivo es apoyar la identificación de condiciones que requieren atención, como estrés hídrico, plagas y deficiencias de fertilización. La mejora de productividad y el impacto agronómico se consideran objetivos del producto, sujetos a validación; el avance del Sprint 2 corresponde al frontend integrado con una mock API.
 
-**Misión :**
+**Misión:**
 Proveer a los productores agrícolas de soluciones tecnológicas accesibles y automatizadas para el monitoreo inteligente de sus parcelas, facilitando la detección temprana de anomalías y optimizando el uso de recursos críticos para lograr una agricultura más rentable y sostenible.
 
-**Visión :**
-Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empoderando a agricultores y cooperativas de todos los tamaños mediante tecnología innovadora que elimine las barreras de entrada a la agricultura de precisión.
+**Visión:**
+Consolidarse como una empresa *AgTech* líder y referente en Latinoamérica, empoderando a agricultores y cooperativas de todos los tamaños mediante tecnología innovadora que elimine las barreras de entrada a la agricultura de precisión.
 
 ### 1.1.2. Perfiles de integrantes del equipo 
 
 | **Integrante** |Pumahualcca Garcia, Diego Rodrigo|
 | :--- | :--- |
 | **Código del Estudiante** |u202219266|
-| **Carrera** |Ingenieria de software|
-| **Descripción** |Mi nombre es Diego, tengo 21 años. Tengo interés sobre la tecnología y sobre aprender a programar, sobretodo quisiera centrarme en ciberseguridad y aparte crear un juego que otro como tiempo libre|
+| **Carrera** |Ingeniería de software|
+| **Descripción** | Tiene 21 años e interés en la tecnología y la programación. Busca especializarse en ciberseguridad y desarrollar videojuegos en su tiempo libre. |
 | **Foto** | <img src="resources/imgs/IntegranteDiego.jpeg" alt="Diego" width="200" height="240">  |
 
 --------------
@@ -360,7 +360,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202423775 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Mi nombre es Yam Cano, tengo 20 años y soy estudiante de la carrera de ingeniería de software,ademas soy una persona proactiva ;cuento con habilidades analíticas y lógicas en programación, lo que me permite abordar problemas en base a mi carrera,además estoy buscando nuevas oportunidades para aprender y aplicar mis conocimientos, lo que me ayuda a crecer tanto a nivel académico como personal.|
+| **Descripción** | Estudia Ingeniería de Software y tiene 20 años. Cuenta con habilidades analíticas y lógicas aplicadas a la programación. Busca oportunidades para ampliar sus conocimientos y aplicarlos en proyectos académicos y personales. |
 | **Foto** | <img src="resources/imgs/chapter_2/Yam.png" alt="Yam" width="200" height="240">  |
 
 ----------------------
@@ -369,7 +369,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202312912 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Mi nombre es Oliver, poseo 21 años. Poseo mucho interés en la programación y llevo haciendo varios proyectos personales desde que ingrese a la universidad. No trabajo bajo contrato actualmente, pero trabajo cómo freelancer por periodos de tiempo. |
+| **Descripción** | Tiene 21 años y desarrolla proyectos personales de programación desde su ingreso a la universidad. Realiza trabajos independientes de forma ocasional. |
 | **Foto** | <img src="resources/imgs/Integrante Oliver.jpeg" alt="Integrante Oliver"> |
 
 ---------------------
@@ -377,8 +377,8 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | **Integrante** | Sunio Danilo Landa Sánchez |
 | :--- | :--- |
 | **Código del Estudiante** | U202423973 |
-| **Carrera** |Ingenieria de Software|
-| **Descripción** |Soy Sunio Landa, tengo 20 años. Suelo aprender cosas rápido y siempre busco que mi equipo realice el mejor trabajo posible.|
+| **Carrera** |Ingeniería de Software|
+| **Descripción** | Tiene 20 años, facilidad para aprender y disposición para colaborar con su equipo. |
 | **Foto** | <img src="resources/imgs/foto-landa.jpeg" alt="Sunio" width="200" height="240"> |
 
 ---------------------
@@ -387,14 +387,14 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | :--- | :--- |
 | **Código del Estudiante** | U202310349 |
 | **Carrera** | Ingeniería de Software |
-| **Descripción** | Soy Sebastián, soy estudiante de la carrera de ingenieria de software, tengo 20 años y me gusta lograr grandes cosas programando, suelo interesarme mucho por aprender cosas nuevas en el mundo de la programacián más que nada. Me gusta apoyar a mis compañeros para los trabajos, considero que soy de trabajar en equipo. Tengo conocimientos en C#, C++, JavaScript, Python y TypeScript. |
+| **Descripción** | Estudia Ingeniería de Software y tiene 20 años. Se interesa por aprender tecnologías de programación y colaborar en proyectos de equipo. Cuenta con conocimientos de C#, C++, JavaScript, Python y TypeScript. |
 | **Foto** | <img src="resources/imgs/foto-sebastian.jpeg" alt="Luis Sebastián Rubio Ortiz" width="200"> |
 
 ## 1.2. Solution Profile 
 
 ### 1.2.1 Antecedentes y problemática 
 
-| 5w & 2H | Descripcion|
+| 5w & 2H | Descripción|
 |---------|------------|
 | **What: ¿Cuál es el problema?**| El monitoreo agrícola manual requiere un alto costo de tiempo y esfuerzo físico, debido a la necesidad de supervisar extensas áreas de cultivo de manera constante. A esto se suma la falta de acceso a software comercial de automatización de vuelos de drones y análisis de imágenes agrícolas, debido a su alto costo y naturaleza cerrada, lo que limita la posibilidad de contar con soluciones personalizables y obliga a los agricultores a depender de procesos manuales poco eficientes.|
 | **When: ¿Cuándo sucede este problema?**| Durante las revisiones periódicas del terreno, siendo especialmente crítico cuando las plagas, el estrés hídrico o las deficiencias de fertilizante avanzan rápidamente sin ser detectados a tiempo.|
@@ -402,7 +402,7 @@ Convertirnos en la empresa *AgTech* líder y referente en Latinoamérica, empode
 | **Who: ¿Quiénes están involucrados?** | Los productores y agricultores que deben gestionar los cultivos, así como el personal encargado de la inspección física en el campo.|
 | **Why: ¿Cuál es la causa del problema?** | Las alternativas tecnológicas actuales operan como ecosistemas cerrados y rígidos. Al no integrarse con las dinámicas y necesidades agronómicas específicas de cada cultivo, resultan inoperantes para el entorno real del productor, forzándolo a depender de las inspecciones físicas tradicionales. |
 | **How: ¿Qué llevó a la persona a llegar a esta situación?** | Se manifiesta a través del monitoreo manual de las parcelas agrícolas, un proceso que requiere de mucho tiempo y esfuerzo físico, y que a menudo no detecta problemas hasta que están muy avanzados|
-| **How Much: ¿Cuánto es el impacto financiero?** | Representa grandes pérdidas de cultivos por la identificación tardía de anomalías, además de los altos costos incurridos en la cantidad de horas  necesarias de un trabajador para recorrer la parcela físicamente.|
+| **How Much: ¿Cuánto es el impacto financiero?** | Representa grandes pérdidas de cultivos por la identificación tardía de anomalías, además de los altos costos incurridos en la cantidad de horas necesarias de un trabajador para recorrer la parcela físicamente.|
 
 **Objetivo y alcance de la solución**
 
@@ -458,14 +458,14 @@ Como criterio propuesto de evaluación, se plantea una tasa de conversión del 2
 
 **Hipótesis 1**
 
-*Se plantea como hipótesis alcanzar* una tasa de conversión del 25% hacia nuestras suscripciones de pago durante los primeros 6 meses
+*Se plantea como hipótesis alcanzar* una tasa de conversión del 25% hacia las suscripciones de pago de SkyCrop durante los primeros 6 meses
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una reducción del tiempo y del esfuerzo manual necesarios para planificar vuelos de drones sobre sus parcelas
 *Con* la funcionalidad de Planificación automatizada de rutas de vuelo, que permite delimitar áreas y generar automáticamente rutas de vuelo personalizadas.
 
 **Hipótesis 2**
 
-*Se plantea como hipótesis alcanzar* un uso mensual recurrente de la herramienta de mapeo por parte de al menos el 60% de nuestros suscriptores de pago
+*Se plantea como hipótesis alcanzar* un uso mensual recurrente de la herramienta de mapeo por parte de al menos el 60% de los suscriptores de pago
 *Si* los agricultores, los ingenieros agrónomos y los gestores de cooperativas
 *Alcanzan* una visualización más rápida y comprensible del estado de sus cultivos y del terreno
 *Con* la funcionalidad de Generación de mapas visuales del terreno, que procesa imágenes aéreas y genera mapas visuales que resaltan anomalías en los cultivos.
@@ -546,7 +546,7 @@ Los segmentos se distinguen por su actividad y sus necesidades de monitoreo. Las
 
 ## 2.1. Competidores. 
 
-Hemos identificado a tres empresas con ofertas similares a la de nuestra startup:
+Se identificaron tres empresas con ofertas similares a la propuesta de GreenTech:
 
 - **Pix4D**: Es una empresa de software de fotogrametría, ofrece varios programas bajo licencia para usarse en varias industrias como en la agricultura. Uno de sus productos es Pix4D fields, un software híbrido de mapeo con drones para el análisis de cultivos y agricultura precisa. 
 - **DJI Enterprise**: Es una empresa que ofrece drones y software para drones. Uno de sus programas es DJI Terra, el cual consiste en la reconstrucción de terrenos para la adquisición y procesamiento de datos. Este programa es aplicable a la agricultura, permitiendo programar rutas de vuelo y generar mapas de vegetación para obtener información sobre la salud y crecimiento de los cultivos.
@@ -562,7 +562,7 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
   <tr>
     <th colspan="2">¿Por qué llevar a cabo este análisis?</th>
     <td colspan="4">
-      El objetivo de este analisis es conocer más sobre lo que ofrece nuestra competencia para, en base a ello, identificar en que aspectos podemos diferenciarnos y como podemos mejorar nuestro producto. Con estos avances podremos tener un mejor puesto en el mercado.
+      El análisis compara las ofertas de la competencia para identificar oportunidades de diferenciación y mejoras para SkyCrop. Sus resultados orientan el posicionamiento del producto en el mercado.
     </td>
   </tr>
   
@@ -605,7 +605,7 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
     <th>Ventaja Competitiva</th>
     <td>Enfoque en la agricultura, compatibilidad con la mayoría de drones y almacenamiento de datos históricos y de reportes avanzados.
     </td>
-    <td>Alta compatibilidad con la mayoría de drones y análisis avanzado a partir de imagenes para generar prescripciones.
+    <td>Alta compatibilidad con la mayoría de drones y análisis avanzado a partir de imágenes para generar prescripciones.
     </td>
     <td>Elaboración y venta de drones especializados en la agricultura junto con un programa de análisis y procesamiento.
     </td>
@@ -651,13 +651,13 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
   </tr>
   <tr>
     <th>Precios & Costos</th>
-    <td>Subscripciones mensuales y anuales a partir de $40.
+    <td>suscripciones mensuales y anuales a partir de $40.
     </td>
-    <td>Prueba gratuita y subscripciones mensuales o anuales a partir de $165.
+    <td>Prueba gratuita y suscripciones mensuales o anuales a partir de $165.
     </td>
     <td>Prueba gratuita y planes anuales a partir de $300.
     </td>
-    <td>Cotizable segun servicio.
+    <td>Cotizable según servicio.
     </td>
   </tr>
     <tr>
@@ -710,9 +710,9 @@ Hemos identificado a tres empresas con ofertas similares a la de nuestra startup
     <th>Amenazas</th>
     <td>Competencia con plataformas similares con mayor experiencia en el mercado.
     </td>
-    <td>Las subscripciones de alto precio que ofrece pueden alejar a empresas agricolas pequeñas.
+    <td>Las suscripciones de alto precio que ofrece pueden alejar a empresas agrícolas pequeñas.
     </td>
-    <td>Sus planes de alto precio, así como la complejidad del software, pueden alejar a empresas agricolas pequeñas.
+    <td>Sus planes de alto precio, así como la complejidad del software, pueden alejar a empresas agrícolas pequeñas.
     </td>
     <td>Posibles problemas con la disponibilidad de los proveedores de servicios.
     </td>
@@ -882,7 +882,7 @@ En esta entrevista, Ana Camila Patricio, una ingeniera agrónoma de 25 años res
 </div>
 
 **Resumen**:  
-Suzy Vásquez, de 48 años, es una ingeniera agrónoma que en esta entrevista nos cuenta sobre su trabajo. En su trabajo ella asesora a productores y agroexportadores, revisando varios cultivos con diferentes hortalizas de invierno o de verano.
+Suzy Vásquez, de 48 años, es una ingeniera agrónoma que describe su trabajo en esta entrevista. En su trabajo ella asesora a productores y agroexportadores, revisando varios cultivos con diferentes hortalizas de invierno o de verano.
 Ella cuenta que el monitoreo de los cultivos que realiza depende de los clientes que asesora y del cultivo, algunos procesos que realiza es la toma de muestras, recorridos por el campo en diferentes formas, el control de plantas al azar por hectárea y la colocación de trampas para plagas. Los datos que suele recolectar son la humedad del suelo, la concentración de nutrientes, el pH, la etapa de desarrollo de los cultivos y el ambiente.
 Nos cuenta también sus dificultades, tales como la resistencia de los clientes agricultores por sus costumbres, los casos donde no se realiza un estudio del suelo y lo largo que puede ser un monitoreo al trabajar con varias hectáreas.
 La entrevistada no trabajó mucho con drones, pero contó que le gustaría que el sistema pueda capturar imágenes del campo con gran resolución, precisión y claridad, además de que pueda moverse a través de 10 o más hectáreas para tomar imágenes automáticamente y contar con otras funciones como aplicación de fertilizantes o riego.
@@ -1179,12 +1179,12 @@ En esta última fase los integrantes identificaron problemas que podrían ocurri
 
 ![Big Picture Event Storming - Problemas](resources/imgs/chapter_2/big-picture-eventstorming-4.jpg)
 
-A partir de este proceso, identificamos lo siguiente:
+A partir de este proceso, se identificaron los siguientes aspectos:
 
 **Procesos clave:**
 
 - Creación de cuenta y perfil de los usuarios de la plataforma
-- Selección de subscripción y pago
+- Selección de suscripción y pago
 - Configuración y planificación del vuelo de los drones
 - Recolección y envío de datos
 - Procesamiento y presentación de datos
@@ -1209,7 +1209,7 @@ A partir de este proceso, identificamos lo siguiente:
 |User (Usuario)                       |Persona en general que haga uso de la plataforma SkyCrop y de sus servicios|
 |Farmer (Agricultor)                  |Persona perteneciente al segmento de agricultores que haya creado una cuenta de agricultor en la plataforma SkyCrop|
 |Agronomist (Agrónomo)                |Persona perteneciente al segmento de ingenieros agrónomos que haya creado una cuenta de agrónomo en la plataforma SkyCrop|
-|Subscription (Subscripción)          |Licencia de uso de la aplicación y servicios de la plataforma SkyCrop|
+|Subscription (suscripción)          |Licencia de uso de la aplicación y servicios de la plataforma SkyCrop|
 |Agricultural Plot (Parcela Agrícola) |Zona registrada en la plataforma SkyCrop y monitoreada por cuentas de agricultores y agrónomos con los permisos suficientes|
 |Drone (Dron)                         |Equipo registrado en la plataforma SkyCrop y gestionado por cuentas de agricultores y agrónomos con los permisos suficientes|
 |Crop (Cultivo) |Tipo o variedad de planta registrada en una parcela para su monitoreo.|
@@ -1226,69 +1226,119 @@ A partir de este proceso, identificamos lo siguiente:
 
 ## 3.1. User Stories
 
-A continuación se presentan las User Stories que indicarán las funcionalidades que SkyCrop deberá cumplir. La tabla sigue el orden de contextos core, de soporte y genéricos definido en el catálogo de la sección 4.6.1. Conserva los identificadores y la relación con las épicas; las historias de una misma épica pueden aparecer en distintos contextos. Los contratos de EP-09 acompañan a la funcionalidad correspondiente y las historias de registro e inicio de sesión se presentan al final.
+A continuación se presentan las User Stories que indicarán las funcionalidades que SkyCrop deberá cumplir. La tabla sigue el orden de contextos core, de soporte y genéricos definido en el catálogo de la sección 4.6.1. Conserva los identificadores y la relación con las épicas; las historias de una misma épica pueden aparecer en distintos contextos. Los contratos de EP-09 acompañan a la funcionalidad correspondiente y las historias de registro e inicio de sesión cierran el contexto IAM. La landing y la épica transversal del API se presentan después de los contextos. EP-01 comprende perfiles e IAM; sus historias conservan esa relación en ambos grupos.
+
+Los criterios se expresan mediante escenarios Given/When/Then: precondición, acción y resultado esperado. Incluyen caminos alternativos según la funcionalidad y describen requisitos del producto; su inclusión no acredita que estén implementados o validados en el sprint actual.
+
+**Core — Diagnoses Generation**
 
 |Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
 |:--------------|:-----|:----------|:----------------------|:--------------|
-| **EP-09** | RESTful API | Como desarrollador, quiero que el proyecto cuente con una RESTful API para permitir la manipulación de datos y el acceso a otras funciones desde otros sistemas|  -Consulta de datos de la plataforma. <br>- Actualización de datos de la plataforma. <br>- Procesamiento de datos ingresados. |-----|
-| **EP-05** | Diagnósticos |Como usuario, deseo que el sistema realice un diagnóstico de la información que recolecto y envíe una notificación de los puntos más importantes.|- Creación de un diagnóstico.<br>- Manejo de diagnósticos|-----|
-| US-23 | Generación de diagnóstico | Como usuario con acceso a una parcela, deseo que se analicen las imágenes de un vuelo y se guarde el diagnóstico para consultar los resultados del monitoreo. | **Scenario: Diagnóstico generado** <br> *Given* que las imágenes de un vuelo están disponibles y asociadas a una parcela <br> *When* el procesamiento finaliza correctamente <br> *Then* el sistema guarda el diagnóstico con sus resultados, la parcela, el vuelo y la fecha del monitoreo. <br> **Scenario: Procesamiento fallido** <br> *Given* que se ha iniciado el análisis de las imágenes de un vuelo <br> *When* ocurre un error que impide completarlo <br> *Then* el sistema registra el fallo e informa que el diagnóstico no pudo generarse, sin modificar el estado de la parcela ni sus diagnósticos anteriores. | EP-05 |
-| US-24 | Generación de mapa según diagnóstico | Como usuario con acceso a una parcela, deseo contar con un mapa de los resultados del diagnóstico para ubicar las zonas que requieren atención. | **Scenario: Mapa generado** <br> *Given* que un diagnóstico finalizado contiene resultados con ubicación en la parcela <br> *When* el sistema genera el mapa del diagnóstico <br> *Then* representa las zonas analizadas y sus resultados con una leyenda. <br> **Scenario: Ubicación insuficiente** <br> *Given* que el diagnóstico no contiene información suficiente para ubicar los resultados <br> *When* el sistema intenta generar el mapa <br> *Then* informa que el mapa no está disponible y conserva el diagnóstico para su consulta. | EP-05 |
-| US-25 | Historial de diagnósticos | Como usuario con acceso a una parcela, deseo consultar sus diagnósticos anteriores para revisar la evolución del cultivo. | **Scenario: Consulta del historial** <br> *Given* que el usuario tiene acceso a una parcela con diagnósticos registrados <br> *When* consulta su historial <br> *Then* obtiene los diagnósticos ordenados del más reciente al más antiguo y puede consultar la fecha y los resultados de cada uno. <br> **Scenario: Historial vacío** <br> *Given* que el usuario tiene acceso a una parcela sin diagnósticos registrados <br> *When* consulta su historial <br> *Then* el sistema informa que todavía no existen diagnósticos. <br> **Scenario: Acceso no permitido** <br> *Given* que el usuario no tiene acceso a una parcela <br> *When* intenta consultar sus diagnósticos <br> *Then* el sistema rechaza la consulta sin mostrar sus resultados. | EP-05 |
-| US-26 | Actualización de una parcela mediante diagnóstico | Como usuario con acceso a una parcela, deseo que su estado refleje el diagnóstico más reciente para consultar información actualizada del cultivo. | **Scenario: Actualización del estado** <br> *Given* que finaliza un diagnóstico de una parcela con datos de monitoreo más recientes que los del estado actual <br> *When* el sistema registra sus resultados <br> *Then* actualiza el estado de la parcela con esos resultados y la fecha del monitoreo, conservando los diagnósticos anteriores en el historial. <br> **Scenario: Resultado de un monitoreo anterior** <br> *Given* que finaliza un diagnóstico cuyos datos de monitoreo son anteriores a los del estado actual <br> *When* el sistema registra sus resultados <br> *Then* lo incorpora al historial sin reemplazar el estado más reciente de la parcela. | EP-05 |
-| TS-05 | Solicitud de procesamiento de imágenes | Como desarrollador, quiero solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | **Scenario: Solicitud de análisis** <br> *Given* que las imágenes de un vuelo están disponibles y la aplicación cliente tiene permiso sobre la parcela <br> *When* solicita el procesamiento de esas imágenes <br> *Then* la API registra la solicitud y devuelve un identificador para consultar su estado. | EP-09 |
-| **EP-07** | Generación de reportes |Como usuario, necesito recibir un reporte de todos los diagnósticos realizados y un informe estacional, todo esto disponible para descargar cómo un archivo PDF.|- Creación de un reporte de cada diagnóstico.<br>- Creación de un reporte de cada diagnóstico según la estación del año. <br>- Botón para descargar cada diagnóstico y reporte como un PDF.|-----|
-| US-31 | Creación de reporte según la estación | Como usuario, deseo que se cree un reporte estacional utilizando los diversos reportes generados | **Scenario: Se crea un reporte estacional** <br> *Given* Que se generen suficientes reportes en durante una estación (mínimo 5) <br> *When* El calendario estacional indique que se esta a mitad de una estación <br> *Then* Se crea el reporte estacional | EP-07 |
-| US-32 | Compartir | Como usuario de la plataforma SkyCrop, deseo compartir los reportes generados mediante un enlace o correo electrónico para comunicarme con entidades externas. | **Scenario: Compartir reporte exitosamente** <br> *Given* el usuario visualiza un reporte o informe estacional <br> *When* presiona el botón "Compartir" e ingresa el correo del destinatario <br> *Then* el sistema envía un enlace de acceso seguro para visualizar el documento. | EP-07 |
-| US-33 | Guardado de reportes en la nube| Como usuario de SkyCrop, quiero que los reportes se almacenen automáticamente en la nube para acceder al histórico de diagnósticos en cualquier momento sin perder información. | **Scenario: Almacenamiento automático en la nube** <br> *Given* que el sistema finaliza la consolidación de un reporte <br> *When* se genera el archivo definitivo <br> *Then* el sistema lo aloja en el almacenamiento en la nube del usuario. | EP-07 |
-| US-34 | Comparación entre reportes| Como usuario de la plataforma SkyCrop, deseo seleccionar dos reportes distintos para comparar los valores entre ambos. | **Scenario: Comparación gráfica de evolución** <br> *Given* el usuario se encuentra en el historial de reportes <br> *When* selecciona dos reportes distintos *And* presiona "Comparar" <br> *Then* la plataforma genera una vista dividida mostrando los dos reportes uno al lado del otro. | EP-07 |
-| US-35 | Guardado de reportes como PDF | Como usuario, deseo descargar cada uno de los reportes cómo un archivo PDF. | **Scenario: Se descarga un reporte** <br> *Given* Que se tenga un reporte ya generado <br> *When* El usuario presione el botón de "descargar" al lado del reporte <br> *Then* Se descarga automáticamente ese reporte como un PDF en el dispositivo del usuario. | EP-07 |
-| TS-03 | Manejo de reportes | Como desarrollador, quiero consultar y descargar reportes mediante la API para utilizarlos en otras aplicaciones. | **Scenario: Descarga de reporte** <br> *Given* que la aplicación cliente tiene acceso a una parcela con un reporte disponible <br> *When* solicita la descarga del reporte por su identificador <br> *Then* la API devuelve el archivo correspondiente. | EP-09 |
-| **EP-03** | Gestión de parcelas agrícolas|Como usuario de la plataforma SkyCrop, deseo un sistema de registro y gestión que me permita registrar mis parcelas agrícolas para poder gestionarlas y monitorearlas.|- Registro de un terreno.<br>- Revisión del estado del terreno y sus cultivos.|-----|
-| US-11 | Registro de parcela | Como usuario, deseo registrar el terreno por el cual el dron va a volar | **Scenario: Registrar el tamaño del terreno** <br> *Given* El usuario registra la dimensiones del terreno en una pestaña <br> *When* el usuario presiona el botón de "registrar terreno" <br> *Then* La página mostrará el mensaje "Terreno Registrado" | EP-03 |
-| US-12 | Consulta de estado de una parcela| Como usuario de la plataforma SkyCrop, deseo consultar el estado de una parcela para conocer los niveles de salud e hidratación del suelo detectados por el dron. | **Scenario: Consulta de estado de parcela exitoso** <br>  *Given* el usuario tiene parcelas registradas <br> *When* selecciona una parcela específica de la lista <br> *Then* el sistema despliega el panel de telemetría con los datos de humedad, temperatura y salud del suelo.| EP-03 |
-| US-13 | Visualización del mapa de una parcela| Como usuario de la plataforma SkyCrop, quiero visualizar el mapa de mi parcela para identificar zonas de anomalías visualmente. | **Scenario: Visualizar mapa de calor** <br> *Given* el usuario se encuentra en el detalle de la parcela <br> *When* activa la pestaña de 'Mapa' <br> *Then* el sistema renderiza el mapa satelital con zonas rojas para indicar las zonas de riesgo. | EP-03 |
-| US-14 | Registro de cultivos en una parcela| Como usuario de la plataforma SkyCrop, quiero registrar el tipo de cultivo de mi parcela para que el sistema adapte las alertas a las necesidades específicas de mi planta. | **Scenario: Asignación de cultivo a parcela** <br> *Given* el usuario edita los detalles de una parcela <br> *When* selecciona una variedad de cultivo de la lista *And* guarda los cambios <br> *Then* la plataforma confirma que el cultivo fue enlazado exitosamente. | EP-03 |
-| US-15 | Consulta de información de los cultivos| Como usuario de la plataforma SkyCrop, deseo acceder a la ficha técnica de mis cultivos asignados para entender el ciclo de crecimiento y alertas sugeridas. | **Scenario: Ver detalles técnicos del cultivo** <br> *Given* el usuario visualiza el estado de una parcela <br> *When* selecciona el nombre del cultivo activo <br> *Then* el sistema despliega información agronómica relevante y los umbrales ideales de humedad. | EP-03 |
-| US-16 | Invitación de compañeros| Como administrador de una cuenta de SkyCrop, quiero invitar a compañeros de trabajo o agrónomos a mis parcelas para compartir el monitoreo de los campos. | **Scenario: Enviar invitación por correo** <br> *Given* el usuario está en el panel de configuración de la parcela <br> *When* ingresa el correo de su compañero And presiona 'Enviar invitación' <br> *Then* el sistema despacha un enlace de acceso al invitado And muestra el estado de la invitación como 'Pendiente'.| EP-03|
-| TS-02 | Manejo de datos de parcelas | Como desarrollador, quiero registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | **Scenario: Registro de parcela** <br> *Given* que la aplicación cliente está autenticada y tiene permiso para registrar parcelas <br> *When* envía una solicitud con los datos obligatorios y válidos de una parcela <br> *Then* la API guarda la parcela y devuelve su identificador. | EP-09 |
-| **EP-04** | Gestión de drones|Como usuario de la plataforma SkyCrop, quiero un sistema de registro y configuración de drones conectar mi dron y configurar una rutina de vuelo.|-Conexión del dron.<br>- Gestión de la rutina de vuelo.||
-| US-17 | Conectar el dron | Como usuario, deseo conectar el aplicativo con mi dron | **Scenario 1: La conexion es exitosa** <br> *Given* El usuario presiona el botón "Conectar Dron" <br> *When* El dron funciona adecuadamente y esta suficientemente cerca del dispositivo con el aplicativo <br> *Then* Se mostrara el mensaje "Conexión exitosa" <br> **Scenario 2: La conexión es no exitosa** <br> *Given* El usuario presiona el botón "Conectar Dron" <br> *When* El dron no funciona adecuadamente y/o está lejos del dispositivo con el aplicativo <br> *Then* Se mostrará el mensaje "Conexión fallida" | EP-04 |
-| US-18 | Gestionar la rutina de vuelo | Como usuario, deseo gestionar la rutina de vuelo que el dron va a patrullar | **Scenario 1: Se ingresa la rutina dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina registrada exitosamente". <br> **Scenario 2: La rutina no se encuentra dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo no se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina debe encontrarse en los parámetros permitidos". <br>  **Scenario 3: Asignación de un dron al vuelo de la parcela** <br> *Given* que el usuario tiene permiso para gestionar vuelos sobre la parcela y dispone de un plan válido y de un dron accesible y disponible <br> *When* confirma la selección del dron para ese plan <br> *Then* el sistema registra un vuelo planificado con los identificadores del plan y del dron. <br> **Scenario 4: Selección no válida** <br> *Given* que el usuario selecciona un dron para un plan de vuelo <br> *When* el sistema detecta falta de permisos, un plan no válido o un dron no disponible <br> *Then* informa el motivo y no registra el vuelo. <br> **Scenario 5: Cancelación** <br> *Given* que la selección no ha sido confirmada <br> *When* el usuario cancela la operación <br> *Then* no se registra un vuelo ni se modifica el plan. | EP-04 |
-| US-19 | Captura de imágenes mediante dron | Como usuario de la plataforma SkyCrop, quiero que el dron capture imágenes automáticamente durante su rutina para recolectar datos visuales de la parcela. | **Scenario 1: Captura automática de imágenes** <br> *Given* el dron se encuentra ejecutando una rutina de vuelo activa <br> *When* alcanza un punto de control (waypoint) programado <br> *Then* la cámara del dron captura una imagen de alta resolución.| EP-04 |
-| US-20 | Parametrización de vuelo del dron | Como usuario de la plataforma SkyCrop, quiero configurar los parámetros técnicos de vuelo para optimizar la toma de capturas. | **Scenario 1: Guardar parámetros válidos** <br>  *Given* el usuario se encuentra en el panel de parametrización <br> *When* ingresa valores de altura y velocidad permitidos And presiona "Guardar" <br> *Then* el sistema actualiza la configuración del dron. <br> **Scenario 2: Parámetros fuera de rango** <br> *Given* el usuario ingresa una altura que excede el límite legal o técnico <br> *When* intenta guardar la configuración <br> *Then* el sistema muestra la alerta "Valor fuera de rango permitido". | EP-04 |
-| US-21 | Envío de imágenes tomadas por el dron | Como usuario de la plataforma SkyCrop, deseo que el dron envíe las imágenes capturadas al servidor para que puedan ser procesadas por el sistema. | **Scenario 1: Envío exitoso con buena señal** <br> *Given* el dron ha finalizado la captura de imágenes <br> *When* detecta una conexión a internet o enlace estable <br> *Then* transfiere las imágenes al servidor *And* muestra el progreso en el aplicativo. <br> **Scenario 2: Pérdida de conexión durante el envío** <br> *Given* el dron está enviando las imágenes <br> *When* la conexión se interrumpe <br> *Then* el sistema pausa la transferencia *And* la reanuda automáticamente al recuperar la señal. | EP-04 |
-| US-22 | Visualización de imágenes tomadas por el dron | Como usuario de la plataforma SkyCrop, quiero visualizar la galería de imágenes tomadas por el dron para verificar la calidad del patrullaje antes del procesamiento. | **Scenario 1: Visualización correcta de galería** <br> *Given* las imágenes del vuelo ya se han sincronizado <br> *When* el usuario ingresa al historial de vuelos y selecciona la galería <br> *Then* el sistema despliega el carrete de imágenes ordenadas cronológicamente y por geolocalización. | EP-04 |
-| TS-04 | Manejo de datos de drones | Como desarrollador, quiero registrar el estado de los drones mediante la API para consultar su información actualizada. | **Scenario: Actualización del estado de un dron** <br> *Given* que el dron está registrado y la aplicación cliente tiene permiso para actualizarlo <br> *When* envía una solicitud con el identificador del dron y datos de estado válidos <br> *Then* la API guarda el estado y confirma la actualización. | EP-09 |
-| **EP-02** | Pago de subscripción|Como usuario de la plataforma SkyCrop, requiero de un sistema de pagos que me permita ingresar mis datos bancarios de manera segura, para pagar mi suscripción de la plataforma|- Pago por medio de diversos procesadores de pago.<br>- Verificación del estado del pago.|-----|
-| US-06 | Adquisición de subscripciones | Como usuario registrado en la plataforma SkyCrop, deseo adquirir una subscripción en la plataforma para tener acceso a las funcionalidades pagadas que ofrece| **Scenario: Adquirir una subscripción** <br> *Given* El usuario ha elegido una subscripción. <br> *When* Ingresa los datos necesarios para realizar el pago *And* La transacción es aprobada. <br> *Then* El sistema asigna la subscripción a la cuenta del usuario *And* Permite que se acceda a las funcionalidades de pago.| EP-02 |
-| US-07 | Pagar la suscripción con tarjeta | Como usuario registrado en la plataforma SkyCrop, deseo pagar mi suscripción con tarjeta, para renovar mi subscripción de manera rápida y segura| **Scenario: Pago exitoso** <br> *Given* El usuario ha ingresado sus datos bancarios <br> *When* El usuario presiona el botón de realizar pago *And* El procesador de pagos aprueba el pago. <br> *Then* La página mostrará el mensaje "El pago fue exitoso" <br> **Scenario: Se ingresan datos bancarios no válidos** <br> *Given* El usuario ha ingresado datos bancarios no válidos <br> *When* El usuario presiona el botón de realizar pago *And* el procesador de pago rechaza el pago. <br> *Then* La página mostrará el mensaje "Error al realizar el pago" *And* Brindará más detalles del error. | EP-02 |
-| US-08 | Confirmación de pagos| Como usuario registrado en la plataforma SkyCrop, quiero recibir una confirmación del pago de una subscripción para tener un registro de las transacciones realizadas. | **Scenario: Recepción de comprobación tras pago** <br> *Given* El usuario ha realizado un pago de una subscripción. <br> *When* El sistema verífica la realización pago. <br> *Then* Envía un comprobante del pago al correo del usuario. | EP-02 |
-| US-09 | Consulta de detalles de la subscripción actual | Como usuario suscrito en la plataforma SkyCrop, quiero consultar los detalles de mi subscripción actual para conocer hasta cuando es vigente y a que funciones tengo acceso| **Scenario: Consulta de subscripción activa** <br> *Given* El usuario cuenta con una subscripción vigente *And* Se encuentra en su perfil. <br> *When* El usuario ingresa a la sección de subscripciones. <br> *Then* El sistema muestra el tipo de subscripción vigente *And* Muestra detalles como la fecha de vigencia y funcionalidades disponibles.| EP-02|
-| US-10 | Cancelación de subscripciones| Como usuario suscrito en la plataforma SkyCrop, quiero ser capaz de cancelar mi subscripción en la plataforma para evitar gastos accidentales.|**Scenario: Cancelación de subscripción vigente** <br> *Given* El usuario se encuentra en la sección de subscripciones en su perfil. <br> *When* Solicita la cancelación de una subscripción. <br> *Then* El sistema marca a la subscripción como cancelada *And* Revoca al usuario los permisos asociados a tal subscripción| EP-02|
-| **EP-01** | Gestión de cuentas y autentificación|Como usuario de la plataforma SkyCrop, quiero registrar una cuenta, iniciar sesión en ella, mantener mi perfil actualizado y cerrar sesión, para acceder de manera segura a la plataforma.|- Registro con validación de correo y contraseña. <br> - Actualización de información del perfil. <br> - Cierre de sesión seguro.|-----|
-| US-03 | Cambiar la información del perfil | Como usuario registrado en la plataforma SkyCrop, deseo ser capaz de cambiar la información de mi perfil para corregir datos incorrectos o desactualizados | **Scenario: Perfil actualizado** <br> *Given* el usuario accede a su perfil <br> *When* edita su información *And* guarda los cambios *Then* el sistema actualiza los datos de su cuenta| EP-01 |
-| TS-01 | Manejo de datos de usuarios | Como desarrollador, quiero consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | **Scenario: Consulta autorizada de un usuario** <br> *Given* que la aplicación cliente dispone de credenciales válidas y permiso para consultar un usuario <br> *When* envía una solicitud con el identificador del usuario <br> *Then* la API devuelve los datos del perfil sin exponer contraseñas. | EP-09 |
-| **EP-08** | Landing Page | Como visitante, quiero conocer lo que la plataforma SkyCrop ofrece y los beneficios que puede brindarme para decidir si debería registrarme|- Visualización del proposito de la plataforma.<br>- Visualización de las funcionalidades y beneficios que ofrece.<br>- Visualización de los planes y precios.|-----|
-| US-36 | Presentación de SkyCrop | Como visitante de la Landing Page, quiero ver una introducción clara con la propuesta de valor de SkyCrop para entender rápidamente qué hace el software. | **Scenario: Carga de la sección de Presentación** <br> *Given* que el visitante ingresa a la URL principal <br> *When* la página termina de cargar <br> *Then* se muestra el eslogan principal, una breve descripción y el botón para registrarse. | EP-08|
-| US-37 | Demostración de funcionalidades de SkyCrop | Como visitante, quiero ver una sección interactiva de características de la plataforma para comprender las herramientas con las que cuenta el aplicativo. | **Scenario: Interacción con características** <br> *Given* el visitante hace scroll hasta la sección de funcionalidades <br> *When* visualiza los bloques interactivos de mapeo, telemetría y drones <br> *Then* puede ver animaciones o capturas de pantalla reales del panel interno. | EP-08 |
-| US-38 | Muestra de beneficios para agricultores | Como productor agrícola visitante, quiero identificar de qué forma SkyCrop mejora el rendimiento de mis parcelas para evaluar la rentabilidad de mi inversión. | **Scenario: Visualización de valor para agricultores** <br> *Given* el visitante está explorando la sección de beneficios <br> *When* filtra por el perfil 'Agricultor' <br> *Then* el sistema destaca métricas como el ahorro de agua, prevención de plagas y facilidad de uso. | EP-08 |
-| US-39 | Muestra de beneficios para agrónomos | Como ingeniero agrónomo visitante, deseo conocer el tipo de analítica y datos técnicos que recolecta el sistema para ver si se adapta a mis consultorías profesionales. | **Scenario: Visualización de valor para agrónomos** <br> *Given* el visitante está explorando la sección de beneficios <br> *When* filtra por el perfil 'Agrónomo' <br> *Then* la página muestra los gráficos detallados de índices de vegetación, automatización de reportes estacionales y gestión multi-parcela. | EP-08 |
-| US-40 | Planes de subscripciones y precios| Como visitante interesado, quiero ver de forma transparente los planes y tarifas disponibles para seleccionar la opción que mejor se ajuste a mis necesidades. |  **Scenario: Comparación de precios** <br> *Given* el visitante navega a la sección de tarifas <br> *When* revisa la cuadrícula de planes <br> *Then* el sistema detalla el costo mensual, características incluidas y un botón para suscribirse. | EP-08 |
-| US-41 | Opción de contacto| Como visitante, quiero tener una manera de contactarme con personal de soporte de la plataforma para aclarar mis dudas. | **Scenario: Contacto mediante la plataforma** <br> *Given* el visitante lee la sección "Contáctanos" <br> <br> *When* Llena el formulario *And* envía el mensaje <br> *Then* El sistema envía el mensaje al personal de soporte *And* Se guarda el correo del remitente para enviar una respuesta pronto. | EP-08 |
-| US-42 | Navegación rápida por la Landing Page | Como visitante, deseo contar con una barra de navegación fija en la parte superior para saltar directamente a las secciones que me interesan sin perder tiempo. | **Scenario: Uso de la barra de navegación** <br> *Given* el visitante se encuentra en cualquier parte de la Landing Page <br> *When* hace clic en un elemento del menú <br> *Then* la pantalla realiza un desplazamiento suave hasta la sección correspondiente. | EP-08 |
-| US-43 | Pie de página informativo | Como visitante, quiero ver un footer con enlaces institucionales, términos de servicio y redes sociales para validar la seriedad de la empresa y poder contactarlos. | **Scenario: Visualización del Footer** <br> *Given* el visitante llega al final de la página web <br> *When* revisa el pie de página <br> *Then* encuentra los accesos a políticas de privacidad, canales de soporte técnico y derechos reservados de SkyCrop. | EP-08 |
-| **EP-06** | Notificaciones | Como usuario, quiero que el sistema me envíe notificaciones cuando ocurran eventos importantes para enterarme a tiempo sobre lo ocurrido |- Notificación de resultados obtenidos.<br>- Notificación especial en el caso de una anomalía.|-----|
-| US-27 | Notificación de diagnóstico realizado | Como usuario con acceso a una parcela, deseo recibir una notificación cuando su diagnóstico esté disponible para revisar los resultados. | **Scenario: Diagnóstico disponible** <br> *Given* que el diagnóstico se ha generado y guardado correctamente <br> *When* el sistema prepara la notificación para el usuario con acceso a la parcela <br> *Then* envía un aviso que identifica la parcela y permite consultar el diagnóstico. <br> **Scenario: Diagnóstico no disponible** <br> *Given* que el procesamiento sigue pendiente o ha fallado <br> *When* el sistema verifica su resultado <br> *Then* no envía una notificación de diagnóstico realizado. | EP-06 |
-| US-28 | Notificación de anomalía detectada | Como usuario, deseo que se me envíe una notificación especial en el caso de que se detecte una anomalía | **Scenario: Se envía la notificación de emergencia** <br> *Given* Que se detecte una anomalía <br> *When* Se realiza el diagnóstico <br> *Then* Se envía una notificación acerca de la anomalía | EP-06 |
-| US-29 | Notificación de fallo del dron| Como usuario de la plataforma SkyCrop, deseo recibir una alerta inmediata si el dron sufre alguna falla | **Scenario: Notificación de error crítico** <br> *Given* el dron se encuentra ejecutando una ruta aérea <br> *When* el hardware detecta una falla <br> *Then* el sistema envía una notificación push de alta prioridad al dispositivo | EP-06 |
-| US-30 | Recordatorio de renovación de subscripción| Como usuario registrado, quiero recibir un aviso días antes del vencimiento de mi suscripción | **Scenario: Envío de recordatorio de pago** <br> *Given* la suscripción del usuario expira en 5 días o menos <br> *When* el sistema verifica los estados de cuenta diariamente <br> *Then* se despacha una notificación al dispositivo y un correo electrónico con el enlace directo de renovación. | EP-06 |
-| TS-06 | Gestión de notificaciones | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | **Scenario: Solicitud de notificación** <br> *Given* que la aplicación cliente tiene permiso para enviar notificaciones y el destinatario cuenta con un canal registrado <br> *When* envía una solicitud con un evento, destinatario y contenido válidos <br> *Then* la API registra la solicitud de envío y devuelve una confirmación de recepción. | EP-09 |
-| US-04 | Recuperación de acceso| Como usuario registrado en la plataforma SkyCrop, deseo tener opciones para recuperar el acceso a mi cuenta para no perder el acceso a mi información en caso olvide mi contraseña| **Scenario: Recuperación de acceso a una cuenta** <br> *Given* El usuario se encuentra en la pagina de inicio de sesión. <br> *When* Selecciona la opción de 'Recuperar acceso'. *And* Ingresa su correo electrónico. <br> *Then* El sistema envía un código de recuperación al correo ingresado.| EP-01 |
-| US-05 | Autenticación de dos factores | Como usuario registrado en la plataforma SkyCrop, quiero tener la capacidad de activar la autenticación de dos factores en mi cuenta para tener una segunda capa de seguridad.| **Scenario: Autenticación de dos factores** <br> *Given* El usuario ha activado la autenticación de dos factores en su cuenta *And* Se encuentra en la página de inicio de sesión. <br> *When* Ingresa sus credenciales *And* Presiona el botón de iniciar sesión. *Then* El sistema evalúa las credenciales *And* Envía un código de uso único al correo del usuario.| EP-01 |
-| TS-07 | Servicio de autenticación | Como desarrollador, quiero autenticar usuarios mediante la API para acceder a las operaciones autorizadas desde una aplicación cliente. | **Scenario: Autenticación válida** <br> *Given* que la aplicación cliente dispone de las credenciales de un usuario registrado <br> *When* envía una solicitud de autenticación con credenciales válidas <br> *Then* la API devuelve una credencial de acceso y restringe las operaciones a los permisos del usuario. <br> **Scenario: Credenciales incorrectas** <br> *Given* que la solicitud contiene credenciales incorrectas <br> *When* la API valida la solicitud <br> *Then* rechaza la autenticación sin emitir una credencial de acceso. | EP-09 |
-| US-01 | Registrar la cuenta de un Usuario| Como usuario de la plataforma SkyCrop, deseo registrarme en la plataforma para poder acceder a las funcionalidades que ofrece|**Scenario: Registro exitoso de un usuario**<br> *Given* el usuario está en el formulario de registro <br>*When* ingresa su nombre, correo y contraseña (≥ 8 caracteres) *And* acepta los términos <br> *Then* el sistema guarda la información *And* envía una confirmación por correo | EP-01|
-| US-02 | Inicio de Sesión |  Como usuario registrado en la plataforma SkyCrop, deseo iniciar sesión a la plataforma usando mis credenciales para volver a tener acceso a mi cuenta  | **Scenario: Inicio de Sesión exitoso** <br> *Given* El usuario ha ingresado los datos correctos <br> *When* Presiona el botón de iniciar sesión <br> *Then* El usuario ingresa a su cuenta dentro de la plataforma. <br> **Scenario: El usuario ingresa datos erróneos**<br> *Given* El usuario ingresa datos erróneos <br> *When* Presiona el botón de iniciar sesión <br> *Then* La página mostrará el mensaje de "Usuario o contraseña incorrecto" | EP-01|
+| **EP-05** | Diagnósticos | El usuario requiere que el sistema realice un diagnóstico de la información que recolecta y envíe una notificación de los puntos más importantes. |- Creación de un diagnóstico.<br>- Manejo de diagnósticos|-----|
+| US-23 | Generación de diagnóstico | El usuario con acceso a una parcela requiere que se analicen las imágenes de un vuelo y se guarde el diagnóstico para consultar los resultados del monitoreo. | **Scenario: Diagnóstico generado** <br> *Given* que las imágenes de un vuelo están disponibles y asociadas a una parcela <br> *When* el procesamiento finaliza correctamente <br> *Then* el sistema guarda el diagnóstico con sus resultados, la parcela, el vuelo y la fecha del monitoreo. <br> **Scenario: Procesamiento fallido** <br> *Given* que se ha iniciado el análisis de las imágenes de un vuelo <br> *When* ocurre un error que impide completarlo <br> *Then* el sistema registra el fallo e informa que el diagnóstico no pudo generarse, sin modificar el estado de la parcela ni sus diagnósticos anteriores. <br> **Scenario: Imágenes no disponibles** <br> *Given* se solicita generar un diagnóstico de una parcela <br> *When* no hay imágenes disponibles asociadas al vuelo indicado <br> *Then* el sistema informa que faltan imágenes y no registra un diagnóstico como finalizado. | EP-05 |
+| US-24 | Generación de mapa según diagnóstico | El usuario con acceso a una parcela requiere contar con un mapa de los resultados del diagnóstico para ubicar las zonas que requieren atención. | **Scenario: Mapa generado** <br> *Given* que un diagnóstico finalizado contiene resultados con ubicación en la parcela <br> *When* el sistema genera el mapa del diagnóstico <br> *Then* representa las zonas analizadas y sus resultados con una leyenda. <br> **Scenario: Ubicación insuficiente** <br> *Given* que el diagnóstico no contiene información suficiente para ubicar los resultados <br> *When* el sistema intenta generar el mapa <br> *Then* informa que el mapa no está disponible y conserva el diagnóstico para su consulta. | EP-05 |
+| US-25 | Historial de diagnósticos | El usuario con acceso a una parcela requiere consultar sus diagnósticos anteriores para revisar la evolución del cultivo. | **Scenario: Consulta del historial** <br> *Given* que el usuario tiene acceso a una parcela con diagnósticos registrados <br> *When* consulta su historial <br> *Then* obtiene los diagnósticos ordenados del más reciente al más antiguo y puede consultar la fecha y los resultados de cada uno. <br> **Scenario: Historial vacío** <br> *Given* que el usuario tiene acceso a una parcela sin diagnósticos registrados <br> *When* consulta su historial <br> *Then* el sistema informa que todavía no existen diagnósticos. <br> **Scenario: Acceso no permitido** <br> *Given* que el usuario no tiene acceso a una parcela <br> *When* intenta consultar sus diagnósticos <br> *Then* el sistema rechaza la consulta sin mostrar sus resultados. | EP-05 |
+| US-26 | Actualización de una parcela mediante diagnóstico | El usuario con acceso a una parcela requiere que su estado refleje el diagnóstico más reciente para consultar información actualizada del cultivo. | **Scenario: Actualización del estado** <br> *Given* que finaliza un diagnóstico de una parcela con datos de monitoreo más recientes que los del estado actual <br> *When* el sistema registra sus resultados <br> *Then* actualiza el estado de la parcela con esos resultados y la fecha del monitoreo, conservando los diagnósticos anteriores en el historial. <br> **Scenario: Resultado de un monitoreo anterior** <br> *Given* que finaliza un diagnóstico cuyos datos de monitoreo son anteriores a los del estado actual <br> *When* el sistema registra sus resultados <br> *Then* lo incorpora al historial sin reemplazar el estado más reciente de la parcela. <br> **Scenario: Diagnóstico sin finalizar** <br> *Given* el diagnóstico está pendiente o ha fallado <br> *When* el sistema evalúa si debe actualizar el estado de la parcela <br> *Then* conserva el último estado registrado y no lo reemplaza con resultados incompletos. | EP-05 |
+| TS-05 | Solicitud de procesamiento de imágenes | El desarrollador requiere solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | **Scenario: Solicitud de análisis** <br> *Given* que las imágenes de un vuelo están disponibles y la aplicación cliente tiene permiso sobre la parcela <br> *When* solicita el procesamiento de esas imágenes <br> *Then* la API registra la solicitud y devuelve un identificador para consultar su estado. | EP-09 |
+
+**Core — Report Management**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-07** | Generación de reportes | El usuario requiere recibir un reporte de todos los diagnósticos realizados y un informe estacional, todo esto disponible para descargar como un archivo PDF. |- Creación de un reporte de cada diagnóstico.<br>- Creación de un reporte de cada diagnóstico según la estación del año. <br>- Botón para descargar cada diagnóstico y reporte como un PDF.|-----|
+| US-31 | Creación de reporte según la estación | El usuario requiere que se cree un reporte estacional utilizando los diversos reportes generados | **Scenario: Se crea un reporte estacional** <br> *Given* Que se generen suficientes reportes durante una estación (mínimo 5) <br> *When* El calendario estacional indique que se está a mitad de una estación <br> *Then* Se crea el reporte estacional <br> **Scenario: Reportes insuficientes** <br> *Given* la estación tiene menos de cinco reportes disponibles <br> *When* se alcanza la fecha prevista para generar el informe estacional <br> *Then* el sistema no genera el informe con datos insuficientes e informa esa condición. | EP-07 |
+| US-32 | Compartir reportes | El usuario de la plataforma SkyCrop requiere compartir los reportes generados mediante un enlace o correo electrónico para comunicarse con entidades externas. | **Scenario: Compartir reporte exitosamente** <br> *Given* el usuario visualiza un reporte o informe estacional <br> *When* presiona el botón "Compartir" e ingresa el correo del destinatario <br> *Then* el sistema envía un enlace de acceso seguro para visualizar el documento. <br> **Scenario: Destinatario no válido** <br> *Given* el usuario tiene acceso al reporte que desea compartir <br> *When* intenta enviarlo con un correo vacío o de formato incorrecto <br> *Then* el sistema solicita corregir el destinatario y no envía el enlace. <br> **Scenario: Envío fallido** <br> *Given* el destinatario es válido <br> *When* el servicio de correo rechaza o no puede completar el envío <br> *Then* el sistema informa el fallo sin confirmar la entrega. | EP-07 |
+| US-33 | Guardado de reportes en la nube| El usuario de SkyCrop requiere que los reportes se almacenen automáticamente en la nube para acceder al histórico de diagnósticos en cualquier momento sin perder información. | **Scenario: Almacenamiento automático en la nube** <br> *Given* que el sistema finaliza la consolidación de un reporte <br> *When* se genera el archivo definitivo <br> *Then* el sistema lo aloja en el almacenamiento en la nube del usuario. <br> **Scenario: Almacenamiento fallido** <br> *Given* el archivo del reporte ha sido generado <br> *When* el proveedor de almacenamiento no puede guardarlo <br> *Then* el sistema registra el fallo y no marca el reporte como almacenado en la nube. | EP-07 |
+| US-34 | Comparación entre reportes| El usuario de la plataforma SkyCrop requiere seleccionar dos reportes distintos para comparar los valores entre ambos. | **Scenario: Comparación gráfica de evolución** <br> *Given* el usuario se encuentra en el historial de reportes <br> *When* selecciona dos reportes distintos *And* presiona "Comparar" <br> *Then* la plataforma genera una vista dividida mostrando los dos reportes uno al lado del otro. <br> **Scenario: Selección incompleta** <br> *Given* el usuario está en el historial de reportes <br> *When* solicita comparar sin seleccionar dos reportes distintos <br> *Then* el sistema solicita corregir la selección y no genera una comparación. | EP-07 |
+| US-35 | Guardado de reportes como PDF | El usuario requiere descargar cada uno de los reportes como un archivo PDF. | **Scenario: Se descarga un reporte** <br> *Given* Que se tenga un reporte ya generado <br> *When* El usuario presione el botón de "descargar" al lado del reporte <br> *Then* Se descarga automáticamente ese reporte como un PDF en el dispositivo del usuario. <br> **Scenario: Archivo no disponible** <br> *Given* el usuario tiene acceso al reporte <br> *When* solicita descargarlo cuando su PDF no está disponible <br> *Then* el sistema informa que la descarga no puede completarse y no entrega un archivo vacío como reporte. | EP-07 |
+| TS-03 | Manejo de reportes | El desarrollador requiere consultar y descargar reportes mediante la API para utilizarlos en otras aplicaciones. | **Scenario: Descarga de reporte** <br> *Given* que la aplicación cliente tiene acceso a una parcela con un reporte disponible <br> *When* solicita la descarga del reporte por su identificador <br> *Then* la API devuelve el archivo correspondiente. | EP-09 |
+
+**Soporte — Agricultural Plot Management**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-03** | Gestión de parcelas agrícolas| El usuario de la plataforma SkyCrop requiere un sistema de registro y gestión que le permita registrar sus parcelas agrícolas para poder gestionarlas y monitorearlas. |- Registro de un terreno.<br>- Revisión del estado del terreno y sus cultivos.|-----|
+| US-11 | Registro de parcela | El usuario requiere registrar el terreno por el cual el dron va a volar | **Scenario: Registrar el tamaño del terreno** <br> *Given* El usuario registra las dimensiones del terreno en una pestaña <br> *When* el usuario presiona el botón de "registrar terreno" <br> *Then* el sistema guarda la parcela con las dimensiones ingresadas y muestra la confirmación "Terreno registrado" <br> **Scenario: Dimensiones no válidas** <br> *Given* el usuario está en el formulario de registro de parcelas <br> *When* envía dimensiones vacías, no numéricas o que no representan una superficie positiva <br> *Then* el sistema señala los datos incorrectos y no registra la parcela. | EP-03 |
+| US-12 | Consulta de estado de una parcela| El usuario de la plataforma SkyCrop requiere consultar el estado de una parcela para conocer los niveles de salud e hidratación del suelo detectados por el dron. | **Scenario: Consulta de estado de parcela exitoso** <br>  *Given* el usuario tiene parcelas registradas <br> *When* selecciona una parcela específica de la lista <br> *Then* el sistema despliega el panel de telemetría con los datos de humedad, temperatura y salud del suelo. <br> **Scenario: Sin monitoreo disponible** <br> *Given* el usuario tiene acceso a una parcela sin mediciones registradas <br> *When* consulta su estado <br> *Then* el sistema indica que no hay datos de monitoreo y no presenta valores inventados. <br> **Scenario: Sin acceso** <br> *Given* el usuario no tiene permiso sobre una parcela <br> *When* solicita consultar su estado <br> *Then* el sistema rechaza la consulta sin exponer los datos de esa parcela. | EP-03 |
+| US-13 | Visualización del mapa de una parcela| El usuario de la plataforma SkyCrop requiere visualizar el mapa de su parcela para identificar zonas de anomalías visualmente. | **Scenario: Visualizar mapa de calor** <br> *Given* el usuario se encuentra en el detalle de la parcela <br> *When* activa la pestaña de 'Mapa' <br> *Then* el sistema renderiza el mapa satelital con zonas rojas para indicar las zonas de riesgo. <br> **Scenario: Mapa sin resultados** <br> *Given* el usuario tiene acceso a una parcela sin resultados georreferenciados <br> *When* abre la vista del mapa <br> *Then* el sistema informa que no hay resultados para representar y no muestra zonas de riesgo sin evidencia. | EP-03 |
+| US-14 | Registro de cultivos en una parcela| El usuario de la plataforma SkyCrop requiere registrar el tipo de cultivo de su parcela para que el sistema adapte las alertas a las necesidades específicas de su planta. | **Scenario: Asignación de cultivo a parcela** <br> *Given* el usuario edita los detalles de una parcela <br> *When* selecciona una variedad de cultivo de la lista *And* guarda los cambios <br> *Then* la plataforma confirma que el cultivo fue enlazado exitosamente. <br> **Scenario: Cultivo no seleccionado** <br> *Given* el usuario puede editar una parcela <br> *When* intenta guardar la asignación sin seleccionar un cultivo válido <br> *Then* el sistema solicita una selección válida y conserva la asignación anterior. | EP-03 |
+| US-15 | Consulta de información de los cultivos| El usuario de la plataforma SkyCrop requiere acceder a la ficha técnica de sus cultivos asignados para entender el ciclo de crecimiento y alertas sugeridas. | **Scenario: Ver detalles técnicos del cultivo** <br> *Given* el usuario visualiza el estado de una parcela <br> *When* selecciona el nombre del cultivo activo <br> *Then* el sistema despliega información agronómica relevante y los umbrales ideales de humedad. <br> **Scenario: Sin cultivo asignado** <br> *Given* el usuario consulta una parcela sin cultivos registrados <br> *When* solicita información del cultivo <br> *Then* el sistema informa que debe registrarse un cultivo y no muestra una ficha ajena a la parcela. | EP-03 |
+| US-16 | Invitación de compañeros| El administrador de una cuenta de SkyCrop requiere invitar a compañeros de trabajo o agrónomos a sus parcelas para compartir el monitoreo de los campos. | **Scenario: Enviar invitación por correo** <br> *Given* el usuario está en el panel de configuración de la parcela <br> *When* ingresa el correo de su compañero *And* presiona 'Enviar invitación' <br> *Then* el sistema despacha un enlace de acceso al invitado *And* muestra el estado de la invitación como 'Pendiente'. <br> **Scenario: Correo de invitación no válido** <br> *Given* el usuario tiene permiso para invitar colaboradores <br> *When* envía una invitación con un correo vacío o de formato incorrecto <br> *Then* el sistema solicita corregirlo y no crea ni envía la invitación. <br> **Scenario: Invitación sin autorización** <br> *Given* el usuario no tiene permiso para administrar colaboradores de la parcela <br> *When* intenta invitar a otra persona <br> *Then* el sistema rechaza la operación y conserva los accesos existentes. | EP-03|
+| TS-02 | Manejo de datos de parcelas | El desarrollador requiere registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | **Scenario: Registro de parcela** <br> *Given* que la aplicación cliente está autenticada y tiene permiso para registrar parcelas <br> *When* envía una solicitud con los datos obligatorios y válidos de una parcela <br> *Then* la API guarda la parcela y devuelve su identificador. | EP-09 |
+
+**Soporte — Drone Management**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-04** | Gestión de drones| El usuario de la plataforma SkyCrop requiere un sistema de registro y configuración de drones para conectar su dron y configurar una rutina de vuelo. |-Conexión del dron.<br>- Gestión de la rutina de vuelo.||
+| US-17 | Conectar el dron | El usuario requiere conectar el aplicativo con su dron | **Scenario 1: La conexión es exitosa** <br> *Given* El usuario presiona el botón "Conectar Dron" <br> *When* El dron funciona adecuadamente y está suficientemente cerca del dispositivo con el aplicativo <br> *Then* Se mostrará el mensaje "Conexión exitosa" <br> **Scenario 2: La conexión es no exitosa** <br> *Given* El usuario presiona el botón "Conectar Dron" <br> *When* El dron no funciona adecuadamente y/o está lejos del dispositivo con el aplicativo <br> *Then* Se mostrará el mensaje "Conexión fallida" | EP-04 |
+| US-18 | Gestionar la rutina de vuelo | El usuario requiere gestionar la rutina de vuelo que el dron va a patrullar | **Scenario 1: Se ingresa la rutina dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina registrada exitosamente". <br> **Scenario 2: La rutina no se encuentra dentro de los parámetros permitidos** <br> *Given* el usuario ingresa la rutina de vuelo <br> *When* la rutina de vuelo no se encuentra dentro de los parámetros <br> *Then* Se mostrará el mensaje "Rutina debe encontrarse en los parámetros permitidos". <br>  **Scenario 3: Asignación de un dron al vuelo de la parcela** <br> *Given* que el usuario tiene permiso para gestionar vuelos sobre la parcela y dispone de un plan válido y de un dron accesible y disponible <br> *When* confirma la selección del dron para ese plan <br> *Then* el sistema registra un vuelo planificado con los identificadores del plan y del dron. <br> **Scenario 4: Selección no válida** <br> *Given* que el usuario selecciona un dron para un plan de vuelo <br> *When* el sistema detecta falta de permisos, un plan no válido o un dron no disponible <br> *Then* informa el motivo y no registra el vuelo. <br> **Scenario 5: Cancelación** <br> *Given* que la selección no ha sido confirmada <br> *When* el usuario cancela la operación <br> *Then* no se registra un vuelo ni se modifica el plan. | EP-04 |
+| US-19 | Captura de imágenes mediante dron | El usuario de la plataforma SkyCrop requiere que el dron capture imágenes automáticamente durante su rutina para recolectar datos visuales de la parcela. | **Scenario 1: Captura automática de imágenes** <br> *Given* el dron se encuentra ejecutando una rutina de vuelo activa <br> *When* alcanza un punto de control (waypoint) programado <br> *Then* la cámara del dron captura una imagen de alta resolución. <br> **Scenario: Captura fallida** <br> *Given* el dron ejecuta un vuelo y alcanza un punto de captura <br> *When* la cámara no puede obtener la imagen <br> *Then* el sistema registra el fallo asociado al vuelo y no registra una imagen como capturada correctamente. | EP-04 |
+| US-20 | Parametrización de vuelo del dron | El usuario de la plataforma SkyCrop requiere configurar los parámetros técnicos de vuelo para optimizar la toma de capturas. | **Scenario 1: Guardar parámetros válidos** <br>  *Given* el usuario se encuentra en el panel de parametrización <br> *When* ingresa valores de altura y velocidad permitidos *And* presiona "Guardar" <br> *Then* el sistema actualiza la configuración del dron. <br> **Scenario 2: Parámetros fuera de rango** <br> *Given* el usuario ingresa una altura que excede el límite legal o técnico <br> *When* intenta guardar la configuración <br> *Then* el sistema muestra la alerta "Valor fuera de rango permitido". | EP-04 |
+| US-21 | Envío de imágenes tomadas por el dron | El usuario de la plataforma SkyCrop requiere que el dron envíe las imágenes capturadas al servidor para que puedan ser procesadas por el sistema. | **Scenario 1: Envío exitoso con buena señal** <br> *Given* el dron ha finalizado la captura de imágenes <br> *When* detecta una conexión a internet o enlace estable <br> *Then* transfiere las imágenes al servidor *And* muestra el progreso en el aplicativo. <br> **Scenario 2: Pérdida de conexión durante el envío** <br> *Given* el dron está enviando las imágenes <br> *When* la conexión se interrumpe <br> *Then* el sistema pausa la transferencia *And* la reanuda automáticamente al recuperar la señal. | EP-04 |
+| US-22 | Visualización de imágenes tomadas por el dron | El usuario de la plataforma SkyCrop requiere visualizar la galería de imágenes tomadas por el dron para verificar la calidad del patrullaje antes del procesamiento. | **Scenario 1: Visualización correcta de galería** <br> *Given* las imágenes del vuelo ya se han sincronizado <br> *When* el usuario ingresa al historial de vuelos y selecciona la galería <br> *Then* el sistema despliega el carrete de imágenes ordenadas cronológicamente y por geolocalización. <br> **Scenario: Galería vacía** <br> *Given* el usuario tiene acceso a un vuelo sin imágenes sincronizadas <br> *When* abre su galería <br> *Then* el sistema muestra el estado sin imágenes y no presenta capturas de otros vuelos. | EP-04 |
+| TS-04 | Manejo de datos de drones | El desarrollador requiere registrar el estado de los drones mediante la API para consultar su información actualizada. | **Scenario: Actualización del estado de un dron** <br> *Given* que el dron está registrado y la aplicación cliente tiene permiso para actualizarlo <br> *When* envía una solicitud con el identificador del dron y datos de estado válidos <br> *Then* la API guarda el estado y confirma la actualización. | EP-09 |
+
+**Soporte — Subscriptions and Payment Management**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-02** | Pago de suscripción| El usuario de la plataforma SkyCrop requiere de un sistema de pagos que le permita ingresar sus datos bancarios de manera segura, para pagar su suscripción de la plataforma |- Pago por medio de diversos procesadores de pago.<br>- Verificación del estado del pago.|-----|
+| US-06 | Adquisición de suscripciones | El usuario registrado en la plataforma SkyCrop requiere adquirir una suscripción en la plataforma para tener acceso a las funcionalidades pagadas que ofrece | **Scenario: Adquirir una suscripción** <br> *Given* El usuario ha elegido una suscripción. <br> *When* Ingresa los datos necesarios para realizar el pago *And* La transacción es aprobada. <br> *Then* El sistema asigna la suscripción a la cuenta del usuario *And* Permite que se acceda a las funcionalidades de pago. <br> **Scenario: Pago rechazado** <br> *Given* el usuario ha seleccionado una suscripción <br> *When* el proveedor rechaza el pago <br> *Then* el sistema informa el rechazo y no activa la suscripción ni concede funciones de pago. | EP-02 |
+| US-07 | Pagar la suscripción con tarjeta | El usuario registrado en la plataforma SkyCrop requiere pagar su suscripción con tarjeta, para renovar su suscripción de manera rápida y segura | **Scenario: Pago exitoso** <br> *Given* El usuario ha ingresado sus datos bancarios <br> *When* El usuario presiona el botón de realizar pago *And* El procesador de pagos aprueba el pago. <br> *Then* La página mostrará el mensaje "El pago fue exitoso" <br> **Scenario: Se ingresan datos bancarios no válidos** <br> *Given* El usuario ha ingresado datos bancarios no válidos <br> *When* El usuario presiona el botón de realizar pago *And* el procesador de pago rechaza el pago. <br> *Then* La página mostrará el mensaje "Error al realizar el pago" *And* Brindará más detalles del error. <br> **Scenario: Confirmación pendiente** <br> *Given* se ha enviado una solicitud de pago <br> *When* el proveedor todavía no confirma su resultado <br> *Then* el sistema muestra el pago como pendiente y no confirma una renovación aprobada. | EP-02 |
+| US-08 | Confirmación de pagos| El usuario registrado en la plataforma SkyCrop requiere recibir una confirmación del pago de una suscripción para tener un registro de las transacciones realizadas. | **Scenario: Recepción de comprobación tras pago** <br> *Given* El usuario ha realizado un pago de una suscripción. <br> *When* El sistema verifica la realización del pago. <br> *Then* Envía un comprobante del pago al correo del usuario. <br> **Scenario: Pago sin aprobación** <br> *Given* una transacción está pendiente o ha sido rechazada <br> *When* el sistema verifica su estado <br> *Then* no envía un comprobante de pago aprobado. <br> **Scenario: Entrega del comprobante fallida** <br> *Given* el pago está aprobado y su comprobante está generado <br> *When* falla el envío del correo <br> *Then* el sistema registra el fallo de entrega y conserva el pago aprobado. | EP-02 |
+| US-09 | Consulta de detalles de la suscripción actual | El usuario suscrito en la plataforma SkyCrop requiere consultar los detalles de su suscripción actual para conocer hasta cuándo está vigente y a qué funciones tiene acceso | **Scenario: Consulta de suscripción activa** <br> *Given* El usuario cuenta con una suscripción vigente *And* Se encuentra en su perfil. <br> *When* El usuario ingresa a la sección de suscripciones. <br> *Then* El sistema muestra el tipo de suscripción vigente *And* Muestra detalles como la fecha de vigencia y funcionalidades disponibles. <br> **Scenario: Sin suscripción vigente** <br> *Given* el usuario ha iniciado sesión y no tiene una suscripción activa <br> *When* consulta la sección de suscripciones <br> *Then* el sistema informa que no existe una suscripción vigente y no muestra funcionalidades de pago como habilitadas. | EP-02|
+| US-10 | Cancelación de suscripciones| El usuario suscrito en la plataforma SkyCrop requiere ser capaz de cancelar su suscripción en la plataforma para evitar gastos accidentales. | **Scenario: Cancelación de suscripción vigente** <br> *Given* El usuario se encuentra en la sección de suscripciones en su perfil. <br> *When* Solicita la cancelación de una suscripción. <br> *Then* El sistema marca a la suscripción como cancelada *And* Revoca al usuario los permisos asociados a tal suscripción <br> **Scenario: Cancelación no confirmada** <br> *Given* el usuario tiene una suscripción activa <br> *When* abandona la solicitud antes de confirmarla <br> *Then* el sistema conserva la suscripción y sus permisos. <br> **Scenario: Sin suscripción activa** <br> *Given* el usuario no tiene una suscripción activa <br> *When* solicita cancelarla <br> *Then* el sistema informa esa condición y no genera otra cancelación. | EP-02|
+
+**Soporte — Profiles and Preferences Management**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-01** | Gestión de cuentas y autenticación| El usuario de la plataforma SkyCrop requiere registrar una cuenta, iniciar sesión en ella, mantener su perfil actualizado y cerrar sesión, para acceder de manera segura a la plataforma. |- Registro con validación de correo y contraseña. <br> - Actualización de información del perfil. <br> - Cierre de sesión seguro.|-----|
+| US-03 | Cambiar la información del perfil | El usuario registrado en la plataforma SkyCrop requiere ser capaz de cambiar la información de su perfil para corregir datos incorrectos o desactualizados | **Scenario: Perfil actualizado** <br> *Given* el usuario accede a su perfil <br> *When* edita su información *And* guarda los cambios <br> *Then* el sistema actualiza los datos de su perfil y los muestra al volver a consultarlo <br> **Scenario: Datos de perfil no válidos** <br> *Given* el usuario ha accedido a su perfil <br> *When* intenta guardar datos que incumplen las validaciones de los campos <br> *Then* el sistema señala los campos incorrectos y conserva la información anterior. <br> **Scenario: Actualización fallida** <br> *Given* el usuario ha enviado cambios válidos del perfil <br> *When* el servicio no puede guardarlos <br> *Then* el sistema informa el error y no confirma la actualización. | EP-01 |
+| TS-01 | Manejo de datos de usuarios | El desarrollador requiere consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | **Scenario: Consulta autorizada de un usuario** <br> *Given* que la aplicación cliente dispone de credenciales válidas y permiso para consultar un usuario <br> *When* envía una solicitud con el identificador del usuario <br> *Then* la API devuelve los datos del perfil sin exponer contraseñas. | EP-09 |
+
+**Genérico — Notification Service**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-06** | Notificaciones | El usuario requiere que el sistema le envíe notificaciones cuando ocurran eventos importantes para informarse a tiempo sobre lo ocurrido |- Notificación de resultados obtenidos.<br>- Notificación especial en el caso de una anomalía.|-----|
+| US-27 | Notificación de diagnóstico realizado | El usuario con acceso a una parcela requiere recibir una notificación cuando su diagnóstico esté disponible para revisar los resultados. | **Scenario: Diagnóstico disponible** <br> *Given* que el diagnóstico se ha generado y guardado correctamente <br> *When* el sistema prepara la notificación para el usuario con acceso a la parcela <br> *Then* envía un aviso que identifica la parcela y permite consultar el diagnóstico. <br> **Scenario: Diagnóstico no disponible** <br> *Given* que el procesamiento sigue pendiente o ha fallado <br> *When* el sistema verifica su resultado <br> *Then* no envía una notificación de diagnóstico realizado. | EP-06 |
+| US-28 | Notificación de anomalía detectada | El usuario requiere que se le envíe una notificación especial en el caso de que se detecte una anomalía | **Scenario: Se envía la notificación de emergencia** <br> *Given* Que se detecte una anomalía <br> *When* Se realiza el diagnóstico <br> *Then* Se envía una notificación acerca de la anomalía <br> **Scenario: Sin anomalías** <br> *Given* un diagnóstico ha finalizado sin anomalías <br> *When* el sistema evalúa sus resultados <br> *Then* no genera una alerta de anomalía para ese diagnóstico. | EP-06 |
+| US-29 | Notificación de fallo del dron| El usuario de la plataforma SkyCrop requiere recibir una alerta inmediata si el dron sufre alguna falla | **Scenario: Notificación de error crítico** <br> *Given* el dron se encuentra ejecutando una ruta aérea <br> *When* el hardware detecta una falla <br> *Then* el sistema envía una notificación push de alta prioridad al dispositivo <br> **Scenario: Identificación del fallo** <br> *Given* se ha recibido un fallo de un dron asociado a un vuelo <br> *When* el sistema genera el aviso <br> *Then* la notificación identifica el dron y el vuelo afectados y se dirige al usuario correspondiente. | EP-06 |
+| US-30 | Recordatorio de renovación de suscripción| El usuario registrado requiere recibir un aviso días antes del vencimiento de su suscripción | **Scenario: Envío de recordatorio de pago** <br> *Given* la suscripción del usuario expira en 5 días o menos <br> *When* el sistema verifica los estados de cuenta diariamente <br> *Then* se despacha una notificación al dispositivo y un correo electrónico con el enlace directo de renovación. <br> **Scenario: Fuera del período de aviso** <br> *Given* la suscripción vence en más de cinco días <br> *When* el sistema realiza la verificación diaria <br> *Then* no envía el recordatorio de vencimiento próximo. <br> **Scenario: Suscripción renovada** <br> *Given* la suscripción fue renovada y su nuevo vencimiento está fuera del período de aviso <br> *When* el sistema realiza la verificación diaria <br> *Then* utiliza la nueva fecha y no envía un recordatorio por el vencimiento anterior. | EP-06 |
+| TS-06 | Gestión de notificaciones | El desarrollador requiere solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | **Scenario: Solicitud de notificación** <br> *Given* que la aplicación cliente tiene permiso para enviar notificaciones y el destinatario cuenta con un canal registrado <br> *When* envía una solicitud con un evento, destinatario y contenido válidos <br> *Then* la API registra la solicitud de envío y devuelve una confirmación de recepción. | EP-09 |
+
+**Genérico — IAM — Identity and Access Management**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| US-04 | Recuperación de acceso| El usuario registrado en la plataforma SkyCrop requiere tener opciones para recuperar el acceso a su cuenta para no perder el acceso a su información en caso olvide su contraseña | **Scenario: Recuperación de acceso a una cuenta** <br> *Given* El usuario se encuentra en la página de inicio de sesión. <br> *When* Selecciona la opción de 'Recuperar acceso'. *And* Ingresa su correo electrónico. <br> *Then* El sistema envía un código de recuperación al correo ingresado. <br> **Scenario: Código válido** <br> *Given* se ha emitido un código de recuperación para la cuenta <br> *When* se presenta el código vigente y una nueva contraseña válida <br> *Then* el sistema actualiza la contraseña e invalida el código utilizado. <br> **Scenario: Código no válido** <br> *Given* se ha solicitado recuperar el acceso <br> *When* se presenta un código incorrecto, vencido o ya utilizado <br> *Then* el sistema rechaza el cambio y conserva la contraseña anterior. <br> **Scenario: Correo sin cuenta** <br> *Given* el correo ingresado no tiene una cuenta asociada <br> *When* se solicita recuperar el acceso <br> *Then* el sistema muestra una respuesta que no revela si el correo está registrado y no emite un código para una cuenta inexistente. | EP-01 |
+| US-05 | Autenticación de dos factores | El usuario registrado en la plataforma SkyCrop requiere tener la capacidad de activar la autenticación de dos factores en su cuenta para tener una segunda capa de seguridad. | **Scenario: Autenticación de dos factores** <br> *Given* El usuario ha activado la autenticación de dos factores en su cuenta *And* Se encuentra en la página de inicio de sesión. <br> *When* Ingresa sus credenciales *And* Presiona el botón de iniciar sesión. <br> *Then* El sistema evalúa las credenciales *And* Envía un código de un solo uso al correo del usuario. <br> **Scenario: Código aceptado** <br> *Given* las credenciales son válidas y existe un código de segundo factor vigente <br> *When* el usuario ingresa el código correcto <br> *Then* el sistema permite el acceso e invalida el código utilizado. <br> **Scenario: Código rechazado** <br> *Given* el sistema ha solicitado el segundo factor <br> *When* el usuario presenta un código incorrecto, vencido o ya utilizado <br> *Then* el sistema rechaza la verificación y no inicia la sesión. | EP-01 |
+| TS-07 | Servicio de autenticación | El desarrollador requiere autenticar usuarios mediante la API para acceder a las operaciones autorizadas desde una aplicación cliente. | **Scenario: Autenticación válida** <br> *Given* que la aplicación cliente dispone de las credenciales de un usuario registrado <br> *When* envía una solicitud de autenticación con credenciales válidas <br> *Then* la API devuelve una credencial de acceso y restringe las operaciones a los permisos del usuario. <br> **Scenario: Credenciales incorrectas** <br> *Given* que la solicitud contiene credenciales incorrectas <br> *When* la API valida la solicitud <br> *Then* rechaza la autenticación sin emitir una credencial de acceso. | EP-09 |
+| US-01 | Registro de cuenta de usuario| El usuario de la plataforma SkyCrop requiere registrarse en la plataforma para poder acceder a las funcionalidades que ofrece | **Scenario: Registro exitoso de un usuario**<br> *Given* el usuario está en el formulario de registro <br>*When* ingresa su nombre, correo y contraseña (≥ 8 caracteres) *And* acepta los términos <br> *Then* el sistema guarda la información *And* envía una confirmación por correo <br> **Scenario: Datos de registro no válidos** <br> *Given* el formulario de registro está disponible <br> *When* se envía sin nombre o correo válido, con contraseña de menos de ocho caracteres o sin aceptar los términos <br> *Then* el sistema identifica los campos que requieren corrección y no crea la cuenta. <br> **Scenario: Correo ya registrado** <br> *Given* existe una cuenta asociada al correo indicado <br> *When* se solicita otro registro con ese correo <br> *Then* el sistema rechaza el registro sin crear una cuenta duplicada. | EP-01|
+| US-02 | Inicio de sesión | El usuario registrado en la plataforma SkyCrop requiere iniciar sesión a la plataforma usando sus credenciales para volver a tener acceso a su cuenta | **Scenario: Inicio de sesión exitoso** <br> *Given* El usuario ha ingresado los datos correctos <br> *When* Presiona el botón de iniciar sesión <br> *Then* El usuario ingresa a su cuenta dentro de la plataforma. <br> **Scenario: El usuario ingresa datos erróneos**<br> *Given* El usuario ingresa datos erróneos <br> *When* Presiona el botón de iniciar sesión <br> *Then* La página mostrará el mensaje de "Usuario o contraseña incorrecto" <br> **Scenario: Campos incompletos** <br> *Given* el formulario de inicio de sesión está disponible <br> *When* se intenta continuar sin correo o contraseña <br> *Then* el sistema solicita completar los campos y no inicia una sesión. <br> **Scenario: Segundo factor habilitado** <br> *Given* la cuenta tiene autenticación de dos factores activa y las credenciales son válidas <br> *When* se solicita iniciar sesión <br> *Then* el sistema solicita el código de verificación y permite el acceso únicamente después de validarlo. | EP-01|
+
+**Presentación pública — Landing Page**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-08** | Landing Page | El visitante requiere conocer lo que la plataforma SkyCrop ofrece y los beneficios que puede brindarle para decidir si debería registrarse |- Visualización del proposito de la plataforma.<br>- Visualización de las funcionalidades y beneficios que ofrece.<br>- Visualización de los planes y precios.|-----|
+| US-36 | Presentación de SkyCrop | El visitante de la Landing Page requiere ver una introducción clara con la propuesta de valor de SkyCrop para entender rápidamente qué hace el software. | **Scenario: Carga de la sección de Presentación** <br> *Given* que el visitante ingresa a la URL principal <br> *When* la página termina de cargar <br> *Then* se muestra el eslogan principal, una breve descripción y el botón para registrarse. <br> **Scenario: Acceso al registro** <br> *Given* la sección de presentación está visible <br> *When* el visitante selecciona el botón de registro <br> *Then* se abre la ruta de registro de la aplicación. | EP-08|
+| US-37 | Demostración de funcionalidades de SkyCrop | El visitante requiere ver una sección interactiva de características de la plataforma para comprender las herramientas con las que cuenta el aplicativo. | **Scenario: Interacción con características** <br> *Given* el visitante hace scroll hasta la sección de funcionalidades <br> *When* visualiza los bloques interactivos de mapeo, telemetría y drones <br> *Then* puede ver animaciones o capturas de pantalla reales del panel interno. <br> **Scenario: Recurso visual no disponible** <br> *Given* la sección de funcionalidades incluye una imagen o animación <br> *When* el recurso no puede cargarse <br> *Then* la descripción textual de la funcionalidad permanece disponible. | EP-08 |
+| US-38 | Muestra de beneficios para agricultores | El productor agrícola visitante requiere identificar de qué forma SkyCrop mejora el rendimiento de sus parcelas para evaluar la rentabilidad de su inversión. | **Scenario: Visualización de valor para agricultores** <br> *Given* el visitante está explorando la sección de beneficios <br> *When* filtra por el perfil 'Agricultor' <br> *Then* el sistema destaca métricas como el ahorro de agua, prevención de plagas y facilidad de uso. <br> **Scenario: Cambio de segmento** <br> *Given* la sección muestra beneficios para agrónomos <br> *When* el visitante selecciona el perfil Agricultor <br> *Then* se muestran los beneficios correspondientes a agricultores. | EP-08 |
+| US-39 | Muestra de beneficios para agrónomos | El ingeniero agrónomo visitante requiere conocer el tipo de analítica y datos técnicos que recolecta el sistema para ver si se adapta a sus consultorías profesionales. | **Scenario: Visualización de valor para agrónomos** <br> *Given* el visitante está explorando la sección de beneficios <br> *When* filtra por el perfil 'Agrónomo' <br> *Then* la página muestra los gráficos detallados de índices de vegetación, automatización de reportes estacionales y gestión multi-parcela. <br> **Scenario: Cambio de segmento** <br> *Given* la sección muestra beneficios para agricultores <br> *When* el visitante selecciona el perfil Agrónomo <br> *Then* se muestran los beneficios correspondientes a agrónomos. | EP-08 |
+| US-40 | Planes de suscripciones y precios| El visitante interesado requiere ver de forma transparente los planes y tarifas disponibles para seleccionar la opción que mejor se ajuste a sus necesidades. | **Scenario: Comparación de precios** <br> *Given* el visitante navega a la sección de tarifas <br> *When* revisa la cuadrícula de planes <br> *Then* el sistema detalla el costo mensual, características incluidas y un botón para suscribirse. <br> **Scenario: Selección de plan** <br> *Given* el visitante consulta los planes publicados <br> *When* selecciona la opción de suscribirse de un plan <br> *Then* la página dirige al acceso o registro de la aplicación sin presentar la suscripción como adquirida antes del pago. | EP-08 |
+| US-41 | Opción de contacto| El visitante requiere tener una manera de comunicarse con personal de soporte de la plataforma para aclarar sus dudas. | **Scenario: Contacto mediante la plataforma** <br> *Given* el visitante lee la sección "Contáctanos" <br> *When* Llena el formulario *And* envía el mensaje <br> *Then* El sistema envía el mensaje al personal de soporte *And* Se guarda el correo del remitente para enviar una respuesta pronto. <br> **Scenario: Formulario no válido** <br> *Given* el visitante accede al formulario de contacto <br> *When* intenta enviarlo con campos obligatorios vacíos o correo de formato incorrecto <br> *Then* la página identifica los campos que requieren corrección y no envía el mensaje. <br> **Scenario: Servicio de contacto no disponible** <br> *Given* el visitante envía un formulario válido <br> *When* el servicio no puede recibir el mensaje <br> *Then* la página informa el fallo y no muestra una confirmación de envío. | EP-08 |
+| US-42 | Navegación rápida por la Landing Page | El visitante requiere contar con una barra de navegación fija en la parte superior para saltar directamente a las secciones que le interesan sin perder tiempo. | **Scenario: Uso de la barra de navegación** <br> *Given* el visitante se encuentra en cualquier parte de la Landing Page <br> *When* hace clic en un elemento del menú <br> *Then* la pantalla realiza un desplazamiento suave hasta la sección correspondiente. <br> **Scenario: Navegación en pantalla pequeña** <br> *Given* el visitante utiliza un dispositivo de pantalla pequeña <br> *When* abre el menú y selecciona una sección <br> *Then* la página permite acceder a la sección elegida sin que el menú oculte su contenido. | EP-08 |
+| US-43 | Pie de página informativo | El visitante requiere ver un footer con enlaces institucionales, términos de servicio y redes sociales para consultar información institucional y los canales de contacto. | **Scenario: Visualización del Footer** <br> *Given* el visitante llega al final de la página web <br> *When* revisa el pie de página <br> *Then* encuentra los accesos a políticas de privacidad, canales de soporte técnico y derechos reservados de SkyCrop. <br> **Scenario: Acceso a enlaces del pie** <br> *Given* el pie de página presenta enlaces institucionales, legales y de contacto <br> *When* el visitante selecciona uno de esos enlaces <br> *Then* se abre el destino correspondiente al texto del enlace. | EP-08 |
+
+**Contratos transversales — RESTful API**
+
+|Epic / Story ID|Título|Descripción|Criterios de aceptación|Relacionado con|
+|:--------------|:-----|:----------|:----------------------|:--------------|
+| **EP-09** | RESTful API | El desarrollador requiere que el proyecto cuente con una RESTful API para permitir la manipulación de datos y el acceso a otras funciones desde otros sistemas |  -Consulta de datos de la plataforma. <br>- Actualización de datos de la plataforma. <br>- Procesamiento de datos ingresados. |-----|
+
 
 
 ## 3.2. Impact Mapping. 
@@ -1304,7 +1354,7 @@ A continuación se presentan las User Stories que indicarán las funcionalidades
 
 ## 3.3. Product Backlog.
 
-El Product Backlog de SkyCrop reúne las User Stories y Technical Stories identificadas para el desarrollo del producto. El orden de presentación agrupa primero los contextos core, después los de soporte y finalmente los genéricos; registro e inicio de sesión cierran la tabla. Los contratos del API acompañan a cada contexto. Este orden expresa la importancia del negocio y no sustituye las dependencias técnicas ni modifica el alcance histórico del Sprint 1, dedicado a la landing. La planificación de los siguientes sprints deberá considerar ambos criterios.
+El Product Backlog de SkyCrop reúne las User Stories y Technical Stories identificadas para el desarrollo del producto. El orden de presentación agrupa primero los contextos core, después los de soporte y finalmente los genéricos; registro e inicio de sesión cierran el contexto IAM. Las historias de la landing se presentan al final, fuera de la clasificación de Bounded Contexts. Los contratos del API acompañan a cada contexto. Este orden expresa la importancia del negocio y no sustituye las dependencias técnicas ni modifica el alcance histórico del Sprint 1, dedicado a la landing. La planificación de los siguientes sprints deberá considerar ambos criterios.
 
 Los Story Points utilizan la escala de Fibonacci y representan una estimación relativa del esfuerzo necesario para implementar cada User Story. En las historias de la landing, las secciones informativas simples se estiman en 1 punto; la integración de contenido, los planes y la navegación adaptable, en 2 puntos; y el contacto con validación y envío a un servicio externo, en 3 puntos. Estas estimaciones consideran complejidad e incertidumbre y no equivalen a horas de trabajo.
 
@@ -1317,56 +1367,56 @@ Enlace al tablero: [Product Backlog en Trello](https://trello.com/b/L5lihF6B)
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
 |:---:|:---:|---|---|:---:|
-| 01 | US-23 | Generación de diagnóstico | Como usuario con acceso a una parcela, deseo que las imágenes sean analizadas y que el diagnóstico sea almacenado. | 3 |
-| 02 | US-24 | Generación de mapa según diagnóstico | Como usuario, deseo contar con un mapa de los resultados del diagnóstico para ubicar las zonas que requieren atención. | 8 |
-| 03 | US-25 | Historial de diagnósticos | Como usuario, deseo consultar diagnósticos anteriores para revisar la evolución del cultivo. | 2 |
-| 04 | US-26 | Actualización de una parcela mediante diagnóstico | Como usuario, deseo que el estado de una parcela refleje los resultados de su diagnóstico más reciente. | 3 |
-| 05 | TS-05 | Llamados para procesamientos | Como desarrollador, quiero solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | 5 |
-| 06 | US-31 | Creación de reporte según la estación | Como usuario, deseo generar un reporte estacional utilizando los reportes obtenidos durante el monitoreo. | 3 |
-| 07 | US-32 | Compartir reportes | Como usuario, deseo compartir los reportes generados mediante un enlace o correo electrónico. | 2 |
-| 08 | US-33 | Guardado de reportes en la nube | Como usuario, quiero que los reportes se almacenen automáticamente para acceder al historial de diagnósticos. | 3 |
-| 09 | US-34 | Comparación entre reportes | Como usuario, deseo seleccionar dos reportes para comparar los resultados entre ambos. | 3 |
-| 10 | US-35 | Guardado de reportes como PDF | Como usuario, deseo descargar los reportes generados como archivos PDF. | 2 |
-| 11 | TS-03 | Manejo de reportes | Como desarrollador, quiero consultar y descargar reportes mediante la API para utilizarlos en otras aplicaciones. | 5 |
-| 12 | US-11 | Registro de parcela | Como usuario, deseo registrar el terreno por el cual el dron va a volar. | 2 |
-| 13 | US-12 | Consulta de estado de una parcela | Como usuario, deseo consultar el estado de una parcela para conocer la información detectada durante su monitoreo. | 1 |
-| 14 | US-13 | Visualización del mapa de una parcela | Como usuario, quiero visualizar el mapa de mi parcela para identificar zonas de anomalías visualmente. | 3 |
-| 15 | US-14 | Registro de cultivos en una parcela | Como usuario, quiero registrar el tipo de cultivo de mi parcela para asociarlo al monitoreo realizado. | 2 |
-| 16 | US-15 | Consulta de información de los cultivos | Como usuario, deseo acceder a la información de los cultivos asignados a mis parcelas. | 1 |
-| 17 | US-16 | Invitación de compañeros | Como administrador de una cuenta, quiero invitar compañeros o agrónomos para compartir el monitoreo de las parcelas. | 3 |
-| 18 | TS-02 | Manejo de datos de parcelas | Como desarrollador, quiero registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | 5 |
-| 19 | US-17 | Conectar el dron | Como usuario, deseo conectar el aplicativo con mi dron. | 5 |
-| 20 | US-18 | Gestionar la rutina de vuelo | Como usuario, deseo gestionar la rutina de vuelo que el dron va a realizar. | 5 |
-| 21 | US-19 | Captura de imágenes mediante dron | Como usuario, quiero que el dron capture imágenes automáticamente durante su rutina. | 5 |
-| 22 | US-20 | Parametrización de vuelo del dron | Como usuario, quiero configurar parámetros técnicos de vuelo para optimizar la captura de imágenes. | 3 |
-| 23 | US-21 | Envío de imágenes tomadas por el dron | Como usuario, deseo que el dron envíe las imágenes capturadas para que puedan ser procesadas por el sistema. | 3 |
-| 24 | US-22 | Visualización de imágenes tomadas por el dron | Como usuario, quiero visualizar las imágenes capturadas para verificar la calidad del patrullaje. | 2 |
-| 25 | TS-04 | Manejo de datos de drones | Como desarrollador, quiero registrar el estado de los drones mediante la API para consultar su información actualizada. | 5 |
-| 26 | US-06 | Adquisición de subscripciones | Como usuario registrado, deseo adquirir una subscripción para acceder a las funcionalidades pagadas de la plataforma. | 3 |
-| 27 | US-07 | Pagar la suscripción con tarjeta | Como usuario registrado, deseo pagar mi suscripción con tarjeta de manera rápida y segura. | 5 |
-| 28 | US-08 | Confirmación de pagos | Como usuario registrado, quiero recibir una confirmación de pago para mantener un registro de mis transacciones. | 2 |
-| 29 | US-09 | Consulta de detalles de la subscripción actual | Como usuario suscrito, quiero consultar los detalles de mi subscripción y las funcionalidades disponibles. | 1 |
-| 30 | US-10 | Cancelación de subscripciones | Como usuario suscrito, quiero cancelar mi subscripción para evitar gastos accidentales. | 1 |
-| 31 | US-03 | Cambiar la información del perfil | Como usuario registrado, deseo cambiar la información de mi perfil para corregir datos incorrectos o desactualizados. | 1 |
-| 32 | TS-01 | Manejo de datos de usuarios | Como desarrollador, quiero consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | 5 |
-| 33 | US-36 | Presentación de SkyCrop | Como visitante, quiero ver una introducción clara con la propuesta de valor de SkyCrop para entender rápidamente qué hace el software. | 1 |
-| 34 | US-37 | Demostración de funcionalidades de SkyCrop | Como visitante, quiero conocer las características de la plataforma para comprender las herramientas disponibles. | 2 |
-| 35 | US-38 | Muestra de beneficios para agricultores | Como productor agrícola visitante, quiero conocer los beneficios de SkyCrop para evaluar su utilidad en mis parcelas. | 1 |
-| 36 | US-39 | Muestra de beneficios para agrónomos | Como ingeniero agrónomo visitante, deseo conocer la analítica e información que ofrece el sistema para evaluar su utilidad profesional. | 1 |
-| 37 | US-40 | Planes de subscripciones y precios | Como visitante interesado, quiero conocer los planes y tarifas para seleccionar una opción adecuada a mis necesidades. | 2 |
-| 38 | US-41 | Opción de contacto | Como visitante, quiero poder comunicarme con el personal de soporte para aclarar mis dudas. | 3 |
-| 39 | US-42 | Navegación rápida por la Landing Page | Como visitante, deseo contar con una barra de navegación fija para acceder rápidamente a las diferentes secciones. | 2 |
-| 40 | US-43 | Pie de página informativo | Como visitante, quiero ver un footer con información institucional, términos y medios de contacto. | 2 |
-| 41 | US-27 | Notificación de diagnóstico realizado | Como usuario, deseo recibir una notificación cuando el diagnóstico de una parcela esté disponible. | 2 |
-| 42 | US-28 | Notificación de anomalía detectada | Como usuario, deseo recibir una notificación especial cuando se detecte una anomalía. | 2 |
-| 43 | US-29 | Notificación de fallo del dron | Como usuario, deseo recibir una alerta inmediata si el dron presenta una falla durante una ruta. | 2 |
-| 44 | US-30 | Recordatorio de renovación de subscripción | Como usuario registrado, quiero recibir un aviso antes del vencimiento de mi subscripción. | 1 |
-| 45 | TS-06 | Gestión de notificaciones | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
-| 46 | US-04 | Recuperación de acceso | Como usuario registrado, deseo recuperar el acceso a mi cuenta en caso olvide mi contraseña. | 3 |
-| 47 | US-05 | Autenticación de dos factores | Como usuario registrado, quiero activar la autenticación de dos factores para contar con una segunda capa de seguridad. | 2 |
-| 48 | TS-07 | Servicio de autenticación | Como desarrollador, quiero autenticar usuarios mediante la API para acceder a las operaciones autorizadas desde una aplicación cliente. | 3 |
-| 49 | US-01 | Registrar la cuenta de un Usuario | Como usuario de la plataforma SkyCrop, deseo registrarme en la plataforma para poder acceder a las funcionalidades que ofrece. | 2 |
-| 50 | US-02 | Inicio de Sesión | Como usuario registrado, deseo iniciar sesión usando mis credenciales para volver a tener acceso a mi cuenta. | 2 |
+| 01 | US-23 | Generación de diagnóstico | El usuario con acceso a una parcela requiere que las imágenes sean analizadas y que el diagnóstico sea almacenado. | 3 |
+| 02 | US-24 | Generación de mapa según diagnóstico | El usuario requiere contar con un mapa de los resultados del diagnóstico para ubicar las zonas que requieren atención. | 8 |
+| 03 | US-25 | Historial de diagnósticos | El usuario requiere consultar diagnósticos anteriores para revisar la evolución del cultivo. | 2 |
+| 04 | US-26 | Actualización de una parcela mediante diagnóstico | El usuario requiere que el estado de una parcela refleje los resultados de su diagnóstico más reciente. | 3 |
+| 05 | TS-05 | Llamados para procesamientos | El desarrollador requiere solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | 5 |
+| 06 | US-31 | Creación de reporte según la estación | El usuario requiere generar un reporte estacional utilizando los reportes obtenidos durante el monitoreo. | 3 |
+| 07 | US-32 | Compartir reportes | El usuario requiere compartir los reportes generados mediante un enlace o correo electrónico. | 2 |
+| 08 | US-33 | Guardado de reportes en la nube | El usuario requiere que los reportes se almacenen automáticamente para acceder al historial de diagnósticos. | 3 |
+| 09 | US-34 | Comparación entre reportes | El usuario requiere seleccionar dos reportes para comparar los resultados entre ambos. | 3 |
+| 10 | US-35 | Guardado de reportes como PDF | El usuario requiere descargar los reportes generados como archivos PDF. | 2 |
+| 11 | TS-03 | Manejo de reportes | El desarrollador requiere consultar y descargar reportes mediante la API para utilizarlos en otras aplicaciones. | 5 |
+| 12 | US-11 | Registro de parcela | El usuario requiere registrar el terreno por el cual el dron va a volar. | 2 |
+| 13 | US-12 | Consulta de estado de una parcela | El usuario requiere consultar el estado de una parcela para conocer la información detectada durante su monitoreo. | 1 |
+| 14 | US-13 | Visualización del mapa de una parcela | El usuario requiere visualizar el mapa de su parcela para identificar zonas de anomalías visualmente. | 3 |
+| 15 | US-14 | Registro de cultivos en una parcela | El usuario requiere registrar el tipo de cultivo de su parcela para asociarlo al monitoreo realizado. | 2 |
+| 16 | US-15 | Consulta de información de los cultivos | El usuario requiere acceder a la información de los cultivos asignados a sus parcelas. | 1 |
+| 17 | US-16 | Invitación de compañeros | El administrador de una cuenta requiere invitar compañeros o agrónomos para compartir el monitoreo de las parcelas. | 3 |
+| 18 | TS-02 | Manejo de datos de parcelas | El desarrollador requiere registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | 5 |
+| 19 | US-17 | Conectar el dron | El usuario requiere conectar el aplicativo con su dron. | 5 |
+| 20 | US-18 | Gestionar la rutina de vuelo | El usuario requiere gestionar la rutina de vuelo que el dron va a realizar. | 5 |
+| 21 | US-19 | Captura de imágenes mediante dron | El usuario requiere que el dron capture imágenes automáticamente durante su rutina. | 5 |
+| 22 | US-20 | Parametrización de vuelo del dron | El usuario requiere configurar parámetros técnicos de vuelo para optimizar la captura de imágenes. | 3 |
+| 23 | US-21 | Envío de imágenes tomadas por el dron | El usuario requiere que el dron envíe las imágenes capturadas para que puedan ser procesadas por el sistema. | 3 |
+| 24 | US-22 | Visualización de imágenes tomadas por el dron | El usuario requiere visualizar las imágenes capturadas para verificar la calidad del patrullaje. | 2 |
+| 25 | TS-04 | Manejo de datos de drones | El desarrollador requiere registrar el estado de los drones mediante la API para consultar su información actualizada. | 5 |
+| 26 | US-06 | Adquisición de suscripciones | El usuario registrado requiere adquirir una suscripción para acceder a las funcionalidades pagadas de la plataforma. | 3 |
+| 27 | US-07 | Pagar la suscripción con tarjeta | El usuario registrado requiere pagar su suscripción con tarjeta de manera rápida y segura. | 5 |
+| 28 | US-08 | Confirmación de pagos | El usuario registrado requiere recibir una confirmación de pago para mantener un registro de sus transacciones. | 2 |
+| 29 | US-09 | Consulta de detalles de la suscripción actual | El usuario suscrito requiere consultar los detalles de su suscripción y las funcionalidades disponibles. | 1 |
+| 30 | US-10 | Cancelación de suscripciones | El usuario suscrito requiere cancelar su suscripción para evitar gastos accidentales. | 1 |
+| 31 | US-03 | Cambiar la información del perfil | El usuario registrado requiere cambiar la información de su perfil para corregir datos incorrectos o desactualizados. | 1 |
+| 32 | TS-01 | Manejo de datos de usuarios | El desarrollador requiere consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | 5 |
+| 33 | US-27 | Notificación de diagnóstico realizado | El usuario requiere recibir una notificación cuando el diagnóstico de una parcela esté disponible. | 2 |
+| 34 | US-28 | Notificación de anomalía detectada | El usuario requiere recibir una notificación especial cuando se detecte una anomalía. | 2 |
+| 35 | US-29 | Notificación de fallo del dron | El usuario requiere recibir una alerta inmediata si el dron presenta una falla durante una ruta. | 2 |
+| 36 | US-30 | Recordatorio de renovación de suscripción | El usuario registrado requiere recibir un aviso antes del vencimiento de su suscripción. | 1 |
+| 37 | TS-06 | Gestión de notificaciones | El desarrollador requiere solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
+| 38 | US-04 | Recuperación de acceso | El usuario registrado requiere recuperar el acceso a su cuenta en caso olvide su contraseña. | 3 |
+| 39 | US-05 | Autenticación de dos factores | El usuario registrado requiere activar la autenticación de dos factores para contar con una segunda capa de seguridad. | 2 |
+| 40 | TS-07 | Servicio de autenticación | El desarrollador requiere autenticar usuarios mediante la API para acceder a las operaciones autorizadas desde una aplicación cliente. | 3 |
+| 41 | US-01 | Registro de cuenta de usuario | El usuario de la plataforma SkyCrop requiere registrarme en la plataforma para poder acceder a las funcionalidades que ofrece. | 2 |
+| 42 | US-02 | Inicio de sesión | El usuario registrado requiere iniciar sesión usando sus credenciales para volver a tener acceso a su cuenta. | 2 |
+| 43 | US-36 | Presentación de SkyCrop | El visitante requiere ver una introducción clara con la propuesta de valor de SkyCrop para entender rápidamente qué hace el software. | 1 |
+| 44 | US-37 | Demostración de funcionalidades de SkyCrop | El visitante requiere conocer las características de la plataforma para comprender las herramientas disponibles. | 2 |
+| 45 | US-38 | Muestra de beneficios para agricultores | El productor agrícola visitante requiere conocer los beneficios de SkyCrop para evaluar su utilidad en sus parcelas. | 1 |
+| 46 | US-39 | Muestra de beneficios para agrónomos | El ingeniero agrónomo visitante requiere conocer la analítica e información que ofrece el sistema para evaluar su utilidad profesional. | 1 |
+| 47 | US-40 | Planes de suscripciones y precios | El visitante interesado requiere conocer los planes y tarifas para seleccionar una opción adecuada a sus necesidades. | 2 |
+| 48 | US-41 | Opción de contacto | El visitante requiere poder comunicarse con el personal de soporte para aclarar sus dudas. | 3 |
+| 49 | US-42 | Navegación rápida por la Landing Page | El visitante requiere contar con una barra de navegación fija para acceder rápidamente a las diferentes secciones. | 2 |
+| 50 | US-43 | Pie de página informativo | El visitante requiere ver un footer con información institucional, términos y medios de contacto. | 2 |
 
 ### Technical Stories
 
@@ -1374,13 +1424,14 @@ Las siguientes Technical Stories complementan las funcionalidades del producto m
 
 | # Orden | Technical Story ID | Título | Descripción | Story Points |
 |:---:|:---:|---|---|:---:|
-| 05 | TS-05 | Solicitud de procesamiento de imágenes | Como desarrollador, quiero solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | 5 |
-| 11 | TS-03 | Manejo de reportes | Como desarrollador, quiero consultar y descargar reportes mediante la API para utilizarlos desde otras aplicaciones. | 5 |
-| 18 | TS-02 | Manejo de datos de parcelas | Como desarrollador, quiero registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | 5 |
-| 25 | TS-04 | Manejo de datos de drones | Como desarrollador, quiero registrar el estado de los drones mediante la API para consultar información actualizada. | 5 |
-| 32 | TS-01 | Manejo de datos de usuarios | Como desarrollador, quiero consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | 5 |
-| 45 | TS-06 | Gestión de notificaciones | Como desarrollador, quiero solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
-| 48 | TS-07 | Servicio de autenticación | Como desarrollador, quiero autenticar usuarios mediante la API para acceder a operaciones autorizadas. | 3 |
+| 05 | TS-05 | Solicitud de procesamiento de imágenes | El desarrollador requiere solicitar el análisis de imágenes mediante la API para iniciar el diagnóstico de una parcela. | 5 |
+| 11 | TS-03 | Manejo de reportes | El desarrollador requiere consultar y descargar reportes mediante la API para utilizarlos desde otras aplicaciones. | 5 |
+| 18 | TS-02 | Manejo de datos de parcelas | El desarrollador requiere registrar y actualizar parcelas mediante la API para mantener su información desde una aplicación cliente. | 5 |
+| 25 | TS-04 | Manejo de datos de drones | El desarrollador requiere registrar el estado de los drones mediante la API para consultar información actualizada. | 5 |
+| 32 | TS-01 | Manejo de datos de usuarios | El desarrollador requiere consultar y actualizar datos de usuarios mediante la API para integrar la gestión de perfiles. | 5 |
+| 37 | TS-06 | Gestión de notificaciones | El desarrollador requiere solicitar notificaciones mediante la API para comunicar eventos a los usuarios correspondientes. | 3 |
+| 40 | TS-07 | Servicio de autenticación | El desarrollador requiere autenticar usuarios mediante la API para acceder a operaciones autorizadas. | 3 |
+
 
 <div style="page-break-after: always;"></div>
 
@@ -1388,7 +1439,7 @@ Las siguientes Technical Stories complementan las funcionalidades del producto m
 
 ## 4.1. Style Guidelines. 
 ### 4.1.1. General Style Guidelines. 
-Las guías generales de estilo de SkyCrop establecen la identidad visual y los principios de diseño que guiarán la experiencia en la plataforma web y dispositivos móviles. Su propósito es democratizar el acceso a la agricultura de precisión mediante un diseño que transmita confianza y accesibilidad, asegurando la eficiencia en la interacción para nuestros usuarios principales: agricultores e ingenieros agrónomos.
+Las guías generales de estilo de SkyCrop establecen la identidad visual y los principios de diseño que guiarán la experiencia en la plataforma web y dispositivos móviles. Su propósito es democratizar el acceso a la agricultura de precisión mediante un diseño que transmita confianza y accesibilidad, asegurando la eficiencia en la interacción para los usuarios principales: agricultores e ingenieros agrónomos.
 
 **Paleta de colores**
 - **Primarios y Secundarios:** Se priorizarán tonos verdes (que representan los cultivos y la salud vegetal), combinados con tonos azules o grises tecnológicos (que representan el cielo, el agua y los drones) para reflejar la fusión entre agricultura y tecnología AgTech.
@@ -1412,7 +1463,7 @@ Las guías generales de estilo de SkyCrop establecen la identidad visual y los p
 - **Modo Offline First:** La interfaz debe indicar de forma clara e inequívoca qué herramientas, mapas y reportes están disponibles sin conexión a internet. Esto prevé los problemas de conectividad intermitente que caracterizan a los campos de cultivo y zonas rurales.
 
 ### 4.1.2. Web Style Guidelines. 
-La versión web de SkyCrop está diseñada para ofrecer una experiencia simple, confiable e intuitiva, enfocada en democratizar el acceso a la agricultura de precisión para nuestros principales usuarios: agricultores e ingenieros agrónomos. Su diseño visual y funcional está pensado para operar eficientemente tanto en la planificación desde un escritorio como durante el trabajo físico en los campos de cultivo.
+La versión web de SkyCrop está diseñada para ofrecer una experiencia simple, confiable e intuitiva, enfocada en democratizar el acceso a la agricultura de precisión para los principales usuarios: agricultores e ingenieros agrónomos. Su diseño visual y funcional está pensado para operar eficientemente tanto en la planificación desde un escritorio como durante el trabajo físico en los campos de cultivo.
 - **Diseño responsivo e interfaces amplias:** La plataforma se adapta de manera óptima a navegadores web, así como a dispositivos móviles y tablets, que son las herramientas principales que los usuarios llevarán a las parcelas. Es un requisito estricto que los botones, tarjetas y controles de mapas sean lo suficientemente grandes para poder ser operados con total facilidad en el campo y bajo condiciones de movilidad.
 - **Feedback visual y semaforización (Hover & Alerts):** Los elementos interactivos proporcionarán retroalimentación inmediata para confirmar acciones. Sobre los mapas visuales del terreno, se implementará un sistema de semaforización (rojo, amarillo, verde) que resaltará visualmente y de forma rápida las anomalías detectadas por los drones, alertando tempranamente sobre problemas críticos como estrés hídrico, presencia de plagas o deficiencia de fertilizantes.
 - **Navegación principal y contextual:** La navegación principal se ubicará en un menú lateral (sidebar) colapsable, asegurando el acceso rápido a módulos vitales como: Mis Parcelas, Planificar Vuelo (Rutas Automatizadas), Mapas de Salud, Historial de Cultivos y Configuración de Suscripción. Adicionalmente, se habilitará una navegación contextual directamente sobre los mapas: al interactuar con un área marcada con anomalías, el usuario podrá saltar directamente hacia el historial de reportes de esa misma ubicación geográfica.
@@ -1421,7 +1472,7 @@ La versión web de SkyCrop está diseñada para ofrecer una experiencia simple, 
 
 ## 4.2. Information Architecture. 
 En esta sección se definen las decisiones de arquitectura de información que guiarán la organización del contenido en la experiencia web y móvil de SkyCrop, incluyendo la Landing Page y las futuras interfaces de gestión agrícola.
-El objetivo principal es garantizar que nuestros segmentos objetivo, conformados por agricultores e ingenieros agrónomos, se adapten de manera intuitiva a la funcionalidad del producto. Se busca que los usuarios encuentren fácilmente lo que necesitan, como la planificación de rutas de vuelo, la visualización de mapas de salud del terreno y el historial de reportes, disfrutando de una navegación fluida y satisfactoria incluso en entornos de campo con conectividad limitada.
+El objetivo principal es garantizar que los segmentos objetivo, conformados por agricultores e ingenieros agrónomos, se adapten de manera intuitiva a la funcionalidad del producto. Se busca que los usuarios encuentren fácilmente lo que necesitan, como la planificación de rutas de vuelo, la visualización de mapas de salud del terreno y el historial de reportes, disfrutando de una navegación fluida y satisfactoria incluso en entornos de campo con conectividad limitada.
 Las propuestas de arquitectura están diseñadas siguiendo principios de usabilidad, claridad, adaptabilidad offline y el uso estricto del lenguaje ubicuo del sector agrícola, considerando los siguientes componentes estructurales:
 
 - Organization Systems
@@ -1475,7 +1526,7 @@ Según el tipo de contenido y el módulo de la plataforma, se aplicarán distint
 - **Alfabético:** Para el listado de miembros del equipo de trabajo o la búsqueda rápida de parcelas guardadas por nombre dentro de la barra de búsqueda global.
 
 ### 4.2.2. Labeling Systems. 
-La representación de los datos en la plataforma SkyCrop busca ser clara, intuitiva y sin ambigüedades, empleando el lenguaje ubicuo recopilado de nuestros usuarios. Para ello se establecen las siguientes directrices de etiquetado:
+La representación de los datos en la plataforma SkyCrop busca ser clara, intuitiva y sin ambigüedades, empleando el lenguaje ubicuo recopilado de los usuarios. Para ello se establecen las siguientes directrices de etiquetado:
 
 **Principios de Etiquetado**
 - Utilizar un mínimo número de palabras para agilizar la lectura, especialmente en exteriores.
@@ -1589,7 +1640,7 @@ El sistema de navegación de SkyCrop está diseñado para guiar a los usuarios (
 
 ### 4.3.1. Landing Page Wireframe. 
 
-A continuación se presentan los Wireframes realizados para la Landing Page. El diseño buscó seguir la heuristica de la usabilidad de 'Diseño estético y minimalista' mediante el uso de una estructura y figuras simples para la pagina. Además, la barra de navegación superior ayuda a que se cumpla la heuristica de 'Flexibilidad y eficiencia en el uso' al brindar atajos a ciertas partes de la pagina.
+Los wireframes de la landing page utilizan una estructura simple para presentar sus secciones, de acuerdo con la heurística de diseño estético y minimalista. La barra de navegación ofrece accesos directos a las secciones y responde a la heurística de flexibilidad y eficiencia de uso.
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-landing-1.jpg" alt="Landing Page Wireframe - Parte 1" width="600">
@@ -1638,39 +1689,39 @@ El diseño adopta Material Design como referencia, los verdes y azules definidos
 
 ### 4.4.1. Web Applications Wireframes. 
 
-En esta sección se presentarán los Wireframes de nuestra aplicación web. Gracias a los encabezados en gran parte de los wireframes es posible conocer en que parte de la aplicación el usuario se puede encontrar y determinar que acciones puede hacer, esto va de acuerdo con la heuristica de usabilidad 'Visibilidad del Estado del Sistema'. Además, el uso del mismo menu superior y lateral, junto con la estructura similar entre secciones, logra cumplir con el principio del diseño inclusivo sobre 'Ser Consistente'.
+Los wireframes de la aplicación web incluyen encabezados que permiten identificar la sección actual y las acciones disponibles, de acuerdo con la heurística de visibilidad del estado del sistema. La navegación superior y lateral mantiene una estructura común entre las secciones para facilitar su uso.
 
-**Pagina de inicio de sesión:**
+**Página de inicio de sesión:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-1.jpg" alt="Web App Wireframe 1" width="600">
 </div>
 
-**Pagina de pago de subscripción:**
+**Página de pago de suscripción:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-2.jpg" alt="Web App Wireframe 2" width="600">
 </div>
 
-**Pagina de inicio**
+**Página de inicio**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-3.jpg" alt="Web App Wireframe 3" width="600">
 </div>
 
-**Pagina de parcelas agricolas registradas**
+**Página de parcelas agrícolas registradas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-4.jpg" alt="Web App Wireframe 4" width="600">
 </div>
 
-**Pagina de drones registrados**
+**Página de drones registrados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-5.jpg" alt="Web App Wireframe 5" width="600">
 </div>
 
-**Sección de registro de parcelas agricolas**
+**Sección de registro de parcelas agrícolas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-6.jpg" alt="Web App Wireframe 6" width="600">
@@ -1694,7 +1745,7 @@ En esta sección se presentarán los Wireframes de nuestra aplicación web. Grac
 <img src="resources/imgs/chapter_4/wireframe-desktop-9.jpg" alt="Web App Wireframe 9" width="600">
 </div>
 
-**Historial de diagnosticos generados**
+**Historial de diagnósticos generados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireframe-desktop-10.jpg" alt="Web App Wireframe 10" width="600">
@@ -1702,15 +1753,15 @@ En esta sección se presentarán los Wireframes de nuestra aplicación web. Grac
 
 ### 4.4.2. Web Applications Wireflow Diagrams. 
 
-Antes de la elaooración de los Wireflow Diagramas, definimos las User goals:
+Antes de elaborar los diagramas de wireflow, se definieron los siguientes objetivos de usuario:
 
-- Como agricultor e ingeniero agrónomo, queremos acceder a la plataforma mediante una cuenta.
-- Como agricultor, quiero ser capaz de registrar una parcela agricola en la plataforma.
-- Como ingeniero agrónomo, quiero ser capaz de monitorear el estado de los drones agrícolas desde la plataforma.
-- Como agricultor e ingeniero agrónomo, queremos recibir y leer reportes por estación sobre nuestras parcelas agrícolas.
-- Como agricultor e ingeniero agrónomo, queremos recibir y leer diagnosticos sobre el estado de nuestros cultivos.
+- Los agricultores e ingenieros agrónomos requieren acceder a la plataforma mediante una cuenta.
+- Los agricultores requieren registrar sus parcelas agrícolas en la plataforma.
+- Los ingenieros agrónomos requieren monitorear el estado de los drones agrícolas desde la plataforma.
+- Los agricultores e ingenieros agrónomos requieren consultar reportes estacionales de sus parcelas agrícolas.
+- Los agricultores e ingenieros agrónomos requieren consultar diagnósticos sobre el estado de sus cultivos.
 
-En base a estas User Goals, elaboramos los siguientes wireflows:
+A partir de estos objetivos, se elaboraron los siguientes wireflows:
 
 Wireflow 1: Acceso a la plataforma
 
@@ -1736,7 +1787,7 @@ Wireflow 4: Visualización de reportes
 <img src="resources/imgs/chapter_4/wireflow-4.jpg" alt="Wireflow 4" width="600">
 </div>
 
-Wireflow 5: Lectura de diagnosticos
+Wireflow 5: Lectura de diagnósticos
 
 <div align="center">
 <img src="resources/imgs/chapter_4/wireflow-5.jpg" alt="Wireflow 5" width="600">
@@ -1746,37 +1797,37 @@ Wireflow 5: Lectura de diagnosticos
 
 A partir de los wireframes elaborados, se realizaron los Mock-ups de la aplicación web. Estos diseños siguen la misma paleta de colores definida en las pautas y usada en la Landing Page, lo cual fortalece la consistencia entre diseño.
 
-**Pagina de inicio de sesión:**
+**Página de inicio de sesión:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-1.jpg" alt="Web App Mock-up 1" width="600">
 </div>
 
-**Pagina de pago de subscripción:**
+**Página de pago de suscripción:**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-2.jpg" alt="Web App Mock-up 2" width="600">
 </div>
 
-**Pagina de inicio**
+**Página de inicio**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-3.jpg" alt="Web App Mock-up 3" width="600">
 </div>
 
-**Pagina de parcelas agricolas registradas**
+**Página de parcelas agrícolas registradas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-4.jpg" alt="Web App Mock-up 4" width="600">
 </div>
 
-**Pagina de drones registrados**
+**Página de drones registrados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-5.jpg" alt="Web App Mock-up 5" width="600">
 </div>
 
-**Sección de registro de parcelas agricolas**
+**Sección de registro de parcelas agrícolas**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-6.jpg" alt="Web App Mock-up 6" width="600">
@@ -1800,7 +1851,7 @@ A partir de los wireframes elaborados, se realizaron los Mock-ups de la aplicaci
 <img src="resources/imgs/chapter_4/mockup-desktop-9.jpg" alt="Web App Mock-up 9" width="600">
 </div>
 
-**Historial de diagnosticos generados**
+**Historial de diagnósticos generados**
 
 <div align="center">
 <img src="resources/imgs/chapter_4/mockup-desktop-10.jpg" alt="Web App Mock-up 10" width="600">
@@ -1834,7 +1885,7 @@ Userflow 4: Visualización de reportes
 <img src="resources/imgs/chapter_4/userflow-4.jpg" alt="Wireflow 4" width="600">
 </div>
 
-Userflow 5: Lectura de diagnosticos
+Userflow 5: Lectura de diagnósticos
 
 <div align="center">
 <img src="resources/imgs/chapter_4/userflow-5.jpg" alt="Wireflow 5" width="600">
@@ -1913,7 +1964,7 @@ Paso 2: Agregar comandos
 <img src="resources/imgs/chapter_4/design-level-eventstorming-2.png" alt="Eventstorming paso 2" width="600">
 </div>
 
-Paso 3: Agregar actores y politicas
+Paso 3: Agregar actores y políticas
 
 <div align="center">
 <img src="resources/imgs/chapter_4/design-level-eventstorming-3.png" alt="Eventstorming paso 3" width="600">
@@ -1969,7 +2020,7 @@ alt="Context-Diagram">
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-La arquitectura propuesta de SkyCrop comprende una Landing Page desarrollada con HTML5, CSS3 y JavaScript, una aplicación web basada en Vue y PrimeVue, y un RESTful API con C# y ASP.NET Core. Entity Framework Core proporciona el acceso a la base de datos relacional, para la cual se consideran MySQL Server o PostgreSQL. La landing presenta el producto y contempla llamados a la acción hacia las vistas de la aplicación correspondientes a cada segmento. La aplicación consume el API mediante HTTPS, mientras que el backend concentra las operaciones del dominio y las integraciones externas.
+La arquitectura propuesta de SkyCrop comprende una Landing Page desarrollada con HTML5, CSS3 y JavaScript, una aplicación web de página única (Single Page Application o SPA) basada en Vue y PrimeVue, y un RESTful API con C# y ASP.NET Core. Entity Framework Core proporciona el acceso a la base de datos relacional, para la cual se consideran MySQL Server o PostgreSQL. La landing presenta el producto y contempla llamados a la acción hacia las vistas de la aplicación correspondientes a cada segmento. La SPA se ejecuta en el navegador y utiliza Vue Router para la navegación del lado del cliente. Consume el API mediante solicitudes HTTPS con datos en formato JSON, mientras que el backend concentra las operaciones del dominio y las integraciones externas.
 
 <img src="resources/imgs/Software Architecture Diagram/Container-Diagram-updated.png" alt="Diagrama de contenedores de SkyCrop">
 
@@ -1985,19 +2036,30 @@ Los componentes organizan la navegación, las funcionalidades y beneficios, los 
 
 **Frontend Web Application: vista general**
 
-La vista general presenta los ocho contextos en el orden del catálogo del dominio. El layout organiza la navegación entre vistas; los módulos de cada contexto utilizan el cliente HTTP compartido para comunicarse con el API. La propuesta utiliza Vue, JavaScript y PrimeVue, con soporte para inglés y español, diseño adaptable y atributos ARIA.
+La vista general organiza el frontend en Presentation, Application, Domain e Infrastructure. Presentation reúne el layout y las vistas de los ocho contextos, en el orden del catálogo del dominio. Los stores de Application coordinan las acciones y el estado; los modelos de Domain representan los datos del cliente; los clientes del API, assemblers y el cliente HTTP pertenecen a Infrastructure. La propuesta utiliza Vue, JavaScript y PrimeVue, con soporte para inglés y español, diseño adaptable y atributos ARIA.
 
 <img src="resources/imgs/Software Architecture Diagram/Components-Frontend-updated.png" alt="C4: vista general de componentes del frontend de SkyCrop">
 
 **Backend RESTful API: vista general**
 
-La vista general distribuye las operaciones entre los ocho contextos y muestra los componentes de persistencia e integración externa. Los repositorios acceden a la base de datos mediante Entity Framework Core. Los adaptadores encapsulan la comunicación con los proveedores y dispositivos. El diseño utiliza C# y ASP.NET Core; la documentación de los contratos HTTP se representa mediante OpenAPI y Swagger.
+La vista general separa Interfaces / Presentation, Application, Domain e Infrastructure. Los controladores reciben solicitudes HTTP y delegan los casos de uso a los servicios de aplicación. Domain conserva las reglas de los ocho contextos y los contratos de repositorio. Application define los contratos de integración que necesita. Los repositorios de Infrastructure implementan la persistencia mediante Entity Framework Core y los adaptadores implementan la comunicación con proveedores y dispositivos. El diseño utiliza C# y ASP.NET Core; la documentación de los contratos HTTP se representa mediante OpenAPI y Swagger.
 
 <img src="resources/imgs/Software Architecture Diagram/Components-Backend-updated.png" alt="C4: vista general de componentes del backend de SkyCrop">
 
 **Vistas de componentes por Bounded Context**
 
-En el frontend, las vistas delegan las acciones y el estado al store del contexto. El cliente del API envía las solicitudes mediante el cliente HTTP compartido y el assembler transforma las respuestas en modelos de la aplicación. En el backend, los controladores reciben las solicitudes, los servicios de aplicación coordinan las operaciones y el dominio mantiene sus reglas. Los repositorios y adaptadores implementan las responsabilidades de infraestructura. Las vistas amplían el diseño por capas de la sección 4.7.1.
+Las vistas individuales agrupan los componentes por capa dentro de cada Bounded Context. Las flechas continuas representan relaciones de uso; las discontinuas con triángulo indican que una implementación satisface un contrato.
+
+| Capa | Frontend | Backend |
+|---|---|---|
+| Presentation / Interfaces | Vistas y componentes de interacción. | Controladores, entrada de solicitudes y respuesta HTTP. |
+| Application | Stores que coordinan acciones, datos, carga y errores. | Servicios de aplicación y contratos de integración. |
+| Domain | Modelos de datos utilizados por el cliente. | Agregados, entidades, objetos de valor, reglas y contratos de repositorio. |
+| Infrastructure | Clientes del API, assemblers y transporte HTTP compartido. | Repositorios con Entity Framework Core y adaptadores externos. |
+
+En el frontend, las vistas delegan las acciones al store del contexto. El cliente del API utiliza el transporte HTTP compartido y el assembler construye los modelos a partir de las respuestas. Estos modelos facilitan la interacción del cliente; las reglas de negocio y su validación autoritativa permanecen en el backend.
+
+En el backend, los servicios de aplicación utilizan contratos de repositorio e integración, cuyas implementaciones pertenecen a Infrastructure. El dominio no depende de Entity Framework Core ni de los proveedores externos. Las vistas describen la arquitectura propuesta y complementan el diseño de clases de la sección 4.7.1.
 
 **Diagnoses Generation**
 
@@ -2113,7 +2175,7 @@ Backend:
 
 **IAM — Identity and Access Management**
 
-En el frontend se organizan las vistas de registro, inicio de sesión y recuperación de acceso. En el backend, el contexto administra identidades, credenciales y autorización. La integración utiliza `PasswordHashVerifier` para verificación de credenciales. La emisión de credenciales se realiza mediante `AccessTokenIssuer`.
+En el frontend se organizan las vistas de registro, inicio de sesión y recuperación de acceso. En el backend, el contexto administra identidades, credenciales y autorización. La integración utiliza `PasswordHashVerifier` para verificación de credenciales. Tras una autenticación correcta, el controlador utiliza `AccessTokenIssuer` para producir la credencial de acceso en la capa de presentación.
 
 Frontend:
 
@@ -2146,6 +2208,22 @@ Los nombres, teléfonos, direcciones y fechas se representan mediante objetos de
 | `Timestamp` | Instantes de creación, pago, verificación, vencimiento, vuelo, captura, generación y registro meteorológico. | Fecha y hora válidas con desplazamiento horario explícito. Igualdad y comparación por el instante UTC, independientemente del desplazamiento original. |
 | `SubscriptionPeriod` | Vigencia de una suscripción. | Fechas válidas con fin posterior al inicio. Intervalo con inicio incluido y fin excluido. Igualdad por ambos límites; renovar sustituye el objeto completo. |
 
+La revisión incorpora tipos para medidas, identificación de drones y recursos digitales. Sus unidades forman parte del contrato del dominio; los límites operativos específicos del dron o de las reglas agronómicas se validan por separado.
+
+| Value Object | Uso | Invariantes e igualdad |
+|---|---|---|
+| `Altitude` | Altura de `FlightPlan`. | Altura no negativa en metros respecto de la referencia del vuelo. Igualdad por metros; los límites operativos se validan al planificar el vuelo. |
+| `Speed` | Velocidad de `FlightPlan`. | Valor positivo en metros por segundo. Igualdad por el valor en esa unidad; los límites del dispositivo se validan por separado. |
+| `Percentage` | Solapamiento de imágenes, batería del dron y humedad del terreno o del clima. | Valor entre 0 y 100, incluidos ambos extremos. Igualdad numérica; no confunde porcentaje con una fracción entre 0 y 1. Las políticas de batería mínima y solapamiento se aplican según el caso de uso. |
+| `Distance` | Alcance de `Drone`. | Distancia no negativa en metros. Igualdad por metros. |
+| `DroneSerialNumber` | Número de serie de `Drone`. | Texto no vacío después de quitar espacios externos; conserva mayúsculas y minúsculas. Igualdad por el texto resultante. La unicidad se comprueba al registrar el dron. |
+| `ImageResolution` | Resolución de `AerialImage` y `TerrainMap`. | Ancho y alto enteros positivos, expresados en píxeles. Igualdad por ambas dimensiones en ese orden. |
+| `ResourceUrl` | Ubicación de mapas, imágenes y archivos devueltos por almacenamiento. | URL absoluta HTTP o HTTPS con host. Igualdad por la URL completa almacenada, incluidos ruta y parámetros. La validez del formato no acredita disponibilidad ni autorización de acceso. |
+| `Temperature` | Temperatura de `TerrainData` y `WeatherData`. | Valor expresado en grados Celsius; admite valores negativos. Igualdad por el valor en esa unidad. Los umbrales agronómicos corresponden a la regla aplicable. |
+| `Precipitation` | Precipitación de `WeatherData`. | Acumulado no negativo en milímetros para el intervalo informado por el proveedor meteorológico. Igualdad por milímetros; las comparaciones requieren intervalos compatibles. |
+
+El título de `Report` utiliza `Name`, que ya representa texto no vacío. Las vistas que repiten un objeto de valor conservan su nombre, estructura y reglas. Los identificadores de agregados siguen representados mediante `Long`; no se añaden tipos sin comportamiento propio para cada identificador.
+
 Todos estos valores se validan al construirlos y se sustituyen completos al cambiar; no tienen setters ni identificadores. Un teléfono o una dirección no proporcionados se representan por ausencia del objeto, en lugar de crear valores vacíos. `verifiedAt` permanece ausente antes de verificar el segundo factor. En un vuelo, el inicio y el fin permanecen ausentes hasta sus respectivos eventos y, cuando ambos existen, el fin no puede preceder al inicio. Un código de recuperación deja de ser válido al alcanzar su instante de vencimiento.
 
 Los agregados delimitan las entidades cuya consistencia se mantiene a través de una raíz. La composición indica pertenencia al mismo agregado; las relaciones entre agregados se expresan mediante identificadores. Los servicios consultan los datos asociados a estos identificadores sin incorporar las entidades de otros contextos al estado del agregado.
@@ -2162,6 +2240,8 @@ Los agregados delimitan las entidades cuya consistencia se mantiene a través de
 | IAM | `User` identifica al usuario; `Account` administra credenciales, `TwoFactorAuthentication` y `RecoveryCode`. | `Account.userId` identifica al usuario. |
 
 Los identificadores se representan mediante `Long`, sin añadir comportamiento de negocio al identificador. Las clases marcadas como `external reference` muestran únicamente la identidad del objeto referenciado. Una anomalía se identifica junto con el diagnóstico al que pertenece, ya que forma parte de ese agregado. Un vuelo puede contener cero imágenes antes de la captura y un diagnóstico puede carecer de resultados mientras se encuentra en procesamiento.
+
+Las tres vistas generales siguientes agrupan varios contextos para mostrar sus relaciones. La primera combina diagnósticos y reportes (core) con notificaciones (genérico). Las vistas individuales de «Diseño de clases por capas» presentan cada contexto en el orden del catálogo: core, soporte y genéricos.
 
 **Diagnoses Generation, Report Management y Notification Service**
 
@@ -2197,6 +2277,8 @@ Las siguientes vistas representan el diseño propuesto para el backend RESTful A
 | Application | Coordinar el caso de uso, las consultas y las integraciones necesarias. | Servicios de aplicación, comandos y contratos de integración. |
 | Domain | Mantener el estado y las reglas del agregado y definir su contrato de persistencia. | Raíces de agregado, entidades, objetos de valor e interfaces de repositorio. |
 | Infrastructure | Implementar persistencia y comunicación con proveedores. | Repositorios, DbContext y adaptadores. |
+
+Los requests y comandos pueden conservar primitivas para representar los datos de entrada. Antes de modificar el agregado, el servicio de aplicación construye los objetos de valor correspondientes; una entrada no válida no debe persistirse. Por ejemplo, el registro de drones recibe el número de serie como texto y lo convierte en `DroneSerialNumber`. Los contratos de mapas y almacenamiento devuelven `ResourceUrl` en lugar de una cadena sin significado explícito.
 
 Los requests contienen los datos recibidos por el API; los comandos expresan la operación solicitada. Los servicios de aplicación acceden al agregado a través de su repositorio y construyen la respuesta mediante un assembler. Los recursos devueltos contienen los datos del contrato HTTP y no exponen las entidades de persistencia. En IAM, la respuesta de autenticación se obtiene mediante `AccessTokenIssuer`, sin incluir la contraseña ni su hash.
 
@@ -2366,11 +2448,11 @@ Para el despliegue de la Landing Page se utilizó GitHub Pages, un servicio para
 En esta sección, el equipo establece los medios y esquemas de organización para el seguimiento de modificaciones durante el ciclo de vida del proyecto. Para ello, se utiliza **GitHub** como plataforma y sistema de control de versiones.
 
 **Repositorios del Proyecto:**
-*   **Organización:** https://github.com/upc-GreenTech
-*   **Informe (skycrop-report):** https://github.com/upc-GreenTech/skycrop-report
-*   **Landing Page:** https://github.com/upc-GreenTech/skycrop-platform
-*   **Aplicación web:** https://github.com/upc-GreenTech/skycrop-website
-*   **Mock API:** https://github.com/upc-GreenTech/skycrop-mock-api
+*   **Organización:** https://github.com/upc-pre-202620-1asi0730-8093-greentech
+*   **Informe (skycrop-report):** https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report
+*   **Landing Page (skycrop-website):** https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website
+*   **Aplicación web (skycrop-webapp):** https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp
+*   **Mock API (skycrop-mock-api):** https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-mock-api
 
 **Flujo de Trabajo (Workflow): GitFlow**
 Se adopta como referencia el modelo [GitFlow de Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) como esquema de control de versiones, definiendo las siguientes ramas principales para proteger el código de producción:
@@ -2448,9 +2530,19 @@ El despliegue en GitHub Pages requiere que los archivos estén organizados de un
 
 - Al finalizar, se genera una URL pública para acceder a la landing page.
 
+**Direcciones públicas verificadas el 20 de octubre de 2026:**
+
+| Producto | Dirección | Resultado HTTP |
+|---|---|---|
+| Landing page | [SkyCrop en GitHub Pages](https://upc-pre-202620-1asi0730-8093-greentech.github.io/skycrop-website/) | 200 |
+| Aplicación web | [SkyCrop en Vercel](https://skycrop-website.vercel.app/home) | 200 |
+
+La URL de la landing utiliza el identificador actual de la organización y el repositorio `skycrop-website`. La dirección anterior, `https://upc-greentech.github.io/skycrop-platform/`, devuelve HTTP 404 en esta comprobación. La aplicación web conserva su dominio de Vercel aunque su repositorio se denomine `skycrop-webapp`. Los registros del 9 de octubre documentan las direcciones vigentes en aquella fecha.
+
+
 **Mock API de SkyCrop en Azure App Service**
 
-La mock API utiliza Node.js y JSON Server 0.17.4 para exponer los recursos de integración del frontend. El proyecto se encuentra en [skycrop-mock-api](https://github.com/upc-GreenTech/skycrop-mock-api). El comando de inicio es `npm start`; `server.js` utiliza `PORT` para el puerto y `JSON_SERVER_DB_PATH` para la ubicación del archivo de datos cuando esta variable está definida.
+La mock API utiliza Node.js y JSON Server 0.17.4 para exponer los recursos de integración del frontend. El proyecto se encuentra en [skycrop-mock-api](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-mock-api). El comando de inicio es `npm start`; `server.js` utiliza `PORT` para el puerto y `JSON_SERVER_DB_PATH` para la ubicación del archivo de datos cuando esta variable está definida.
 
 La URL base utilizada por el frontend es `https://skycrop-fake-api-fre4gthff0hudyew.chilecentral-01.azurewebsites.net/api/v1`, configurada mediante `VITE_SKYCROP_API_URL`. La mock API ofrece operaciones de consulta y modificación sobre sus colecciones. Esta integración no sustituye las reglas de dominio ni acredita la implementación de análisis de imágenes, pagos o autenticación del backend propuesto.
 
@@ -2490,9 +2582,9 @@ Estas consultas comprueban disponibilidad y formato de respuesta en la fecha ind
 
 **Aplicación web de SkyCrop en Vercel**
 
-La aplicación web utiliza Vue y Vite y se publica desde el [repositorio skycrop-website](https://github.com/upc-GreenTech/skycrop-website). La importación en Vercel selecciona la rama `main` y la raíz del repositorio (`./`). La instalación de dependencias se realiza con `npm ci`; la compilación utiliza `npm run build` y genera los archivos estáticos en `dist`.
+La aplicación web utiliza Vue y Vite y se publica desde el [repositorio skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp). La importación en Vercel selecciona la rama `main` y la raíz del repositorio (`./`). La instalación de dependencias se realiza con `npm ci`; la compilación utiliza `npm run build` y genera los archivos estáticos en `dist`.
 
-El archivo [vercel.json](https://github.com/upc-GreenTech/skycrop-website/blob/main/vercel.json), incorporado en el [commit a15cab3](https://github.com/upc-GreenTech/skycrop-website/commit/a15cab3), define el framework Vite, el comando de compilación, el directorio de salida y la reescritura de las rutas hacia `/index.html`. Esta regla permite abrir directamente rutas de la aplicación, como `/plots`, y mantener la navegación de Vue Router al recargar la página.
+El archivo [vercel.json](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/blob/main/vercel.json), incorporado en el [commit a15cab3](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/a15cab3), define el framework Vite, el comando de compilación, el directorio de salida y la reescritura de las rutas hacia `/index.html`. Esta regla permite abrir directamente rutas de la aplicación, como `/plots`, y mantener la navegación de Vue Router al recargar la página.
 
 La configuración utiliza las siguientes variables de entorno para Production y Preview:
 
@@ -2510,7 +2602,7 @@ Los valores se incorporan durante la compilación del frontend. La URL de produc
 
 #### 5.2.1.1. Sprint Planning 1. 
 
-El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera versión funcional de la Landing Page de SkyCrop . El objetivo principal de esta iteración es establecer la presencia digital del producto, comunicando su propuesta de valor a los agricultores y a los ingenieros agrónomos, e integrando la presentación de sus funcionalidades, los beneficios para cada segmento, los planes de suscripción y un canal de contacto.
+El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera versión funcional de la Landing Page de SkyCrop. El objetivo principal de esta iteración es establecer la presencia digital del producto, comunicando su propuesta de valor a los agricultores y a los ingenieros agrónomos, e integrando la presentación de sus funcionalidades, los beneficios para cada segmento, los planes de suscripción y un canal de contacto.
 
 | **Sprint #** | Sprint 1 |
 | :--- | :--- |
@@ -2537,7 +2629,7 @@ La capacidad estimada de 14 Story Points sirve como referencia para la planifica
 | Historias seleccionadas | 8: US-36 a US-43 | Alcance de la landing, correspondiente a EP-08. |
 | Suma del alcance seleccionado | 14 Story Points | 1 + 2 + 1 + 1 + 2 + 3 + 2 + 2. |
 | Bloques de tareas | 11 | Agrupan los 20 identificadores UT-01 a UT-20. |
-| Esfuerzo estimado | 63 horas-persona | Suma de las estimaciones de tareas; no representa tiempo ejecutado. |
+| Esfuerzo estimado | 53 horas-persona | Suma de las estimaciones de tareas de 5.2.1.3; no representa tiempo ejecutado. |
 
 Los Story Points expresan esfuerzo relativo y las horas-persona estiman dedicación. La coincidencia entre capacidad y alcance en esta planificación no establece una equivalencia entre ambas unidades. Los estados de tareas consignados en el backlog son registros de seguimiento; la revisión del resultado utiliza las evidencias de desarrollo, ejecución y despliegue.
 
@@ -2556,21 +2648,23 @@ A continuación, se detalla la matriz de liderazgo y colaboración (LACX) para l
 #### 5.2.1.3. Sprint Backlog 1. 
 
 
-El objetivo principal de este Sprint es implementar la primera versión funcional de la Landing Page de SkyCrop. Para ello, se toman las User Stories de la épica EP-08 (US-36 a US-43) y se descomponen en tasks, junto con tasks generales de diseño, despliegue y documentación que no dependen de una User Story en particular. El seguimiento del Sprint se realiza en Trello; a continuación se presenta una captura del tablero y su enlace público.
+El objetivo principal de este Sprint es implementar la primera versión funcional de la Landing Page de SkyCrop. Para ello, se toman las User Stories de la épica EP-08 (US-36 a US-43) y se descomponen en tareas, junto con tareas generales de diseño, despliegue y documentación que no dependen de una User Story en particular. El seguimiento del Sprint se realiza en Trello; a continuación se presenta una captura del tablero y su enlace público.
 
 Enlace: https://trello.com/b/v9IDjQLu/sprint-backlog-1
 
 
 ![Sprint 1 Backlog - Trello](resources/imgs/chapter_5/sprint-1-backlog-trello.png)
 
-Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. Los identificadores originales se conservan para relacionar cada bloque con las evidencias existentes y los aportes de sus responsables. La revisión mantiene un esfuerzo total estimado de 63 horas-persona; redistribuye el esfuerzo de beneficios entre el filtro compartido y su integración por segmento. Las horas corresponden a estimaciones revisadas, no a registros de tiempo ejecutado. La captura de Trello conserva la organización anterior; la tabla siguiente presenta la agrupación revisada.
+Cada historia se descompone en al menos dos tareas. Para US-39, US-40, US-42 y US-43 se presenta un desglose documental de las tareas originales UT-07, UT-08, UT-11 y UT-12 mediante identificadores con sufijos. Las estimaciones se distribuyen entre las subtareas sin incrementar el esfuerzo original. La tabla suma 53 horas-persona: 32 asociadas a historias y 21 correspondientes a tareas generales. Estas horas son estimaciones, no registros de tiempo ejecutado.
+
+Los responsables originales se mantienen. Las subtareas remiten al estado registrado de su tarea de origen; no constituyen nuevos registros de ejecución ni acreditan por separado el cumplimiento de criterios de aceptación. La captura de Trello conserva la organización anterior y no se modifica en esta revisión.
 
 
 <div align="center">
 <table border="1">
   <tr>
     <th>Sprint #</th>
-    <th colspan="7">Sprint 2</th>
+    <th colspan="7">Sprint 1</th>
   </tr>
 
   <tr>
@@ -2603,7 +2697,7 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
 
   <tr>
     <td>UT-02</td>
-    <td>Preparar la presentación de la pagina</td>
+    <td>Preparar la presentación de la página</td>
     <td>Maquetar la sección Hero con descripción y botón de acceso provisional</td>
     <td>3</td>
     <td>Diego Pumahualcca</td>
@@ -2615,7 +2709,7 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
     <td rowspan="2">Demostración de funcionalidades de SkyCrop</td>
     <td>UT-03</td>
     <td>Implementar la sección de funcionalidades</td>
-    <td>Maquetar los bloques ded mapeo, telemetria y drones e </td>
+    <td>Maquetar los bloques de mapeo, telemetría y drones.</td>
     <td>2</td>
     <td>Oliver Jonseck</td>
     <td>Done</td>
@@ -2623,8 +2717,8 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
 
   <tr>
     <td>UT-04</td>
-    <td>Agregar imagenes de funcionalidades</td>
-    <td>Incorporar imagenes a la sección de funcionalidades</td>
+    <td>Agregar imágenes de funcionalidades</td>
+    <td>Incorporar imágenes a la sección de funcionalidades</td>
     <td>2</td>
     <td>Yam Cano</td>
     <td>Done</td>
@@ -2651,25 +2745,43 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
   </tr>
 
   <tr>
-    <td>US-39</td>
-    <td>Muestra de beneficios para agrónomos</td>
-    <td>UT-07</td>
-    <td>Integrar los beneficios para agrónomos</td>
-    <td>Redactar y maquetar los beneficios para agrónomos y verificar su visualización al cambiar de perfil mediante el filtro compartido.</td>
-    <td>5</td>
+    <td rowspan="2">US-39</td>
+    <td rowspan="2">Muestra de beneficios para agrónomos</td>
+    <td>UT-07.1</td>
+    <td>Maquetar los beneficios para agrónomos</td>
+    <td>Redactar y estructurar las tarjetas de beneficios del segmento Agrónomo.</td>
+    <td>3</td>
     <td>Oliver Jonseck</td>
-    <td>Done</td>
+    <td>Ver UT-07</td>
   </tr>
 
   <tr>
-    <td>US-40</td>
-    <td>Planes de subscripciones y precios</td>
-    <td>UT-08</td>
-    <td>Implementar la cuadrícula de planes</td>
-    <td>Maquetar costos mensuales, características y botones de subscripción de cada plan</td>
-    <td>4</td>
+    <td>UT-07.2</td>
+    <td>Integrar los beneficios con el filtro compartido</td>
+    <td>Integrar el contenido del segmento Agrónomo y comprobar su visualización al cambiar de perfil.</td>
+    <td>2</td>
+    <td>Oliver Jonseck</td>
+    <td>Ver UT-07</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-40</td>
+    <td rowspan="2">Planes de suscripciones y precios</td>
+    <td>UT-08.1</td>
+    <td>Maquetar la información de los planes</td>
+    <td>Presentar el costo mensual y las características de cada plan en una cuadrícula.</td>
+    <td>2</td>
     <td>Sunio Landa</td>
-    <td>Done</td>
+    <td>Ver UT-08</td>
+  </tr>
+
+  <tr>
+    <td>UT-08.2</td>
+    <td>Incorporar los botones de suscripción</td>
+    <td>Añadir los botones de acceso de cada plan y relacionarlos con la navegación prevista.</td>
+    <td>2</td>
+    <td>Sunio Landa</td>
+    <td>Ver UT-08</td>
   </tr>
 
   <tr>
@@ -2677,7 +2789,7 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
     <td rowspan="2">Opción de contacto</td>
     <td>UT-09</td>
     <td>Implementar el diseño del formulario</td>
-    <td>Crear los campos de contacto, </td>
+    <td>Crear los campos de nombre, correo electrónico y mensaje del formulario de contacto.</td>
     <td>2</td>
     <td>Yam Cano</td>
     <td>Done</td>
@@ -2693,25 +2805,43 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
   </tr>
 
   <tr>
-    <td>US-42</td>
-    <td>Navegación rápida por la Landing Page</td>
-    <td>UT-11</td>
-    <td>Implementar la navegación por las secciones de la pagina</td>
-    <td>Crear un menú fijo con desplazamiento a secciones</td>
-    <td>3</td>
+    <td rowspan="2">US-42</td>
+    <td rowspan="2">Navegación rápida por la Landing Page</td>
+    <td>UT-11.1</td>
+    <td>Estructurar el menú de secciones</td>
+    <td>Crear el menú fijo y sus enlaces a las secciones de la landing.</td>
+    <td>1</td>
     <td>Diego Pumahualcca</td>
-    <td>Done</td>
+    <td>Ver UT-11</td>
   </tr>
 
   <tr>
-    <td>US-43</td>
-    <td>Pie de pagina informativo</td>
-    <td>UT-12</td>
-    <td>Implementar el pie de página</td>
-    <td>Agregar enlace, politicas y medios de contacto en el footer</td>
+    <td>UT-11.2</td>
+    <td>Implementar el desplazamiento entre secciones</td>
+    <td>Configurar el desplazamiento a las secciones desde los enlaces del menú.</td>
     <td>2</td>
+    <td>Diego Pumahualcca</td>
+    <td>Ver UT-11</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">US-43</td>
+    <td rowspan="2">Pie de página informativo</td>
+    <td>UT-12.1</td>
+    <td>Maquetar el contenido del pie de página</td>
+    <td>Organizar la información institucional y los medios de contacto en el pie de página.</td>
+    <td>1</td>
     <td>Yam Cano</td>
-    <td>Done</td>
+    <td>Ver UT-12</td>
+  </tr>
+
+  <tr>
+    <td>UT-12.2</td>
+    <td>Incorporar los enlaces legales y de contacto</td>
+    <td>Añadir los enlaces a las políticas y los canales de contacto del pie de página.</td>
+    <td>1</td>
+    <td>Yam Cano</td>
+    <td>Ver UT-12</td>
   </tr>
 
 
@@ -2775,26 +2905,39 @@ Las tareas se presentan en bloques de ingeniería de entre 4 y 8 horas-persona. 
 </table>
 </div>
 
+
+
+**Estado original de las tareas desglosadas**
+
+| Tarea de origen | Subtareas documentadas | Estimación original (horas-persona) | Estado original |
+|---|---|---:|---|
+| UT-07 | UT-07.1, UT-07.2 | 5 | Done |
+| UT-08 | UT-08.1, UT-08.2 | 4 | Done |
+| UT-11 | UT-11.1, UT-11.2 | 3 | Done |
+| UT-12 | UT-12.1, UT-12.2 | 2 | Done |
+
+Esta tabla conserva los estados de origen; sus estimaciones ya están distribuidas en la tabla principal y no se suman nuevamente. El desglose presenta 16 tareas asociadas a ocho historias y seis tareas generales. Las tareas generales UT-13 y UT-14, relacionadas con Figma, se conservan sin cambios.
+
 #### 5.2.1.4. Development Evidence for Sprint Review. 
 
 La columna de repositorio identifica la ubicación actual de la landing page en `upc-GreenTech/skycrop-platform`. Los hashes y mensajes de la tabla se conservan como registro histórico de los aportes anteriores a la migración. Los catorce commits referenciados están presentes en el clon del repositorio de la landing page.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :---: | :--- | :--- | :---: |
-| upc-GreenTech/skycrop-platform | develop | 8e8ed5b | Merge pull request #3 from GreenTech-upc/feature/landing-contact-footer | Integra en `develop`, mediante el Pull Request #3, la rama `feature/landing-contact-footer` con el formulario de contacto validado y el pie de página. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/landing-contact-footer | 1f43784 | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Ajusta la indentación a dos espacios en el menú de navegación y en las listas de beneficios de `index.html`, según la convención de la sección 5.1.3, con un cambio menor en `style.css`. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | develop | 47f4734 | Merge pull request feature/landing-contact-footer | Integra en `develop` los cambios de contacto y pie de página, ya combinados con los de planes y precios. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/landing-contact-footer | db891db | merge: resolve conflicts with develop | Incorpora en la rama de la funcionalidad los cambios de `develop`, incluida la sección de planes, y resuelve los conflictos de integración. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/landing-contact-footer | 947818e | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Agrega la sección de contacto con formulario (nombre, correo y mensaje) y validación en el cliente con mensajes de error accesibles; incorpora el pie de página con los diálogos de privacidad y términos. Modifica `index.html`, `style.css` y `main.js`. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | develop | b9efc89 | Merge branch 'feature/plans-and-pricing' into develop | Integra en `develop` la sección de planes y precios. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/plans-and-pricing | 41eb331 | feat(styles): add styles to pricing cards | Agrega en `style.css` los estilos de las tarjetas de precios y su cuadrícula adaptable a pantallas pequeñas. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/plans-and-pricing | 145c749 | feat(index): add plans structure | Agrega en `index.html` la sección de planes con las tarjetas Basic, Professional y Corporate, su costo mensual y sus características. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | develop | b0f411f | Merge branch 'feature/landing-features-benefits' into develop | Integra en `develop` las secciones de funcionalidades y beneficios. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/landing-features-benefits | 05a0644 | feat: add landing features and benefits. | Agrega la sección de funcionalidades (parcelas, rutas de dron, diagnóstico de cultivos y reportes estacionales) y la de beneficios para agricultores y agrónomos, con sus estilos. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | develop | df5c8d4 | Merge branch 'feature/landing-foundation' into develop | Integra en `develop` la base de la landing y la sección Hero. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | feature/landing-foundation | 76136a6 | feat: build landing foundation and hero. | Construye la base de la página: cabecera con navegación fija y menú móvil, sección Hero, mensaje informativo del botón «Access Platform», hojas de estilo adaptables, imágenes e íconos SVG, y el script `main.js`. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | develop | eb6c793 | chore: add landing page gitignore. | Agrega el archivo `.gitignore` del proyecto. | 20/09/2026 |
-| upc-GreenTech/skycrop-platform | main | cc4445c | chore: initial commit | Crea el repositorio con `README.md`, un `index.html` inicial, las carpetas `assets/images`, `assets/scripts` y `assets/styles`, el favicon y los logotipos de SkyCrop. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | develop | 8e8ed5b | Merge pull request #3 from GreenTech-upc/feature/landing-contact-footer | Integra en `develop`, mediante el Pull Request #3, la rama `feature/landing-contact-footer` con el formulario de contacto validado y el pie de página. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/landing-contact-footer | 1f43784 | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Ajusta la indentación a dos espacios en el menú de navegación y en las listas de beneficios de `index.html`, según la convención de la sección 5.1.3, con un cambio menor en `style.css`. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | develop | 47f4734 | Merge pull request feature/landing-contact-footer | Integra en `develop` los cambios de contacto y pie de página, ya combinados con los de planes y precios. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/landing-contact-footer | db891db | merge: resolve conflicts with develop | Incorpora en la rama de la funcionalidad los cambios de `develop`, incluida la sección de planes, y resuelve los conflictos de integración. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/landing-contact-footer | 947818e | feat(landing): add contact validation and footer (US-41 UT-08, US-43 UT-11) | Agrega la sección de contacto con formulario (nombre, correo y mensaje) y validación en el cliente con mensajes de error accesibles; incorpora el pie de página con los diálogos de privacidad y términos. Modifica `index.html`, `style.css` y `main.js`. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | develop | b9efc89 | Merge branch 'feature/plans-and-pricing' into develop | Integra en `develop` la sección de planes y precios. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/plans-and-pricing | 41eb331 | feat(styles): add styles to pricing cards | Agrega en `style.css` los estilos de las tarjetas de precios y su cuadrícula adaptable a pantallas pequeñas. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/plans-and-pricing | 145c749 | feat(index): add plans structure | Agrega en `index.html` la sección de planes con las tarjetas Basic, Professional y Corporate, su costo mensual y sus características. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | develop | b0f411f | Merge branch 'feature/landing-features-benefits' into develop | Integra en `develop` las secciones de funcionalidades y beneficios. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/landing-features-benefits | 05a0644 | feat: add landing features and benefits. | Agrega la sección de funcionalidades (parcelas, rutas de dron, diagnóstico de cultivos y reportes estacionales) y la de beneficios para agricultores y agrónomos, con sus estilos. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | develop | df5c8d4 | Merge branch 'feature/landing-foundation' into develop | Integra en `develop` la base de la landing y la sección Hero. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | feature/landing-foundation | 76136a6 | feat: build landing foundation and hero. | Construye la base de la página: cabecera con navegación fija y menú móvil, sección Hero, mensaje informativo del botón «Access Platform», hojas de estilo adaptables, imágenes e íconos SVG, y el script `main.js`. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | develop | eb6c793 | chore: add landing page gitignore. | Agrega el archivo `.gitignore` del proyecto. | 20/09/2026 |
+| upc-pre-202620-1asi0730-8093-greentech/skycrop-website | main | cc4445c | chore: initial commit | Crea el repositorio con `README.md`, un `index.html` inicial, las carpetas `assets/images`, `assets/scripts` y `assets/styles`, el favicon y los logotipos de SkyCrop. | 20/09/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review. 
 
@@ -2853,7 +2996,7 @@ El alcance del Sprint 1 corresponde a la landing page (US-36 a US-43). No incluy
 
 ![Responsive_Landing](resources/imgs/chapter_5/Responsive_Landing.png)
 
-**Publicación de la landing page:** [SkyCrop en GitHub Pages](https://upc-greentech.github.io/skycrop-platform/). La consulta del 9 de octubre de 2026 devolvió HTTP 200 y el documento con título SkyCrop | Smarter crop monitoring. El código fuente se encuentra en [skycrop-platform](https://github.com/upc-GreenTech/skycrop-platform). La aplicación web se publica por separado en [Vercel](https://skycrop-website.vercel.app/home).
+**Publicación de la landing page:** [SkyCrop en GitHub Pages](https://upc-pre-202620-1asi0730-8093-greentech.github.io/skycrop-website/). La consulta del 20 de octubre de 2026 a la dirección actual devolvió HTTP 200 y el documento con título SkyCrop | Smarter crop monitoring. El código fuente se encuentra en [skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website). La aplicación web se publica por separado en [Vercel](https://skycrop-website.vercel.app/home).
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
@@ -2912,7 +3055,7 @@ El Sprint Backlog 2 reúne las tareas de la primera versión del frontend de Sky
 <img src="resources/imgs/sprintbacklog-2-greentech.jpg" width="700" alt="Sprint backlog 2">
 </div>
 
-La tabla relaciona cada historia de usuario con sus tareas, estimaciones en horas, responsables y estados registrados.
+La tabla relaciona cada historia de usuario con dos tareas diferenciadas: una prepara la interfaz o la estructura de información y otra integra el registro o la consulta de datos. Se conservan los identificadores, las estimaciones y los responsables registrados. La expresión «No registrado» señala que el documento original no especifica un estado; no equivale a Done ni a una evaluación del avance.
 
 
 <div align="center">
@@ -3003,7 +3146,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
     <td rowspan="2">Consulta de información de los cultivos</td>
     <td>UT-25</td>
     <td>Estructurar la vista de detalles</td>
-    <td>Diseñar la vista de detalles de cultivos y que campos se considerarán</td>
+    <td>Diseñar la vista de detalles de cultivos y definir los campos que incluirá</td>
     <td>1</td>
     <td>Diego Pumahualcca</td>
     <td>Done</td>
@@ -3026,7 +3169,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
     <td>Estructurar y elaborar la interfaz de registro de dron</td>
     <td>3</td>
     <td>Oliver Jonseck</td>
-    <td></td>
+    <td>No registrado</td>
   </tr>
 
   <tr>
@@ -3035,7 +3178,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
     <td>Generar registros de drones mediante la interfaz de registro</td>
     <td>3</td>
     <td>Oliver Jonseck</td>
-    <td></td>
+    <td>No registrado</td>
   </tr>
 
   <tr>
@@ -3062,8 +3205,8 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
     <td rowspan="2">US-23</td>
     <td rowspan="2">Generación de diagnóstico</td>
     <td>UT-31</td>
-    <td>Estructurar el diagnostico</td>
-    <td>Definir los campos y datos que se tomarán en cuenta para un diagnostico</td>
+    <td>Estructurar el diagnóstico</td>
+    <td>Definir los campos y datos que se tomarán en cuenta para un diagnóstico</td>
     <td>2</td>
     <td>Sunio Landa</td>
     <td>Done</td>
@@ -3071,8 +3214,8 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
 
   <tr>
     <td>UT-32</td>
-    <td>Registrar diagnosticos</td>
-    <td>Guardar un historial de diagnosticos generados para una parcela</td>
+    <td>Registrar diagnósticos</td>
+    <td>Guardar un historial de diagnósticos generados para una parcela</td>
     <td>2</td>
     <td>Sunio Landa</td>
     <td>Done</td>
@@ -3092,7 +3235,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
   <tr>
     <td>UT-34</td>
     <td>Vista de datos del historial</td>
-    <td>Visualizar los datos registrados de los diagnosticos en el historial</td>
+    <td>Visualizar los datos registrados de los diagnósticos en el historial</td>
     <td>2</td>
     <td>Sunio Landa</td>
     <td>Done</td>
@@ -3112,7 +3255,7 @@ La tabla relaciona cada historia de usuario con sus tareas, estimaciones en hora
   <tr>
     <td>UT-36</td>
     <td>Generar el reporte</td>
-    <td>Usar datos historicos de los diagnosticos para registrar un reporte con ellos</td>
+    <td>Usar datos históricos de los diagnósticos para registrar un reporte con ellos</td>
     <td>3</td>
     <td>Diego Pumahualcca</td>
     <td>Done</td>
@@ -3150,26 +3293,26 @@ Como evidencia del trabajo realizado, se presentan los commits más representati
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/layout | [12f26759](https://github.com/upc-GreenTech/skycrop-website/commit/12f26759ff76801418650b5590478992fcc4b7ed) | feat(shared): add layout component | Implementa el componente base de distribución de la aplicación web, estableciendo la estructura visual reutilizable para las diferentes vistas del sistema. | 06/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/routing-and-layout | [d8297b43](https://github.com/upc-GreenTech/skycrop-website/commit/d8297b434fd3c6bc7fc74fee41f3981065074743) | feat: implement Vue Router and basic routing structure | Implementa Vue Router y la estructura inicial de rutas, permitiendo la navegación entre las diferentes secciones de la plataforma SkyCrop. | 06/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/routing-and-layout | [1b01038b](https://github.com/upc-GreenTech/skycrop-website/commit/1b01038b1adc821bf20d3d9ae6d1462f8dbc7937) | feat(shared): add header and sidebar layout | Incorpora los componentes Header y Sidebar, proporcionando una estructura de navegación consistente para acceder a los distintos módulos de la aplicación. | 06/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/parcel-registration-details | [9b44d4fd](https://github.com/upc-GreenTech/skycrop-website/commit/9b44d4fda59650cad0812897290385bb63b989d6) | feat(plots): add registration and detail views. | Desarrolla las interfaces de registro y visualización de detalles de parcelas agrícolas, facilitando la gestión de los terrenos registrados en SkyCrop. | 07/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/parcel-registration-details | [5fedc829](https://github.com/upc-GreenTech/skycrop-website/commit/5fedc8293bc705024c8994bae3fa745a1d4e438b) | feat(i18n): add English and Spanish support for plots. | Agrega soporte de internacionalización en inglés y español para las funcionalidades relacionadas con parcelas, mejorando la accesibilidad de la plataforma. | 07/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-management | [4aa846ad](https://github.com/upc-GreenTech/skycrop-website/commit/4aa846ad9faacb6c17c05f5ccbae28fa8d1a4eab) | feat: add initial crop list view | Implementa la vista inicial del listado de cultivos, permitiendo visualizar los cultivos registrados dentro de la plataforma. | 08/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-management | [e08e99fd](https://github.com/upc-GreenTech/skycrop-website/commit/e08e99fde1f196c35285d7085276940467e627b9) | feat: connect crop list to store and API | Conecta el listado de cultivos con el almacenamiento de estado y la API, permitiendo obtener y administrar la información utilizada por la interfaz. | 08/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-registration | [62f7fadb](https://github.com/upc-GreenTech/skycrop-website/commit/62f7fadba2ec5f6c33e4635d27397dc1b0a6fe95) | feat: implement crop registration | Implementa la funcionalidad de registro de cultivos, permitiendo ingresar nuevos cultivos y sus datos correspondientes en la plataforma. | 08/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-registration | [526f89a9](https://github.com/upc-GreenTech/skycrop-website/commit/526f89a90ec40e0dddb90c265e024f55950d01e0) | feat: add additional crop registration fields | Incorpora campos adicionales al formulario de registro de cultivos, ampliando la información que puede proporcionar el usuario. | 08/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-details | [42c7157a](https://github.com/upc-GreenTech/skycrop-website/commit/42c7157ae92fd39b8169f10592e070e37e866abd) | feat: implement crop details view | Implementa la vista de detalles de cultivos, permitiendo consultar información específica de cada cultivo registrado. | 08/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-details | [e8092343](https://github.com/upc-GreenTech/skycrop-website/commit/e809234320a29099c846eff888ba568f068e6501) | feat: implement crop editing | Desarrolla la funcionalidad de edición de cultivos, permitiendo actualizar la información previamente registrada. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/plot-wireframe-aligment | [473bcadf](https://github.com/upc-GreenTech/skycrop-website/commit/473bcadf4203e692ec6689503be000f7fcc88dbb) | feat(plots): align registration and details with wireframes. | Ajusta las interfaces de registro y detalles de parcelas para mantener coherencia visual con los wireframes definidos durante el diseño del producto. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/drone-registration-details-routes | [90602cce](https://github.com/upc-GreenTech/skycrop-website/commit/90602ccefdb4950591b71aa7d73e4a4d76029de4) | feat(drones): implement registration details and flight routes. | Implementa las funcionalidades de registro y consulta de detalles de drones, además de la visualización de rutas de vuelo dentro de la plataforma. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/report-list-details | [b67a2117](https://github.com/upc-GreenTech/skycrop-website/commit/b67a21178874f426d0051de3b5864ab5cad32ff9) | feat(reports): implement history details seasonal generation and PDF export. | Implementa el historial y la consulta de detalles de reportes, incorpora la generación estacional y permite exportar los resultados en formato PDF. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/diagnoses | [64ce98c9](https://github.com/upc-GreenTech/skycrop-website/commit/64ce98c9d406f8d14a83fedcca471c2961660579) | feat(diagnoses): add diagnoses api | Incorpora la capa de comunicación con la API de diagnósticos, estableciendo la estructura necesaria para gestionar la información de diagnósticos desde la aplicación. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/diagnoses-generation-details | [053244a4](https://github.com/upc-GreenTech/skycrop-website/commit/053244a43d6eafb4af8c4ce252508a4e0577533d) | feat(diagnoses): complete simulated generation history and details. | Completa las funcionalidades de generación simulada de diagnósticos, consulta de historial y visualización de sus detalles. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | feature/crop-details | [d88f83db](https://github.com/upc-GreenTech/skycrop-website/commit/d88f83db743711eea54a7cd30c72b1d8df274edd) | feat(crops): add variety autocomplete | Incorpora el autocompletado de variedades de cultivos, facilitando el ingreso de información y mejorando la experiencia de usuario durante el registro o edición. | 09/10/2026 |
-| [upc-GreenTech/skycrop-website](https://github.com/upc-GreenTech/skycrop-website) | develop | [a15cab30](https://github.com/upc-GreenTech/skycrop-website/commit/a15cab30842051d4976801b44d582862a791f8fe) | feat(vercel): add vercel.json. | Incorpora el archivo de configuración de Vercel, preparando la aplicación web para su despliegue en la plataforma. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/layout | [12f26759](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/12f26759ff76801418650b5590478992fcc4b7ed) | feat(shared): add layout component | Implementa el componente base de distribución de la aplicación web, estableciendo la estructura visual reutilizable para las diferentes vistas del sistema. | 06/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/routing-and-layout | [d8297b43](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/d8297b434fd3c6bc7fc74fee41f3981065074743) | feat: implement Vue Router and basic routing structure | Implementa Vue Router y la estructura inicial de rutas, permitiendo la navegación entre las diferentes secciones de la plataforma SkyCrop. | 06/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/routing-and-layout | [1b01038b](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/1b01038b1adc821bf20d3d9ae6d1462f8dbc7937) | feat(shared): add header and sidebar layout | Incorpora los componentes Header y Sidebar, proporcionando una estructura de navegación consistente para acceder a los distintos módulos de la aplicación. | 06/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/parcel-registration-details | [9b44d4fd](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/9b44d4fda59650cad0812897290385bb63b989d6) | feat(plots): add registration and detail views. | Desarrolla las interfaces de registro y visualización de detalles de parcelas agrícolas, facilitando la gestión de los terrenos registrados en SkyCrop. | 07/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/parcel-registration-details | [5fedc829](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/5fedc8293bc705024c8994bae3fa745a1d4e438b) | feat(i18n): add English and Spanish support for plots. | Agrega soporte de internacionalización en inglés y español para las funcionalidades relacionadas con parcelas, mejorando la accesibilidad de la plataforma. | 07/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-management | [4aa846ad](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/4aa846ad9faacb6c17c05f5ccbae28fa8d1a4eab) | feat: add initial crop list view | Implementa la vista inicial del listado de cultivos, permitiendo visualizar los cultivos registrados dentro de la plataforma. | 08/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-management | [e08e99fd](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/e08e99fde1f196c35285d7085276940467e627b9) | feat: connect crop list to store and API | Conecta el listado de cultivos con el almacenamiento de estado y la API, permitiendo obtener y administrar la información utilizada por la interfaz. | 08/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-registration | [62f7fadb](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/62f7fadba2ec5f6c33e4635d27397dc1b0a6fe95) | feat: implement crop registration | Implementa la funcionalidad de registro de cultivos, permitiendo ingresar nuevos cultivos y sus datos correspondientes en la plataforma. | 08/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-registration | [526f89a9](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/526f89a90ec40e0dddb90c265e024f55950d01e0) | feat: add additional crop registration fields | Incorpora campos adicionales al formulario de registro de cultivos, ampliando la información que puede proporcionar el usuario. | 08/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-details | [42c7157a](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/42c7157ae92fd39b8169f10592e070e37e866abd) | feat: implement crop details view | Implementa la vista de detalles de cultivos, permitiendo consultar información específica de cada cultivo registrado. | 08/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-details | [e8092343](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/e809234320a29099c846eff888ba568f068e6501) | feat: implement crop editing | Desarrolla la funcionalidad de edición de cultivos, permitiendo actualizar la información previamente registrada. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/plot-wireframe-aligment | [473bcadf](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/473bcadf4203e692ec6689503be000f7fcc88dbb) | feat(plots): align registration and details with wireframes. | Ajusta las interfaces de registro y detalles de parcelas para mantener coherencia visual con los wireframes definidos durante el diseño del producto. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/drone-registration-details-routes | [90602cce](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/90602ccefdb4950591b71aa7d73e4a4d76029de4) | feat(drones): implement registration details and flight routes. | Implementa las funcionalidades de registro y consulta de detalles de drones, además de la visualización de rutas de vuelo dentro de la plataforma. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/report-list-details | [b67a2117](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/b67a21178874f426d0051de3b5864ab5cad32ff9) | feat(reports): implement history details seasonal generation and PDF export. | Implementa el historial y la consulta de detalles de reportes, incorpora la generación estacional y permite exportar los resultados en formato PDF. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/diagnoses | [64ce98c9](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/64ce98c9d406f8d14a83fedcca471c2961660579) | feat(diagnoses): add diagnoses api | Incorpora la capa de comunicación con la API de diagnósticos, estableciendo la estructura necesaria para gestionar la información de diagnósticos desde la aplicación. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/diagnoses-generation-details | [053244a4](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/053244a43d6eafb4af8c4ce252508a4e0577533d) | feat(diagnoses): complete simulated generation history and details. | Completa las funcionalidades de generación simulada de diagnósticos, consulta de historial y visualización de sus detalles. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | feature/crop-details | [d88f83db](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/d88f83db743711eea54a7cd30c72b1d8df274edd) | feat(crops): add variety autocomplete | Incorpora el autocompletado de variedades de cultivos, facilitando el ingreso de información y mejorando la experiencia de usuario durante el registro o edición. | 09/10/2026 |
+| [upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp) | develop | [a15cab30](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp/commit/a15cab30842051d4976801b44d582862a791f8fe) | feat(vercel): add vercel.json. | Incorpora el archivo de configuración de Vercel, preparando la aplicación web para su despliegue en la plataforma. | 09/10/2026 |
 
-**Repositorio de evidencia:** https://github.com/upc-GreenTech/skycrop-website
+**Repositorio de evidencia:** https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp
 
 Los commits seleccionados evidencian el desarrollo progresivo de las funcionalidades del Sprint 2. Asimismo, reflejan la distribución del trabajo en distintas ramas de desarrollo, la incorporación de nuevos módulos y los ajustes realizados para integrar las funcionalidades de la plataforma SkyCrop.
 
@@ -3297,7 +3440,7 @@ El servidor también contiene colecciones para perfiles, suscripciones, pagos, n
 
 **Trazabilidad con el código**
 
-El [repositorio de la mock API](https://github.com/upc-GreenTech/skycrop-mock-api) contiene `mock-api-server.js`, que configura el middleware JSON, el endpoint de salud y la reescritura de rutas, y `db.json`, que declara las colecciones. En el [repositorio del frontend](https://github.com/upc-GreenTech/skycrop-website), los adaptadores `plots-api.js`, `crops-api.js`, `drones-api.js`, `diagnoses-api.js` y `reports-api.js` concentran las llamadas descritas en la tabla.
+El [repositorio de la mock API](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-mock-api) contiene `mock-api-server.js`, que configura el middleware JSON, el endpoint de salud y la reescritura de rutas, y `db.json`, que declara las colecciones. En el [repositorio del frontend](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-webapp), los adaptadores `plots-api.js`, `crops-api.js`, `drones-api.js`, `diagnoses-api.js` y `reports-api.js` concentran las llamadas descritas en la tabla.
 
 La mock API permite almacenar y consultar registros para las vistas del sprint. Los diagnósticos utilizan datos simulados; el registro de un vuelo no ejecuta una conexión física con un dron. La evidencia de disponibilidad del servicio en Azure se presenta en la sección 5.1.4 y la configuración del frontend publicado en la sección 5.2.2.7.
 
@@ -3342,9 +3485,9 @@ El [registro de verificación del frontend](resources/deployment/website-verific
 
 **Actualización de la landing page para TB1**
 
-La landing page se publica en [SkyCrop en GitHub Pages](https://upc-greentech.github.io/skycrop-platform/) desde el repositorio [skycrop-platform](https://github.com/upc-GreenTech/skycrop-platform). La actualización del 9 de octubre de 2026 incorpora accesos a la aplicación web publicada en Vercel. El [commit c5e9a53](https://github.com/upc-GreenTech/skycrop-platform/commit/c5e9a53578ef371c5d92b7df5dca8da909464991) modifica los controles de acceso y añade el manejador que dirige a `https://skycrop-website.vercel.app/home`.
+La landing page se publica en [SkyCrop en GitHub Pages](https://upc-pre-202620-1asi0730-8093-greentech.github.io/skycrop-website/) desde el repositorio [skycrop-website](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website). La actualización del 9 de octubre de 2026 incorpora accesos a la aplicación web publicada en Vercel. El [commit c5e9a53](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website/commit/c5e9a53578ef371c5d92b7df5dca8da909464991) modifica los controles de acceso y añade el manejador que dirige a `https://skycrop-website.vercel.app/home`.
 
-El cambio se integra en `main` mediante el [commit c3249b5](https://github.com/upc-GreenTech/skycrop-platform/commit/c3249b5), correspondiente al cierre de la rama `release/2.0.0`. La consulta HTTP del 9 de octubre de 2026 devuelve HTTP 200 para la landing y para su archivo `assets/scripts/main.js`; el script publicado contiene el selector `data-open-platform` y la dirección del frontend. Esta evidencia registra una actualización del contenido publicado respecto de la versión anterior de la landing.
+El cambio se integra en `main` mediante el [commit c3249b5](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-website/commit/c3249b5), correspondiente al cierre de la rama `release/2.0.0`. La consulta HTTP del 9 de octubre de 2026 devuelve HTTP 200 para la landing y para su archivo `assets/scripts/main.js`; el script publicado contiene el selector `data-open-platform` y la dirección del frontend. Esta evidencia registra una actualización del contenido publicado respecto de la versión anterior de la landing.
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
@@ -3418,4 +3561,4 @@ Enlace al video de entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/persona
 
 Enlace al Sprint Navigation 2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQDhF1dMbAU1R4u6WSnbjIWYAd2SjkGT6bbca2dyF2NeBkY?e=m6YUYr
 
-Enlace al video de exposicion: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQC7-9lfjgHpQ4bt-_6qzEckAakmUPUCAoJjSVcUw-FifaQ?e=XQGhZZ
+Enlace al video de exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202423973_upc_edu_pe/IQC7-9lfjgHpQ4bt-_6qzEckAakmUPUCAoJjSVcUw-FifaQ?e=XQGhZZ
