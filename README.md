@@ -1,8 +1,8 @@
-<div align="center" style="margin-top: -5px;">
+<div align="center" style="margin-top: -5px; font-size: 18pt;">
 
 <img src="resources/imgs/UPC_logo_transparente.png"
 alt="UPC_logo_transparente"
-style="width: 18%; height: auto; margin-bottom: 12px;">
+style="width: 15%; height: auto;">
 
 <br>
 Universidad Peruana de Ciencias Aplicadas
@@ -32,7 +32,7 @@ Proyecto
 **SkyCrop**
 
 
-#### Integrantes
+**Integrantes**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="resources/imgs/integrantes-dark.png">
@@ -41,7 +41,8 @@ Proyecto
 </picture>
 
 **Período 202620**
-<h3>Octubre 2026</h3>
+
+**Octubre 2026**
 
 </div>
 
@@ -49,38 +50,40 @@ Proyecto
 
 # Registro de Versiones del Informe
 
-El registro reúne las modificaciones principales del informe mediante identificadores de versión y referencias a commits. Las fechas de los commits corresponden al historial de Git. La autoría del documento se presenta a nombre del equipo GreenTech.
+El registro reúne las modificaciones principales del informe. La autoría del documento se presenta a nombre del equipo GreenTech.
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| [cec5325](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/cec5325) | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
-| [2c87943](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/2c87943) | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
-| [bc6eb7c](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/bc6eb7c) | 2026-09-10 | Equipo GreenTech | Incorporación de registros e imágenes de entrevistas. |
-| [73cdf85](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/73cdf85) | 2026-09-14 | Equipo GreenTech | Desarrollo y análisis de la matriz de tareas. |
-| [ce65d09](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/ce65d09) | 2026-09-15 | Equipo GreenTech | Documentación del Big Picture EventStorming con imágenes. |
-| [76dd380](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/76dd380) | 2026-09-18 | Equipo GreenTech | Registro de la segunda entrevista de agricultores. |
-| [88e9191](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/88e9191) | 2026-09-18 | Equipo GreenTech | Documentación del avance parcial de fundamentos visuales en Figma. |
-| [0908eb9](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/0908eb9) | 2026-09-19 | Equipo GreenTech | Ampliación de las User Stories. |
-| [9fa32e4](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/9fa32e4) | 2026-09-19 | Equipo GreenTech | Actualización de las hipótesis Lean UX. |
-| [4519a4a](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/4519a4a) | 2026-09-19 | Equipo GreenTech | Actualización de los registros de entrevistas. |
-| [b7a4291](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/b7a4291) | 2026-09-19 | Equipo GreenTech | Corrección de listas de EventStorming y ampliación del glosario. |
-| [2252774](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/2252774) | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
-| [cbbef45](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/cbbef45) | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
-| [d3c3f1a](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/d3c3f1a) | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
-| [afe3e3f](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/afe3e3f) | 2026-10-09 | Equipo GreenTech | Definición de contextos y orden de requisitos por importancia del negocio. |
-| [ad288c4](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/ad288c4) | 2026-10-09 | Equipo GreenTech | Incorporación de objetos de valor para nombres, datos de contacto y fechas. |
-| [ffcc46d](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/ffcc46d) | 2026-10-09 | Equipo GreenTech | Relaciones entre agregados mediante identificadores. |
-| [1291cc8](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/1291cc8) | 2026-10-09 | Equipo GreenTech | Coherencia del texto con el modelo del dominio. |
-| [ea241f0](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/ea241f0) | 2026-10-09 | Equipo GreenTech | Diagramas de clases por capas y contexto. |
-| [2187054](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/2187054) | 2026-10-09 | Equipo GreenTech | Vistas generales C4 y componentes de frontend y backend por contexto. |
-| [70cc8cf](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/70cc8cf) | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
-| [1d90594](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/1d90594) | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
-| [5ba924e](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/5ba924e) | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
-| [9f39774](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/9f39774) | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
-| [d4a8a9d](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/d4a8a9d) | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
-| [fa371fe](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/fa371fe) | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome 5 y conclusiones para TB1. |
-| [1c25eda](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/1c25eda) | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
-| [bf3af2d](https://github.com/upc-pre-202620-1asi0730-8093-greentech/skycrop-report/commit/bf3af2d) | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
+| 1  | 2026-08-31 | Equipo GreenTech | Estructura inicial del informe y recursos de imagen. |
+| 2  | 2026-09-04 | Equipo GreenTech | Desarrollo de la tabla de análisis competitivo. |
+| 3  | 2026-09-10 | Equipo GreenTech | Incorporación de registros e imágenes de entrevistas. |
+| 4  | 2026-09-14 | Equipo GreenTech | Desarrollo y análisis de la matriz de tareas. |
+| 5  | 2026-09-15 | Equipo GreenTech | Documentación del Big Picture EventStorming con imágenes. |
+| 6  | 2026-09-18 | Equipo GreenTech | Registro de la segunda entrevista de agricultores. |
+| 7  | 2026-09-18 | Equipo GreenTech | Documentación del avance parcial de fundamentos visuales en Figma. |
+| 8  | 2026-09-19 | Equipo GreenTech | Ampliación de las User Stories. |
+| 9  | 2026-09-19 | Equipo GreenTech | Actualización de las hipótesis Lean UX. |
+| 10 | 2026-09-19 | Equipo GreenTech | Actualización de los registros de entrevistas. |
+| 11 | 2026-09-19 | Equipo GreenTech | Corrección de listas de EventStorming y ampliación del glosario. |
+| 12 | 2026-09-19 | Equipo GreenTech | Documentación de la configuración de despliegue. |
+| 13 | 2026-09-19 | Equipo GreenTech | Desarrollo de las historias de diagnósticos US-24, US-25 y US-26. |
+| 14 | 2026-09-19 | Equipo GreenTech | Ajuste de los segmentos objetivo según las entrevistas. |
+| 15 | 2026-10-09 | Equipo GreenTech | Definición de contextos y orden de requisitos por importancia del negocio. |
+| 16 | 2026-10-09 | Equipo GreenTech | Incorporación de objetos de valor para nombres, datos de contacto y fechas. |
+| 17 | 2026-10-09 | Equipo GreenTech | Relaciones entre agregados mediante identificadores. |
+| 18 | 2026-10-09 | Equipo GreenTech | Coherencia del texto con el modelo del dominio. |
+| 19 | 2026-10-09 | Equipo GreenTech | Diagramas de clases por capas y contexto. |
+| 20 | 2026-10-09 | Equipo GreenTech | Vistas generales C4 y componentes de frontend y backend por contexto. |
+| 21 | 2026-10-09 | Equipo GreenTech | Flujo y reglas de asignación de un dron al vuelo de una parcela. |
+| 22 | 2026-10-09 | Equipo GreenTech | Consistencia de estimaciones del sprint y evidencia de despliegue en Azure. |
+| 23 | 2026-10-09 | Equipo GreenTech | Ajustes de formato del informe y actualización del registro de versiones. |
+| 24 | 2026-10-09 | Equipo GreenTech | Incorporación de la captura de Contributors para TB1 y descripción de los aportes registrados en el repositorio del informe. |
+| 25 | 2026-10-09 | Equipo GreenTech | Documentación de la configuración de la aplicación web en Vercel, incorporación de capturas y verificación de la URL de producción. |
+| 26 | 2026-10-09 | Equipo GreenTech | Documentación de servicios y evidencias de ejecución del Sprint 2; actualización de Student Outcome y conclusiones para TB1. |
+| 27 | 2026-10-09 | Equipo GreenTech | Corrección de la planificación y trazabilidad del Sprint 2, referencias de repositorios y publicación, redacción académica, enlaces internos e incorporación de formularios en las evidencias de ejecución. |
+| 28 | 2026-10-09 | Equipo GreenTech | Registro de la actualización de la landing page para TB1 y ampliación de las evidencias de ejecución con la confirmación de registro de parcela, los detalles del dron y el resultado de un diagnóstico simulado. |
+
+<div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
 
@@ -220,7 +223,10 @@ La captura corresponde al historial mostrado en `main`; no representa un conteo 
 
 <div style="page-break-after: always;"></div>
 
-# Student Outcome 5
+# Student Outcome
+
+A continuación, por cada integrante del grupo y por cada entregable, se presentan los logros realizados que están relacionados con el **ABET - EAC - Student Outcome 5**:   
+*La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.*
 
 <div align="center">
 <table border="1">
@@ -2609,7 +2615,7 @@ El Sprint Planning 1 se enfoca en el desarrollo e implementación de la primera 
 | **Sprint 0 Review Summary** | Este es el primer sprint del proyecto. |
 | **Sprint 0 Retrospective Summary** | Este es el primer sprint del proyecto. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Objetivo:** implementar la landing page de SkyCrop con su propuesta de valor, funcionalidades, beneficios por segmento, planes de suscripción y contacto.<br><br>**Hipótesis:** una presentación organizada facilita la comprensión de la plataforma a agricultores e ingenieros agrónomos.<br><br>**Criterio de comprobación:** el visitante puede acceder a las secciones desde la navegación y visualizar la página en móvil y escritorio sin desbordes ni elementos cortados. El objetivo contempla su publicación en GitHub Pages. |
+| **Sprint 1 Goal** | **Nuestro enfoque está en** implementar la landing page de SkyCrop con su propuesta de valor, funcionalidades, beneficios por segmento, planes de suscripción y contacto.<br>**Creemos que esto entrega** una presentación organizada que facilitará la comprensión de la plataforma a agricultores e ingenieros agrónomos.<br>**Esto será confirmado cuando** el visitante pueda acceder a las secciones desde la navegación y visualizar la página en móvil y escritorio sin desbordes ni elementos cortados. |
 | **Sprint 1 Velocity** | 14 Story Points (estimación inicial revisada) |
 | **Sum of Story Points** | 14 Story Points |
 
@@ -3021,7 +3027,7 @@ El Sprint Planning 2 se enfoca en el desarrollo y despliegue de la primera versi
 | **Sprint 1 Review Summary** | Durante el Sprint 1 se implementó la primera versión de la landing page para presentar SkyCrop. La revisión identificó ajustes de diseño para mejorar su presentación. |
 | **Sprint 1 Retrospective Summary** | La retrospectiva del Sprint 1 destacó la coordinación del equipo y la organización del trabajo mediante GitHub. Estos aspectos orientan la distribución de tareas y la integración de cambios del frontend durante el Sprint 2. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 2 Goal** | Implementar y publicar la primera versión de la aplicación web de SkyCrop, con registro y consulta de parcelas, cultivos y drones, planificación de vuelos y visualización de diagnósticos y reportes mediante una mock API. El alcance del sprint corresponde a las vistas y al manejo de registros de la aplicación; los diagnósticos utilizan datos simulados. |
+| **Sprint 2 Goal** | **Nuestro enfoque está en** implementar y publicar la primera versión de la aplicación web de SkyCrop, con registro y consulta de parcelas, cultivos y drones, planificación de vuelos y visualización de diagnósticos y reportes mediante una mock API. <br>**Creemos que esto entrega** una version integrada y funcional de nuestra plataforma donde los usuarios son capaces de realizar operaciones fundamentales de nuestro negocio. <br>**Esto será confirmado cuando** la plataforma sea accesible desde cualquier navegador y los usuarios puedan completar tareas básicas dentro de ella sin complicaciones|
 | **Sprint 2 Velocity** | 14 |
 | **Sum of Story Points** | 24 |
 
@@ -3502,9 +3508,8 @@ Asimismo, mediante la sección **Insights**, se analizó la actividad general de
 
 En conclusión, las herramientas de GitHub facilitaron el monitoreo de las contribuciones y la evolución del proyecto durante el Sprint 2, proporcionando información relevante sobre la participación del equipo y el avance de las actividades de desarrollo.
 
----
 
-
+<div style="page-break-after: always;"></div>
 
 # Conclusiones 
 
@@ -3519,6 +3524,9 @@ Durante el Sprint 2 se desarrolló la primera versión de la aplicación web con
 El alcance implementado utiliza registros de una mock API y diagnósticos simulados. El estado de un dron y el registro de un vuelo representan información de la aplicación y no acreditan una conexión física con equipos agrícolas. Estas condiciones delimitan los resultados del sprint y permiten distinguir la implementación de las vistas de la validación operativa y agronómica de SkyCrop.
 
 Las hipótesis de conversión a suscripciones, uso recurrente y retención deberán contrastarse mediante un producto funcional y pruebas con usuarios. También será necesario verificar la integración con los drones seleccionados y evaluar la calidad de los diagnósticos. Los resultados de estas validaciones orientarán los ajustes del producto y las prioridades del roadmap, antes de atribuir mejoras de productividad o resultados agronómicos.
+
+
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 
@@ -3537,6 +3545,9 @@ Microsoft. (s. f.). *[C# identifier naming rules and conventions](https://learn.
 Preston-Werner, T. (s. f.). *[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)*.
 
 Vue.js. (s. f.). *[Style guide](https://vuejs.org/style-guide/)*. Recuperado el 19 de septiembre de 2026.
+
+
+<div style="page-break-after: always;"></div>
 
 # Anexos
 
