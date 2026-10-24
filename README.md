@@ -34,11 +34,51 @@ Proyecto
 
 **Integrantes**
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="resources/imgs/integrantes-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="resources/imgs/integrantes-light.png">
-  <img src="resources/imgs/integrantes-light.png" alt="Integrantes" width="55%">
-</picture>
+<table style="border: none; border-collapse: collapse;">
+<tr>
+<td style="border: none;">
+  <strong>Código</strong>
+</td>
+<td style="border: none;">
+  <strong>Apellidos y Nombres</strong>
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202423973
+</td>
+<td style="border: none;">Landa Sánchez, Sunio Danilo
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202423775
+</td>
+<td style="border: none;">Cano Gomez, Yam Antony
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202312912
+</td>
+<td style="border: none;">Jonseck Choque, Oliver
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202310349
+</td>
+<td style="border: none;">Rubio Ortiz, Luis Sebastián
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202219266
+</td>
+<td style="border: none;">Pumahualcca Garcia, Diego Rodrigo
+</td>
+</tr>
+</table>
 
 **Período 202620**
 
