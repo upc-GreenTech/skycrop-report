@@ -1806,31 +1806,31 @@ A partir de estos objetivos, se elaboraron los siguientes wireflows:
 Wireflow 1: Acceso a la plataforma
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-1.jpg" alt="Wireflow 1" width="600">
+<img src="resources/imgs/chapter_4/wireflow-1.png" alt="Wireflow 1" width="600">
 </div>
 
 Wireflow 2: Registro de parcela agrícola
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-2.jpg" alt="Wireflow 2" width="600">
+<img src="resources/imgs/chapter_4/wireflow-2.png" alt="Wireflow 2" width="600">
 </div>
 
 Wireflow 3: Gestión de drones
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-3.jpg" alt="Wireflow 3" width="600">
+<img src="resources/imgs/chapter_4/wireflow-3.png" alt="Wireflow 3" width="600">
 </div>
 
 Wireflow 4: Visualización de reportes
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-4.jpg" alt="Wireflow 4" width="600">
+<img src="resources/imgs/chapter_4/wireflow-4.png" alt="Wireflow 4" width="600">
 </div>
 
 Wireflow 5: Lectura de diagnósticos
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-5.jpg" alt="Wireflow 5" width="600">
+<img src="resources/imgs/chapter_4/wireflow-5.png" alt="Wireflow 5" width="600">
 </div>
 
 ### 4.4.3. Web Applications Mock-ups.
@@ -1904,31 +1904,31 @@ Los User Flow Diagrams representan los recorridos de la aplicación a partir de 
 Userflow 1: Acceso a la plataforma
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-1.jpg" alt="Wireflow 1" width="600">
+<img src="resources/imgs/chapter_4/userflow-1.png" alt="Wireflow 1" width="600">
 </div>
 
 Userflow 2: Registro de parcela agrícola
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-2.jpg" alt="Wireflow 2" width="600">
+<img src="resources/imgs/chapter_4/userflow-2.png" alt="Wireflow 2" width="600">
 </div>
 
 Wireflow 3: Gestión de drones
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-3.jpg" alt="Wireflow 3" width="600">
+<img src="resources/imgs/chapter_4/userflow-3.png" alt="Wireflow 3" width="600">
 </div>
 
 Userflow 4: Visualización de reportes
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-4.jpg" alt="Wireflow 4" width="600">
+<img src="resources/imgs/chapter_4/userflow-4.png" alt="Wireflow 4" width="600">
 </div>
 
 Userflow 5: Lectura de diagnósticos
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-5.jpg" alt="Wireflow 5" width="600">
+<img src="resources/imgs/chapter_4/userflow-5.png" alt="Wireflow 5" width="600">
 </div>
 
 #### Asignación de un dron al vuelo de una parcela
