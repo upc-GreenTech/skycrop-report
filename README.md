@@ -34,11 +34,51 @@ Proyecto
 
 **Integrantes**
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="resources/imgs/integrantes-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="resources/imgs/integrantes-light.png">
-  <img src="resources/imgs/integrantes-light.png" alt="Integrantes" width="55%">
-</picture>
+<table style="border: none; border-collapse: collapse;">
+<tr>
+<td style="border: none;">
+  <strong>Código</strong>
+</td>
+<td style="border: none;">
+  <strong>Apellidos y Nombres</strong>
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202423973
+</td>
+<td style="border: none;">Landa Sánchez, Sunio Danilo
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202423775
+</td>
+<td style="border: none;">Cano Gomez, Yam Antony
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202312912
+</td>
+<td style="border: none;">Jonseck Choque, Oliver
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202310349
+</td>
+<td style="border: none;">Rubio Ortiz, Luis Sebastián
+</td>
+</tr>
+
+<tr>
+<td style="border: none;">U202219266
+</td>
+<td style="border: none;">Pumahualcca Garcia, Diego Rodrigo
+</td>
+</tr>
+</table>
 
 **Período 202620**
 
@@ -1766,31 +1806,31 @@ A partir de estos objetivos, se elaboraron los siguientes wireflows:
 Wireflow 1: Acceso a la plataforma
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-1.jpg" alt="Wireflow 1" width="600">
+<img src="resources/imgs/chapter_4/wireflow-1.png" alt="Wireflow 1" width="600">
 </div>
 
 Wireflow 2: Registro de parcela agrícola
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-2.jpg" alt="Wireflow 2" width="600">
+<img src="resources/imgs/chapter_4/wireflow-2.png" alt="Wireflow 2" width="600">
 </div>
 
 Wireflow 3: Gestión de drones
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-3.jpg" alt="Wireflow 3" width="600">
+<img src="resources/imgs/chapter_4/wireflow-3.png" alt="Wireflow 3" width="600">
 </div>
 
 Wireflow 4: Visualización de reportes
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-4.jpg" alt="Wireflow 4" width="600">
+<img src="resources/imgs/chapter_4/wireflow-4.png" alt="Wireflow 4" width="600">
 </div>
 
 Wireflow 5: Lectura de diagnósticos
 
 <div align="center">
-<img src="resources/imgs/chapter_4/wireflow-5.jpg" alt="Wireflow 5" width="600">
+<img src="resources/imgs/chapter_4/wireflow-5.png" alt="Wireflow 5" width="600">
 </div>
 
 ### 4.4.3. Web Applications Mock-ups.
@@ -1864,31 +1904,31 @@ Los User Flow Diagrams representan los recorridos de la aplicación a partir de 
 Userflow 1: Acceso a la plataforma
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-1.jpg" alt="Wireflow 1" width="600">
+<img src="resources/imgs/chapter_4/userflow-1.png" alt="Wireflow 1" width="600">
 </div>
 
 Userflow 2: Registro de parcela agrícola
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-2.jpg" alt="Wireflow 2" width="600">
+<img src="resources/imgs/chapter_4/userflow-2.png" alt="Wireflow 2" width="600">
 </div>
 
 Wireflow 3: Gestión de drones
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-3.jpg" alt="Wireflow 3" width="600">
+<img src="resources/imgs/chapter_4/userflow-3.png" alt="Wireflow 3" width="600">
 </div>
 
 Userflow 4: Visualización de reportes
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-4.jpg" alt="Wireflow 4" width="600">
+<img src="resources/imgs/chapter_4/userflow-4.png" alt="Wireflow 4" width="600">
 </div>
 
 Userflow 5: Lectura de diagnósticos
 
 <div align="center">
-<img src="resources/imgs/chapter_4/userflow-5.jpg" alt="Wireflow 5" width="600">
+<img src="resources/imgs/chapter_4/userflow-5.png" alt="Wireflow 5" width="600">
 </div>
 
 #### Asignación de un dron al vuelo de una parcela
@@ -2022,7 +2062,7 @@ alt="Context-Diagram">
 
 La arquitectura propuesta de SkyCrop comprende una Landing Page desarrollada con HTML5, CSS3 y JavaScript, una aplicación web de página única (Single Page Application o SPA) basada en Vue y PrimeVue, y un RESTful API con C# y ASP.NET Core. Entity Framework Core proporciona el acceso a la base de datos relacional, para la cual se consideran MySQL Server o PostgreSQL. La landing presenta el producto y contempla llamados a la acción hacia las vistas de la aplicación correspondientes a cada segmento. La SPA se ejecuta en el navegador y utiliza Vue Router para la navegación del lado del cliente. Consume el API mediante solicitudes HTTPS con datos en formato JSON, mientras que el backend concentra las operaciones del dominio y las integraciones externas.
 
-<img src="resources/imgs/Software Architecture Diagram/Container-Diagram-updated.png" alt="Diagrama de contenedores de SkyCrop">
+<img src="resources/imgs/Software Architecture Diagram/Container-Diagram.png" alt="Diagrama de contenedores de SkyCrop">
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
@@ -2032,13 +2072,13 @@ Las vistas C4 de componentes describen la estructura interna de la landing, la a
 
 Los componentes organizan la navegación, las funcionalidades y beneficios, los planes, el formulario de contacto y el pie de página. El cambio de idioma proporciona los textos de la interfaz y los llamados a la acción contemplan la redirección hacia la aplicación.
 
-<img src="resources/imgs/Software Architecture Diagram/Components-Landing-updated.png" alt="Componentes de la Landing Page de SkyCrop">
+<img src="resources/imgs/Software Architecture Diagram/Components-Landing.png" alt="Componentes de la Landing Page de SkyCrop">
 
 **Frontend Web Application: vista general**
 
 La vista general organiza el frontend en Presentation, Application, Domain e Infrastructure. Presentation reúne el layout y las vistas de los ocho contextos, en el orden del catálogo del dominio. Los stores de Application coordinan las acciones y el estado; los modelos de Domain representan los datos del cliente; los clientes del API, assemblers y el cliente HTTP pertenecen a Infrastructure. La propuesta utiliza Vue, JavaScript y PrimeVue, con soporte para inglés y español, diseño adaptable y atributos ARIA.
 
-<img src="resources/imgs/Software Architecture Diagram/Components-Frontend-updated.png" alt="C4: vista general de componentes del frontend de SkyCrop">
+<img src="resources/imgs/Software Architecture Diagram/Components-Frontend.png" alt="C4: vista general de componentes del frontend de SkyCrop">
 
 **Backend RESTful API: vista general**
 
