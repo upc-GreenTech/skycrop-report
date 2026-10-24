@@ -1,44 +1,51 @@
 @startuml
-skinparam monochrome true
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
 skinparam shadowing false
 skinparam dpi 150
 skinparam defaultFontName SansSerif
 skinparam wrapWidth 220
-skinparam maxMessageSize 70
-skinparam componentStyle rectangle
 left to right direction
-title SkyCrop - Diagrama de contenedores
-actor "Agricultor\n[Persona]\n\nSupervisa parcelas y consulta información." as farmer
-actor "Ingeniero agrónomo\n[Persona]\n\nEvalúa cultivos y consulta diagnósticos." as agronomist
-rectangle "SkyCrop [Sistema de software]" {
-component "Landing Page\n[Contenedor: HTML5, CSS3, JavaScript]\n\nPresenta propuesta, beneficios, planes y contacto." as landing
-component "Single Page Application (SPA)\n[Contenedor: Vue, JavaScript, PrimeVue]\n\nSe ejecuta en el navegador y gestiona\nla interacción de agricultores y agrónomos." as web
-component "Backend RESTful API\n[Contenedor: C#, ASP.NET Core, EF Core]\n\nExpone operaciones del dominio y acceso a datos." as api
-database "Base de datos relacional\n[MySQL Server o PostgreSQL]\n\nPersiste cuentas, parcelas, vuelos y resultados." as db
+
+title SkyCrop - Container Level Diagram
+
+
+Person(farmer, "Farmer", "Monitors plots and views information")
+Person(agronomist, "Agronomist" ,"Evaluate crops and consult diagnoses")
+
+System_Ext(payment, "Payment Processor", "Processes transactions")
+System_Ext(messaging, "Messaging service", "Sends mails and notifications")
+System_Ext(maps, "Map Service", "Provides maps using latitude and longitude")
+System_Ext(weather, "Weather Service", "Provides weather information given a location")
+
+System_Boundary(skycrop, "SkyCrop") {
+Container(landing, "Landing Page", "HTML5, CSS3", "Presents the proposal, benefits, plans, and contact information.")
+Container(web, "Web Application", "Vercel", "Serves the Single Page Application to a user's browser")
+Container(spa, "Single Page Application", "Vue, JavaScript. PrimeVue", "It runs in the browser and manages the interaction between farmers and agronomists.")
+Container(api, "RESTful API", "C#, ASP.NET", "Exposes domain operations and data access endpoints.")
+ContainerDb(db, "Relational Database", "MySQL", "Records accounts, plots, flights, and results.")
 }
-component "Pasarela de pagos\n[Sistema externo]\n\nProcesa transacciones." as payment
-component "Servicio de mensajería\n[Sistema externo]\n\nEntrega correos y notificaciones." as messaging
-component "Servicios de mapas y meteorología\n[Sistemas externos]\n\nProporcionan mapas y datos meteorológicos." as agri
-component "Almacenamiento de archivos\n[Sistema externo]\n\nConserva imágenes y reportes." as storage
-farmer --> landing : Consulta [HTTPS]
-agronomist --> landing : Consulta [HTTPS]
-farmer --> web : Interactúa [HTTPS]
-agronomist --> web : Interactúa [HTTPS]
-landing --> web : CTA a vistas por segmento [HTTPS]\n(diseño previsto)
-web --> api : Operaciones REST [HTTPS / JSON]
-api --> db : Lectura y escritura [EF Core / SQL]
-api --> payment : Solicita pagos [HTTPS]
-api --> messaging : Solicita notificaciones [HTTPS]
-api --> agri : Consulta información [HTTPS]
-api --> storage : Guarda y recupera archivos [HTTPS]
-note bottom of web
-Navegación del lado del cliente: Vue Router.
-Referencia visual: Material Design.
-Idioma predeterminado: inglés; soporte es_419.
-end note
-note bottom of api
-Documentación: OpenAPI / Swagger.
-Arquitectura propuesta.
-end note
+
+Rel(farmer, landing, "Visits using [HTTPS]")
+Rel(agronomist, landing, "Visits using [HTTPS]")
+
+Rel(farmer, web, "Visits using [HTTPS]")
+Rel(agronomist, web, "Visits using [HTTPS]")
+
+Rel(farmer, spa, "Interacts with")
+Rel(agronomist, spa, "Interacts with")
+
+Rel(web, spa, "Serves to the user's browser")
+
+Rel(landing, web, "Redirects to")
+
+Rel(spa, api, "Sends [HTTP] requests")
+
+Rel(api, db, "Queries and registers records")
+Rel(api, payment, "Requests payment processing")
+Rel(api, messaging, "Requests notifications")
+Rel(api, maps, "Requests map information")
+Rel(api, weather, "Requests weather information")
 
 @enduml

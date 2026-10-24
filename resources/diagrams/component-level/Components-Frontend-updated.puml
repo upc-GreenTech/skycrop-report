@@ -1,73 +1,61 @@
 @startuml
-skinparam monochrome true
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
 skinparam shadowing false
 skinparam dpi 120
 skinparam defaultFontName SansSerif
-skinparam componentStyle rectangle
 skinparam wrapWidth 180
-skinparam nodesep 35
-skinparam ranksep 45
-top to bottom direction
-title SkyCrop - C4 - Frontend Component Overview
-actor "Farmer / Agronomist\n[Person]" as user
-rectangle "Frontend Web Application\n[Container: Vue / JavaScript / PrimeVue]" {
-rectangle "Presentation" {
-component "Layout and Navigation\n[Component: Vue]\n\nView navigation, language and interface states." as layout
-component "Diagnoses Generation / Core\n[Component: Vue / JavaScript]\n\nDiagnoses, results map and history." as diagnoses
-component "Report Management / Core\n[Component: Vue / JavaScript]\n\nReports, comparison and document downloads." as reports
-component "Agricultural Plot Management / Supporting\n[Component: Vue / JavaScript]\n\nPlot registration, details, crops and collaboration." as plots
-component "Drone Management / Supporting\n[Component: Vue / JavaScript]\n\nDrone registration, configuration and flights." as drones
-component "Subscriptions and Payment Management / Supporting\n[Component: Vue / JavaScript]\n\nPlans, payments and subscription status." as subscriptions
-component "Profiles and Preferences Management / Supporting\n[Component: Vue / JavaScript]\n\nProfile information viewing and editing." as profiles
-component "Notification Service / Generic\n[Component: Vue / JavaScript]\n\nNotifications, details and read status." as notifications
-component "IAM — Identity and Access Management / Generic\n[Component: Vue / JavaScript]\n\nRegistration, sign-in and account recovery." as iam
+
+
+title SkyCrop - Component Diagram (Bounded Contexts)
+
+
+System_Ext(maps, "Map Service", "Provides maps using latitude and longitude")
+
+
+Container(web, "Web Application", "Vercel", "Serves the Single Page Application to a user's browser")
+Container(api, "RESTful API", "C#, ASP.NET", "Exposes domain operations and data access endpoints.")
+
+
+Container_Boundary(frontend, "Single Page Application") {
+    Component(diagnoses, "Diagnoses", "Vue, JavaScript", "Diagnoses, results map and history.")
+    Component(reports, "Reports", "Vue, JavaScript", "Reports, comparison and document downloads.")
+    Component(plots, "Plots", "Vue, JavaScript", "Plot registration, details, crops and collaboration.")
+    Component(drones, "Drones", "Vue, JavaScript", "Drone registration, configuration and flights.")
+    Component(subscriptions, "Subscriptions", "Vue, JavaScript", "Plans, payments and subscription status.")
+    Component(crops, "Crops", "Vue, JavaScript", "Crop information viewing and editing.")
+    Component(notifications, "Notifications", "Vue, JavaScript", "Notifications, details and read status.")
+    Component(iam, "IAM", "Vue, JavaScript", "Registration, sign-in and account recovery.")
+    Component(shared, "Shared", "Vue, JavaScript", "Value objects and presentation views")
 }
-rectangle "Application" {
-component "Stores per Context\n[Component: Pinia / JavaScript]\n\nCoordinate actions, loading state and errors." as stores
-}
-rectangle "Domain" {
-component "Client Models per Context\n[Component: JavaScript]\n\nRepresent the data used by the interface." as models
-}
-rectangle "Infrastructure" {
-component "API Clients and Assemblers\n[Component: JavaScript]\n\nSend remote requests and transform responses into models." as clients
-component "HTTP Client\n[Component: JavaScript]\n\nREST requests and error handling." as http
-}
-}
-component "Backend RESTful API\n[Container: C# / ASP.NET Core]\n\nDomain operations." as api
-user --> layout : Interacts
-layout --> diagnoses : Navigates
-diagnoses --> stores : Requests context actions
-layout --> reports : Navigates
-reports --> stores : Requests context actions
-layout --> plots : Navigates
-plots --> stores : Requests context actions
-layout --> drones : Navigates
-drones --> stores : Requests context actions
-layout --> subscriptions : Navigates
-subscriptions --> stores : Requests context actions
-layout --> profiles : Navigates
-profiles --> stores : Requests context actions
-layout --> notifications : Navigates
-notifications --> stores : Requests context actions
-layout --> iam : Navigates
-iam --> stores : Requests context actions
-stores --> clients : Invokes operations
-stores --> models : Manages client data
-clients --> models : Builds models
-clients --> http : Sends requests
-http --> api : REST [HTTPS / JSON]
-diagnoses -[hidden]right-> reports
-reports -[hidden]right-> plots
-plots -[hidden]right-> drones
-drones -[hidden]right-> subscriptions
-subscriptions -[hidden]right-> profiles
-profiles -[hidden]right-> notifications
-notifications -[hidden]right-> iam
-legend bottom
-C4 - Component view of the proposed architecture.
-Each view expands a single container.
-Presentation modules follow the core, supporting and generic context order.
-Stores, models and API clients are organized by context.
-Client models do not replace the backend domain model.
-endlegend
+
+
+Rel(web, frontend, "Serves")
+
+Rel(shared, diagnoses, "Renders diagnosis list and details")
+Rel(shared, reports, "Renders report list and details")
+Rel(shared, plots, "Renders plot form, list and information")
+Rel(shared, drones, "Renders drone linking form, list and details")
+Rel(shared, subscriptions, "Renders subscription plans and form")
+Rel(shared, crops, "Renders crop details")
+Rel(shared, iam, "Renders registration form and account details")
+
+Rel(crops, plots, "Gets plot information from")
+Rel(subscriptions, notifications, "Requests reminder notifications")
+Rel(drones, notifications, "Requests alert notifications")
+Rel(diagnoses, notifications, "Requests alert notifications")
+
+Rel(diagnoses, api, "Reads and writes diagnoses using [HTTPS/JSON]")
+Rel(reports, api, "Reads and writes reports using [HTTPS/JSON] ")
+Rel(plots, api, "Reads and writes plots using [HTTPS/JSON]")
+Rel(drones, api, "Reads and writes drones using [HTTPS/JSON]")
+Rel(subscriptions, api, "Reads and writes subscriptions using [HTTPS/JSON]")
+Rel(crops, api, "Reads and writes crop information using [HTTPS/JSON]")
+Rel(notifications, api, "Requests notifications using [HTTPS/JSON]")
+Rel(iam, api, "Signs users in and up using [HTTPS/JSON]")
+
+Rel(plots, maps, "Gets map information using [HTTPS/JSON]")
+Rel(diagnoses, maps, "Gets map information using [HTTPS/JSON]")
+
+
 @enduml
